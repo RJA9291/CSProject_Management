@@ -1,7 +1,7 @@
 /* Relocation Command — offline service worker.
    Network-first for navigations (so updates show), cache-first for assets.
    Bump CACHE whenever assets change to refresh returning visitors. */
-const CACHE = 'reloc-gamuda-v1';
+const CACHE = 'reloc-gamuda-v2';
 const ASSETS = [
   './',
   './index.html',

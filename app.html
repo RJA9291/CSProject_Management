@@ -287,6 +287,84 @@ input[type=file]{display:none}
   .hdr-in{padding:10px 14px} main{padding:16px 14px 50px} .tabs{padding:0 14px}
   .kpi .val{font-size:22px} .brand h1{font-size:14px}
 }
+
+/* ============ EDIT MODE ============ */
+.ic.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.ic.on:hover{background:var(--accent-ink);color:#fff}
+.edit-only{display:none}
+#app.edit .edit-only{display:inline-flex}
+#app.edit .g-row{cursor:pointer}
+#app.edit .g-lab .tx{cursor:pointer}
+#app.edit .g-lab .tx:hover{color:var(--accent)}
+.editbadge{display:none}
+#app.edit .editbadge{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;
+  color:var(--accent);background:var(--accent-soft);padding:3px 9px;border-radius:20px;letter-spacing:.3px}
+.pen{opacity:.5;font-size:11px;margin-left:4px}
+#app.edit .g-row:hover .pen{opacity:1}
+/* progress stripe inside a gantt bar */
+.g-bar{overflow:hidden}
+.g-prog{position:absolute;left:0;bottom:0;height:3px;background:rgba(0,0,0,.5)}
+:root[data-theme="dark"] .g-prog{background:rgba(255,255,255,.6)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .g-prog{background:rgba(255,255,255,.6)}}
+.addbtn{height:34px;padding:0 13px;border:1px dashed var(--accent);background:var(--accent-soft);color:var(--accent);
+  border-radius:9px;font-size:12.5px;font-weight:700;display:inline-flex;align-items:center;gap:6px}
+.addbtn:hover{background:var(--accent);color:#fff;border-style:solid}
+/* inline inputs in tables */
+.cin{width:100px;height:30px;padding:0 8px;border:1px solid var(--line);border-radius:7px;background:var(--surface);
+  color:var(--ink);font-family:var(--mono);font-size:12.5px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
+.cin:focus{outline:2px solid var(--accent-soft);border-color:var(--accent)}
+.psel{height:30px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--ink);
+  font-family:inherit;font-size:12px;font-weight:600;padding:0 6px}
+.rmv{width:26px;height:26px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--key);
+  font-size:14px;line-height:1;display:inline-grid;place-items:center;padding:0}
+.rmv:hover{background:var(--key);color:#fff;border-color:var(--key)}
+.hin{width:70px;height:32px;padding:0 8px;border:1px solid var(--line);border-radius:7px;background:var(--surface);
+  color:var(--ink);font-family:var(--mono);font-size:14px;font-weight:700;text-align:center;font-variant-numeric:tabular-nums}
+.hin:focus{outline:2px solid var(--accent-soft);border-color:var(--accent)}
+.hb .top .fig .hin{margin:0 2px}
+
+/* ============ DRAWER ============ */
+.drawer{position:fixed;inset:0;z-index:60;display:none}
+.drawer.open{display:block}
+.dbackdrop{position:absolute;inset:0;background:rgba(10,18,28,.5);backdrop-filter:blur(2px);animation:dfade .2s ease}
+@keyframes dfade{from{opacity:0}to{opacity:1}}
+.dpanel{position:absolute;top:0;right:0;bottom:0;width:min(430px,94vw);background:var(--surface);
+  box-shadow:var(--shadow-lg);overflow-y:auto;display:flex;flex-direction:column;transform:translateX(100%);
+  transition:transform .26s cubic-bezier(.4,0,.2,1)}
+.drawer.open .dpanel{transform:none}
+.dhead{position:sticky;top:0;background:var(--surface);border-bottom:1px solid var(--line);padding:16px 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;z-index:2}
+.dhead .eyebrow{margin-bottom:2px}
+.dhead h3{font-size:15px}
+.dclose{width:32px;height:32px;border:1px solid var(--line);border-radius:8px;background:var(--surface);
+  color:var(--ink-2);font-size:16px;line-height:1;flex:none}
+.dclose:hover{border-color:var(--key);color:var(--key)}
+.dbody{padding:18px 20px;display:flex;flex-direction:column;gap:15px;flex:1}
+.fld{display:flex;flex-direction:column;gap:5px}
+.fld label{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--ink-3);font-weight:700}
+.fld input,.fld select,.fld textarea{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:9px;
+  background:var(--surface-2);color:var(--ink);font-family:inherit;font-size:13.5px}
+.fld textarea{resize:vertical;min-height:64px;line-height:1.45}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:2px solid var(--accent-soft);border-color:var(--accent);background:var(--surface)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stbtns{display:flex;gap:6px;flex-wrap:wrap}
+.stbtn{flex:1;min-width:70px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink-2);
+  padding:8px 6px;border-radius:9px;font-size:12px;font-weight:650;display:flex;align-items:center;gap:6px;justify-content:center}
+.stbtn .sd{width:9px;height:9px;border-radius:50%;border:1.5px solid var(--idle)}
+.stbtn .sd.ok{background:var(--ok);border-color:var(--ok)} .stbtn .sd.prog{background:var(--b);border-color:var(--b)}
+.stbtn .sd.wait{background:var(--warn);border-color:var(--warn)} .stbtn .sd.no{background:transparent}
+.stbtn.on{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
+.rng{display:flex;align-items:center;gap:10px}
+.rng input[type=range]{flex:1;accent-color:var(--accent)}
+.rng .rv{font-family:var(--mono);font-weight:700;font-size:13px;min-width:42px;text-align:right}
+.dfoot{position:sticky;bottom:0;background:var(--surface);border-top:1px solid var(--line);padding:14px 20px;
+  display:flex;gap:10px;align-items:center}
+.dfoot .del{margin-right:auto;border:1px solid var(--line);background:var(--surface);color:var(--key);
+  height:38px;padding:0 14px;border-radius:9px;font-size:13px;font-weight:650}
+.dfoot .del:hover{background:var(--key);color:#fff;border-color:var(--key)}
+.dfoot .save{height:38px;padding:0 18px;border-radius:9px;border:0;background:var(--accent);color:#fff;font-size:13px;font-weight:700}
+.dfoot .save:hover{background:var(--accent-ink)}
+.dfoot .cancel{height:38px;padding:0 14px;border-radius:9px;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);font-size:13px;font-weight:650}
 </style>
 
 <div id="app">
@@ -299,10 +377,13 @@ input[type=file]{display:none}
           <div class="route"><b>Shah Alam</b><span class="arw">→</span><b>Kundang Jaya, Rawang</b></div>
         </div>
       </div>
+      <span class="editbadge">✎ Editing</span>
       <div class="hdr-sp"></div>
       <div class="hbtns">
-        <button class="ic" id="exportBtn" title="Download your status backup as JSON">↓ Backup</button>
-        <button class="ic" id="importBtn" title="Restore a status backup">↑ Restore</button>
+        <button class="ic" id="editBtn" title="Turn editing on or off">✎ Edit</button>
+        <button class="ic" id="exportBtn" title="Download a backup of all your edits as JSON">↓ Backup</button>
+        <button class="ic" id="importBtn" title="Restore edits from a backup file">↑ Restore</button>
+        <button class="ic edit-only" id="resetBtn" title="Discard all edits and restore the workbook baseline">⟲ Reset</button>
         <input type="file" id="fileIn" accept="application/json">
         <button class="ic sq" id="themeBtn" title="Toggle light / dark">◐</button>
       </div>
@@ -321,8 +402,13 @@ input[type=file]{display:none}
 
   <footer class="foot">
     <span>Relocation to Gamuda, Rawang · baseline dated 15 June 2026 · figures in RM</span>
-    <span>Status edits are saved on this device — use <b>Backup</b> to carry them between devices.</span>
+    <span>Your edits are saved on this device — use <b>Backup</b> to carry them between devices, or <b>Reset</b> to return to the workbook baseline.</span>
   </footer>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="dbackdrop" data-close="1"></div>
+    <div class="dpanel" role="dialog" aria-modal="true" aria-labelledby="dTitle"></div>
+  </div>
 </div>
 
 <script>
@@ -338,11 +424,70 @@ const rm=n=>'RM '+fmt(n);
 const rmk=n=> n>=1000 ? 'RM '+(n/1000).toFixed(n%1000?1:0)+'k' : 'RM '+n;
 const esc=s=>(s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-/* ---- persisted state ---- */
-const LS='reloc.gamuda.v1';
-let ST={theme:null,tab:'overview',collapsed:{},status:{},gtFilter:'all'};
-try{const s=JSON.parse(localStorage.getItem(LS));if(s)ST=Object.assign(ST,s);}catch(e){}
+/* ---- persisted state (baseline DATA + user overrides) ---- */
+const LS='reloc.gamuda.v2';
+let ST={theme:null,tab:'overview',collapsed:{},gtFilter:'all',editMode:false,edits:{},added:[],deleted:{}};
+try{
+  const cur=JSON.parse(localStorage.getItem(LS));
+  if(cur){ST=Object.assign(ST,cur);}
+  else{ // one-time migration from v1 (status-only)
+    const old=JSON.parse(localStorage.getItem('reloc.gamuda.v1'));
+    if(old){
+      ST.theme=old.theme||null; ST.tab=old.tab||'overview';
+      ST.collapsed=old.collapsed||{}; ST.gtFilter=old.gtFilter||'all';
+      if(old.status){for(const id in old.status){ST.edits[id]={status:old.status[id]};}}
+    }
+  }
+}catch(e){}
+ST.edits=ST.edits||{}; ST.added=ST.added||[]; ST.deleted=ST.deleted||{};
 const save=()=>{try{localStorage.setItem(LS,JSON.stringify(ST));}catch(e){}};
+
+/* ---- override accessors ---- */
+const getEdit=id=>ST.edits[id]||{};
+const setEdit=(id,patch)=>{ST.edits[id]=Object.assign({},ST.edits[id],patch);save();};
+const delRow=id=>{
+  if(String(id)[0]==='x'){ST.added=ST.added.filter(a=>a.id!==id);delete ST.edits[id];}
+  else{ST.deleted[id]=true;}
+  save();
+};
+function effTimeline(){
+  const out=[];
+  DATA.timelineMain.forEach((x,i)=>{const id='m'+i;if(ST.deleted[id])return;
+    out.push(Object.assign({},x,ST.edits[id],{id:id}));});
+  ST.added.filter(a=>a._kind==='act').forEach(a=>
+    out.push(Object.assign({},a,ST.edits[a.id],{id:a.id,_added:true})));
+  return out;
+}
+function effCost(blk){
+  const base=blk==='A'?DATA.costA:DATA.costB;const out=[];
+  base.forEach((r,i)=>{const id=blk+i;if(ST.deleted[id])return;
+    out.push(Object.assign({},r,ST.edits[id],{id:id,blk:blk}));});
+  ST.added.filter(a=>a._kind==='cost'&&a.blk===blk).forEach(a=>
+    out.push(Object.assign({},a,ST.edits[a.id],{id:a.id,blk:blk,_added:true})));
+  return out;
+}
+function effHiring(){
+  return DATA.headcount.map((hh,i)=>{const id='h'+i;const ov=ST.edits[id]||{};
+    const rto=ov.rto!=null?+ov.rto:hh.rto, hired=ov.hired!=null?+ov.hired:hh.hired;
+    return Object.assign({},hh,{id:id,rto:rto,hired:hired,var:Math.max(0,rto-hired)});});
+}
+function effBudget(){
+  const A=effCost('A'),B=effCost('B');
+  const sum=arr=>arr.reduce((s,r)=>s+(+r.cost||0),0);
+  const ph=(arr,p)=>arr.filter(r=>r.phase===p).reduce((s,r)=>s+(+r.cost||0),0);
+  const blockA=sum(A),blockB=sum(B);
+  return {total:blockA+blockB,blockA:blockA,blockB:blockB,
+    phases:{A:{P1:ph(A,'P1'),P2:ph(A,'P2'),P3:ph(A,'P3')},B:{P1:ph(B,'P1'),P2:ph(B,'P2'),P3:ph(B,'P3')}}};
+}
+function completion(){
+  const rows=effTimeline().filter(r=>r.s&&r.c!=='key');
+  if(!rows.length)return 0;
+  const val=r=>{if(r.prog!=null&&r.prog!=='')return +r.prog;
+    const st=(r.status||'no');return st==='ok'?100:st==='prog'?50:st==='wait'?25:0;};
+  return Math.round(rows.reduce((s,r)=>s+val(r),0)/rows.length);
+}
+function rerenderAll(){Object.keys(rendered).forEach(k=>rendered[k]=false);
+  if(renderers[ST.tab]){renderers[ST.tab]();rendered[ST.tab]=true;}}
 
 /* ---- theme ---- */
 function applyTheme(){
@@ -354,6 +499,21 @@ $('#themeBtn').onclick=()=>{
   ST.theme=cur==='dark'?'light':'dark';applyTheme();save();
 };
 applyTheme();
+
+/* ---- edit mode ---- */
+const appEl=$('#app');
+function applyEdit(){
+  appEl.classList.toggle('edit',!!ST.editMode);
+  const b=$('#editBtn');b.classList.toggle('on',!!ST.editMode);
+  b.innerHTML=ST.editMode?'✓ Done':'✎ Edit';
+  b.title=ST.editMode?'Finish editing (view mode)':'Turn editing on';
+}
+$('#editBtn').onclick=()=>{ST.editMode=!ST.editMode;save();applyEdit();rerenderAll();};
+$('#resetBtn').onclick=()=>{
+  if(!confirm('Discard ALL your edits and restore the original workbook figures? This cannot be undone.'))return;
+  ST.edits={};ST.added=[];ST.deleted={};save();rerenderAll();
+};
+applyEdit();
 
 /* ---- week / month scaffolding ---- */
 const W0=28, W1=51;               // week span shown on the gantt
@@ -367,8 +527,9 @@ const STAT=[
   {k:'prog',label:'In Progress', cls:'prog'},
   {k:'wait',label:'Pending',     cls:'wait'},
 ];
-const statOf=id=> ST.status[id]||'no';
-const cycle=id=>{const cur=statOf(id);const i=STAT.findIndex(s=>s.k===cur);ST.status[id]=STAT[(i+1)%STAT.length].k;save();};
+const statOf=id=> (ST.edits[id]&&ST.edits[id].status)||'no';
+const cycle=id=>{const cur=statOf(id);const i=STAT.findIndex(s=>s.k===cur);setEdit(id,{status:STAT[(i+1)%STAT.length].k});};
+const statObj=k=>STAT.find(s=>s.k===k)||STAT[0];
 
 /* =================================================================== TABS */
 const TABS=[
@@ -401,16 +562,17 @@ const rendered={}, renderers={};
 
 /* =================================================================== OVERVIEW */
 renderers.overview=function(){
-  const v=$('#v-overview');const B=DATA.budget;
-  const tot=DATA.timelineMain.filter(x=>x.s);
-  const done=tot.filter(x=>statOf('m'+DATA.timelineMain.indexOf(x))==='ok').length;
-  const hc=DATA.headcount.reduce((a,h)=>({rto:a.rto+(h.rto||0),hired:a.hired+(h.hired||0)}),{rto:0,hired:0});
+  const v=$('#v-overview');const B=effBudget();
+  const tl=effTimeline().filter(x=>x.s);
+  const comp=completion();
+  const hc=effHiring().reduce((a,h)=>({rto:a.rto+(h.rto||0),hired:a.hired+(h.hired||0)}),{rto:0,hired:0});
   const kpis=[
     {c:'',   lab:'Total Budget', val:rm(B.total), foot:'Block A + Block B, all phases'},
-    {c:'a',  lab:'Block A', val:rmk(B.blockA), foot:'Lot 39058 · '+Math.round(B.blockA/B.total*100)+'% of spend'},
-    {c:'b',  lab:'Block B', val:rmk(B.blockB), foot:'Lot 39059 · '+Math.round(B.blockB/B.total*100)+'% of spend'},
-    {c:'key',lab:'Schedule', val:'Jul–Dec', foot:'2026 · weeks 28–51 ('+(tot.length)+' activities)'},
-    {c:'ok', lab:'Hiring Filled', val:Math.round(hc.hired/hc.rto*100)+'%', foot:hc.hired+' of '+hc.rto+' positions'},
+    {c:'a',  lab:'Block A', val:rmk(B.blockA), foot:'Lot 39058 · '+(B.total?Math.round(B.blockA/B.total*100):0)+'% of spend'},
+    {c:'b',  lab:'Block B', val:rmk(B.blockB), foot:'Lot 39059 · '+(B.total?Math.round(B.blockB/B.total*100):0)+'% of spend'},
+    {c:'ok', lab:'Overall Progress', val:comp+'%', foot:tl.length+' scheduled activities'},
+    {c:'key',lab:'Schedule', val:'Jul–Dec', foot:'2026 · weeks 28–51'},
+    {c:'b',  lab:'Hiring Filled', val:(hc.rto?Math.round(hc.hired/hc.rto*100):0)+'%', foot:hc.hired+' of '+hc.rto+' positions'},
   ];
   let h=`<div class="kpis">`+kpis.map(k=>`<div class="kpi ${k.c}">
      <div class="lab">${k.lab}</div><div class="val">${k.val}</div><div class="foot">${k.foot}</div></div>`).join('')+`</div>`;
@@ -444,7 +606,7 @@ renderers.overview=function(){
   </div>`;
 
   /* key dates */
-  const keys=DATA.timelineMain.filter(x=>x.due).slice(0,10);
+  const keys=effTimeline().filter(x=>x.due).slice(0,10);
   h+=`<div class="grid2-a">
     <div class="card panel">
       <div class="panel-h"><h3>Key regulatory & legal dates</h3><span class="hint">critical path to production</span></div>
@@ -463,7 +625,7 @@ renderers.overview=function(){
 };
 function catBars(){
   const groups={};
-  DATA.timelineMain.forEach(x=>{if(x.s){const c=x.cat||'—';groups[c]=(groups[c]||0)+1;}});
+  effTimeline().forEach(x=>{if(x.s){const c=x.cat||'—';groups[c]=(groups[c]||0)+1;}});
   const arr=Object.entries(groups).sort((a,b)=>b[1]-a[1]);
   const mx=Math.max(...arr.map(a=>a[1]));
   return `<div class="stack">`+arr.map(([c,n])=>`<div class="srow" style="grid-template-columns:130px 1fr 34px">
@@ -489,7 +651,7 @@ renderers.timeline=function(){
   const v=$('#v-timeline');
   v.innerHTML=`
     <div class="sec-h"><span class="eyebrow">Master schedule</span><h2>Relocation timeline</h2>
-      <span class="sub">weeks 28–51 · 2026 · click a status dot to mark progress</span></div>
+      <span class="sub">weeks 28–51 · 2026 · click a status dot to set progress · <b>Edit</b> mode: click a row to edit</span></div>
     <div class="gt-ctl">
       <div class="chipset" id="gtFilter">
         <button class="chip" data-f="all">All work</button>
@@ -497,17 +659,24 @@ renderers.timeline=function(){
         <button class="chip" data-f="b">Block B</button>
         <button class="chip" data-f="key">Key dates</button>
       </div>
+      <button class="addbtn edit-only" id="addAct">＋ Add activity</button>
       <div class="hdr-sp" style="flex:1"></div>
       <div class="lgnd"><span><i class="dot a"></i>Block A</span><span><i class="dot b"></i>Block B</span>
         <span><i class="dot key"></i>Key date</span>
         <span><i class="dot ok"></i>Done</span><span><i class="dot idle" style="background:transparent;box-shadow:inset 0 0 0 1.5px var(--idle)"></i>Not set</span></div>
     </div>
     <div class="gt-wrap"><div class="gt" id="gt"></div></div>
-    <p class="note">Bars mirror the workbook's colour coding. Baseline is 15 June 2026 (week 25) — the plan opens in week 28.</p>`;
+    <p class="note">Bars mirror the workbook's colour coding; the stripe along a bar shows % progress. Baseline is 15 June 2026 (week 25) — the plan opens in week 28.</p>`;
   $$('#gtFilter .chip').forEach(c=>{
     c.classList.toggle('on',c.dataset.f===(ST.gtFilter||'all'));
     c.onclick=()=>{ST.gtFilter=c.dataset.f;save();$$('#gtFilter .chip').forEach(x=>x.classList.toggle('on',x===c));buildGantt();};
   });
+  $('#addAct').onclick=()=>{
+    const id='x'+Date.now();
+    const cats=[...new Set(effTimeline().map(r=>r.cat).filter(Boolean))];
+    ST.added.push({id:id,_kind:'act',cat:cats[0]||'General',act:'New activity',s:W0,e:W0,c:'a'});
+    save();openDrawer(id,true);
+  };
   buildGantt();
 };
 function buildGantt(){
@@ -518,14 +687,14 @@ function buildGantt(){
   </div><div class="gt-body">`;
   // group by cat, preserving order
   const order=[];const groups={};
-  DATA.timelineMain.forEach((x,i)=>{
+  effTimeline().forEach(x=>{
     if(!x.s) return;
     if(f==='a'&&x.c!=='a') return;
     if(f==='b'&&x.c!=='b') return;
     if(f==='key'&&x.c!=='key') return;
     const c=x.cat||'General';
     if(!groups[c]){groups[c]=[];order.push(c);}
-    groups[c].push({x,i});
+    groups[c].push(x);
   });
   if(!order.length){gt.innerHTML=h+`<div class="empty">No activities match this filter.</div></div>`;return;}
   order.forEach(c=>{
@@ -533,22 +702,23 @@ function buildGantt(){
     h+=`<div class="g-grp"><div class="g-grp-h ${col?'col':''}" data-g="${esc(c)}">
       <span class="tw">▼</span><span>${esc(c)}</span><span class="cnt">${rows.length}</span></div>
       <div class="g-rows ${col?'hide':''}" data-rows="${esc(c)}">`;
-    rows.forEach(({x,i})=>{
-      const id='m'+i;const st=statOf(id);const sc=STAT.find(s=>s.k===st).cls;
-      const sub=/^(i+\.|iv\.|v\.|vi\.|\d\.)/.test(x.act.trim())||x.act.trim().startsWith('i.');
-      h+=`<div class="g-row"><div class="g-lab">
-        <span class="st ${sc}" data-id="${id}" title="${STAT.find(s=>s.k===st).label} — click to change"></span>
-        <span class="tx ${sub?'sub':''}" title="${esc(x.act)}${x.pic?' · '+esc(x.pic):''}">${esc(x.act)}</span>
+    rows.forEach(x=>{
+      const id=x.id;const st=statOf(id);const o=statObj(st);
+      const sub=/^(i+\.|iv\.|v\.|vi\.|\d\.)/.test((x.act||'').trim())||(x.act||'').trim().startsWith('i.');
+      const prog=(x.prog!=null&&x.prog!=='')?+x.prog:(st==='ok'?100:0);
+      h+=`<div class="g-row" data-id="${id}"><div class="g-lab">
+        <span class="st ${o.cls}" data-id="${id}" title="${o.label} — click to change"></span>
+        <span class="tx ${sub?'sub':''}" title="${esc(x.act)}${x.pic?' · '+esc(x.pic):''}">${esc(x.act)}<span class="pen edit-only">✎</span></span>
       </div><div class="g-track">`;
       for(let k=0;k<24;k++) h+=`<div class="cell"></div>`;
-      const s=Math.max(x.s,W0),e=Math.min(x.e,W1);
+      const s=Math.max(x.s,W0),e=Math.min(Math.max(x.e||x.s,x.s),W1);
       if(x.c==='key'){
         const left=((s-W0)+0.5)/24*100;
         h+=`<div class="g-diamond" style="left:${left}%" title="${esc(x.act)}"></div>`;
       }else{
         const left=(s-W0)/24*100, width=(e-s+1)/24*100;
-        h+=`<div class="g-bar ${x.c}" style="left:${left}%;width:calc(${width}% - 3px);margin-left:1.5px"
-             title="${esc(x.act)} · W${x.s}–W${x.e}"></div>`;
+        h+=`<div class="g-bar ${x.c||'a'}" style="left:${left}%;width:calc(${width}% - 3px);margin-left:1.5px"
+             title="${esc(x.act)} · W${x.s}–W${x.e}${prog?' · '+prog+'%':''}">${prog?`<span class="g-prog" style="width:${prog}%"></span>`:''}</div>`;
       }
       h+=`</div></div>`;
     });
@@ -561,19 +731,102 @@ function buildGantt(){
   });
   $$('.g-lab .st',gt).forEach(d=>d.onclick=e=>{
     e.stopPropagation();cycle(d.dataset.id);
-    const st=statOf(d.dataset.id),o=STAT.find(s=>s.k===st);
+    const o=statObj(statOf(d.dataset.id));
     d.className='st '+o.cls;d.title=o.label+' — click to change';
+    // refresh the bar's progress stripe when status flips to/from done
+    const row=d.closest('.g-row');const bar=row&&row.querySelector('.g-bar');
+    if(bar){const ed=getEdit(d.dataset.id);const p=(ed.prog!=null&&ed.prog!=='')?+ed.prog:(statOf(d.dataset.id)==='ok'?100:0);
+      bar.innerHTML=p?`<span class="g-prog" style="width:${p}%"></span>`:'';}
   });
+  $$('.g-row',gt).forEach(r=>r.addEventListener('click',e=>{
+    if(!ST.editMode) return;
+    if(e.target.closest('.st')) return; // status dot handled separately
+    openDrawer(r.dataset.id);
+  }));
 }
+
+/* ---- edit drawer (timeline activity) ---- */
+const drawer=$('#drawer');
+let drawerNew=null;
+const clampWk=v=>Math.max(W0,Math.min(W1,parseInt(v,10)||W0));
+function closeDrawer(cancelNew){
+  if(cancelNew&&drawerNew){delRow(drawerNew);drawerNew=null;buildGantt();}
+  drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true');
+}
+function openDrawer(id,isNew){
+  drawerNew=isNew?id:null;
+  const r=effTimeline().find(x=>x.id===id);
+  if(!r){return;}
+  const cats=[...new Set(effTimeline().map(x=>x.cat).filter(Boolean))];
+  if(r.cat&&!cats.includes(r.cat))cats.unshift(r.cat);
+  let curStat=statOf(id);
+  const catOpts=cats.map(c=>`<option value="${esc(c)}"${c===r.cat?' selected':''}>${esc(c)}</option>`).join('');
+  const blkOpts=[['a','Block A'],['b','Block B'],['key','Key date (milestone)']]
+    .map(([v,l])=>`<option value="${v}"${(r.c||'a')===v?' selected':''}>${l}</option>`).join('');
+  const p=(r.prog!=null&&r.prog!=='')?+r.prog:'';
+  const panel=$('.dpanel',drawer);
+  panel.innerHTML=`
+    <div class="dhead"><div><div class="eyebrow">${isNew?'New activity':'Edit activity'}</div>
+      <h3 id="dTitle">Timeline item</h3></div>
+      <button class="dclose" data-close="1" aria-label="Close">✕</button></div>
+    <div class="dbody">
+      <div class="fld"><label>Activity</label><input id="dAct" value="${esc(r.act||'')}" placeholder="Describe the activity"></div>
+      <div class="fld"><label>Category / area</label><select id="dCat">${catOpts}</select></div>
+      <div class="fld"><label>Person in charge (PIC)</label><input id="dPic" value="${esc(r.pic||'')}" placeholder="e.g. Ikmal / Syafiq"></div>
+      <div class="frow">
+        <div class="fld"><label>Due date</label><input id="dDue" type="date" value="${esc(r.due||'')}"></div>
+        <div class="fld"><label>Type</label><select id="dBlk">${blkOpts}</select></div>
+      </div>
+      <div class="fld"><label>Status</label>
+        <div class="stbtns" id="dStat">${STAT.map(s=>`<button class="stbtn ${s.k===curStat?'on':''}" data-k="${s.k}"><span class="sd ${s.cls}"></span>${s.label}</button>`).join('')}</div>
+      </div>
+      <div class="fld"><label>Progress</label>
+        <div class="rng"><input id="dProg" type="range" min="0" max="100" step="5" value="${p===''?0:p}">
+          <span class="rv" id="dProgV">${p===''?'—':p+'%'}</span></div>
+      </div>
+      <div class="frow">
+        <div class="fld"><label>Start week</label><input id="dS" type="number" min="${W0}" max="${W1}" value="${r.s||W0}"></div>
+        <div class="fld"><label>End week</label><input id="dE" type="number" min="${W0}" max="${W1}" value="${r.e||r.s||W0}"></div>
+      </div>
+      <div class="fld"><label>Remark / note</label><textarea id="dRmk" placeholder="Latest update, blockers…">${esc(r.rmk||'')}</textarea></div>
+    </div>
+    <div class="dfoot">
+      <button class="del" id="dDel">🗑 Delete</button>
+      <button class="cancel" data-close="1">Cancel</button>
+      <button class="save" id="dSave">Save</button>
+    </div>`;
+  $$('#dStat .stbtn',panel).forEach(b=>b.onclick=()=>{curStat=b.dataset.k;
+    $$('#dStat .stbtn',panel).forEach(x=>x.classList.toggle('on',x===b));});
+  const pr=$('#dProg',panel),prv=$('#dProgV',panel);
+  pr.oninput=()=>{prv.textContent=pr.value+'%';};
+  $('#dSave',panel).onclick=()=>{
+    const blk=$('#dBlk',panel).value;
+    let sv=clampWk($('#dS',panel).value), ev=clampWk($('#dE',panel).value);
+    if(ev<sv)ev=sv;
+    const patch={act:$('#dAct',panel).value.trim()||'Untitled',cat:$('#dCat',panel).value,
+      pic:$('#dPic',panel).value.trim(),due:$('#dDue',panel).value,c:blk,
+      rmk:$('#dRmk',panel).value.trim(),status:curStat,
+      prog:+pr.value,s:sv,e:(blk==='key'?sv:ev)};
+    setEdit(id,patch);drawerNew=null;closeDrawer(false);buildGantt();rendered.overview=false;
+  };
+  $('#dDel',panel).onclick=()=>{
+    if(!confirm('Delete this activity?'))return;
+    delRow(id);drawerNew=null;closeDrawer(false);buildGantt();rendered.overview=false;
+  };
+  $$('[data-close]',panel).forEach(b=>b.onclick=()=>closeDrawer(true));
+  drawer.classList.add('open');drawer.setAttribute('aria-hidden','false');
+  setTimeout(()=>{const a=$('#dAct',panel);if(a)a.focus();},60);
+}
+$('.dbackdrop',drawer).onclick=()=>closeDrawer(true);
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&drawer.classList.contains('open'))closeDrawer(true);});
 
 /* =================================================================== BUDGET */
 renderers.budget=function(){
   const v=$('#v-budget');
-  const rowsA=DATA.costA.map(r=>({...r,blk:'A'})), rowsB=DATA.costB.map(r=>({...r,blk:'B'}));
-  const all=[...rowsA,...rowsB];
+  const B0=effBudget();
   v.innerHTML=`
     <div class="sec-h"><span class="eyebrow">Cost breakdown</span><h2>Bill of quantities — costed lines</h2>
-      <span class="sub">${all.length} priced items · RM ${fmt(DATA.budget.total)} total</span></div>
+      <span class="sub" id="budTotal">RM ${fmt(B0.total)} total</span></div>
     <div class="tbl-ctl">
       <input class="srch" id="budSrch" placeholder="Search location or activity…">
       <div class="chipset" id="budBlk">
@@ -587,37 +840,65 @@ renderers.budget=function(){
         <button class="chip" data-p="P2">P2</button>
         <button class="chip" data-p="P3">P3</button>
       </div>
+      <button class="addbtn edit-only" data-add="A">＋ Line (A)</button>
+      <button class="addbtn edit-only" data-add="B">＋ Line (B)</button>
     </div>
     <div class="tbl-wrap"><table id="budTbl"></table></div>
-    <p class="note">Only line items with an estimated cost in the workbook appear here. Items marked “separate from tender”
-      or descriptive-only rows are excluded, so section subtotals reflect costed scope.</p>`;
+    <p class="note">In <b>Edit</b> mode, change a cost and the subtotals, phase totals and Overview update instantly.
+      Only line items with an estimated cost appear here, so subtotals reflect costed scope.</p>`;
   const state={q:'',b:'all',p:'all'};
   const draw=()=>{
+    const all=[...effCost('A'),...effCost('B')];
     const rows=all.filter(r=>
       (state.b==='all'||r.blk===state.b)&&
       (state.p==='all'||r.phase===state.p)&&
-      (!state.q|| (r.loc+' '+r.act).toLowerCase().includes(state.q)) );
-    const sum=rows.reduce((a,r)=>a+r.cost,0);
+      (!state.q|| ((r.loc||'')+' '+(r.act||'')).toLowerCase().includes(state.q)) );
+    const sum=rows.reduce((a,r)=>a+(+r.cost||0),0);
+    const ed=ST.editMode;
     let h=`<thead><tr>
-      <th>Block</th><th>Location / scope</th><th>Type</th><th>Qty</th><th>Phase</th><th class="num">Est. cost</th>
+      <th>Block</th><th>Location / scope</th><th>Type</th><th>Qty</th><th>Phase</th><th class="num">Est. cost</th>${ed?'<th></th>':''}
       </tr></thead><tbody>`;
-    if(!rows.length) h+=`<tr><td colspan="6"><div class="empty">No lines match.</div></td></tr>`;
+    if(!rows.length) h+=`<tr><td colspan="${ed?7:6}"><div class="empty">No lines match.</div></td></tr>`;
     rows.forEach(r=>{
+      const locCell = (ed&&r._added)
+        ? `<input class="cin" style="width:100%;text-align:left;font-family:inherit" data-loc="${r.id}" value="${esc(r.loc||'')}">`
+        : `${esc(r.loc)}<div style="font-size:11px;color:var(--ink-3);font-weight:400;margin-top:2px">${esc(r.desc||'')}</div>`;
+      const phaseCell = ed
+        ? `<select class="psel" data-phase="${r.id}">${['P1','P2','P3'].map(p=>`<option${r.phase===p?' selected':''}>${p}</option>`).join('')}</select>`
+        : `<span class="pill ${(r.phase||'na').toLowerCase()}">${esc(r.phase||'—')}</span>`;
+      const costCell = ed
+        ? `<input class="cin" type="number" min="0" step="100" data-cost="${r.id}" value="${+r.cost||0}">`
+        : fmt(+r.cost||0);
       h+=`<tr>
         <td><span class="pill ${r.blk==='A'?'p2':'rel'}">Block ${r.blk}</span></td>
-        <td class="loc">${esc(r.loc)}<div style="font-size:11px;color:var(--ink-3);font-weight:400;margin-top:2px">${esc(r.desc)}</div></td>
-        <td><span class="pill ${/relocat/i.test(r.act)?'rel':'buy'}">${esc(r.act||'—')}</span></td>
+        <td class="loc">${locCell}</td>
+        <td><span class="pill ${/relocat/i.test(r.act||'')?'rel':'buy'}">${esc(r.act||'—')}</span></td>
         <td>${esc(r.qty||'—')}</td>
-        <td><span class="pill ${(r.phase||'na').toLowerCase()}">${esc(r.phase||'—')}</span></td>
-        <td class="num">${fmt(r.cost)}</td></tr>`;
+        <td>${phaseCell}</td>
+        <td class="num">${costCell}</td>
+        ${ed?`<td><button class="rmv" data-del="${r.id}" title="Remove line">✕</button></td>`:''}</tr>`;
     });
     h+=`</tbody><tfoot><tr><td colspan="5">Subtotal · ${rows.length} item${rows.length!==1?'s':''}</td>
-      <td class="num">RM ${fmt(sum)}</td></tr></tfoot>`;
+      <td class="num">RM ${fmt(sum)}</td>${ed?'<td></td>':''}</tr></tfoot>`;
     $('#budTbl').innerHTML=h;
+    // wire edit inputs
+    $$('#budTbl [data-cost]').forEach(inp=>inp.onchange=()=>{
+      setEdit(inp.dataset.cost,{cost:Math.max(0,+inp.value||0)});refresh();});
+    $$('#budTbl [data-phase]').forEach(sel=>sel.onchange=()=>{
+      setEdit(sel.dataset.phase,{phase:sel.value});refresh();});
+    $$('#budTbl [data-loc]').forEach(inp=>inp.onchange=()=>{
+      setEdit(inp.dataset.loc,{loc:inp.value});});
+    $$('#budTbl [data-del]').forEach(b=>b.onclick=()=>{
+      if(!confirm('Remove this cost line?'))return;delRow(b.dataset.del);refresh();});
   };
+  const refresh=()=>{draw();$('#budTotal').textContent='RM '+fmt(effBudget().total)+' total';rendered.overview=false;};
   $('#budSrch').oninput=e=>{state.q=e.target.value.toLowerCase().trim();draw();};
   $$('#budBlk .chip').forEach(c=>c.onclick=()=>{state.b=c.dataset.b;$$('#budBlk .chip').forEach(x=>x.classList.toggle('on',x===c));draw();});
   $$('#budPh .chip').forEach(c=>c.onclick=()=>{state.p=c.dataset.p;$$('#budPh .chip').forEach(x=>x.classList.toggle('on',x===c));draw();});
+  $$('[data-add]',v).forEach(b=>b.onclick=()=>{
+    const blk=b.dataset.add;const id='x'+Date.now();
+    ST.added.push({id:id,_kind:'cost',blk:blk,loc:'New line item',act:'New Purchase',qty:'',desc:'',phase:'P1',cost:0});
+    save();refresh();});
   draw();
 };
 
@@ -640,28 +921,32 @@ renderers.stakeholders=function(){
 /* =================================================================== HIRING */
 renderers.hiring=function(){
   const v=$('#v-hiring');
-  const hc=DATA.headcount;
+  const hc=effHiring();const ed=ST.editMode;
   const tot=hc.reduce((a,h)=>({rto:a.rto+(h.rto||0),hired:a.hired+(h.hired||0),var:a.var+(h.var||0)}),{rto:0,hired:0,var:0});
   v.innerHTML=`
     <div class="sec-h"><span class="eyebrow">Manpower</span><h2>Hiring vs. requirement</h2>
-      <span class="sub">ramp-up to 20 JPH capacity</span></div>
+      <span class="sub">ramp-up to 20 JPH capacity${ed?' · edit the numbers below':''}</span></div>
     <div class="kpis">
       <div class="kpi ok"><div class="lab">Positions filled</div><div class="val">${tot.hired}<small> / ${tot.rto}</small></div>
-        <div class="foot">${Math.round(tot.hired/tot.rto*100)}% of required headcount</div></div>
+        <div class="foot">${tot.rto?Math.round(tot.hired/tot.rto*100):0}% of required headcount</div></div>
       <div class="kpi ${tot.var>0?'a':'ok'}"><div class="lab">Open variance</div><div class="val">${tot.var}</div>
         <div class="foot">${tot.var>0?'positions still to fill':'fully staffed'}</div></div>
       <div class="kpi b"><div class="lab">Categories</div><div class="val">${hc.length}</div>
         <div class="foot">Exec · Non-Exec · Operator</div></div>
     </div>
     <div class="card hbar" style="margin-top:6px">
-      ${hc.map(h=>{const pct=Math.round((h.hired/h.rto)*100);
+      ${hc.map(h=>{const pct=h.rto?Math.round((h.hired/h.rto)*100):0;
+        const fig=ed
+          ? `<input class="hin" type="number" min="0" data-hired="${h.id}" value="${h.hired}"> / <input class="hin" type="number" min="0" data-rto="${h.id}" value="${h.rto}"> hired · <span class="${h.var>0?'var-gap':'var-ok'}">${h.var>0?h.var+' open':'complete'}</span>`
+          : `<b>${h.hired}</b> / ${h.rto} hired · <span class="${h.var>0?'var-gap':'var-ok'}">${h.var>0?h.var+' open':'complete'}</span>`;
         return `<div class="hb">
-          <div class="top"><span class="lv">${esc(h.lvl)}</span>
-            <span class="fig"><b>${h.hired}</b> / ${h.rto} hired · <span class="${h.var>0?'var-gap':'var-ok'}">${h.var>0?h.var+' open':'complete'}</span></span></div>
-          <div class="trk"><div class="fill" style="width:${pct}%">${pct}%</div></div>
+          <div class="top"><span class="lv">${esc(h.lvl)}</span><span class="fig">${fig}</span></div>
+          <div class="trk"><div class="fill" style="width:${Math.min(100,pct)}%">${pct}%</div></div>
           <div class="dept">${esc(h.dept)}</div></div>`;}).join('')}
     </div>
     <p class="note">Requirement-to-operate (RTO) figures from the hiring timeline. Operator hiring runs in two phases across weeks 35–45.</p>`;
+  $$('[data-hired]',v).forEach(inp=>inp.onchange=()=>{setEdit(inp.dataset.hired,{hired:Math.max(0,+inp.value||0)});rendered.overview=false;renderers.hiring();});
+  $$('[data-rto]',v).forEach(inp=>inp.onchange=()=>{setEdit(inp.dataset.rto,{rto:Math.max(0,+inp.value||0)});rendered.overview=false;renderers.hiring();});
 };
 
 /* =================================================================== BQ / EQUIPMENT */
@@ -683,18 +968,25 @@ function fmtDate(s){if(!s)return'';const[y,m,d]=s.split('-');const mo=['Jan','Fe
 function shortCat(c){return (c||'').replace(/^Operation Area\s*-\s*/,'').replace(/\s*&\s*Agreement/,'').trim()||'General';}
 function pillCat(c){if(/legal/i.test(c))return'p1';if(/util/i.test(c))return'p2';return'p3';}
 
-/* ---- export / import ---- */
+/* ---- export / import (all edits) ---- */
 $('#exportBtn').onclick=()=>{
-  const blob=new Blob([JSON.stringify({app:LS,exported:new Date().toISOString(),status:ST.status},null,2)],{type:'application/json'});
-  const a=el('a');a.href=URL.createObjectURL(blob);a.download='relocation-status-backup.json';a.click();
+  const payload={app:LS,exported:new Date().toISOString(),edits:ST.edits,added:ST.added,deleted:ST.deleted};
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+  const a=el('a');a.href=URL.createObjectURL(blob);a.download='relocation-backup.json';a.click();
   setTimeout(()=>URL.revokeObjectURL(a.href),2000);
 };
 $('#importBtn').onclick=()=>$('#fileIn').click();
 $('#fileIn').onchange=e=>{
   const f=e.target.files[0];if(!f)return;const rd=new FileReader();
-  rd.onload=()=>{try{const j=JSON.parse(rd.result);if(j.status){ST.status=j.status;save();
-    Object.keys(rendered).forEach(k=>rendered[k]=false);go(ST.tab);alert('Status restored.');}
-    else alert('No status data in that file.');}catch(x){alert('Could not read that file.');}};
+  rd.onload=()=>{try{
+    const j=JSON.parse(rd.result);
+    if(j.edits||j.added||j.deleted){          // v2 full backup
+      ST.edits=j.edits||{};ST.added=j.added||[];ST.deleted=j.deleted||{};
+    }else if(j.status){                         // legacy status-only backup
+      ST.edits={};for(const id in j.status){ST.edits[id]={status:j.status[id]};}
+    }else{alert('No edits found in that file.');return;}
+    save();rerenderAll();alert('Backup restored.');
+  }catch(x){alert('Could not read that file.');}};
   rd.readAsText(f);e.target.value='';
 };
 
