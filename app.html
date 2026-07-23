@@ -365,6 +365,51 @@ input[type=file]{display:none}
 .dfoot .save{height:38px;padding:0 18px;border-radius:9px;border:0;background:var(--accent);color:#fff;font-size:13px;font-weight:700}
 .dfoot .save:hover{background:var(--accent-ink)}
 .dfoot .cancel{height:38px;padding:0 14px;border-radius:9px;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);font-size:13px;font-weight:650}
+
+/* ============ STAKEHOLDER TASK LISTS ============ */
+.lop-summary{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--radius);padding:14px 18px;box-shadow:var(--shadow);margin-bottom:16px}
+.lop-summary .lab{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--ink-3);font-weight:700}
+.lop-summary .big{font-size:22px;font-weight:750;font-variant-numeric:tabular-nums;letter-spacing:-.5px;margin-top:2px}
+.lop-summary .big .u{color:var(--ink-3);font-size:14px;font-weight:600}
+.lop-summary .bar{flex:1;min-width:150px;height:10px;background:var(--surface-2);border:1px solid var(--line-2);border-radius:6px;overflow:hidden}
+.lop-summary .bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--ok),#37b985);border-radius:6px;transition:width .5s cubic-bezier(.4,0,.2,1)}
+.lop-summary .pc{font-size:22px;font-weight:750;color:var(--ok);font-variant-numeric:tabular-nums}
+.lopc{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.lopc-h{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px 11px;cursor:pointer;user-select:none}
+.lopc-h:hover{background:var(--surface-2)}
+.lopc-t{display:flex;align-items:center;gap:9px;min-width:0}
+.lopc-t .nm{font-size:14px;font-weight:700}
+.lopc-t .tag{font-size:10px;font-weight:800;color:var(--accent);background:var(--accent-soft);padding:3px 8px;border-radius:6px;letter-spacing:.4px;white-space:nowrap}
+.lopc-meta{display:flex;align-items:center;gap:11px;flex:none}
+.prog-mini{font-family:var(--mono);font-size:11.5px;font-weight:650;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.prog-mini.done{color:var(--ok)}
+.lopc-meta .tw{color:var(--ink-3);font-size:10px;transition:transform .2s}
+.lopc-meta .tw.col{transform:rotate(-90deg)}
+.lopbar{height:4px;background:var(--surface-2)}
+.lopbar>i{display:block;height:100%;background:var(--ok);transition:width .4s cubic-bezier(.4,0,.2,1)}
+.lopc-b{padding:6px 16px 16px;display:flex;flex-direction:column;gap:11px}
+.lopc-b.hide{display:none}
+.lopc-b .pics{font-size:11.5px;color:var(--ink-3);display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.lopc-b .pics b{color:var(--ink-2);font-weight:600}
+.tasks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+.task{display:flex;align-items:flex-start;gap:9px;padding:6px 5px;border-radius:8px}
+.task:hover{background:var(--surface-2)}
+.chk{width:18px;height:18px;flex:none;border:1.8px solid var(--idle);border-radius:5px;background:var(--surface);
+  display:grid;place-items:center;margin-top:1px;transition:.15s;padding:0;line-height:1}
+.chk:hover{border-color:var(--ok)}
+.chk.on{background:var(--ok);border-color:var(--ok)}
+.chk.on::after{content:"✓";color:#fff;font-size:12px;font-weight:800}
+.ttx{font-size:12.5px;color:var(--ink-2);line-height:1.45;flex:1;white-space:pre-line;min-width:0}
+.task.done .ttx{color:var(--ink-3);text-decoration:line-through}
+.tin{flex:1;min-width:0;font-family:inherit;font-size:12.5px;padding:6px 8px;border:1px solid var(--line);border-radius:7px;
+  background:var(--surface-2);color:var(--ink)}
+.tin:focus{outline:2px solid var(--accent-soft);border-color:var(--accent);background:var(--surface)}
+.tacts{display:flex;gap:4px;flex:none}
+.tacts button{width:24px;height:24px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink-3);font-size:11px;line-height:1;padding:0}
+.tacts button:hover{border-color:var(--key);color:var(--key)}
+.lopc-b .tgt{margin-top:2px;padding-top:9px;border-top:1px solid var(--line-2);font-size:11.5px;color:var(--ink-3);display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.lopc-b .tgt b{font-family:var(--mono);color:var(--key);font-weight:650}
 </style>
 
 <div id="app">
@@ -470,6 +515,20 @@ function effHiring(){
   return DATA.headcount.map((hh,i)=>{const id='h'+i;const ov=ST.edits[id]||{};
     const rto=ov.rto!=null?+ov.rto:hh.rto, hired=ov.hired!=null?+ov.hired:hh.hired;
     return Object.assign({},hh,{id:id,rto:rto,hired:hired,var:Math.max(0,rto-hired)});});
+}
+function effLop(){
+  return DATA.lop.map((l,i)=>{
+    const sid='L'+i;const ov=ST.edits[sid]||{};
+    const tasks=[];
+    l.subs.forEach((s,j)=>{const tid=sid+'_'+j;if(ST.deleted[tid])return;
+      const tov=ST.edits[tid]||{};
+      tasks.push({id:tid,text:tov.text!=null?tov.text:s,done:!!tov.done});});
+    ST.added.filter(a=>a._kind==='lopTask'&&a.lop===i).forEach(a=>{
+      const tov=ST.edits[a.id]||{};
+      tasks.push({id:a.id,text:tov.text!=null?tov.text:a.text,done:!!tov.done,_added:true});});
+    return {id:sid,idx:i,sh:l.sh,pic:ov.pic!=null?ov.pic:l.pic,
+      target:ov.target!=null?ov.target:l.target,remark:l.remark,tasks:tasks};
+  });
 }
 function effBudget(){
   const A=effCost('A'),B=effCost('B');
@@ -903,19 +962,75 @@ renderers.budget=function(){
 };
 
 /* =================================================================== STAKEHOLDERS */
+const lopAbbr=s=>{const m=s.match(/\(([^)]+)\)/);return m?m[1]:s.split(' ').map(w=>w[0]).join('').slice(0,3).toUpperCase();};
+function taskRow(t,ed){
+  return `<li class="task ${t.done?'done':''}">
+    <button class="chk ${t.done?'on':''}" data-done="${t.id}" aria-label="Toggle complete" title="Mark ${t.done?'not done':'done'}"></button>
+    ${ed?`<input class="tin" data-ttext="${t.id}" value="${esc(t.text||'')}" placeholder="Task…">`
+        :`<span class="ttx">${esc(t.text||'')}</span>`}
+    ${ed?`<span class="tacts"><button data-deltask="${t.id}" title="Delete task">✕</button></span>`:''}
+  </li>`;
+}
 renderers.stakeholders=function(){
   const v=$('#v-stakeholders');
-  const abbr=s=>{const m=s.match(/\(([^)]+)\)/);return m?m[1]:s.split(' ').map(w=>w[0]).join('').slice(0,3).toUpperCase();};
-  v.innerHTML=`
-    <div class="sec-h"><span class="eyebrow">List of parties</span><h2>Stakeholders &amp; workstreams</h2>
-      <span class="sub">${DATA.lop.length} functions · owners and open items</span></div>
-    <div class="lop-grid">${DATA.lop.map(l=>`
-      <div class="card lop">
-        <div class="lop-h"><div class="nm">${esc(l.sh.replace(/\s*\([^)]*\)/,''))}</div><div class="tag">${esc(abbr(l.sh))}</div></div>
-        ${l.pic?`<div class="pics"><b>PIC:</b> ${esc(l.pic)}</div>`:''}
-        <ul>${l.subs.map(s=>`<li>${esc(s)}</li>`).join('')}</ul>
-        ${l.target?`<div class="tgt">Target <b>${fmtDate(l.target)}</b></div>`:''}
-      </div>`).join('')}</div>`;
+  const ed=ST.editMode;
+  const data=effLop();
+  let allDone=0,allTot=0;
+  data.forEach(l=>{allTot+=l.tasks.length;allDone+=l.tasks.filter(t=>t.done).length;});
+  const pctAll=allTot?Math.round(allDone/allTot*100):0;
+  let h=`<div class="sec-h"><span class="eyebrow">List of parties</span><h2>Stakeholders &amp; workstreams</h2>
+      <span class="sub">${data.length} functions · tick tasks to track completion${ed?' · edit mode: rename, add or delete tasks':''}</span></div>
+    <div class="lop-summary">
+      <div><div class="lab">Workstream completion</div><div class="big">${allDone}<span class="u"> / ${allTot} tasks done</span></div></div>
+      <div class="bar"><i style="width:${pctAll}%"></i></div>
+      <div class="pc">${pctAll}%</div>
+    </div>
+    <div class="lop-grid">`;
+  data.forEach(l=>{
+    const done=l.tasks.filter(t=>t.done).length, tot=l.tasks.length, pct=tot?Math.round(done/tot*100):0;
+    const col=ST.collapsed['lop_'+l.idx];
+    const nm=l.sh.replace(/\s*\([^)]*\)/,'');
+    h+=`<div class="card lopc">
+      <div class="lopc-h" data-toggle="${l.idx}">
+        <div class="lopc-t"><div class="nm">${esc(nm)}</div><div class="tag">${esc(lopAbbr(l.sh))}</div></div>
+        <div class="lopc-meta"><span class="prog-mini ${tot&&done===tot?'done':''}">${done}/${tot}${tot?' · '+pct+'%':''}</span>
+          <span class="tw ${col?'col':''}">▼</span></div>
+      </div>
+      <div class="lopbar"><i style="width:${pct}%"></i></div>
+      <div class="lopc-b ${col?'hide':''}">
+        <div class="pics">${ed
+          ? `<b>PIC</b><input class="tin" style="max-width:220px" data-pic="${l.id}" value="${esc(l.pic||'')}" placeholder="Assign owner">`
+          : (l.pic?`<b>PIC:</b> ${esc(l.pic)}`:`<span>No owner assigned</span>`)}</div>
+        <ul class="tasks">${l.tasks.map(t=>taskRow(t,ed)).join('')||`<li class="task" style="color:var(--ink-3);font-size:12px">No tasks yet${ed?' — add one below':''}.</li>`}</ul>
+        ${ed?`<button class="addbtn" data-addtask="${l.idx}">＋ Add task</button>`:''}
+        <div class="tgt">Target ${ed
+          ? `<input class="tin" type="date" style="max-width:160px" data-target="${l.id}" value="${esc(l.target||'')}">`
+          : (l.target?`<b>${fmtDate(l.target)}</b>`:`—`)}</div>
+      </div>
+    </div>`;
+  });
+  v.innerHTML=h+`</div>`;
+  // collapse toggle
+  $$('.lopc-h',v).forEach(hh=>hh.onclick=()=>{
+    const i=hh.dataset.toggle;ST.collapsed['lop_'+i]=!ST.collapsed['lop_'+i];save();
+    hh.querySelector('.tw').classList.toggle('col');
+    hh.parentElement.querySelector('.lopc-b').classList.toggle('hide');
+  });
+  // task completion (works in view mode too)
+  $$('[data-done]',v).forEach(b=>b.onclick=e=>{e.stopPropagation();
+    const id=b.dataset.done;setEdit(id,{done:!getEdit(id).done});renderers.stakeholders();});
+  // inline text / pic / target edits (no re-render, save on change)
+  $$('[data-ttext]',v).forEach(inp=>inp.onchange=()=>setEdit(inp.dataset.ttext,{text:inp.value}));
+  $$('[data-pic]',v).forEach(inp=>inp.onchange=()=>setEdit(inp.dataset.pic,{pic:inp.value}));
+  $$('[data-target]',v).forEach(inp=>inp.onchange=()=>setEdit(inp.dataset.target,{target:inp.value}));
+  $$('[data-deltask]',v).forEach(b=>b.onclick=()=>{
+    if(!confirm('Delete this task?'))return;delRow(b.dataset.deltask);renderers.stakeholders();});
+  $$('[data-addtask]',v).forEach(b=>b.onclick=()=>{
+    const i=+b.dataset.addtask;const id='x'+Date.now();
+    ST.added.push({id:id,_kind:'lopTask',lop:i,text:'New task',done:false});
+    ST.collapsed['lop_'+i]=false;save();renderers.stakeholders();
+    setTimeout(()=>{const el=v.querySelector(`[data-ttext="${id}"]`);if(el){el.focus();el.select();}},40);
+  });
 };
 
 /* =================================================================== HIRING */
