@@ -430,6 +430,19 @@ input[type=file]{display:none}
 .tacts button:hover{border-color:var(--key);color:var(--key)}
 .lopc-b .tgt{margin-top:2px;padding-top:9px;border-top:1px solid var(--line-2);font-size:11.5px;color:var(--ink-3);display:flex;gap:7px;align-items:center;flex-wrap:wrap}
 .lopc-b .tgt b{font-family:var(--mono);color:var(--key);font-weight:650}
+
+/* ============ OVERVIEW DELIVERY METERS ============ */
+.meters{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:640px){.meters{grid-template-columns:1fr;gap:16px}}
+.meter .mt{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:8px}
+.meter .mlab{font-size:12.5px;font-weight:650;color:var(--ink-2)}
+.meter .mpct{font-family:var(--mono);font-size:19px;font-weight:750;letter-spacing:-.5px;font-variant-numeric:tabular-nums}
+.meter .mbar{height:9px;background:var(--surface-2);border:1px solid var(--line-2);border-radius:6px;overflow:hidden}
+.meter .mbar>i{display:block;height:100%;border-radius:6px;transition:width .6s cubic-bezier(.4,0,.2,1)}
+.meter .msub{font-size:11px;color:var(--ink-3);margin-top:6px;font-variant-numeric:tabular-nums}
+.meter.sch .mpct{color:var(--accent)} .meter.sch .mbar>i{background:var(--accent)}
+.meter.wk .mpct{color:var(--ok)} .meter.wk .mbar>i{background:linear-gradient(90deg,var(--ok),#37b985)}
+.meter.hr .mpct{color:var(--b)} .meter.hr .mbar>i{background:var(--b)}
 </style>
 
 <div id="app">
@@ -508,13 +521,15 @@ ST.edits=ST.edits||{}; ST.added=ST.added||[]; ST.deleted=ST.deleted||{};
 const save=()=>{try{localStorage.setItem(LS,JSON.stringify(ST));}catch(e){}};
 
 /* ---- override accessors ---- */
+const touchOverview=()=>{try{rendered.overview=false;}catch(e){}};
 const getEdit=id=>ST.edits[id]||{};
-const setEdit=(id,patch)=>{ST.edits[id]=Object.assign({},ST.edits[id],patch);save();};
+const setEdit=(id,patch)=>{ST.edits[id]=Object.assign({},ST.edits[id],patch);save();touchOverview();};
 const delRow=id=>{
   if(String(id)[0]==='x'){ST.added=ST.added.filter(a=>a.id!==id);delete ST.edits[id];}
   else{ST.deleted[id]=true;}
-  save();
+  save();touchOverview();
 };
+const addRow=rec=>{ST.added.push(rec);save();touchOverview();};
 function effTimeline(){
   const out=[];
   DATA.timelineMain.forEach((x,i)=>{const id='m'+i;if(ST.deleted[id])return;
@@ -565,6 +580,13 @@ function completion(){
     const st=(r.status||'no');return st==='ok'?100:st==='prog'?50:st==='wait'?25:0;};
   return Math.round(rows.reduce((s,r)=>s+val(r),0)/rows.length);
 }
+function tlDoneCount(){
+  return effTimeline().filter(r=>r.s&&r.c!=='key').filter(r=>{
+    const st=(r.status||'no');const p=(r.prog!=null&&r.prog!=='')?+r.prog:(st==='ok'?100:0);
+    return p>=100;}).length;
+}
+function lopStats(){let d=0,t=0;effLop().forEach(l=>{t+=l.tasks.length;d+=l.tasks.filter(x=>x.done).length;});
+  return {done:d,total:t,pct:t?Math.round(d/t*100):0};}
 function rerenderAll(){Object.keys(rendered).forEach(k=>rendered[k]=false);
   if(renderers[ST.tab]){renderers[ST.tab]();rendered[ST.tab]=true;}}
 
@@ -649,12 +671,26 @@ renderers.overview=function(){
     {c:'',   lab:'Total Budget', val:rm(B.total), foot:'Block A + Block B, all phases'},
     {c:'a',  lab:'Block A', val:rmk(B.blockA), foot:'Lot 39058 · '+(B.total?Math.round(B.blockA/B.total*100):0)+'% of spend'},
     {c:'b',  lab:'Block B', val:rmk(B.blockB), foot:'Lot 39059 · '+(B.total?Math.round(B.blockB/B.total*100):0)+'% of spend'},
-    {c:'ok', lab:'Overall Progress', val:comp+'%', foot:tl.length+' scheduled activities'},
     {c:'key',lab:'Schedule', val:'Jul–Dec', foot:'2026 · weeks 28–51'},
-    {c:'b',  lab:'Hiring Filled', val:(hc.rto?Math.round(hc.hired/hc.rto*100):0)+'%', foot:hc.hired+' of '+hc.rto+' positions'},
   ];
   let h=`<div class="kpis">`+kpis.map(k=>`<div class="kpi ${k.c}">
      <div class="lab">${k.lab}</div><div class="val">${k.val}</div><div class="foot">${k.foot}</div></div>`).join('')+`</div>`;
+
+  /* delivery progress meters */
+  const tlDone=tlDoneCount(), tlTot=tl.length;
+  const wk=lopStats();
+  const hpct=hc.rto?Math.round(hc.hired/hc.rto*100):0;
+  const meter=(cls,lab,pct,sub)=>`<div class="meter ${cls}">
+    <div class="mt"><span class="mlab">${lab}</span><span class="mpct">${pct}%</span></div>
+    <div class="mbar"><i style="width:${Math.min(100,pct)}%"></i></div>
+    <div class="msub">${sub}</div></div>`;
+  h+=`<div class="card panel" style="margin-bottom:16px">
+    <div class="panel-h"><h3>Delivery progress</h3><span class="hint">live — updates as you tick tasks &amp; set status</span></div>
+    <div class="meters">
+      ${meter('sch','Schedule (activities)',comp,tlDone+' of '+tlTot+' scheduled done')}
+      ${meter('wk','Workstream tasks',wk.pct,wk.done+' of '+wk.total+' tasks done')}
+      ${meter('hr','Hiring filled',hpct,hc.hired+' of '+hc.rto+' positions')}
+    </div></div>`;
 
   /* phase stack + donut */
   const ph=B.phases, maxPh=Math.max(ph.A.P1+ph.B.P1,ph.A.P2+ph.B.P2,ph.A.P3+ph.B.P3);
@@ -753,8 +789,8 @@ renderers.timeline=function(){
   $('#addAct').onclick=()=>{
     const id='x'+Date.now();
     const cats=[...new Set(effTimeline().map(r=>r.cat).filter(Boolean))];
-    ST.added.push({id:id,_kind:'act',cat:cats[0]||'General',act:'New activity',s:W0,e:W0,c:'a'});
-    save();openDrawer(id,true);
+    addRow({id:id,_kind:'act',cat:cats[0]||'General',act:'New activity',s:W0,e:W0,c:'a'});
+    openDrawer(id,true);
   };
   buildGantt();
 };
@@ -976,8 +1012,8 @@ renderers.budget=function(){
   $$('#budPh .chip').forEach(c=>c.onclick=()=>{state.p=c.dataset.p;$$('#budPh .chip').forEach(x=>x.classList.toggle('on',x===c));draw();});
   $$('[data-add]',v).forEach(b=>b.onclick=()=>{
     const blk=b.dataset.add;const id='x'+Date.now();
-    ST.added.push({id:id,_kind:'cost',blk:blk,loc:'New line item',act:'New Purchase',qty:'',desc:'',phase:'P1',cost:0});
-    save();refresh();});
+    addRow({id:id,_kind:'cost',blk:blk,loc:'New line item',act:'New Purchase',qty:'',desc:'',phase:'P1',cost:0});
+    refresh();});
   draw();
 };
 
@@ -1047,7 +1083,7 @@ renderers.stakeholders=function(){
     if(!confirm('Delete this task?'))return;delRow(b.dataset.deltask);renderers.stakeholders();});
   $$('[data-addtask]',v).forEach(b=>b.onclick=()=>{
     const i=+b.dataset.addtask;const id='x'+Date.now();
-    ST.added.push({id:id,_kind:'lopTask',lop:i,text:'New task',done:false});
+    addRow({id:id,_kind:'lopTask',lop:i,text:'New task',done:false});
     ST.collapsed['lop_'+i]=false;save();renderers.stakeholders();
     setTimeout(()=>{const el=v.querySelector(`[data-ttext="${id}"]`);if(el){el.focus();el.select();}},40);
   });
