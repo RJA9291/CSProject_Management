@@ -1,0 +1,6 @@
+# Build intermediate — the data is embedded directly in app.html
+data.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
