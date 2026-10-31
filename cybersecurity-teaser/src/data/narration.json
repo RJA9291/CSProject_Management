@@ -1,0 +1,167 @@
+{
+  "voice": "am_michael",
+  "lines": [
+    {
+      "id": "s1_1",
+      "scene": 1,
+      "lang": "en",
+      "speed": 1.05,
+      "say": "Every day, we click.",
+      "sub": "Every day, we click.",
+      "tr": "Setiap hari, kita klik."
+    },
+    {
+      "id": "s1_2",
+      "scene": 1,
+      "lang": "en",
+      "speed": 1.05,
+      "say": "We scroll.",
+      "sub": "We scroll.",
+      "tr": "Kita skrol."
+    },
+    {
+      "id": "s1_3",
+      "scene": 1,
+      "lang": "en",
+      "speed": 1.05,
+      "say": "We shop.",
+      "sub": "We shop.",
+      "tr": "Kita membeli-belah."
+    },
+    {
+      "id": "s1_4",
+      "scene": 1,
+      "lang": "en",
+      "speed": 1.05,
+      "say": "We transfer money.",
+      "sub": "We transfer money.",
+      "tr": "Kita pindahkan wang."
+    },
+    {
+      "id": "s1_5",
+      "scene": 1,
+      "lang": "en",
+      "speed": 1.05,
+      "say": "We share our personal information.",
+      "sub": "We share our personal information.",
+      "tr": "Kita kongsi maklumat peribadi."
+    },
+    {
+      "id": "s1_6",
+      "scene": 1,
+      "lang": "en",
+      "speed": 0.9,
+      "say": "But… are we really safe?",
+      "sub": "But… are we really safe?",
+      "tr": "Tapi… adakah kita benar-benar selamat?"
+    },
+    {
+      "id": "s2_1",
+      "scene": 2,
+      "lang": "en",
+      "speed": 0.9,
+      "say": "One message. One call. One click.",
+      "sub": "One message. One call. One click.",
+      "tr": "Satu mesej. Satu panggilan. Satu klik."
+    },
+    {
+      "id": "s2_2",
+      "scene": 2,
+      "lang": "en",
+      "speed": 0.88,
+      "say": "And maybe… all your personal information is exposed.",
+      "sub": "And maybe… all your personal information is exposed.",
+      "tr": "Dan mungkin… semua maklumat peribadi anda terdedah."
+    },
+    {
+      "id": "s3_1",
+      "scene": 3,
+      "lang": "ms",
+      "speed": 1.18,
+      "say": "Di Malaysia, dua puluh lapan ribu enam ratus sembilan puluh lapan kes jenayah telekomunikasi direkodkan dari Januari hingga November dua ribu dua puluh lima.",
+      "sub": "Di Malaysia, 28,698 kes jenayah telekomunikasi direkodkan dari Januari hingga November 2025.",
+      "tr": "In Malaysia, 28,698 telecommunication crime cases were recorded from January to November 2025."
+    },
+    {
+      "id": "s3_2",
+      "scene": 3,
+      "lang": "ms",
+      "speed": 1.12,
+      "say": "Dan golongan dua puluh satu hingga tiga puluh tahun mencatat jumlah mangsa tertinggi.",
+      "sub": "Dan golongan 21 hingga 30 tahun mencatat jumlah mangsa tertinggi.",
+      "tr": "And those aged 21 to 30 recorded the highest number of victims."
+    },
+    {
+      "id": "s4_1",
+      "scene": 4,
+      "lang": "en",
+      "speed": 0.88,
+      "say": "Welcome to the world of cybersecurity.",
+      "sub": "Welcome to the world of CYBERSECURITY.",
+      "tr": "Selamat datang ke dunia keselamatan siber."
+    },
+    {
+      "id": "s4_2",
+      "scene": 4,
+      "lang": "en",
+      "speed": 0.92,
+      "say": "It's not just about hackers.",
+      "sub": "It's not just about hackers.",
+      "tr": "Ia bukan sekadar tentang penggodam."
+    },
+    {
+      "id": "s4_3",
+      "scene": 4,
+      "lang": "en",
+      "speed": 0.92,
+      "say": "It's about protecting your identity,",
+      "sub": "It's about protecting your identity,",
+      "tr": "Ia tentang melindungi identiti anda,"
+    },
+    {
+      "id": "s4_4",
+      "scene": 4,
+      "lang": "en",
+      "speed": 0.92,
+      "say": "your data,",
+      "sub": "your data,",
+      "tr": "data anda,"
+    },
+    {
+      "id": "s4_5",
+      "scene": 4,
+      "lang": "en",
+      "speed": 0.92,
+      "say": "your money…",
+      "sub": "your money…",
+      "tr": "wang anda…"
+    },
+    {
+      "id": "s4_6",
+      "scene": 4,
+      "lang": "en",
+      "speed": 0.9,
+      "say": "and your digital life.",
+      "sub": "and your digital life.",
+      "tr": "dan kehidupan digital anda."
+    },
+    {
+      "id": "s5_1",
+      "scene": 5,
+      "lang": "en",
+      "speed": 0.86,
+      "say": "So, here's the question…",
+      "sub": "So, here's the question…",
+      "tr": "Jadi, persoalannya…"
+    },
+    {
+      "id": "s5_2",
+      "scene": 5,
+      "lang": "en",
+      "speed": 0.84,
+      "say": "Are you really protected?",
+      "sub": "Are you really PROTECTED?",
+      "tr": "Adakah anda benar-benar dilindungi?"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+1
+00:00:00,200 --> 00:00:01,467
+Every day, we click.
+
+2
+00:00:01,467 --> 00:00:02,467
+We scroll.
+
+3
+00:00:02,467 --> 00:00:03,400
+We shop.
+
+4
+00:00:03,400 --> 00:00:04,733
+We transfer money.
+
+5
+00:00:04,733 --> 00:00:07,033
+We share our personal information.
+
+6
+00:00:07,067 --> 00:00:08,967
+But… are we really safe?
+
+7
+00:00:09,400 --> 00:00:12,300
+One message. One call. One click.
+
+8
+00:00:13,200 --> 00:00:17,333
+And maybe… all your personal information is exposed.
+
+9
+00:00:17,800 --> 00:00:28,667
+In Malaysia, 28,698 telecommunication crime cases were recorded from January to November 2025.
+
+10
+00:00:28,667 --> 00:00:34,200
+And those aged 21 to 30 recorded the highest number of victims.
+
+11
+00:00:35,000 --> 00:00:37,967
+Welcome to the world of CYBERSECURITY.
+
+12
+00:00:38,000 --> 00:00:40,200
+It's not just about hackers.
+
+13
+00:00:40,267 --> 00:00:42,533
+It's about protecting your identity,
+
+14
+00:00:42,533 --> 00:00:43,600
+your data,
+
+15
+00:00:43,600 --> 00:00:44,733
+your money…
+
+16
+00:00:44,733 --> 00:00:46,567
+and your digital life.
+
+17
+00:00:48,000 --> 00:00:49,833
+So, here's the question…
+
+18
+00:00:50,500 --> 00:00:52,567
+Are you really PROTECTED?

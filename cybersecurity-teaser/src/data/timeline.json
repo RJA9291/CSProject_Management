@@ -1,0 +1,29 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1770,
+  "scenes": {
+    "hook":      {"from": 0,    "to": 264},
+    "threat":    {"from": 264,  "to": 516},
+    "reality":   {"from": 516,  "to": 1026},
+    "intro":     {"from": 1026, "to": 1410},
+    "cliffhanger": {"from": 1410, "to": 1770}
+  },
+  "vo": {
+    "s1_1": 6, "s1_2": 44, "s1_3": 74, "s1_4": 102, "s1_5": 142, "s1_6": 212,
+    "s2_1": 282, "s2_2": 396,
+    "s3_1": 534, "s3_2": 860,
+    "s4_1": 1050, "s4_2": 1140, "s4_3": 1208, "s4_4": 1276, "s4_5": 1308, "s4_6": 1342,
+    "s5_1": 1440, "s5_2": 1515
+  },
+  "beats": {
+    "safeText": 224,
+    "msgArrive": 282, "callArrive": 312, "clickTap": 333, "parcelArrive": 356, "bankLink": 376,
+    "hesitate": 396, "exposed": 488, "oneClickText": 420,
+    "mapIn": 520, "casesIn": 564, "lossesIn": 700, "ageIn": 878, "sourceIn": 600,
+    "blueTurn": 1000, "cyberWord": 1098,
+    "identity": 1238, "data": 1278, "money": 1310, "digitalLife": 1350,
+    "fadeDark": 1410, "titleReveal": 1582, "readyIn": 1636, "soonIn": 1686, "glitchOut": 1734, "silence": 1746
+  }
+}

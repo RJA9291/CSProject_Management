@@ -25,3 +25,12 @@ all data embedded, no external requests). It is:
 
 Status edits live in `localStorage` (per-URL). Use **Backup / Restore** in the app to move them
 between devices — including from the Artifact URL to this Pages URL.
+
+---
+
+## Cybersecurity awareness teaser (Episode 01)
+
+[`cybersecurity-teaser/`](cybersecurity-teaser/) is a separate Remotion (React + TypeScript) project that renders a
+59-second vertical cinematic teaser for Malaysian audiences. The final video is at
+[`cybersecurity-teaser/output/cybersecurity_teaser_01.mp4`](cybersecurity-teaser/output/cybersecurity_teaser_01.mp4).
+See [its README](cybersecurity-teaser/README.md) for render and editing instructions.

@@ -1,0 +1,34 @@
+{
+  "name": "cybersecurity-teaser",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cybersecurity awareness teaser 01 (Malaysia) - vertical 9:16 cinematic teaser built with Remotion",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts CyberTeaser01 output/render_raw.mp4 --codec=h264 --crf=16 --audio-bitrate=320k",
+    "master": "bash scripts/master.sh",
+    "build": "npm run render && npm run master",
+    "still": "remotion still src/index.ts CyberTeaser01 output/still.png",
+    "srt": "node scripts/build-srt.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/bebas-neue": "5.2.5",
+    "@fontsource/inter": "5.2.5",
+    "@fontsource/jetbrains-mono": "5.2.5",
+    "@remotion/cli": "4.0.539",
+    "@remotion/fonts": "4.0.539",
+    "@remotion/media-utils": "4.0.539",
+    "@remotion/noise": "4.0.539",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "d3-geo": "3.1.1",
+    "topojson-client": "3.1.0",
+    "typescript": "5.6.3",
+    "world-atlas": "2.0.2"
+  }
+}
