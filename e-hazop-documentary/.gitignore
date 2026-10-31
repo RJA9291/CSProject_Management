@@ -1,0 +1,6 @@
+node_modules/
+output/render_raw.mp4
+.remotion/
+*.onnx
+voices-*.bin
+public/audio/music/*.wav

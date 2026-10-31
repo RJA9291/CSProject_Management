@@ -1,0 +1,272 @@
+1
+00:00:01,400 --> 00:00:03,767
+Assalamualaikum and good day.
+
+2
+00:00:03,767 --> 00:00:10,500
+My name is Abdul Rahman bin Japry,
+matriculation number MET264016.
+
+3
+00:00:10,900 --> 00:00:14,133
+This video is prepared for METE1153-51,
+
+4
+00:00:14,133 --> 00:00:20,500
+Occupational Safety for Energy System,
+as part of Individual Assignment 4.
+
+5
+00:00:20,500 --> 00:00:23,267
+Today, I will be explaining
+the basic concept of
+
+6
+00:00:23,267 --> 00:00:26,500
+Electrical Hazard and
+Operability Study, or E-HAZOP.
+
+7
+00:00:27,567 --> 00:00:31,067
+Electricity powers almost
+every aspect of modern life.
+
+8
+00:00:31,067 --> 00:00:33,867
+But behind this essential
+energy source are complex
+
+9
+00:00:33,867 --> 00:00:37,000
+electrical systems that can
+present serious hazards.
+
+10
+00:00:37,000 --> 00:00:41,133
+What happens when an electrical
+system does not operate as intended?
+
+11
+00:00:41,167 --> 00:00:43,467
+And how can we identify these risks before
+
+12
+00:00:43,467 --> 00:00:46,167
+they lead to accidents or equipment failure?
+
+13
+00:00:46,433 --> 00:00:48,667
+This is where E-HAZOP comes in.
+
+14
+00:00:49,433 --> 00:00:53,167
+E-HAZOP stands for Electrical
+Hazard and Operability Study.
+
+15
+00:00:53,167 --> 00:00:57,833
+It is a systematic and structured technique
+used to identify potential hazards,
+
+16
+00:00:57,833 --> 00:01:01,733
+operational problems and deviations
+within electrical systems.
+
+17
+00:01:01,733 --> 00:01:03,567
+It applies the principles of the
+
+18
+00:01:03,567 --> 00:01:06,800
+traditional HAZOP methodology
+to electrical designs.
+
+19
+00:01:06,800 --> 00:01:09,733
+Rather than simply inspecting
+individual equipment,
+
+20
+00:01:09,733 --> 00:01:12,600
+E-HAZOP examines how the
+overall electrical system
+
+21
+00:01:12,600 --> 00:01:15,733
+is designed and how different
+components interact.
+
+22
+00:01:15,733 --> 00:01:18,800
+The objective is to identify
+possible problems early,
+
+23
+00:01:18,800 --> 00:01:22,733
+assess their consequences and
+recommend appropriate safeguards.
+
+24
+00:01:23,600 --> 00:01:25,567
+So, how does E-HAZOP work?
+
+25
+00:01:25,567 --> 00:01:29,333
+First, the engineering team
+reviews important design documents,
+
+26
+00:01:29,333 --> 00:01:32,000
+such as electrical single-line diagrams.
+
+27
+00:01:32,000 --> 00:01:36,833
+Next, the electrical system is divided
+into smaller sections, known as nodes.
+
+28
+00:01:36,833 --> 00:01:40,800
+The team then applies guidewords to
+electrical parameters such as voltage,
+
+29
+00:01:40,800 --> 00:01:43,133
+current, power, frequency and earthing.
+
+30
+00:01:43,167 --> 00:01:46,300
+For example, guidewords such
+as 'over', 'under', 'spike',
+
+31
+00:01:46,300 --> 00:01:48,500
+'dip' and 'fault' help the team consider
+
+32
+00:01:48,500 --> 00:01:51,667
+possible deviations from
+normal operating conditions.
+
+33
+00:01:51,667 --> 00:01:55,567
+Each deviation is analysed by
+identifying its possible causes,
+
+34
+00:01:55,567 --> 00:01:58,833
+consequences and existing
+protective safeguards.
+
+35
+00:01:58,833 --> 00:02:01,100
+Finally, recommendations and corrective
+
+36
+00:02:01,100 --> 00:02:03,900
+actions are documented in a hazard register.
+
+37
+00:02:04,467 --> 00:02:08,233
+Consider a practical example
+involving a power transformer.
+
+38
+00:02:08,567 --> 00:02:12,400
+What if the transformer experiences
+an overvoltage condition?
+
+39
+00:02:12,400 --> 00:02:15,367
+This deviation could be
+caused by incorrect protection
+
+40
+00:02:15,367 --> 00:02:18,633
+settings or disturbances
+within the electrical network.
+
+41
+00:02:18,633 --> 00:02:21,333
+If not properly controlled,
+it may place stress on
+
+42
+00:02:21,333 --> 00:02:24,400
+the insulation and potentially
+damage the equipment.
+
+43
+00:02:24,400 --> 00:02:28,067
+During an E-HAZOP study, the team
+examines the possible causes,
+
+44
+00:02:28,067 --> 00:02:31,933
+consequences and effectiveness
+of existing protection systems.
+
+45
+00:02:31,933 --> 00:02:33,967
+The team can then recommend additional
+
+46
+00:02:33,967 --> 00:02:36,833
+safeguards or corrective
+actions where necessary.
+
+47
+00:02:37,400 --> 00:02:39,467
+E-HAZOP plays an important role in
+
+48
+00:02:39,467 --> 00:02:42,867
+improving electrical safety
+and system reliability.
+
+49
+00:02:42,867 --> 00:02:46,833
+It helps protect personnel, reduce
+the likelihood of equipment damage,
+
+50
+00:02:46,833 --> 00:02:50,433
+identify design weaknesses and
+support business continuity.
+
+51
+00:02:50,467 --> 00:02:53,567
+It is particularly valuable
+during the design stage,
+
+52
+00:02:53,567 --> 00:02:58,300
+as well as when electrical systems
+undergo modifications or major upgrades.
+
+53
+00:02:58,300 --> 00:03:02,067
+A multidisciplinary team is essential,
+bringing together engineering,
+
+54
+00:03:02,067 --> 00:03:04,367
+operations and maintenance knowledge.
+
+55
+00:03:04,933 --> 00:03:07,300
+Ultimately, E-HAZOP is about identifying
+
+56
+00:03:07,300 --> 00:03:10,900
+potential problems before
+they become serious incidents.
+
+57
+00:03:11,400 --> 00:03:15,867
+Because in electrical safety, prevention
+is always better than failure.
+
+58
+00:03:15,867 --> 00:03:16,933
+Thank you.

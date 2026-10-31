@@ -34,3 +34,11 @@ between devices — including from the Artifact URL to this Pages URL.
 59-second vertical cinematic teaser for Malaysian audiences. The final video is at
 [`cybersecurity-teaser/output/cybersecurity_teaser_01.mp4`](cybersecurity-teaser/output/cybersecurity_teaser_01.mp4).
 See [its README](cybersecurity-teaser/README.md) for render and editing instructions.
+
+---
+
+## E-HAZOP documentary (METE1153-51, Individual Assignment 4)
+
+[`e-hazop-documentary/`](e-hazop-documentary/) is a Remotion project that renders a 1920 × 1080 documentary on the basic concept of
+E-HAZOP. Final video: [`e-hazop-documentary/output/E-HAZOP_Basic_Concept_MET264016.mp4`](e-hazop-documentary/output/E-HAZOP_Basic_Concept_MET264016.mp4).
+See [its README](e-hazop-documentary/README.md).

@@ -1,0 +1,28 @@
+{
+  "name": "e-hazop-documentary",
+  "version": "1.0.0",
+  "private": true,
+  "description": "METE1153-51 Individual Assignment 4 - Basic Concept of E-HAZOP (3-minute documentary, Remotion)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts EHazopDocumentary output/render_raw.mp4 --codec=h264 --crf=17 --audio-bitrate=320k",
+    "master": "bash scripts/master.sh",
+    "build": "npm run render && npm run master",
+    "timeline": "node scripts/build-timeline.mjs",
+    "docs": "node scripts/build-docs.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.539",
+    "@remotion/fonts": "4.0.539",
+    "@remotion/noise": "4.0.539",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@fontsource/inter": "5.2.5",
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}

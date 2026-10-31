@@ -1,0 +1,69 @@
+EXPLANATION OF THE BASIC CONCEPT OF E-HAZOP – NARRATION SCRIPT
+Abdul Rahman bin Japry · MET264016
+METE1153-51 Occupational Safety for Energy System · Individual Assignment 4
+Language: British English · Total running time 03:26.8 (mm:ss)
+
+
+SCENE 1 – PERSONAL INTRODUCTION  [00:00.0–00:26.6]
+Visuals: Academic title card, then an illustrated electrical substation at dusk.
+
+[00:01.4] Assalamualaikum and good day.
+[00:03.8] My name is Abdul Rahman bin Japry, matriculation number MET264016.
+[00:10.9] This video is prepared for METE1153-51, Occupational Safety for Energy System, as part of Individual Assignment 4.
+[00:20.5] Today, I will be explaining the basic concept of Electrical Hazard and Operability Study, or E-HAZOP.
+
+SCENE 2 – THE HIDDEN RISKS OF ELECTRICAL SYSTEMS  [00:26.6–00:48.8]
+Visuals: Wide substation, transformer close-up, switchgear warning lamp, control-room alarm.
+
+[00:27.6] Electricity powers almost every aspect of modern life.
+[00:31.1] But behind this essential energy source are complex electrical systems that can present serious hazards.
+[00:37.0] What happens when an electrical system does not operate as intended?
+[00:41.2] And how can we identify these risks before they lead to accidents or equipment failure?
+[00:46.4] This is where E-HAZOP comes in.
+
+SCENE 3 – WHAT IS E-HAZOP?  [00:48.8–01:22.9]
+Visuals: Full-term reveal, HAZOP-to-E-HAZOP bridge (IEC 61882), animated single-line diagram.
+
+[00:49.4] E-HAZOP stands for Electrical Hazard and Operability Study.
+[00:53.2] It is a systematic and structured technique used to identify potential hazards, operational problems and deviations within electrical systems.
+[01:01.7] It applies the principles of the traditional HAZOP methodology to electrical designs.
+[01:06.8] Rather than simply inspecting individual equipment, E-HAZOP examines how the overall electrical system is designed and how different components interact.
+[01:15.7] The objective is to identify possible problems early, assess their consequences and recommend appropriate safeguards.
+
+SCENE 4 – HOW DOES E-HAZOP WORK?  [01:22.9–02:04.1]
+Visuals: Five-step workflow, team review of the SLD, nodes, guideword × parameter matrix, hazard register.
+
+[01:23.6] So, how does E-HAZOP work?
+[01:25.6] First, the engineering team reviews important design documents, such as electrical single-line diagrams.
+[01:32.0] Next, the electrical system is divided into smaller sections, known as nodes.
+[01:36.8] The team then applies guidewords to electrical parameters such as voltage, current, power, frequency and earthing.
+[01:43.2] For example, guidewords such as 'over', 'under', 'spike', 'dip' and 'fault' help the team consider possible deviations from normal operating conditions.
+[01:51.7] Each deviation is analysed by identifying its possible causes, consequences and existing protective safeguards.
+[01:58.8] Finally, recommendations and corrective actions are documented in a hazard register.
+
+SCENE 5 – PRACTICAL EXAMPLE: TRANSFORMER OVERVOLTAGE (ILLUSTRATIVE)  [02:04.1–02:37.0]
+Visuals: Transformer, rising-voltage trend, relay alarm, insulation stress, cause–consequence–safeguard table.
+
+[02:04.5] Consider a practical example involving a power transformer.
+[02:08.6] What if the transformer experiences an overvoltage condition?
+[02:12.4] This deviation could be caused by incorrect protection settings or disturbances within the electrical network.
+[02:18.6] If not properly controlled, it may place stress on the insulation and potentially damage the equipment.
+[02:24.4] During an E-HAZOP study, the team examines the possible causes, consequences and effectiveness of existing protection systems.
+[02:31.9] The team can then recommend additional safeguards or corrective actions where necessary.
+
+SCENE 6 – WHY IS E-HAZOP IMPORTANT?  [02:37.0–03:04.5]
+Visuals: Engineers in PPE, four benefits, when to apply, multidisciplinary team.
+
+[02:37.4] E-HAZOP plays an important role in improving electrical safety and system reliability.
+[02:42.9] It helps protect personnel, reduce the likelihood of equipment damage, identify design weaknesses and support business continuity.
+[02:50.5] It is particularly valuable during the design stage, as well as when electrical systems undergo modifications or major upgrades.
+[02:58.3] A multidisciplinary team is essential, bringing together engineering, operations and maintenance knowledge.
+
+SCENE 7 – CONCLUSION  [03:04.5–03:19.8]
+Visuals: Wide substation, closing message: Identify the deviation. Understand the risk. Strengthen the safeguards.
+
+[03:04.9] Ultimately, E-HAZOP is about identifying potential problems before they become serious incidents.
+[03:11.4] Because in electrical safety, prevention is always better than failure.
+[03:15.9] Thank you.
+
+REFERENCES END CARD  [03:19.8–03:26.8]

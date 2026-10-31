@@ -1,0 +1,244 @@
+{
+  "voice": "bm_george",
+  "lang": "en-gb",
+  "lines": [
+    {
+      "id": "s1_1",
+      "scene": 1,
+      "speed": 1.2,
+      "say": "Assalamu alaikum, and good day.",
+      "sub": "Assalamualaikum and good day."
+    },
+    {
+      "id": "s1_2",
+      "scene": 1,
+      "speed": 1.22,
+      "say": "My name is Abdul Rahman bin Japry, matriculation number, M E T, two six four, zero one six.",
+      "sub": "My name is Abdul Rahman bin Japry, matriculation number MET264016."
+    },
+    {
+      "id": "s1_3",
+      "scene": 1,
+      "speed": 1.22,
+      "say": "This video is prepared for M E T E, one one five three, dash fifty-one, Occupational Safety for Energy System, as part of Individual Assignment four.",
+      "sub": "This video is prepared for METE1153-51, Occupational Safety for Energy System, as part of Individual Assignment 4."
+    },
+    {
+      "id": "s1_4",
+      "scene": 1,
+      "speed": 1.28,
+      "say": "Today, I will be explaining the basic concept of Electrical Hazard and Operability Study, or E-hazop.",
+      "sub": "Today, I will be explaining the basic concept of Electrical Hazard and Operability Study, or E-HAZOP."
+    },
+    {
+      "id": "s2_1",
+      "scene": 2,
+      "speed": 1.28,
+      "say": "Electricity powers almost every aspect of modern life.",
+      "sub": "Electricity powers almost every aspect of modern life."
+    },
+    {
+      "id": "s2_2",
+      "scene": 2,
+      "speed": 1.28,
+      "say": "But behind this essential energy source are complex electrical systems that can present serious hazards.",
+      "sub": "But behind this essential energy source are complex electrical systems that can present serious hazards."
+    },
+    {
+      "id": "s2_3",
+      "scene": 2,
+      "speed": 1.24,
+      "say": "What happens when an electrical system does not operate as intended?",
+      "sub": "What happens when an electrical system does not operate as intended?"
+    },
+    {
+      "id": "s2_4",
+      "scene": 2,
+      "speed": 1.24,
+      "say": "And how can we identify these risks before they lead to accidents or equipment failure?",
+      "sub": "And how can we identify these risks before they lead to accidents or equipment failure?"
+    },
+    {
+      "id": "s2_5",
+      "scene": 2,
+      "speed": 1.2,
+      "say": "This is where E-hazop comes in.",
+      "sub": "This is where E-HAZOP comes in."
+    },
+    {
+      "id": "s3_1",
+      "scene": 3,
+      "speed": 1.28,
+      "say": "E-hazop stands for Electrical Hazard and Operability Study.",
+      "sub": "E-HAZOP stands for Electrical Hazard and Operability Study."
+    },
+    {
+      "id": "s3_2",
+      "scene": 3,
+      "speed": 1.28,
+      "say": "It is a systematic and structured technique used to identify potential hazards, operational problems and deviations within electrical systems.",
+      "sub": "It is a systematic and structured technique used to identify potential hazards, operational problems and deviations within electrical systems."
+    },
+    {
+      "id": "s3_3",
+      "scene": 3,
+      "speed": 1.28,
+      "say": "It applies the principles of the traditional hazop methodology to electrical designs.",
+      "sub": "It applies the principles of the traditional HAZOP methodology to electrical designs."
+    },
+    {
+      "id": "s3_4",
+      "scene": 3,
+      "speed": 1.28,
+      "say": "Rather than simply inspecting individual equipment, E-hazop examines how the overall electrical system is designed, and how different components interact.",
+      "sub": "Rather than simply inspecting individual equipment, E-HAZOP examines how the overall electrical system is designed and how different components interact."
+    },
+    {
+      "id": "s3_5",
+      "scene": 3,
+      "speed": 1.28,
+      "say": "The objective is to identify possible problems early, assess their consequences, and recommend appropriate safeguards.",
+      "sub": "The objective is to identify possible problems early, assess their consequences and recommend appropriate safeguards."
+    },
+    {
+      "id": "s4_1",
+      "scene": 4,
+      "speed": 1.24,
+      "say": "So, how does E-hazop work?",
+      "sub": "So, how does E-HAZOP work?"
+    },
+    {
+      "id": "s4_2",
+      "scene": 4,
+      "speed": 1.28,
+      "say": "First, the engineering team reviews important design documents, such as electrical single-line diagrams.",
+      "sub": "First, the engineering team reviews important design documents, such as electrical single-line diagrams."
+    },
+    {
+      "id": "s4_3",
+      "scene": 4,
+      "speed": 1.28,
+      "say": "Next, the electrical system is divided into smaller sections, known as nodes.",
+      "sub": "Next, the electrical system is divided into smaller sections, known as nodes."
+    },
+    {
+      "id": "s4_4",
+      "scene": 4,
+      "speed": 1.28,
+      "say": "The team then applies guidewords to electrical parameters, such as voltage, current, power, frequency and earthing.",
+      "sub": "The team then applies guidewords to electrical parameters such as voltage, current, power, frequency and earthing."
+    },
+    {
+      "id": "s4_5",
+      "scene": 4,
+      "speed": 1.28,
+      "say": "For example, guidewords such as over, under, spike, dip and fault, help the team consider possible deviations from normal operating conditions.",
+      "sub": "For example, guidewords such as 'over', 'under', 'spike', 'dip' and 'fault' help the team consider possible deviations from normal operating conditions."
+    },
+    {
+      "id": "s4_6",
+      "scene": 4,
+      "speed": 1.28,
+      "say": "Each deviation is analysed by identifying its possible causes, consequences, and existing protective safeguards.",
+      "sub": "Each deviation is analysed by identifying its possible causes, consequences and existing protective safeguards."
+    },
+    {
+      "id": "s4_7",
+      "scene": 4,
+      "speed": 1.28,
+      "say": "Finally, recommendations and corrective actions are documented in a hazard register.",
+      "sub": "Finally, recommendations and corrective actions are documented in a hazard register."
+    },
+    {
+      "id": "s5_1",
+      "scene": 5,
+      "speed": 1.28,
+      "say": "Consider a practical example involving a power transformer.",
+      "sub": "Consider a practical example involving a power transformer."
+    },
+    {
+      "id": "s5_2",
+      "scene": 5,
+      "speed": 1.24,
+      "say": "What if the transformer experiences an overvoltage condition?",
+      "sub": "What if the transformer experiences an overvoltage condition?"
+    },
+    {
+      "id": "s5_3",
+      "scene": 5,
+      "speed": 1.28,
+      "say": "This deviation could be caused by incorrect protection settings, or disturbances within the electrical network.",
+      "sub": "This deviation could be caused by incorrect protection settings or disturbances within the electrical network."
+    },
+    {
+      "id": "s5_4",
+      "scene": 5,
+      "speed": 1.28,
+      "say": "If not properly controlled, it may place stress on the insulation, and potentially damage the equipment.",
+      "sub": "If not properly controlled, it may place stress on the insulation and potentially damage the equipment."
+    },
+    {
+      "id": "s5_5",
+      "scene": 5,
+      "speed": 1.28,
+      "say": "During an E-hazop study, the team examines the possible causes, consequences, and effectiveness of existing protection systems.",
+      "sub": "During an E-HAZOP study, the team examines the possible causes, consequences and effectiveness of existing protection systems."
+    },
+    {
+      "id": "s5_6",
+      "scene": 5,
+      "speed": 1.28,
+      "say": "The team can then recommend additional safeguards or corrective actions where necessary.",
+      "sub": "The team can then recommend additional safeguards or corrective actions where necessary."
+    },
+    {
+      "id": "s6_1",
+      "scene": 6,
+      "speed": 1.28,
+      "say": "E-hazop plays an important role in improving electrical safety and system reliability.",
+      "sub": "E-HAZOP plays an important role in improving electrical safety and system reliability."
+    },
+    {
+      "id": "s6_2",
+      "scene": 6,
+      "speed": 1.28,
+      "say": "It helps protect personnel, reduce the likelihood of equipment damage, identify design weaknesses, and support business continuity.",
+      "sub": "It helps protect personnel, reduce the likelihood of equipment damage, identify design weaknesses and support business continuity."
+    },
+    {
+      "id": "s6_3",
+      "scene": 6,
+      "speed": 1.28,
+      "say": "It is particularly valuable during the design stage, as well as when electrical systems undergo modifications or major upgrades.",
+      "sub": "It is particularly valuable during the design stage, as well as when electrical systems undergo modifications or major upgrades."
+    },
+    {
+      "id": "s6_4",
+      "scene": 6,
+      "speed": 1.28,
+      "say": "A multidisciplinary team is essential, bringing together engineering, operations and maintenance knowledge.",
+      "sub": "A multidisciplinary team is essential, bringing together engineering, operations and maintenance knowledge."
+    },
+    {
+      "id": "s7_1",
+      "scene": 7,
+      "speed": 1.28,
+      "say": "Ultimately, E-hazop is about identifying potential problems before they become serious incidents.",
+      "sub": "Ultimately, E-HAZOP is about identifying potential problems before they become serious incidents."
+    },
+    {
+      "id": "s7_2",
+      "scene": 7,
+      "speed": 1.2,
+      "say": "Because in electrical safety, prevention is always better than failure.",
+      "sub": "Because in electrical safety, prevention is always better than failure."
+    },
+    {
+      "id": "s7_3",
+      "scene": 7,
+      "speed": 1.2,
+      "say": "Thank you.",
+      "sub": "Thank you."
+    }
+  ]
+}
