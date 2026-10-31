@@ -12,7 +12,8 @@ STATS=$(ffmpeg -hide_banner -nostats -i "$IN" -af loudnorm=I=-16:TP=-1.5:LRA=11:
 get() { echo "$STATS" | grep "\"$1\"" | sed -E 's/.*: "([^"]+)".*/\1/'; }
 
 # pass 2: apply (linear), encode AAC 320k 48 kHz
-ffmpeg -hide_banner -y -i "$IN" -c:v copy \
+# re-encode video at CRF 20 / slow (keeps the file under GitHub's 100 MB limit, visually transparent for graphics)
+ffmpeg -hide_banner -y -loglevel error -i "$IN" -c:v libx264 -crf ${CRF:-20} -preset slow -pix_fmt yuv420p -tune animation \
   -af "loudnorm=I=-16:TP=-1.5:LRA=11:measured_I=$(get input_i):measured_TP=$(get input_tp):measured_LRA=$(get input_lra):measured_thresh=$(get input_thresh):offset=$(get target_offset):linear=true,aresample=48000" \
   -c:a aac -b:a 320k -movflags +faststart "$OUT"
 
