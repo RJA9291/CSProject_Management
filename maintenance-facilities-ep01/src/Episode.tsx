@@ -7,6 +7,7 @@ import {SceneClock} from './lib/clock';
 import {Scene04, Scene06, Scene07} from './scenes/DigitalScenes';
 import {Scene01, Scene02, Scene03, Scene05, Scene08} from './scenes/PlantScenes';
 import {Soundtrack} from './Soundtrack';
+import {OpeningTitle, Subtitles} from './Overlays';
 
 loadFonts();
 
@@ -21,9 +22,9 @@ export const SCENE_COMPONENTS: Record<number, React.FC> = {
   8: Scene08,
 };
 
-export type EpisodeProps = {audio: boolean};
+export type EpisodeProps = {audio: boolean; subtitles?: boolean};
 
-export const Episode01: React.FC<EpisodeProps> = ({audio}) => (
+export const Episode01: React.FC<EpisodeProps> = ({audio, subtitles = true}) => (
   <AbsoluteFill style={{background: '#000'}}>
     {SCENES.map((s) => {
       const C = SCENE_COMPONENTS[s.id];
@@ -35,6 +36,8 @@ export const Episode01: React.FC<EpisodeProps> = ({audio}) => (
         </Sequence>
       );
     })}
+    <OpeningTitle />
+    {subtitles && <Subtitles />}
     {audio && <Soundtrack />}
   </AbsoluteFill>
 );

@@ -177,7 +177,7 @@ const Sistematik: React.FC<{from: number}> = ({from}) => {
   const f = useSceneFrame();
   const p = ramp(f, from, from + 16);
   return (
-    <div style={{position: 'absolute', left: 0, right: 0, bottom: 170, textAlign: 'center', fontFamily: FONT, opacity: p}}>
+    <div style={{position: 'absolute', left: 0, right: 0, bottom: 240, textAlign: 'center', fontFamily: FONT, opacity: p}}>
       <div style={{fontSize: 30, fontWeight: 600, color: '#cfe0f2', letterSpacing: 2}}>PENYELENGGARAAN YANG DIURUS SECARA</div>
       <div style={{fontSize: 64, fontWeight: 800, color: '#fff', letterSpacing: 10, marginTop: 6}}>SISTEMATIK</div>
     </div>

@@ -80,7 +80,7 @@ export const Label: React.FC<{title: string; sub?: string; from: number; to: num
   const o = Math.min(ramp(f, from, from + 10), 1 - ramp(f, to - 10, to));
   if (o <= 0) return null;
   return (
-    <div style={{position: 'absolute', left: 110, bottom: 190, opacity: o, transform: `translateX(${(1 - ramp(f, from, from + 14)) * -30}px)`, fontFamily: FONT}}>
+    <div style={{position: 'absolute', left: 110, bottom: 250, opacity: o, transform: `translateX(${(1 - ramp(f, from, from + 14)) * -30}px)`, fontFamily: FONT}}>
       <div style={{width: 60 * o, height: 4, background: color, marginBottom: 12}} />
       <div style={{fontSize: 44, fontWeight: 800, color: '#fff', letterSpacing: 1, textShadow: '0 3px 16px rgba(0,0,0,0.6)'}}>{title}</div>
       {sub && <div style={{fontSize: 24, fontWeight: 600, color: '#d6e2ef', marginTop: 4, textShadow: '0 2px 10px rgba(0,0,0,0.7)'}}>{sub}</div>}
@@ -89,7 +89,7 @@ export const Label: React.FC<{title: string; sub?: string; from: number; to: num
 };
 
 /** Big keywords appearing one by one (centred). */
-export const Keywords: React.FC<{words: {t: string; at: number}[]; out: number; y?: number}> = ({words, out, y = 820}) => {
+export const Keywords: React.FC<{words: {t: string; at: number}[]; out: number; y?: number}> = ({words, out, y = 760}) => {
   const f = useSceneFrame();
   const o = 1 - ramp(f, out - 12, out);
   return (

@@ -17,7 +17,8 @@ export const RemotionRoot: React.FC = () => (
     ))}
     <Still id="AeVsTechnician" component={AeVsTechnician} width={1920} height={1080} />
     <Composition id="Turntable" component={Turntable} durationInFrames={240} fps={30} width={1920} height={1080} />
-    <Composition id="Episode01" component={Episode01} durationInFrames={TOTAL} fps={FPS} width={1920} height={1080} defaultProps={{audio: true}} />
+    <Composition id="Episode01" component={Episode01} durationInFrames={TOTAL} fps={FPS} width={1920} height={1080} defaultProps={{audio: true, subtitles: true}} />
+    <Composition id="Episode01-NoSubs" component={Episode01} durationInFrames={TOTAL} fps={FPS} width={1920} height={1080} defaultProps={{audio: true, subtitles: false}} />
     {SCENES.map((sc) => (
       <Composition key={sc.id} id={`Scene0${sc.id}`} component={SingleScene} durationInFrames={sc.len} fps={FPS} width={1920} height={1080} defaultProps={{id: sc.id}} />
     ))}
