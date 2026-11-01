@@ -125,6 +125,7 @@ const PANEL_X = (i: number) => i * 3.3;
 // modules light up as they are named in line s6_3 (contractor sits between inventory and KPI)
 const MOD_WORDS = ['work order', 'penyelenggaraan', 'laporan', 'alat ganti', '', 'prestasi'];
 const modWord = (w: string) => dF(6, wordAt('s6_3', w)) - 4;
+export const SYS_AT = dF(6, wordAt('s6_2', 'sistem pentadbiran')) - 6;
 export const MOD_AT = (i: number) => (MOD_WORDS[i] ? modWord(MOD_WORDS[i]) : (modWord('alat ganti') + modWord('prestasi')) / 2);
 
 export const Scene06: React.FC = () => {
@@ -136,9 +137,11 @@ export const Scene06: React.FC = () => {
     {f: 0, pos: [-30.2, 1.95, 8.0], look: [-31.2, 1.1, 8.4], fov: 40},
     {f: 100, pos: [-30.95, 1.3, 8.33], look: [-31.25, 1.02, 8.4], fov: 34},
   ];
+  // wide reveal of the whole system while "sistem pentadbiran" is spoken, then into each module as it is named
   const digiKeys: CamKey[] = [
-    {f: 100, pos: [-2.5, 1.9, 6.5], look: [0, 1.9, 0], fov: 44},
-    ...MODULES.map((_, i) => ({f: MOD_AT(i) + 30, pos: [PANEL_X(i) + 0.4, 1.95, 3.7] as V3, look: [PANEL_X(i), 1.9, 0] as V3, fov: 42})),
+    {f: 100, pos: [8.25, 3.6, 15.5], look: [8.25, 1.9, 0], fov: 46},
+    {f: MOD_AT(0) - 30, pos: [6.0, 2.6, 9.5], look: [5.0, 1.9, 0], fov: 44},
+    ...MODULES.map((_, i) => ({f: MOD_AT(i) + 22, pos: [PANEL_X(i) + 0.4, 1.95, 3.7] as V3, look: [PANEL_X(i), 1.9, 0] as V3, fov: 42})),
     {f: 780, pos: [8.25, 3.6, 13.5], look: [8.25, 1.9, 0], fov: 46},
   ];
   return (
@@ -161,7 +164,8 @@ export const Scene06: React.FC = () => {
               const last = i === MODULES.length - 1;
               const next = last ? 0 : MOD_AT(i + 1);
               const active = last ? ramp(f, at, at + 8) : Math.min(ramp(f, at, at + 8), 1 - ramp(f, next, next + 8));
-              return <ModulePanel key={i} i={i} pos={[PANEL_X(i), 1.9, 0]} rotY={0} p={pop(f, at - 24, 16)} active={active} />;
+              const appear = Math.min(SYS_AT, 112) + i * 14; // panels build in right after the dive into the tablet
+              return <ModulePanel key={i} i={i} pos={[PANEL_X(i), 1.9, 0]} rotY={0} p={pop(f, appear, 16)} active={active} />;
             })}
           </>
         )}
