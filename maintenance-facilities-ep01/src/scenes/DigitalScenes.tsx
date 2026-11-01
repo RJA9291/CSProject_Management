@@ -1,12 +1,14 @@
 // Digital-space scenes: 04 (org chart), 06 (admin systems), 07 (documentation & compliance).
 import React from 'react';
-import {AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
+import {useSceneFrame} from '../lib/clock';
+import {AbsoluteFill, interpolate, useVideoConfig} from 'remotion';
 import {Character} from '../characters/Character';
 import {Action} from '../characters/poses';
 import {byId} from '../characters/specs';
 import {CamKey, PathCamera} from '../lib/camera';
 import {FONT, MONO, TexPlane} from '../lib/text';
 import {Beam, COMPLIANCE, ComplianceIcon, DigitalWorld, DocSheet, ModulePanel, MODULES, Platform} from '../environment/Digital';
+import {dF, wordAt} from '../data/timeline';
 import {clamp, EdgeFade, Flash, Label, PlantWorld, ramp, ShotLights, Stage, V3} from './common';
 
 const PI = Math.PI;
@@ -39,18 +41,24 @@ const TIER = {
   assistant: [0, 1.05, 1] as V3,
   techs: [[-1.7, 0, 3], [0, 0, 3.2], [1.7, 0, 3]] as V3[],
 };
-export const ORG_AT = {manager: 150, engineer: 320, assistant: 480, techs: 640};
+// each role appears as its narration line begins
+export const ORG_AT = {
+  manager: dF(4, wordAt('s4_2', 'manager')) - 6,
+  engineer: dF(4, wordAt('s4_3', 'engineer')) - 6,
+  assistant: dF(4, wordAt('s4_4', 'assistant')) - 6,
+  techs: dF(4, wordAt('s4_5', 'technician')) - 6,
+};
 
 export const Scene04: React.FC = () => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const {fps} = useVideoConfig();
   const t = (f + 1350) / fps;
   const keys: CamKey[] = [
     {f: 0, pos: [0, 5.2, 7], look: [0, 3.0, -3], fov: 42},
-    {f: 150, pos: [0.6, 4.4, 1.2], look: [0, 4.0, -3], fov: 40},
-    {f: 320, pos: [-0.6, 3.2, 2.9], look: [0, 2.9, -1], fov: 40},
-    {f: 480, pos: [0.6, 2.1, 4.7], look: [0, 1.9, 1], fov: 40},
-    {f: 640, pos: [0, 1.7, 8.2], look: [0, 1.0, 3], fov: 42},
+    {f: ORG_AT.manager, pos: [0.6, 4.4, 1.2], look: [0, 4.0, -3], fov: 40},
+    {f: ORG_AT.engineer, pos: [-0.6, 3.2, 2.9], look: [0, 2.9, -1], fov: 40},
+    {f: ORG_AT.assistant, pos: [0.6, 2.1, 4.7], look: [0, 1.9, 1], fov: 40},
+    {f: ORG_AT.techs, pos: [0, 1.7, 8.2], look: [0, 1.0, 3], fov: 42},
     {f: 810, pos: [3.5, 4.6, 12.5], look: [0, 1.6, 0], fov: 44},
   ];
   const plat = (at: number) => pop(f, at - 20, 20);
@@ -89,7 +97,7 @@ export const Scene04: React.FC = () => {
 };
 
 const OrgLegend: React.FC<{from: number}> = ({from}) => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const o = ramp(f, from, from + 16) * (1 - ramp(f, 795, 810));
   if (o <= 0) return null;
   const rows = [
@@ -114,10 +122,13 @@ const OrgLegend: React.FC<{from: number}> = ({from}) => {
 
 // =================================================================== SCENE 06
 const PANEL_X = (i: number) => i * 3.3;
-export const MOD_AT = (i: number) => 150 + i * 88;
+// modules light up as they are named in line s6_3 (contractor sits between inventory and KPI)
+const MOD_WORDS = ['work order', 'penyelenggaraan', 'laporan', 'alat ganti', '', 'prestasi'];
+const modWord = (w: string) => dF(6, wordAt('s6_3', w)) - 4;
+export const MOD_AT = (i: number) => (MOD_WORDS[i] ? modWord(MOD_WORDS[i]) : (modWord('alat ganti') + modWord('prestasi')) / 2);
 
 export const Scene06: React.FC = () => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const {fps} = useVideoConfig();
   const t = (f + 2730) / fps;
   const office = f < 100;
@@ -147,21 +158,23 @@ export const Scene06: React.FC = () => {
             <DigitalWorld t={t} />
             {MODULES.map((_, i) => {
               const at = MOD_AT(i);
-              const active = Math.min(ramp(f, at, at + 10), 1 - ramp(f, at + 80, at + 92));
-              return <ModulePanel key={i} i={i} pos={[PANEL_X(i), 1.9, 0]} rotY={0} p={pop(f, at - 30, 18)} active={i === MODULES.length - 1 ? ramp(f, at, at + 10) : active} />;
+              const last = i === MODULES.length - 1;
+              const next = last ? 0 : MOD_AT(i + 1);
+              const active = last ? ramp(f, at, at + 8) : Math.min(ramp(f, at, at + 8), 1 - ramp(f, next, next + 8));
+              return <ModulePanel key={i} i={i} pos={[PANEL_X(i), 1.9, 0]} rotY={0} p={pop(f, at - 24, 16)} active={active} />;
             })}
           </>
         )}
       </Stage>
       <Flash at={100} dur={14} />
-      {f > 690 && <Sistematik from={700} />}
+      {f > dF(6, wordAt('s6_4', 'sistematik')) - 20 && <Sistematik from={dF(6, wordAt('s6_4', 'sistematik')) - 12} />}
       <EdgeFade len={780} fin={6} fout={6} />
     </AbsoluteFill>
   );
 };
 
 const Sistematik: React.FC<{from: number}> = ({from}) => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const p = ramp(f, from, from + 16);
   return (
     <div style={{position: 'absolute', left: 0, right: 0, bottom: 170, textAlign: 'center', fontFamily: FONT, opacity: p}}>
@@ -172,10 +185,11 @@ const Sistematik: React.FC<{from: number}> = ({from}) => {
 };
 
 // =================================================================== SCENE 07
-export const COMP_AT = (i: number) => 345 + i * 42;
+const COMP_WORDS = ['kualiti', 'alam sekitar', 'keselamatan', 'audit'];
+export const COMP_AT = (i: number) => dF(7, wordAt('s7_2', COMP_WORDS[i])) - 4;
 
 export const Scene07: React.FC = () => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const {fps} = useVideoConfig();
   const t = (f + 3510) / fps;
   const office = f < 150;

@@ -1,0 +1,198 @@
+{
+  "voice": "am_michael",
+  "note": "Teks dalam {kurungan} disebut dengan sebutan Inggeris; selebihnya sebutan Bahasa Melayu. 'at' = sasaran frame global (30 fps).",
+  "lines": [
+    {
+      "id": "s1_1",
+      "scene": 1,
+      "at": 16,
+      "speed": 1.16,
+      "say": "Setiap hari, sebuah kilang beroperasi tanpa henti.",
+      "sub": "Setiap hari, sebuah kilang beroperasi tanpa henti."
+    },
+    {
+      "id": "s1_2",
+      "scene": 1,
+      "at": 0,
+      "speed": 1.22,
+      "say": "Mesin bergerak, barisan pengeluaran berjalan, dan pelbagai sistem bekerja secara berterusan.",
+      "sub": "Mesin bergerak, barisan pengeluaran berjalan dan pelbagai sistem bekerja secara berterusan."
+    },
+    {
+      "id": "s1_3",
+      "scene": 1,
+      "at": 0,
+      "speed": 1.14,
+      "say": "Tetapi, pernahkah kita terfikir... siapakah yang memastikan semuanya terus berfungsi?",
+      "sub": "Tetapi pernahkah kita terfikir, siapakah yang memastikan semuanya terus berfungsi?"
+    },
+    {
+      "id": "s2_1",
+      "scene": 2,
+      "at": 470,
+      "speed": 1.25,
+      "say": "Di sebalik setiap mesin yang beroperasi, setiap sistem yang berfungsi, dan setiap kemudahan yang digunakan, terdapat satu pasukan yang memainkan peranan penting.",
+      "sub": "Di sebalik setiap mesin yang beroperasi, setiap sistem yang berfungsi dan setiap kemudahan yang digunakan, terdapat satu pasukan yang memainkan peranan penting."
+    },
+    {
+      "id": "s2_2",
+      "scene": 2,
+      "at": 0,
+      "speed": 1.22,
+      "say": "Mereka memantau, memeriksa, menyelenggara, dan memastikan persekitaran kerja sentiasa berada dalam keadaan baik.",
+      "sub": "Mereka memantau, memeriksa, menyelenggara dan memastikan persekitaran kerja sentiasa berada dalam keadaan baik."
+    },
+    {
+      "id": "s3_1",
+      "scene": 3,
+      "at": 1004,
+      "speed": 1.16,
+      "say": "Inilah {Department Maintenance and Facilities.}",
+      "sub": "Inilah Department Maintenance & Facilities."
+    },
+    {
+      "id": "s3_2",
+      "scene": 3,
+      "at": 0,
+      "speed": 1.25,
+      "say": "{Department} yang bertanggungjawab menyokong kebolehpercayaan peralatan, penyelenggaraan kemudahan, dan kelancaran operasi persekitaran kerja.",
+      "sub": "Department yang bertanggungjawab menyokong kebolehpercayaan peralatan, penyelenggaraan kemudahan dan kelancaran operasi persekitaran kerja."
+    },
+    {
+      "id": "s4_1",
+      "scene": 4,
+      "at": 1365,
+      "speed": 1.22,
+      "say": "Setiap {department} memerlukan kepimpinan, perancangan, dan pembahagian tanggungjawab yang jelas.",
+      "sub": "Setiap department memerlukan kepimpinan, perancangan dan pembahagian tanggungjawab yang jelas."
+    },
+    {
+      "id": "s4_2",
+      "scene": 4,
+      "at": 1500,
+      "speed": 1.22,
+      "say": "{Manager} mengetuai {department}, serta memantau hala tuju, sumber, dan prestasi keseluruhan.",
+      "sub": "Manager mengetuai department serta memantau hala tuju, sumber dan prestasi keseluruhan."
+    },
+    {
+      "id": "s4_3",
+      "scene": 4,
+      "at": 1670,
+      "speed": 1.22,
+      "say": "{Engineer} menyelaras aktiviti teknikal, strategi penyelenggaraan, dan inisiatif penambahbaikan.",
+      "sub": "Engineer menyelaras aktiviti teknikal, strategi penyelenggaraan dan inisiatif penambahbaikan."
+    },
+    {
+      "id": "s4_4",
+      "scene": 4,
+      "at": 1830,
+      "speed": 1.22,
+      "say": "{Assistant Engineer} menyokong perancangan, pemeriksaan, pemantauan, dan penyelarasan operasi harian.",
+      "sub": "Assistant Engineer menyokong perancangan, pemeriksaan, pemantauan dan penyelarasan operasi harian."
+    },
+    {
+      "id": "s4_5",
+      "scene": 4,
+      "at": 1990,
+      "speed": 1.22,
+      "say": "Manakala {Technician} melaksanakan kerja-kerja teknikal, mengikut bidang kepakaran masing-masing.",
+      "sub": "Manakala Technician melaksanakan kerja-kerja teknikal mengikut bidang kepakaran masing-masing."
+    },
+    {
+      "id": "s5_1",
+      "scene": 5,
+      "at": 2180,
+      "speed": 1.16,
+      "say": "Daripada sistem elektrik, kepada peralatan mekanikal. Daripada {troubleshooting}, kepada kerja fabrikasi.",
+      "sub": "Daripada sistem elektrik kepada peralatan mekanikal, daripada troubleshooting kepada kerja fabrikasi."
+    },
+    {
+      "id": "s5_2",
+      "scene": 5,
+      "at": 2405,
+      "speed": 1.14,
+      "say": "Setiap kepakaran mempunyai peranan tersendiri.",
+      "sub": "Setiap kepakaran mempunyai peranan tersendiri."
+    },
+    {
+      "id": "s5_3",
+      "scene": 5,
+      "at": 2545,
+      "speed": 1.1,
+      "say": "Setiap pemeriksaan penting. Setiap pembaikan, membawa perbezaan.",
+      "sub": "Setiap pemeriksaan penting. Setiap pembaikan membawa perbezaan."
+    },
+    {
+      "id": "s6_1",
+      "scene": 6,
+      "at": 2744,
+      "speed": 1.22,
+      "say": "Namun, tugas {Maintenance and Facilities} bukan sekadar membaiki kerosakan.",
+      "sub": "Namun, tugas Maintenance & Facilities bukan sekadar membaiki kerosakan."
+    },
+    {
+      "id": "s6_2",
+      "scene": 6,
+      "at": 0,
+      "speed": 1.22,
+      "say": "Di sebalik setiap kerja yang dilaksanakan, terdapat sistem pentadbiran yang menyokong operasi {department}.",
+      "sub": "Di sebalik setiap kerja yang dilaksanakan, terdapat sistem pentadbiran yang menyokong operasi department."
+    },
+    {
+      "id": "s6_3",
+      "scene": 6,
+      "at": 0,
+      "speed": 1.18,
+      "say": "{Work order} diuruskan, penyelenggaraan dirancang, laporan direkodkan, alat ganti dipantau, dan prestasi kerja dinilai.",
+      "sub": "Work order diuruskan, penyelenggaraan dirancang, laporan direkodkan, alat ganti dipantau dan prestasi kerja dinilai."
+    },
+    {
+      "id": "s6_4",
+      "scene": 6,
+      "at": 0,
+      "speed": 1.18,
+      "say": "Kerana penyelenggaraan yang baik bukan sekadar menyelesaikan masalah, tetapi mengurusnya secara sistematik.",
+      "sub": "Kerana penyelenggaraan yang baik bukan sekadar menyelesaikan masalah, tetapi mengurusnya secara sistematik."
+    },
+    {
+      "id": "s7_1",
+      "scene": 7,
+      "at": 3524,
+      "speed": 1.22,
+      "say": "Setiap aktiviti juga perlu disokong dengan dokumentasi, pemantauan, dan pematuhan kepada keperluan organisasi.",
+      "sub": "Setiap aktiviti juga perlu disokong dengan dokumentasi, pemantauan dan pematuhan kepada keperluan organisasi."
+    },
+    {
+      "id": "s7_2",
+      "scene": 7,
+      "at": 0,
+      "speed": 1.22,
+      "say": "Melalui rekod penyelenggaraan dan pelaksanaan kerja yang sistematik, {department} turut menyokong aspek kualiti, alam sekitar, keselamatan pekerjaan, dan keperluan audit.",
+      "sub": "Melalui rekod penyelenggaraan dan pelaksanaan kerja yang sistematik, department turut menyokong aspek kualiti, alam sekitar, keselamatan pekerjaan dan keperluan audit."
+    },
+    {
+      "id": "s8_1",
+      "scene": 8,
+      "at": 4058,
+      "speed": 1.07,
+      "say": "Berbeza kemahiran. Berbeza tanggungjawab. Namun, berkongsi satu matlamat.",
+      "sub": "Berbeza kemahiran. Berbeza tanggungjawab. Namun berkongsi satu matlamat."
+    },
+    {
+      "id": "s8_2",
+      "scene": 8,
+      "at": 0,
+      "speed": 1.16,
+      "say": "Menyelenggara kemudahan, menyokong warga kerja, dan memastikan operasi kilang terus berjalan.",
+      "sub": "Menyelenggara kemudahan, menyokong warga kerja dan memastikan operasi kilang terus berjalan."
+    },
+    {
+      "id": "s8_3",
+      "scene": 8,
+      "at": 0,
+      "speed": 1.04,
+      "say": "Inilah kami. {Maintenance and Facilities.}",
+      "sub": "Inilah kami. Maintenance & Facilities."
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import React, {useMemo} from 'react';
-import {AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
+import {useSceneFrame} from '../lib/clock';
+import {AbsoluteFill, interpolate, useVideoConfig} from 'remotion';
 import {ThreeCanvas} from '@remotion/three';
 import {Object3D} from 'three';
 import {Exterior} from '../environment/Exterior';
@@ -75,7 +76,7 @@ export const Stage: React.FC<{children: React.ReactNode}> = ({children}) => {
 
 /** Role / location label, lower-left. */
 export const Label: React.FC<{title: string; sub?: string; from: number; to: number; color?: string}> = ({title, sub, from, to, color = '#e8771e'}) => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const o = Math.min(ramp(f, from, from + 10), 1 - ramp(f, to - 10, to));
   if (o <= 0) return null;
   return (
@@ -89,7 +90,7 @@ export const Label: React.FC<{title: string; sub?: string; from: number; to: num
 
 /** Big keywords appearing one by one (centred). */
 export const Keywords: React.FC<{words: {t: string; at: number}[]; out: number; y?: number}> = ({words, out, y = 820}) => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const o = 1 - ramp(f, out - 12, out);
   return (
     <div style={{position: 'absolute', left: 0, right: 0, top: y, display: 'flex', justifyContent: 'center', gap: 46, fontFamily: FONT, opacity: o}}>
@@ -107,14 +108,14 @@ export const Keywords: React.FC<{words: {t: string; at: number}[]; out: number; 
 
 /** Fade from/to black at the scene edges. */
 export const EdgeFade: React.FC<{len: number; fin?: number; fout?: number; color?: string}> = ({len, fin = 10, fout = 10, color = '#000'}) => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const o = Math.max(1 - ramp(f, 0, fin), ramp(f, len - fout, len));
   if (o <= 0) return null;
   return <AbsoluteFill style={{background: color, opacity: o}} />;
 };
 
 export const Flash: React.FC<{at: number; dur?: number; color?: string}> = ({at, dur = 12, color = '#cfe6ff'}) => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const d = f - at;
   if (d < -dur / 2 || d > dur) return null;
   const o = d < 0 ? 1 + d / (dur / 2) : 1 - d / dur;
@@ -122,7 +123,7 @@ export const Flash: React.FC<{at: number; dur?: number; color?: string}> = ({at,
 };
 
 export const SceneTag: React.FC<{n: number; title: string; len: number}> = ({n, title, len}) => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const o = Math.min(ramp(f, 12, 24), 1 - ramp(f, 80, 96));
   if (o <= 0) return null;
   return (

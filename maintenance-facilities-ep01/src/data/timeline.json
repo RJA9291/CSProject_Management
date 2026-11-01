@@ -1,0 +1,96 @@
+{
+  "fps": 30,
+  "total": 4812,
+  "scenes": [
+    {
+      "id": 1,
+      "name": "Kilang yang tidak pernah berhenti",
+      "from": 0,
+      "len": 496,
+      "designLen": 450,
+      "k": 1.1022
+    },
+    {
+      "id": 2,
+      "name": "Pasukan di sebalik operasi",
+      "from": 496,
+      "len": 555,
+      "designLen": 540,
+      "k": 1.0278
+    },
+    {
+      "id": 3,
+      "name": "Mengenali department",
+      "from": 1051,
+      "len": 372,
+      "designLen": 360,
+      "k": 1.0333
+    },
+    {
+      "id": 4,
+      "name": "Struktur organisasi",
+      "from": 1423,
+      "len": 968,
+      "designLen": 810,
+      "k": 1.1951
+    },
+    {
+      "id": 5,
+      "name": "Keperluan kemahiran yang berbeza",
+      "from": 2391,
+      "len": 524,
+      "designLen": 570,
+      "k": 0.9193
+    },
+    {
+      "id": 6,
+      "name": "Bukan sekadar kerja teknikal",
+      "from": 2915,
+      "len": 807,
+      "designLen": 780,
+      "k": 1.0346
+    },
+    {
+      "id": 7,
+      "name": "Dokumentasi dan pematuhan",
+      "from": 3722,
+      "len": 574,
+      "designLen": 540,
+      "k": 1.063
+    },
+    {
+      "id": 8,
+      "name": "Satu pasukan, satu matlamat",
+      "from": 4296,
+      "len": 516,
+      "designLen": 450,
+      "k": 1.1467
+    }
+  ],
+  "vo": {
+    "s1_1": 18,
+    "s1_2": 128,
+    "s1_3": 318,
+    "s2_1": 517,
+    "s2_2": 824,
+    "s3_1": 1065,
+    "s3_2": 1151,
+    "s4_1": 1441,
+    "s4_2": 1636,
+    "s4_3": 1820,
+    "s4_4": 2006,
+    "s4_5": 2199,
+    "s5_1": 2409,
+    "s5_2": 2630,
+    "s5_3": 2745,
+    "s6_1": 2929,
+    "s6_2": 3073,
+    "s6_3": 3268,
+    "s6_4": 3504,
+    "s7_1": 3737,
+    "s7_2": 3968,
+    "s8_1": 4305,
+    "s8_2": 4472,
+    "s8_3": 4669
+  }
+}

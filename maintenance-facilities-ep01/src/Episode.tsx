@@ -1,10 +1,12 @@
-// Episode 01 assembly: the eight scenes in sequence (Phase 3: picture only).
+// Episode 01 assembly: the eight scenes in sequence, each on its own scene clock.
 import React from 'react';
 import {AbsoluteFill, Sequence} from 'remotion';
 import {SCENES} from './data/timeline';
 import {loadFonts} from './fonts';
+import {SceneClock} from './lib/clock';
 import {Scene04, Scene06, Scene07} from './scenes/DigitalScenes';
 import {Scene01, Scene02, Scene03, Scene05, Scene08} from './scenes/PlantScenes';
+import {Soundtrack} from './Soundtrack';
 
 loadFonts();
 
@@ -19,26 +21,33 @@ export const SCENE_COMPONENTS: Record<number, React.FC> = {
   8: Scene08,
 };
 
-export const Episode01: React.FC = () => (
+export type EpisodeProps = {audio: boolean};
+
+export const Episode01: React.FC<EpisodeProps> = ({audio}) => (
   <AbsoluteFill style={{background: '#000'}}>
     {SCENES.map((s) => {
       const C = SCENE_COMPONENTS[s.id];
       return (
         <Sequence key={s.id} name={`${String(s.id).padStart(2, '0')} · ${s.name}`} from={s.from} durationInFrames={s.len}>
-          <C />
+          <SceneClock k={s.k}>
+            <C />
+          </SceneClock>
         </Sequence>
       );
     })}
+    {audio && <Soundtrack />}
   </AbsoluteFill>
 );
 
 /** One scene on its own (for separate rendering / review). */
 export const SingleScene: React.FC<{id: number}> = ({id}) => {
-  loadFonts();
   const C = SCENE_COMPONENTS[id];
+  const s = SCENES.find((x) => x.id === id)!;
   return (
     <AbsoluteFill style={{background: '#000'}}>
-      <C />
+      <SceneClock k={s.k}>
+        <C />
+      </SceneClock>
     </AbsoluteFill>
   );
 };

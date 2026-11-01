@@ -1,12 +1,14 @@
 // Location scenes in the shared plant world: 01, 02, 03, 05, 08.
 import React from 'react';
-import {AbsoluteFill, useCurrentFrame, useVideoConfig} from 'remotion';
+import {useSceneFrame} from '../lib/clock';
+import {AbsoluteFill, useVideoConfig} from 'remotion';
 import {Character} from '../characters/Character';
 import {Action} from '../characters/poses';
 import {byId} from '../characters/specs';
 import {along, CamKey, PathCamera, sampleCam} from '../lib/camera';
 import {FONT} from '../lib/text';
 import {STATIONS} from '../environment/Sets';
+import {dF, wordAt} from '../data/timeline';
 import {EdgeFade, Keywords, Label, PlantWorld, ramp, SceneTag, ShotLights, Stage, V3} from './common';
 
 const PI = Math.PI;
@@ -16,7 +18,7 @@ const inShot = (f: number, from: number, to: number) => f >= from && f < to;
 
 // =================================================================== SCENE 01
 export const Scene01: React.FC = () => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const {fps} = useVideoConfig();
   const t = f / fps;
   const keys: CamKey[] = [
@@ -45,7 +47,7 @@ export const Scene01: React.FC = () => {
 
 // =================================================================== SCENE 02
 export const Scene02: React.FC = () => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const {fps} = useVideoConfig();
   const t = (f + 450) / fps;
   // shot A: tracking behind the mechanical technician
@@ -80,9 +82,9 @@ export const Scene02: React.FC = () => {
       </Stage>
       <Keywords
         words={[
-          {t: 'MEMANTAU', at: 330},
-          {t: 'MEMERIKSA', at: 365},
-          {t: 'MENYELENGGARA', at: 400},
+          {t: 'MEMANTAU', at: dF(2, wordAt('s2_2', 'memantau')) - 3},
+          {t: 'MEMERIKSA', at: dF(2, wordAt('s2_2', 'memeriksa')) - 3},
+          {t: 'MENYELENGGARA', at: dF(2, wordAt('s2_2', 'menyelenggara')) - 3},
         ]}
         out={530}
       />
@@ -102,7 +104,7 @@ const TEAM_OFFICE: {id: string; p: V3; r: number; a: Action}[] = [
 ];
 
 export const Scene03: React.FC = () => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const {fps} = useVideoConfig();
   const t = (f + 990) / fps;
   const keys: CamKey[] = [
@@ -129,7 +131,7 @@ export const Scene03: React.FC = () => {
 
 // =================================================================== SCENE 05
 export const Scene05: React.FC = () => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const {fps} = useVideoConfig();
   const t = (f + 2160) / fps;
   const [dx, , dz] = STATIONS.db;
@@ -171,7 +173,7 @@ const FORMATION: {id: string; dx: number; dz: number}[] = [
 ];
 
 export const Scene08: React.FC = () => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const {fps} = useVideoConfig();
   const t = (f + 4050) / fps;
   const lead = along([{f: 0, p: [-15, 0, 6.6]}, {f: 190, p: [-6.5, 0, 6.6]}], f);
@@ -197,14 +199,14 @@ export const Scene08: React.FC = () => {
           />
         ))}
       </Stage>
-      <FinalTitle from={235} tag={300} />
+      <FinalTitle from={dF(8, wordAt('s8_3', 'maintenance')) - 4} tag={dF(8, wordAt('s8_3', 'maintenance')) + 40} />
       <EdgeFade len={450} fin={6} fout={18} />
     </AbsoluteFill>
   );
 };
 
 const FinalTitle: React.FC<{from: number; tag: number}> = ({from, tag}) => {
-  const f = useCurrentFrame();
+  const f = useSceneFrame();
   const p = ramp(f, from, from + 24);
   const q = ramp(f, tag, tag + 24);
   if (p <= 0) return null;

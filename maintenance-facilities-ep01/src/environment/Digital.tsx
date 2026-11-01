@@ -75,8 +75,8 @@ export const Beam: React.FC<{a: V3; b: V3; p: number; color?: string}> = ({a, b,
 
 export const MODULES = [
   {key: 'wo', title: 'Work Order Management', ms: 'Pengurusan arahan kerja'},
-  {key: 'dmr', title: 'Daily Maintenance Report', ms: 'Laporan penyelenggaraan harian'},
   {key: 'pm', title: 'Preventive Maintenance Schedule', ms: 'Jadual penyelenggaraan pencegahan'},
+  {key: 'dmr', title: 'Daily Maintenance Report', ms: 'Laporan penyelenggaraan harian'},
   {key: 'inv', title: 'Spare Parts & Inventory', ms: 'Alat ganti & inventori'},
   {key: 'con', title: 'Contractor Coordination', ms: 'Koordinasi kontraktor'},
   {key: 'kpi', title: 'KPI Monitoring', ms: 'Pemantauan prestasi'},
