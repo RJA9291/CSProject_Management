@@ -42,3 +42,10 @@ See [its README](cybersecurity-teaser/README.md) for render and editing instruct
 [`e-hazop-documentary/`](e-hazop-documentary/) is a Remotion project that renders a 1920 × 1080 documentary on the basic concept of
 E-HAZOP. Final video: [`e-hazop-documentary/output/E-HAZOP_Basic_Concept_MET264016.mp4`](e-hazop-documentary/output/E-HAZOP_Basic_Concept_MET264016.mp4).
 See [its README](e-hazop-documentary/README.md).
+
+---
+
+## Maintenance & Facilities – Episode 01 (in pre-production)
+
+[`maintenance-facilities-ep01/`](maintenance-facilities-ep01/) is a 3D animated onboarding documentary in Bahasa Melayu
+(Remotion + Three.js). Phase 1 pre-production pack: [`docs/PRE_PRODUCTION.md`](maintenance-facilities-ep01/docs/PRE_PRODUCTION.md).
