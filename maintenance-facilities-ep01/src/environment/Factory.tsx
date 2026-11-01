@@ -88,18 +88,23 @@ export const DistributionBoard: React.FC<{p: V3; rotY?: number; open?: number; t
 );
 
 /** CNC / press-type machine block. */
-export const Machine: React.FC<{p: V3; rotY?: number; t: number}> = ({p, rotY = 0, t}) => (
+export const Machine: React.FC<{p: V3; rotY?: number; t: number; alarm?: boolean}> = ({p, rotY = 0, t, alarm = false}) => (
   <group position={p} rotation={[0, rotY, 0]}>
     <B p={[0, 1.1, 0]} s={[2.4, 2.2, 1.8]} c="#d9dde2" r={0.5} m={0.2} />
     <B p={[0, 1.2, 0.905]} s={[1.3, 0.9, 0.02]} c="#26303c" r={0.1} m={0.3} />
     <B p={[0.9, 1.5, 0.92]} s={[0.35, 0.25, 0.04]} c="#0d1622" e="#2f8cff" ei={0.6} />
     <B p={[0, 0.1, 0]} s={[2.5, 0.2, 1.9]} c="#3a3f47" />
     <Cyl p={[0, 2.35 + 0.05 * Math.sin(t * 3), 0]} r={0.25} h={0.2} c="#e8771e" />
+    {/* signal tower (beacon): amber flashes when alarm */}
+    <Cyl p={[0.95, 2.5, 0.6]} r={0.05} h={0.5} c="#3a3f47" />
+    <Cyl p={[0.95, 2.82, 0.6]} r={0.08} h={0.14} c="#3ddc84" e="#3ddc84" ei={alarm ? 0.2 : 1.2} />
+    <Cyl p={[0.95, 2.97, 0.6]} r={0.08} h={0.14} c="#ffb238" e="#ffb238" ei={alarm ? (Math.sin(t * 12) > 0 ? 4 : 0.2) : 0.1} />
+    {alarm && Math.sin(t * 12) > 0 && <pointLight position={[0.95, 3.0, 0.8]} color="#ffb238" intensity={8} distance={6} />}
   </group>
 );
 
 /** The production hall; `t` is time in seconds for animation. */
-export const Factory: React.FC<{t: number; lights?: number; cutaway?: boolean}> = ({t, lights = 1, cutaway = false}) => {
+export const Factory: React.FC<{t: number; lights?: number; cutaway?: boolean; dbOpen?: number; alarm?: boolean}> = ({t, lights = 1, cutaway = false, dbOpen = 0, alarm = false}) => {
   const conveyor = (t * 0.6) % 7;
   return (
     <group>
@@ -186,10 +191,10 @@ export const Factory: React.FC<{t: number; lights?: number; cutaway?: boolean}> 
 
       {/* side bays: machines, electrical room wall, workshop */}
       {[-24, -16].map((x) => (
-        <Machine key={x} p={[x, 0, -11]} t={t} />
+        <Machine key={x} p={[x, 0, -11]} t={t} alarm={alarm && x === -16} />
       ))}
       {[10, 11.5, 13, 14.5].map((x) => (
-        <DistributionBoard key={x} p={[x, 0, -14.6]} t={t} />
+        <DistributionBoard key={x} p={[x, 0, -14.6]} t={t} open={x === 11.5 ? dbOpen : 0} />
       ))}
       {/* workshop corner: workbench + racks */}
       <group position={[24, 0, -11.5]}>
