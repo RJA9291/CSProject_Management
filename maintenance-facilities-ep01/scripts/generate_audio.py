@@ -341,7 +341,112 @@ def build_score(tl):
     return mix
 
 
+def build_score_ep02(tl):
+    """Episode 02 cue sheet with the Episode 01 palette: 1 intro/build · 2 digital arps (org chart)
+    · 3–4 documentary pulse (tour) · 5 tension: drone + industrial percussion (breakdown)
+    · 6 digital ring then inspirational lift and resolve."""
+    fps = tl["fps"]
+    total = tl["total"] / fps
+    sc = {s["id"]: (s["from"] / fps, (s["from"] + s["len"]) / fps) for s in tl["scenes"]}
+    n = int(total * SR)
+    t = np.arange(n) / SR
+    mix = np.zeros(n)
+
+    def win(a, b, fin=1.5, fout=1.5):
+        return np.clip((t - a) / fin, 0, 1) * np.clip((b - t) / fout, 0, 1)
+
+    prog = [[45, 57, 60, 64], [41, 57, 60, 65], [48, 55, 60, 64], [43, 55, 59, 62]]
+    tense = [[45, 57, 60, 63], [44, 56, 60, 63], [45, 57, 60, 64], [43, 55, 58, 62]]
+    lift = [[41, 57, 60, 65], [43, 55, 59, 62], [45, 57, 60, 64], [48, 55, 60, 67]]
+    cl = 5.0
+    padbuf = np.zeros(n)
+    bass = np.zeros(n)
+    for ci, c0 in enumerate(np.arange(0, total, cl)):
+        if c0 >= sc[6][0] + 3:
+            ch = lift[ci % 4]
+        elif sc[5][0] - 0.5 <= c0 < sc[5][1] - 8:
+            ch = tense[ci % 4]
+        else:
+            ch = prog[ci % 4]
+        m = (t >= c0 - 0.6) & (t < c0 + cl + 0.6)
+        tt = t[m] - c0
+        e = np.clip((tt + 0.6) / 1.2, 0, 1) * np.clip((cl + 0.6 - tt) / 1.2, 0, 1)
+        padbuf[m] += pad([midi(x) for x in ch], tt) * e
+        bass[m] += np.sin(2 * np.pi * midi(ch[0] - 12) * tt) * e
+    padbuf = lp(padbuf, 1800)
+    mix += padbuf * (0.045 + 0.03 * win(sc[6][0] + 3, sc[6][1], 3, 4)) * win(0, total, 3, 4)
+    mix += lp(bass, 180) * 0.11 * win(1.0, total, 4, 4)
+
+    riser = np.sin(2 * np.pi * np.cumsum(60 * 2 ** (np.clip(t / sc[1][1], 0, 1) * 1.5)) / SR)
+    mix += lp(riser, 400) * 0.04 * win(sc[1][0] + 2, sc[1][1] + 0.5, 4, 0.5)
+
+    kt = T(0.35)
+    kick = np.sin(2 * np.pi * np.cumsum(48 + 70 * np.exp(-kt / 0.03)) / SR) * env(len(kt), 0.12)
+    ht = T(0.05)
+    hat = hp(rng.standard_normal(len(ht)), 7000) * env(len(ht), 0.01)
+    pulse = np.zeros(n)
+    beat = 60 / 96
+    for a, b in ((sc[1][1] - 2.0, sc[1][1] + 0.5), (sc[3][0], sc[4][1]), (sc[6][0] + 5, sc[6][1] - 3)):
+        tt = a
+        while tt < b - 0.5:
+            place(pulse, kick, tt, 0.7)
+            place(pulse, hat, tt + beat / 2, 0.14)
+            tt += beat
+    mix += lp(pulse, 6000) * 0.2
+
+    arp = np.zeros(n)
+    step = 60 / 104 / 2
+    pt = T(0.8)
+    k = 0
+    for a, b in (sc[2], (sc[6][0], sc[6][0] + 5)):
+        tt = a + 0.4
+        while tt < b - 0.4:
+            ch = prog[int(tt // cl) % 4]
+            f = midi(ch[[1, 2, 3, 2][k % 4]] + 12)
+            place(arp, (np.sin(2 * np.pi * f * pt) + 0.3 * np.sin(2 * np.pi * 2 * f * pt)) * env(len(pt), 0.16), tt, 0.8 + 0.2 * (k % 2))
+            tt += step
+            k += 1
+    arp += 0.3 * np.concatenate([np.zeros(int(step * 3 * SR)), arp])[:n]
+    mix += lp(arp, 4000) * 0.045
+
+    # breakdown: low drone + industrial percussion while the line is down
+    a, b = sc[5]
+    drone = sum(np.sin(2 * np.pi * f * t + ph) for f, ph in ((41.2, 0), (55.0, 1.1), (61.7, 2.0)))
+    mix += lp(drone, 200) * 0.05 * win(a + 1.5, b - 6, 2, 3)
+    perc = np.zeros(n)
+    beat = 60 / 104
+    tt = a + 2.0
+    i = 0
+    while tt < b - 7:
+        nt = int(0.4 * SR)
+        tom = np.sin(2 * np.pi * np.cumsum(70 + 60 * np.exp(-T(0.4) / 0.04)) / SR) * env(nt, 0.15)
+        place(perc, tom, tt, 0.7 if i % 4 in (0, 2) else 0.3)
+        if i % 8 == 7:
+            ml = bp(rng.standard_normal(int(0.3 * SR)), 2500, 6000) * env(int(0.3 * SR), 0.06)
+            place(perc, ml, tt, 0.3)
+        tt += beat / 2
+        i += 1
+    mix += perc * 0.12
+
+    fin = pad([midi(x) for x in (48, 55, 60, 64, 67, 72)], t, 1.0)
+    mix += lp(fin, 2500) * 0.05 * win(sc[6][1] - 5, total, 2, 3)
+
+    mix = norm(stereo(mix, 0.4, 14), 0.8)
+    mix *= np.clip((total - t) / 3.0, 0, 1)[:, None]
+    return mix
+
+
 def main():
+    import sys
+    ep = sys.argv[sys.argv.index("--ep") + 1] if "--ep" in sys.argv else ""
+    if ep:
+        tl = json.loads((ROOT / f"src/data/{ep}/timeline.json").read_text())
+        wav = ROOT / f"public/audio/{ep}/music/score.wav"
+        write(wav, build_score_ep02(tl))
+        subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(wav), "-c:a", "flac", "-compression_level", "8", str(wav.with_suffix(".flac"))], check=True)
+        wav.unlink()
+        print(f"{ep} score written (SFX shared with Episode 01)")
+        return
     tl = json.loads((ROOT / "src/data/timeline.json").read_text())
     wav = ROOT / "public/audio/music/score.wav"
     write(wav, build_score(tl))

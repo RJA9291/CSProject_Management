@@ -51,3 +51,30 @@ Render penuh mengambil masa ~45 minit pada 4 teras CPU.
 Warna uniform dan kod helmet, logo dan nama syarikat (tidak dipaparkan), KPI sebenar (panel guna "KPI 1–3" generik), nama
 sistem work order, standard ISO, dan kandungan panel sistem (contoh ilustrasi). Semua boleh ditukar dalam `specs.ts`,
 `Digital.tsx` dan `Sets.tsx`.
+
+---
+
+# Episode 02: Struktur Organisasi Kilang
+
+Video 1920 × 1080, **3:08**, Bahasa Melayu. Episode 01 kekal sebagai **rujukan visual induk**: rig watak, dunia kilang,
+pencahayaan, gaya kamera, sari kata dan muzik yang sama.
+
+| Fail | Kandungan |
+|---|---|
+| `output/DI_SEBALIK_OPERASI_KILANG_EP02.mp4` | **Video akhir Episode 02** |
+| `output/DI_SEBALIK_OPERASI_KILANG_EP02.srt` | Sari kata Bahasa Melayu |
+| `output/skrip_narasi_ep02.txt` | Skrip narasi dengan masa |
+| `docs/ep02/PRE_PRODUCTION_EP02.md` | Carta organisasi, peraturan kesinambungan, watak, persekitaran, storyboard, scene prompts, placeholder |
+| `docs/ep02/01_cast_sheet_ep02.png`, `02_org_chart.png` | Watak sokongan dan carta organisasi |
+
+Kod: `src/ep02/` (scene, dunia, soundtrack, timeline), `src/environment/Ep02Sets.tsx`, `src/environment/Ep02Digital.tsx`.
+Data: `src/data/ep02/`. Audio: `public/audio/ep02/` (SFX dikongsi dengan Episode 01).
+
+```bash
+python scripts/generate_vo.py --ep ep02 --model kokoro-v1.0.onnx --voices voices-v1.0.bin
+node scripts/build-timeline-ep02.mjs
+python scripts/generate_audio.py --ep ep02
+node scripts/build-docs.mjs --ep ep02
+npx remotion render src/index.ts Episode02 output/render_raw_ep02.mp4 --codec=h264 --crf=21 --audio-bitrate=320k
+bash scripts/master.sh output/render_raw_ep02.mp4 output/DI_SEBALIK_OPERASI_KILANG_EP02.mp4
+```

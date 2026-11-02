@@ -17,7 +17,7 @@ export type Pose = {
   shieldDown?: boolean;
 };
 
-export type Action = 'idle' | 'walk' | 'lead' | 'tablet' | 'clipboard' | 'inspect' | 'toolWork' | 'measure' | 'weld' | 'present';
+export type Action = 'idle' | 'walk' | 'lead' | 'tablet' | 'clipboard' | 'inspect' | 'toolWork' | 'measure' | 'weld' | 'present' | 'sit' | 'report';
 
 const arm = (pitch: number, elbow: number, roll = 0.08): ArmPose => ({pitch, roll, elbow});
 const leg = (hip = 0, knee = 0): LegPose => ({hip, knee});
@@ -107,6 +107,20 @@ export const poseFor = (action: Action, t: number): Pose => {
       p.r = arm(-0.95 + 0.03 * s(t * 3), -0.45);
       p.shieldDown = true;
       break;
+    case 'sit': // seated (forklift driver): hands on the wheel
+      p.ll = leg(-1.5, 1.5);
+      p.rl = leg(-1.5, 1.5);
+      p.drop = 0.43;
+      p.l = arm(-0.9, -0.5);
+      p.r = arm(-0.9 + 0.05 * s(t * 1.5), -0.5);
+      p.headYaw = 0.1 * s(t * 0.5);
+      break;
+    case 'report': // pointing up at the andon light while reporting
+      p.l = arm(0.04, -0.2);
+      p.r = arm(-2.3 + 0.05 * s(t * 3), -0.1, 0.2);
+      p.headPitch = -0.35;
+      p.headYaw = 0.2;
+      break;
   }
   return p;
 };
@@ -119,4 +133,14 @@ export const ROLE_ACTIONS: Record<string, Action[]> = {
   electrical: ['idle', 'walk', 'measure', 'toolWork', 'inspect'],
   mechanical: ['idle', 'walk', 'toolWork', 'inspect'],
   welding: ['idle', 'walk', 'weld', 'toolWork'],
+  // Episode 02 supporting cast
+  newtech: ['idle', 'walk', 'toolWork', 'inspect'],
+  operator1: ['idle', 'walk', 'toolWork', 'report', 'inspect'],
+  operator2: ['idle', 'walk', 'toolWork', 'inspect'],
+  quality: ['idle', 'walk', 'inspect', 'tablet', 'clipboard'],
+  logistics: ['idle', 'walk', 'sit'],
+  ppc: ['idle', 'walk', 'present', 'tablet'],
+  engineering: ['idle', 'walk', 'present', 'tablet', 'inspect'],
+  safety: ['idle', 'walk', 'clipboard', 'inspect', 'present'],
+  qms: ['idle', 'walk', 'tablet', 'present'],
 };

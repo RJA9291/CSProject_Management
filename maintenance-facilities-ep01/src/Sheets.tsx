@@ -52,6 +52,8 @@ const ACTION_MS: Record<Action, string> = {
   toolWork: 'Kerja hands-on',
   measure: 'Pengukuran elektrik',
   weld: 'Kimpalan',
+  sit: 'Memandu forklift',
+  report: 'Melaporkan kerosakan',
 };
 
 const NOT_ALLOWED: Record<string, string> = {

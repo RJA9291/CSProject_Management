@@ -184,7 +184,8 @@ const Head: React.FC<{spec: CharacterSpec; pitch: number; yaw: number; has: (a: 
           </group>
         )}
 
-        {/* safety helmet */}
+        {/* safety helmet (office roles have none) */}
+        {spec.helmet && (
         <group position={[0, 0.05, -0.004]}>
           <mesh scale={[1, 0.8, 1.1]} castShadow>
             <sphereGeometry args={[0.122, 32, 16, 0, Math.PI * 2, 0, Math.PI / 2]} />
@@ -201,7 +202,7 @@ const Head: React.FC<{spec: CharacterSpec; pitch: number; yaw: number; has: (a: 
           </mesh>
           <Box p={[0, 0.088, -0.005]} s={[0.022, 0.03, 0.22]} c={darken(spec.helmet, 0.92)} r={0.32} />
           {/* department sticker (PLACEHOLDER logo) */}
-          <Box p={[0, 0.06, 0.11]} s={[0.04, 0.022, 0.004]} rot={[-0.6, 0, 0]} c="#e8771e" />
+          <Box p={[0, 0.06, 0.11]} s={[0.04, 0.022, 0.004]} rot={[-0.6, 0, 0]} c={spec.badge ?? '#e8771e'} />
           {has('weldingShield') && (
             <group position={[0, 0.03, 0.02]} rotation={[shieldDown ? 0 : -0.95, 0, 0]}>
               {/* curved shell, hinged at the helmet sides */}
@@ -216,6 +217,7 @@ const Head: React.FC<{spec: CharacterSpec; pitch: number; yaw: number; has: (a: 
             </group>
           )}
         </group>
+        )}
       </group>
     </group>
   );
@@ -314,9 +316,10 @@ export const Character: React.FC<{spec: CharacterSpec; action?: Action; t?: numb
   const glove = has('insulatedGloves') ? '#e0581c' : has('workGloves') ? (spec.id === 'welding' ? '#8a5a32' : '#6d7178') : undefined;
   const k = spec.height / 1.72;
   const b = spec.build;
-  const cuff = spec.id === 'manager' ? '#eef3f8' : darken(spec.shirt, 0.8);
+  const corporate = spec.corporate ?? false;
+  const cuff = corporate ? '#eef3f8' : darken(spec.shirt, 0.8);
   const breathe = Math.sin(t * 1.7) * 0.003;
-  const isUniform = spec.id !== 'manager';
+  const isUniform = !corporate;
 
   return (
     <group position={position} rotation={[0, rotationY, 0]} scale={[k * b, k, k * (0.93 + 0.07 * b)]}>
@@ -347,7 +350,7 @@ export const Character: React.FC<{spec: CharacterSpec; action?: Action; t?: numb
             {/* collar */}
             <mesh position={[0, 0.47, 0.0]} rotation={[0.25, 0, 0]}>
               <torusGeometry args={[0.062, 0.016, 8, 24, Math.PI * 1.25]} />
-              <Mat c={spec.id === 'manager' ? '#f4f7fb' : darken(spec.shirt, 0.85)} r={0.85} />
+              <Mat c={corporate ? '#f4f7fb' : darken(spec.shirt, 0.85)} r={0.85} />
             </mesh>
             {/* placket + buttons */}
             <Box p={[0, 0.25, 0.104]} s={[0.022, 0.36, 0.004]} c={darken(spec.shirt, 0.9)} />
@@ -362,17 +365,27 @@ export const Character: React.FC<{spec: CharacterSpec; action?: Action; t?: numb
               </group>
             ))}
             {/* department badge (logo PLACEHOLDER) on left chest pocket */}
-            <Box p={[-0.075, 0.3, 0.105]} s={[0.045, 0.03, 0.003]} c="#e8771e" />
+            <Box p={[-0.075, 0.3, 0.105]} s={[0.045, 0.03, 0.003]} c={spec.badge ?? '#e8771e'} />
+            {/* hi-vis vest */}
+            {spec.vest && (
+              <>
+                <mesh position={[0, 0.22, 0]} scale={[1.03, 0.92, 0.63]}>
+                  <capsuleGeometry args={[0.172, 0.27, 10, 24]} />
+                  <Mat c={spec.vest} r={0.7} e={spec.vest} ei={0.08} />
+                </mesh>
+                <Box p={[0, 0.25, 0.111]} s={[0.05, 0.4, 0.004]} c={spec.shirt} />
+              </>
+            )}
             {/* reflective stripes on department uniform */}
             {isUniform &&
               [0.12, 0.2].map((y) => (
                 <mesh key={y} position={[0, y, 0]} scale={[1.005, 1, 0.605]}>
-                  <cylinderGeometry args={[0.174, 0.174, 0.02, 32, 1, true]} />
+                  <cylinderGeometry args={[spec.vest ? 0.181 : 0.174, spec.vest ? 0.181 : 0.174, 0.02, 32, 1, true]} />
                   <Mat c="#dfe3e8" r={0.25} m={0.25} e="#a7b0ba" ei={0.18} />
                 </mesh>
               ))}
             {/* manager tie */}
-            {spec.id === 'manager' && (
+            {spec.tie && (
               <>
                 <Box p={[0, 0.27, 0.106]} s={[0.034, 0.26, 0.005]} c="#1f3a5f" />
                 <Box p={[0, 0.42, 0.105]} s={[0.03, 0.03, 0.01]} c="#1f3a5f" />

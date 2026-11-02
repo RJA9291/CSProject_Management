@@ -2,7 +2,8 @@
 // same timing data the video uses.  Usage: node scripts/build-docs.mjs
 import {readFileSync, writeFileSync, mkdirSync} from 'node:fs';
 
-const read = (p) => JSON.parse(readFileSync(new URL(`../src/data/${p}`, import.meta.url), 'utf8'));
+const EP = process.argv.includes('--ep') ? process.argv[process.argv.indexOf('--ep') + 1] : '';
+const read = (p) => JSON.parse(readFileSync(new URL(`../src/data/${EP ? EP + '/' : ''}${p}`, import.meta.url), 'utf8'));
 const tl = read('timeline.json');
 const dur = read('vo-durations.json');
 const {lines} = read('narration.json');
@@ -52,17 +53,17 @@ lines.forEach((l, i) => {
     t = e;
   });
 });
-out('DI_SEBALIK_OPERASI_KILANG_EP01.srt', cues.map((c, i) => `${i + 1}\n${ts(c.from)} --> ${ts(c.end)}\n${wrap(c.text)}\n`).join('\n'));
+out(EP ? 'DI_SEBALIK_OPERASI_KILANG_EP02.srt' : 'DI_SEBALIK_OPERASI_KILANG_EP01.srt', cues.map((c, i) => `${i + 1}\n${ts(c.from)} --> ${ts(c.end)}\n${wrap(c.text)}\n`).join('\n'));
 
 const mmss = (f) => `${String(Math.floor(f / FPS / 60)).padStart(2, '0')}:${((f / FPS) % 60).toFixed(1).padStart(4, '0')}`;
 let txt = `DI SEBALIK OPERASI KILANG
-Episode 01 – Mengenali Department Maintenance & Facilities
+${EP ? 'Episode 02 – Struktur Organisasi Kilang' : 'Episode 01 – Mengenali Department Maintenance & Facilities'}
 Skrip narasi (Bahasa Melayu) · Durasi ${mmss(tl.total)}
-Istilah jawatan rasmi dikekalkan dalam bahasa Inggeris seperti dalam brief.
+Istilah jawatan dan nama jabatan rasmi dikekalkan dalam bahasa Inggeris seperti dalam brief.
 `;
 for (const s of tl.scenes) {
   txt += `\nSCENE ${String(s.id).padStart(2, '0')} – ${s.name.toUpperCase()}  [${mmss(s.from)}–${mmss(s.from + s.len)}]\n`;
   for (const l of lines.filter((x) => x.scene === s.id)) txt += `[${mmss(tl.vo[l.id])}] ${l.sub}\n`;
 }
-out('skrip_narasi.txt', txt);
+out(EP ? 'skrip_narasi_ep02.txt' : 'skrip_narasi.txt', txt);
 console.log(`srt: ${cues.length} cues; skrip_narasi.txt`);

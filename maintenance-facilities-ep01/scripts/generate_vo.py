@@ -45,9 +45,11 @@ def main():
     ap.add_argument("--model", default="kokoro-v1.0.onnx")
     ap.add_argument("--voices", default="voices-v1.0.bin")
     ap.add_argument("--measure-only", action="store_true")
+    ap.add_argument("--ep", default="", help="episode folder, e.g. ep02 (data in src/data/ep02, audio in public/audio/ep02/vo)")
     args = ap.parse_args()
-    data = json.loads((ROOT / "src/data/narration.json").read_text())
-    out = ROOT / "public/audio/vo"
+    ddir = ROOT / "src/data" / args.ep if args.ep else ROOT / "src/data"
+    data = json.loads((ddir / "narration.json").read_text())
+    out = ROOT / "public/audio" / args.ep / "vo" if args.ep else ROOT / "public/audio/vo"
     out.mkdir(parents=True, exist_ok=True)
     if not args.measure_only:
         from kokoro_onnx import Kokoro
@@ -63,7 +65,7 @@ def main():
     for line in data["lines"]:
         info = sf.info(out / f"{line['id']}.wav")
         dur[line["id"]] = round(info.frames / info.samplerate, 3)
-    (ROOT / "src/data/vo-durations.json").write_text(json.dumps(dur, indent=2) + "\n")
+    (ddir / "vo-durations.json").write_text(json.dumps(dur, indent=2) + "\n")
 
 
 if __name__ == "__main__":

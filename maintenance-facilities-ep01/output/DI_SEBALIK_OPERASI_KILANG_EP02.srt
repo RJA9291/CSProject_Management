@@ -1,0 +1,199 @@
+1
+00:00:01,200 --> 00:00:06,933
+Pagi itu, seorang technician baharu
+melangkah masuk ke kilang buat kali pertama.
+
+2
+00:00:06,967 --> 00:00:10,500
+Segalanya kelihatan besar
+dan sibuk. Mesin, robot,
+
+3
+00:00:10,500 --> 00:00:14,200
+kenderaan dan pelbagai
+aktiviti berlaku serentak.
+
+4
+00:00:14,200 --> 00:00:19,300
+Dan satu soalan bermain di fikirannya:
+bagaimanakah semua ini disusun?
+
+5
+00:00:20,433 --> 00:00:25,100
+Setiap kilang digerakkan oleh satu
+struktur organisasi yang jelas.
+
+6
+00:00:25,100 --> 00:00:29,300
+Di peringkat kepimpinan, terdapat
+Managing Director – Modular,
+
+7
+00:00:29,300 --> 00:00:31,733
+dan Plant Head, yang mengetuai kilang.
+
+8
+00:00:31,867 --> 00:00:37,367
+Di dalam kilang, enam jabatan operasi
+utama bekerja bersama: Production,
+
+9
+00:00:37,367 --> 00:00:42,700
+Quality, Logistics, PPC, Engineering
+dan Maintenance & Facilities.
+
+10
+00:00:42,833 --> 00:00:46,600
+Manakala Safety dan QMS
+berperanan sebagai fungsi
+
+11
+00:00:46,600 --> 00:00:50,767
+sokongan yang menyokong
+keseluruhan operasi kilang.
+
+12
+00:00:53,167 --> 00:00:55,767
+Untuk memahami struktur ini, technician
+
+13
+00:00:55,767 --> 00:00:58,800
+baharu itu dibawa melawat setiap jabatan.
+
+14
+00:00:59,100 --> 00:01:02,300
+Di Production, operator
+memasang dan menghasilkan
+
+15
+00:01:02,300 --> 00:01:05,700
+produk mengikut standard
+dan jadual pengeluaran.
+
+16
+00:01:06,133 --> 00:01:08,700
+Quality memeriksa dan mengesahkan setiap
+
+17
+00:01:08,700 --> 00:01:11,800
+produk memenuhi spesifikasi yang ditetapkan.
+
+18
+00:01:12,200 --> 00:01:14,867
+Logistics menguruskan pergerakan bahan,
+
+19
+00:01:14,867 --> 00:01:19,167
+alat ganti dan produk, dari
+penerimaan hingga penghantaran.
+
+20
+00:01:19,567 --> 00:01:24,167
+PPC merancang dan mengawal
+jadual pengeluaran supaya bahan,
+
+21
+00:01:24,167 --> 00:01:27,267
+mesin dan tenaga kerja diselaraskan.
+
+22
+00:01:27,700 --> 00:01:32,600
+Engineering membangunkan dan menambah
+baik proses serta kaedah pengeluaran.
+
+23
+00:01:33,000 --> 00:01:36,267
+Dan Maintenance & Facilities memastikan mesin,
+
+24
+00:01:36,267 --> 00:01:40,567
+peralatan dan kemudahan kilang
+sentiasa sedia beroperasi.
+
+25
+00:01:41,900 --> 00:01:45,433
+Dua fungsi sokongan pula
+menyentuh setiap jabatan.
+
+26
+00:01:45,567 --> 00:01:49,600
+Safety memastikan setiap kerja
+dilakukan dengan selamat,
+
+27
+00:01:49,600 --> 00:01:53,767
+daripada penggunaan PPE
+hingga prosedur kerja selamat.
+
+28
+00:01:54,100 --> 00:01:57,067
+QMS memastikan sistem pengurusan kualiti
+
+29
+00:01:57,067 --> 00:02:01,000
+dipatuhi melalui prosedur,
+dokumentasi dan audit.
+
+30
+00:02:03,100 --> 00:02:07,933
+Kemudian, tiba-tiba, sebuah robot
+di barisan pengeluaran berhenti.
+
+31
+00:02:08,133 --> 00:02:11,567
+Operator Production segera
+melaporkan kerosakan.
+
+32
+00:02:11,800 --> 00:02:16,933
+Safety memastikan mesin diasingkan
+dengan selamat sebelum kerja dimulakan.
+
+33
+00:02:17,133 --> 00:02:22,533
+Technician Maintenance & Facilities
+menjalankan troubleshooting dan pembaikan,
+
+34
+00:02:22,533 --> 00:02:25,867
+dibantu Engineering dalam analisis teknikal.
+
+35
+00:02:26,100 --> 00:02:28,933
+Quality memeriksa produk yang terjejas.
+
+36
+00:02:28,933 --> 00:02:32,733
+PPC menyelaraskan semula jadual pengeluaran.
+
+37
+00:02:32,767 --> 00:02:37,533
+Dan Logistics memastikan alat ganti
+dan bahan tiba tepat pada masanya.
+
+38
+00:02:37,833 --> 00:02:40,800
+Selepas pembaikan, rekod dan tindakan
+
+39
+00:02:40,800 --> 00:02:45,167
+pembetulan didokumentasikan
+mengikut keperluan QMS.
+
+40
+00:02:46,867 --> 00:02:50,767
+Satu kerosakan. Lapan pasukan. Satu matlamat.
+
+41
+00:02:51,000 --> 00:02:56,867
+Kini technician baharu itu faham: setiap
+jabatan mempunyai peranan tersendiri,
+
+42
+00:02:56,867 --> 00:03:01,433
+tetapi kejayaan kilang bergantung
+kepada kerjasama semua.
+
+43
+00:03:01,533 --> 00:03:04,500
+Inilah struktur organisasi kilang kita.

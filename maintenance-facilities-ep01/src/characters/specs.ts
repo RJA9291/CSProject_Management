@@ -37,7 +37,12 @@ export type CharacterSpec = {
   shirt: string;
   shirtAccent: string; // yoke / accent panel
   trousers: string;
-  helmet: string;
+  helmet: string; // '' = no helmet (office roles)
+  corporate?: boolean; // office shirt: no reflective stripes, white collar/cuffs
+  tie?: boolean;
+  vest?: string; // hi-vis vest colour
+  badge?: string; // department badge / helmet sticker colour (default M&F orange)
+  dept?: string; // department (Episode 02+); default Maintenance & Facilities
   tudungColor?: string;
   accessories: Accessory[];
   pose: 'leader' | 'tablet' | 'clipboard' | 'tool' | 'weld';
@@ -74,6 +79,8 @@ export const CHARACTERS: CharacterSpec[] = [
     shirtAccent: UNIFORM.navy,
     trousers: '#232b36',
     helmet: HELMET.management,
+    corporate: true,
+    tie: true,
     accessories: ['tablet', 'glasses', 'lanyard'],
     pose: 'leader',
   },
@@ -162,8 +169,33 @@ export const CHARACTERS: CharacterSpec[] = [
   },
 ];
 
+// ---- Episode 02 supporting cast (other departments). Department uniform and helmet
+// colours are PLACEHOLDERS until confirmed; they are chosen to read clearly against the
+// Maintenance & Facilities navy/orange uniform. No names; roles only.
+const GREY = '#5f6b78';
+export const CAST_EP02: CharacterSpec[] = [
+  {id: 'newtech', role: 'TECHNICIAN BAHARU', roleMs: 'Technician Maintenance & Facilities yang baru menyertai kilang', skin: '#b07a55', hair: 'crew', hairColor: '#17110c', build: 0.98, height: 1.7,
+    shirt: UNIFORM.navy, shirtAccent: UNIFORM.orange, trousers: UNIFORM.navyDark, helmet: HELMET.technician, accessories: ['toolBelt', 'safetyGlasses', 'workGloves'], pose: 'tool'},
+  {id: 'operator1', role: 'OPERATOR PRODUCTION', roleMs: 'Pemasangan & pengeluaran', skin: '#9a6a48', hair: 'short', hairColor: '#120d0a', build: 1.0, height: 1.71, dept: 'Production',
+    shirt: GREY, shirtAccent: '#3d9b5a', trousers: '#2b3038', helmet: '#3d9b5a', badge: '#3d9b5a', accessories: ['workGloves', 'safetyGlasses'], pose: 'tool'},
+  {id: 'operator2', role: 'OPERATOR PRODUCTION', roleMs: 'Pemasangan & pengeluaran', skin: '#c99470', hair: 'tudung', hairColor: '#111', tudungColor: '#2e4f3b', build: 0.9, height: 1.6, dept: 'Production',
+    shirt: GREY, shirtAccent: '#3d9b5a', trousers: '#2b3038', helmet: '#3d9b5a', badge: '#3d9b5a', accessories: ['workGloves', 'safetyGlasses'], pose: 'tool'},
+  {id: 'quality', role: 'QUALITY', roleMs: 'Pemeriksaan & pengesahan produk', skin: '#d9ab86', hair: 'short', hairColor: '#0f0c0a', build: 0.96, height: 1.69, dept: 'Quality',
+    shirt: '#cfdbe8', shirtAccent: '#2f6fd6', trousers: '#2b3038', helmet: '#8fc7ff', badge: '#2f6fd6', accessories: ['tablet', 'lanyard', 'safetyGlasses'], pose: 'tablet'},
+  {id: 'logistics', role: 'LOGISTICS', roleMs: 'Pergerakan bahan, alat ganti & produk', skin: '#8a5a3c', hair: 'short', hairColor: '#0e0b09', moustache: true, build: 1.06, height: 1.72, dept: 'Logistics',
+    shirt: GREY, shirtAccent: '#ff7a1a', trousers: '#2b3038', helmet: '#ff8c1a', vest: '#ff7a1a', badge: '#ff7a1a', accessories: ['workGloves'], pose: 'tool'},
+  {id: 'ppc', role: 'PPC', roleMs: 'Perancangan & kawalan pengeluaran', skin: '#c48f6a', hair: 'tudung', hairColor: '#111', tudungColor: '#6b2a3a', build: 0.9, height: 1.6, dept: 'PPC',
+    shirt: '#e4ebf3', shirtAccent: '#6b2a3a', trousers: '#2a2f38', helmet: '', corporate: true, badge: '#6b2a3a', accessories: ['tablet', 'lanyard'], pose: 'tablet'},
+  {id: 'engineering', role: 'ENGINEERING', roleMs: 'Pembangunan & penambahbaikan proses', skin: '#e0b592', hair: 'short', hairColor: '#0d0b0a', build: 0.97, height: 1.73, dept: 'Engineering',
+    shirt: '#3b4350', shirtAccent: '#7fd6ff', trousers: '#22272f', helmet: HELMET.management, badge: '#7fd6ff', accessories: ['tablet', 'drawingRoll', 'lanyard', 'glasses'], pose: 'tablet'},
+  {id: 'safety', role: 'SAFETY', roleMs: 'Kerja selamat, PPE & prosedur', skin: '#a8714c', hair: 'short', hairColor: '#120e0b', beard: true, build: 1.02, height: 1.74, dept: 'Safety',
+    shirt: '#2c3440', shirtAccent: '#c6f432', trousers: '#22272f', helmet: '#d93636', vest: '#c6f432', badge: '#d93636', accessories: ['clipboard', 'lanyard', 'safetyGlasses'], pose: 'clipboard'},
+  {id: 'qms', role: 'QMS', roleMs: 'Sistem pengurusan kualiti: prosedur, dokumentasi & audit', skin: '#bd8763', hair: 'short', hairColor: '#15100c', build: 0.98, height: 1.7, dept: 'QMS',
+    shirt: '#dfe7ef', shirtAccent: '#2a4a6a', trousers: '#2a2f38', helmet: '', corporate: true, badge: '#2a4a6a', accessories: ['tablet', 'lanyard', 'glasses'], pose: 'tablet'},
+];
+
 export const byId = (id: string) => {
-  const c = CHARACTERS.find((x) => x.id === id);
+  const c = CHARACTERS.find((x) => x.id === id) ?? CAST_EP02.find((x) => x.id === id);
   if (!c) throw new Error(`unknown character ${id}`);
   return c;
 };

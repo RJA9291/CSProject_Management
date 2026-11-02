@@ -1,0 +1,45 @@
+DI SEBALIK OPERASI KILANG
+Episode 02 – Struktur Organisasi Kilang
+Skrip narasi (Bahasa Melayu) · Durasi 03:08.4
+Istilah jawatan dan nama jabatan rasmi dikekalkan dalam bahasa Inggeris seperti dalam brief.
+
+SCENE 01 – HARI PERTAMA  [00:00.0–00:19.8]
+[00:01.2] Pagi itu, seorang technician baharu melangkah masuk ke kilang buat kali pertama.
+[00:07.0] Segalanya kelihatan besar dan sibuk. Mesin, robot, kenderaan dan pelbagai aktiviti berlaku serentak.
+[00:14.2] Dan satu soalan bermain di fikirannya: bagaimanakah semua ini disusun?
+
+SCENE 02 – GAMBARAN BESAR ORGANISASI  [00:19.8–00:52.7]
+[00:20.4] Setiap kilang digerakkan oleh satu struktur organisasi yang jelas.
+[00:25.1] Di peringkat kepimpinan, terdapat Managing Director – Modular,
+[00:29.3] dan Plant Head, yang mengetuai kilang.
+[00:31.9] Di dalam kilang, enam jabatan operasi utama bekerja bersama: Production, Quality, Logistics, PPC, Engineering dan Maintenance & Facilities.
+[00:42.8] Manakala Safety dan QMS berperanan sebagai fungsi sokongan yang menyokong keseluruhan operasi kilang.
+
+SCENE 03 – LAWATAN SETIAP JABATAN  [00:52.7–01:41.3]
+[00:53.2] Untuk memahami struktur ini, technician baharu itu dibawa melawat setiap jabatan.
+[00:59.1] Di Production, operator memasang dan menghasilkan produk mengikut standard dan jadual pengeluaran.
+[01:06.1] Quality memeriksa dan mengesahkan setiap produk memenuhi spesifikasi yang ditetapkan.
+[01:12.2] Logistics menguruskan pergerakan bahan, alat ganti dan produk, dari penerimaan hingga penghantaran.
+[01:19.6] PPC merancang dan mengawal jadual pengeluaran supaya bahan, mesin dan tenaga kerja diselaraskan.
+[01:27.7] Engineering membangunkan dan menambah baik proses serta kaedah pengeluaran.
+[01:33.0] Dan Maintenance & Facilities memastikan mesin, peralatan dan kemudahan kilang sentiasa sedia beroperasi.
+
+SCENE 04 – FUNGSI SOKONGAN  [01:41.3–02:01.7]
+[01:41.9] Dua fungsi sokongan pula menyentuh setiap jabatan.
+[01:45.6] Safety memastikan setiap kerja dilakukan dengan selamat, daripada penggunaan PPE hingga prosedur kerja selamat.
+[01:54.1] QMS memastikan sistem pengurusan kualiti dipatuhi melalui prosedur, dokumentasi dan audit.
+
+SCENE 05 – MESIN ROSAK  [02:01.7–02:46.1]
+[02:03.1] Kemudian, tiba-tiba, sebuah robot di barisan pengeluaran berhenti.
+[02:08.1] Operator Production segera melaporkan kerosakan.
+[02:11.8] Safety memastikan mesin diasingkan dengan selamat sebelum kerja dimulakan.
+[02:17.1] Technician Maintenance & Facilities menjalankan troubleshooting dan pembaikan, dibantu Engineering dalam analisis teknikal.
+[02:26.1] Quality memeriksa produk yang terjejas.
+[02:28.9] PPC menyelaraskan semula jadual pengeluaran.
+[02:32.8] Dan Logistics memastikan alat ganti dan bahan tiba tepat pada masanya.
+[02:37.8] Selepas pembaikan, rekod dan tindakan pembetulan didokumentasikan mengikut keperluan QMS.
+
+SCENE 06 – SATU KILANG, SATU PASUKAN  [02:46.1–03:08.4]
+[02:46.9] Satu kerosakan. Lapan pasukan. Satu matlamat.
+[02:51.0] Kini technician baharu itu faham: setiap jabatan mempunyai peranan tersendiri, tetapi kejayaan kilang bergantung kepada kerjasama semua.
+[03:01.5] Inilah struktur organisasi kilang kita.

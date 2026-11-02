@@ -5,6 +5,9 @@ import {AeVsTechnician, CharacterSheetPage, Turntable} from './Sheets';
 import {CHARACTERS} from './characters/specs';
 import {Episode01, SingleScene} from './Episode';
 import {FPS, SCENES, TOTAL} from './data/timeline';
+import {Episode02, Episode02Scene} from './ep02/Episode';
+import {SCENES as SCENES2, TOTAL as TOTAL2} from './ep02/timeline';
+import {CastSheet02} from './ep02/Cast';
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -22,6 +25,12 @@ export const RemotionRoot: React.FC = () => (
     {SCENES.map((sc) => (
       <Composition key={sc.id} id={`Scene0${sc.id}`} component={SingleScene} durationInFrames={sc.len} fps={FPS} width={1920} height={1080} defaultProps={{id: sc.id}} />
     ))}
+    <Composition id="Episode02" component={Episode02} durationInFrames={TOTAL2} fps={FPS} width={1920} height={1080} defaultProps={{audio: true, subtitles: true}} />
+    <Composition id="Episode02-NoSubs" component={Episode02} durationInFrames={TOTAL2} fps={FPS} width={1920} height={1080} defaultProps={{audio: true, subtitles: false}} />
+    {SCENES2.map((sc) => (
+      <Composition key={sc.id} id={`E2-Scene0${sc.id}`} component={Episode02Scene} durationInFrames={sc.len} fps={FPS} width={1920} height={1080} defaultProps={{id: sc.id}} />
+    ))}
+    <Still id="E2-CastSheet" component={CastSheet02} width={1920} height={1080} />
     <Composition id="LookdevMotion" component={FactoryLookdev} durationInFrames={120} fps={30} width={1920} height={1080} defaultProps={{cam: 'wide' as const}} />
   </>
 );

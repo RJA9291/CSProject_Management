@@ -104,8 +104,8 @@ export const Machine: React.FC<{p: V3; rotY?: number; t: number; alarm?: boolean
 );
 
 /** The production hall; `t` is time in seconds for animation. */
-export const Factory: React.FC<{t: number; lights?: number; cutaway?: boolean; dbOpen?: number; alarm?: boolean}> = ({t, lights = 1, cutaway = false, dbOpen = 0, alarm = false}) => {
-  const conveyor = (t * 0.6) % 7;
+export const Factory: React.FC<{t: number; lights?: number; cutaway?: boolean; dbOpen?: number; alarm?: boolean; lineT?: number; stop?: {x: number; t: number}}> = ({t, lights = 1, cutaway = false, dbOpen = 0, alarm = false, lineT, stop}) => {
+  const conveyor = ((lineT ?? t) * 0.6) % 7;
   return (
     <group>
       {/* floor: epoxy grey with walkway lines */}
@@ -171,7 +171,7 @@ export const Factory: React.FC<{t: number; lights?: number; cutaway?: boolean; d
       ))}
       {[-17.5, -10.5, -3.5, 3.5, 10.5, 17.5].map((x, i) => (
         <React.Fragment key={x}>
-          <Robot p={[x, 0, 2.3]} rotY={Math.PI / 2 + 0.3} t={t} phase={i * 1.3} />
+          <Robot p={[x, 0, 2.3]} rotY={Math.PI / 2 + 0.3} t={stop && stop.x === x ? stop.t : t} phase={i * 1.3} />
           <Robot p={[x + 1.2, 0, -2.3]} rotY={-Math.PI / 2 - 0.3} t={t} phase={i * 1.1 + 2} />
         </React.Fragment>
       ))}

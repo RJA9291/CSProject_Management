@@ -1,27 +1,35 @@
 // Episode-level overlays on the global timeline: opening title card and Malay subtitles.
 import React from 'react';
 import {interpolate, useCurrentFrame} from 'remotion';
-import {LINES} from './data/timeline';
+import {LINES as EP01_LINES} from './data/timeline';
+
+type SubLine = {sub: string; from: number; to: number};
 import {FONT, MONO} from './lib/text';
 
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
 /** DI SEBALIK OPERASI KILANG – shown over the opening aerial. */
-export const OpeningTitle: React.FC<{from?: number; to?: number}> = ({from = 20, to = 150}) => {
+export const OpeningTitle: React.FC<{from?: number; to?: number; kicker?: string; title?: [string, string]; sub?: string}> = ({
+  from = 20,
+  to = 150,
+  kicker = 'EPISODE 01',
+  title = ['DI SEBALIK', 'OPERASI KILANG'],
+  sub = 'Mengenali Department Maintenance & Facilities',
+}) => {
   const f = useCurrentFrame();
   const o = Math.min(interpolate(f, [from, from + 18], [0, 1], clamp), interpolate(f, [to - 18, to], [1, 0], clamp));
   if (o <= 0) return null;
   const p = interpolate(f, [from, from + 30], [0, 1], clamp);
   return (
     <div style={{position: 'absolute', left: 120, top: 360, opacity: o, fontFamily: FONT}}>
-      <div style={{fontFamily: MONO, fontSize: 22, letterSpacing: 8, color: '#e8771e'}}>EPISODE 01</div>
+      <div style={{fontFamily: MONO, fontSize: 22, letterSpacing: 8, color: '#e8771e'}}>{kicker}</div>
       <div style={{width: 90 * p, height: 5, background: '#e8771e', margin: '16px 0 20px'}} />
       <div style={{fontSize: 92, fontWeight: 800, color: '#fff', letterSpacing: 4 + 6 * (1 - p), lineHeight: 1, textShadow: '0 6px 30px rgba(0,0,0,0.55)'}}>
-        DI SEBALIK
+        {title[0]}
         <br />
-        OPERASI KILANG
+        {title[1]}
       </div>
-      <div style={{fontSize: 32, fontWeight: 600, color: '#e3ebf4', marginTop: 22, textShadow: '0 3px 14px rgba(0,0,0,0.6)'}}>Mengenali Department Maintenance &amp; Facilities</div>
+      <div style={{fontSize: 32, fontWeight: 600, color: '#e3ebf4', marginTop: 22, textShadow: '0 3px 14px rgba(0,0,0,0.6)'}}>{sub}</div>
     </div>
   );
 };
@@ -31,7 +39,8 @@ const KEY = /(penyelenggaraan|menyelenggara|pemantauan|memantau|keselamatan|pres
 const isKey = (s: string) => /^(penyelenggaraan|menyelenggara|pemantauan|memantau|keselamatan|prestasi|pematuhan)$/i.test(s);
 
 /** Bahasa Melayu subtitles following the narration, with key words highlighted. */
-export const Subtitles: React.FC<{hold?: number}> = ({hold = 8}) => {
+export const Subtitles: React.FC<{hold?: number; lines?: SubLine[]}> = ({hold = 8, lines = EP01_LINES}) => {
+  const LINES = lines;
   const f = useCurrentFrame();
   const i = LINES.findIndex((l, k) => {
     const next = LINES[k + 1];
