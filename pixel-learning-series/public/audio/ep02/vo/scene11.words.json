@@ -1,0 +1,120 @@
+{
+ "text": "Peniaga kecil pula boleh semak stok dan jualan guna laptop di kedai atau telefon di luar, selagi ada internet dan servis cloud berfungsi.",
+ "words": [
+  {
+   "text": "Peniaga",
+   "start": 0.094625,
+   "end": 0.407125
+  },
+  {
+   "text": "kecil",
+   "start": 0.429458,
+   "end": 0.775458
+  },
+  {
+   "text": "pula",
+   "start": 0.79775,
+   "end": 0.998625
+  },
+  {
+   "text": "boleh",
+   "start": 1.009833,
+   "end": 1.244208
+  },
+  {
+   "text": "semak",
+   "start": 1.244208,
+   "end": 1.523208
+  },
+  {
+   "text": "stok",
+   "start": 1.545541,
+   "end": 1.846874
+  },
+  {
+   "text": "dan",
+   "start": 1.880375,
+   "end": 2.036625
+  },
+  {
+   "text": "jualan",
+   "start": 2.103583,
+   "end": 2.371458
+  },
+  {
+   "text": "guna",
+   "start": 2.42725,
+   "end": 2.650458
+  },
+  {
+   "text": "laptop",
+   "start": 2.661625,
+   "end": 2.985291
+  },
+  {
+   "text": "di",
+   "start": 2.996416,
+   "end": 3.085707
+  },
+  {
+   "text": "kedai",
+   "start": 3.119208,
+   "end": 3.454041
+  },
+  {
+   "text": "atau",
+   "start": 3.4875,
+   "end": 3.7665
+  },
+  {
+   "text": "telefon",
+   "start": 3.811166,
+   "end": 4.168291
+  },
+  {
+   "text": "di",
+   "start": 4.179458,
+   "end": 4.257583
+  },
+  {
+   "text": "luar",
+   "start": 4.30225,
+   "end": 4.592416
+  },
+  {
+   "text": "selagi",
+   "start": 4.871416,
+   "end": 5.217416
+  },
+  {
+   "text": "ada",
+   "start": 5.217416,
+   "end": 5.418291
+  },
+  {
+   "text": "internet",
+   "start": 5.418291,
+   "end": 5.887041
+  },
+  {
+   "text": "dan",
+   "start": 5.887041,
+   "end": 6.076791
+  },
+  {
+   "text": "servis",
+   "start": 6.087958,
+   "end": 6.489749
+  },
+  {
+   "text": "cloud",
+   "start": 6.523208,
+   "end": 6.813374
+  },
+  {
+   "text": "berfungsi",
+   "start": 6.813375,
+   "end": 7.404875
+  }
+ ]
+}

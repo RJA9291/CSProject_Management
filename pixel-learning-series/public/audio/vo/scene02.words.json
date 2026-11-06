@@ -1,0 +1,40 @@
+{
+ "text": "Tapi tak tahu nak mula dari mana?",
+ "words": [
+  {
+   "text": "Tapi",
+   "start": 0.097166,
+   "end": 0.356582
+  },
+  {
+   "text": "tak",
+   "start": 0.380208,
+   "end": 0.521708
+  },
+  {
+   "text": "tahu",
+   "start": 0.5335,
+   "end": 0.792916
+  },
+  {
+   "text": "nak",
+   "start": 0.828291,
+   "end": 0.946207
+  },
+  {
+   "text": "mula",
+   "start": 0.958,
+   "end": 1.193833
+  },
+  {
+   "text": "dari",
+   "start": 1.22925,
+   "end": 1.406125
+  },
+  {
+   "text": "mana",
+   "start": 1.417916,
+   "end": 1.748124
+  }
+ ]
+}

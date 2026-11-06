@@ -1,0 +1,140 @@
+{
+ "text": "Ada tiga model perkhidmatan. IaaS, sewa infrastruktur seperti server dan storage. PaaS, platform untuk bina aplikasi. SaaS, software sedia guna seperti Gmail dan Microsoft 365.",
+ "words": [
+  {
+   "text": "Ada",
+   "start": 0.094625,
+   "end": 0.317833
+  },
+  {
+   "text": "tiga",
+   "start": 0.3625,
+   "end": 0.574541
+  },
+  {
+   "text": "model",
+   "start": 0.596875,
+   "end": 0.942875
+  },
+  {
+   "text": "perkhidmatan",
+   "start": 0.965166,
+   "end": 1.645957
+  },
+  {
+   "text": "Ai-as",
+   "start": 2.444208,
+   "end": 3.013416
+  },
+  {
+   "text": "sewa",
+   "start": 3.258916,
+   "end": 3.571416
+  },
+  {
+   "text": "infrastruktur",
+   "start": 3.571416,
+   "end": 4.341499
+  },
+  {
+   "text": "seperti",
+   "start": 4.352666,
+   "end": 4.709791
+  },
+  {
+   "text": "server",
+   "start": 4.743291,
+   "end": 5.178541
+  },
+  {
+   "text": "dan",
+   "start": 5.212041,
+   "end": 5.412916
+  },
+  {
+   "text": "storage",
+   "start": 5.424125,
+   "end": 5.892875
+  },
+  {
+   "text": "Pas",
+   "start": 6.729916,
+   "end": 7.064749
+  },
+  {
+   "text": "platform",
+   "start": 7.265625,
+   "end": 7.700875
+  },
+  {
+   "text": "untuk",
+   "start": 7.700875,
+   "end": 7.979875
+  },
+  {
+   "text": "bina",
+   "start": 8.00225,
+   "end": 8.258916
+  },
+  {
+   "text": "aplikasi",
+   "start": 8.258916,
+   "end": 8.928541
+  },
+  {
+   "text": "Sas",
+   "start": 9.799125,
+   "end": 10.245541
+  },
+  {
+   "text": "software",
+   "start": 10.491083,
+   "end": 10.915208
+  },
+  {
+   "text": "sedia",
+   "start": 10.948666,
+   "end": 11.227666
+  },
+  {
+   "text": "guna",
+   "start": 11.261166,
+   "end": 11.529041
+  },
+  {
+   "text": "seperti",
+   "start": 11.540166,
+   "end": 11.874999
+  },
+  {
+   "text": "Gmail",
+   "start": 11.919625,
+   "end": 12.31025
+  },
+  {
+   "text": "dan",
+   "start": 12.354916,
+   "end": 12.511166
+  },
+  {
+   "text": "Microsoft",
+   "start": 12.522333,
+   "end": 13.158499
+  },
+  {
+   "text": "three",
+   "start": 13.191958,
+   "end": 13.392833
+  },
+  {
+   "text": "six",
+   "start": 13.4375,
+   "end": 13.705375
+  },
+  {
+   "text": "five",
+   "start": 13.727666,
+   "end": 14.107124
+  }
+ ]
+}

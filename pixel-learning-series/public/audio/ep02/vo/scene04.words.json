@@ -1,0 +1,75 @@
+{
+ "text": "Hari ini kita belajar tentang Cloud Computing, teknologi yang kita guna hampir setiap hari!",
+ "words": [
+  {
+   "text": "Hari",
+   "start": 0.094625,
+   "end": 0.340166
+  },
+  {
+   "text": "ini",
+   "start": 0.340166,
+   "end": 0.596874
+  },
+  {
+   "text": "kita",
+   "start": 0.608041,
+   "end": 0.797791
+  },
+  {
+   "text": "belajar",
+   "start": 0.808916,
+   "end": 1.188374
+  },
+  {
+   "text": "tentang",
+   "start": 1.221875,
+   "end": 1.48975
+  },
+  {
+   "text": "Cloud",
+   "start": 1.534375,
+   "end": 1.76875
+  },
+  {
+   "text": "Computing",
+   "start": 1.80225,
+   "end": 2.3045
+  },
+  {
+   "text": "teknologi",
+   "start": 2.460708,
+   "end": 2.951791
+  },
+  {
+   "text": "yang",
+   "start": 2.951791,
+   "end": 3.052249
+  },
+  {
+   "text": "kita",
+   "start": 3.096875,
+   "end": 3.286625
+  },
+  {
+   "text": "guna",
+   "start": 3.320083,
+   "end": 3.576791
+  },
+  {
+   "text": "hampir",
+   "start": 3.587958,
+   "end": 3.922791
+  },
+  {
+   "text": "setiap",
+   "start": 3.945083,
+   "end": 4.235249
+  },
+  {
+   "text": "hari",
+   "start": 4.23525,
+   "end": 4.558916
+  }
+ ]
+}

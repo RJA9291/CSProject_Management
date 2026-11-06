@@ -1,0 +1,95 @@
+{
+ "text": "Cloud Computing ialah penggunaan perkhidmatan seperti server, storage, database dan software melalui internet, tanpa perlu miliki server sendiri.",
+ "words": [
+  {
+   "text": "Cloud",
+   "start": 0.094625,
+   "end": 0.351333
+  },
+  {
+   "text": "Computing",
+   "start": 0.373666,
+   "end": 0.864749
+  },
+  {
+   "text": "ialah",
+   "start": 0.86475,
+   "end": 1.188416
+  },
+  {
+   "text": "penggunaan",
+   "start": 1.199541,
+   "end": 1.657124
+  },
+  {
+   "text": "perkhidmatan",
+   "start": 1.668291,
+   "end": 2.282124
+  },
+  {
+   "text": "seperti",
+   "start": 2.293291,
+   "end": 2.650416
+  },
+  {
+   "text": "server",
+   "start": 2.683916,
+   "end": 3.174999
+  },
+  {
+   "text": "storage",
+   "start": 3.431708,
+   "end": 3.933958
+  },
+  {
+   "text": "database",
+   "start": 4.134833,
+   "end": 4.726333
+  },
+  {
+   "text": "dan",
+   "start": 4.759833,
+   "end": 4.949583
+  },
+  {
+   "text": "software",
+   "start": 4.960708,
+   "end": 5.418291
+  },
+  {
+   "text": "melalui",
+   "start": 5.440625,
+   "end": 5.820083
+  },
+  {
+   "text": "internet",
+   "start": 5.820083,
+   "end": 6.277666
+  },
+  {
+   "text": "tanpa",
+   "start": 6.467416,
+   "end": 6.746416
+  },
+  {
+   "text": "perlu",
+   "start": 6.757583,
+   "end": 7.014291
+  },
+  {
+   "text": "miliki",
+   "start": 7.025458,
+   "end": 7.349124
+  },
+  {
+   "text": "server",
+   "start": 7.382583,
+   "end": 7.750874
+  },
+  {
+   "text": "sendiri",
+   "start": 7.762041,
+   "end": 8.186166
+  }
+ ]
+}

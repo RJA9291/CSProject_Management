@@ -1,0 +1,343 @@
+1
+00:00:00,595 --> 00:00:02,157
+Pernah guna Google Drive,
+
+2
+00:00:02,157 --> 00:00:03,630
+Gmail atau Netflix?
+
+3
+00:00:04,250 --> 00:00:04,942
+Tahu tak,
+
+4
+00:00:04,942 --> 00:00:06,460
+data anda sebenarnya disimpan
+
+5
+00:00:06,460 --> 00:00:07,073
+di mana?
+
+6
+00:00:08,261 --> 00:00:10,024
+Assalamualaikum dan hai semua!
+
+7
+00:00:10,678 --> 00:00:11,214
+Jom,
+
+8
+00:00:11,214 --> 00:00:12,585
+mari sama-sama belajar!
+
+9
+00:00:13,728 --> 00:00:15,179
+Terima kasih istimewa kepada
+
+10
+00:00:15,179 --> 00:00:16,518
+empat supporters yang belanja
+
+11
+00:00:16,518 --> 00:00:18,180
+Gift Kek: AhmadFitri89,
+
+12
+00:00:18,270 --> 00:00:19,274
+SitiAisyahMY,
+
+13
+00:00:19,297 --> 00:00:21,037
+KamarulTech dan NurulHuda92!
+
+14
+00:00:21,680 --> 00:00:23,120
+Sokongan anda buat saya lebih
+
+15
+00:00:23,120 --> 00:00:24,715
+bersemangat berkongsi ilmu.
+
+16
+00:00:26,095 --> 00:00:27,534
+Hari ini kita belajar tentang
+
+17
+00:00:27,534 --> 00:00:28,461
+Cloud Computing,
+
+18
+00:00:28,461 --> 00:00:29,588
+teknologi yang kita guna
+
+19
+00:00:29,588 --> 00:00:30,759
+hampir setiap hari!
+
+20
+00:00:31,928 --> 00:00:33,033
+Cloud Computing ialah
+
+21
+00:00:33,033 --> 00:00:34,127
+penggunaan perkhidmatan
+
+22
+00:00:34,127 --> 00:00:35,208
+seperti server,
+
+23
+00:00:35,265 --> 00:00:35,967
+storage,
+
+24
+00:00:35,968 --> 00:00:37,653
+database dan software melalui
+
+25
+00:00:37,653 --> 00:00:38,301
+internet,
+
+26
+00:00:38,301 --> 00:00:39,595
+tanpa perlu miliki server
+
+27
+00:00:39,595 --> 00:00:40,219
+sendiri.
+
+28
+00:00:41,395 --> 00:00:42,175
+Contohnya,
+
+29
+00:00:42,198 --> 00:00:43,325
+seorang pelajar simpan
+
+30
+00:00:43,325 --> 00:00:44,810
+assignment dalam Google Drive
+
+31
+00:00:44,810 --> 00:00:46,461
+guna laptop di universiti.
+
+32
+00:00:47,137 --> 00:00:48,019
+Balik rumah,
+
+33
+00:00:48,019 --> 00:00:49,525
+dia sambung guna telefon,
+
+34
+00:00:49,525 --> 00:00:51,021
+sebab fail itu disimpan dalam
+
+35
+00:00:51,021 --> 00:00:51,600
+cloud.
+
+36
+00:00:52,761 --> 00:00:54,513
+Ada tiga model perkhidmatan.
+
+37
+00:00:55,111 --> 00:00:55,880
+IaaS,
+
+38
+00:00:55,926 --> 00:00:57,410
+sewa infrastruktur seperti
+
+39
+00:00:57,410 --> 00:00:58,760
+server dan storage.
+
+40
+00:00:59,397 --> 00:00:59,931
+PaaS,
+
+41
+00:00:59,932 --> 00:01:01,795
+platform untuk bina aplikasi.
+
+42
+00:01:02,466 --> 00:01:03,112
+SaaS,
+
+43
+00:01:03,158 --> 00:01:04,586
+software sedia guna seperti
+
+44
+00:01:04,586 --> 00:01:06,974
+Gmail dan Microsoft 365.
+
+45
+00:01:08,128 --> 00:01:09,400
+Dari segi deployment,
+
+46
+00:01:09,400 --> 00:01:11,208
+ada empat model: Public,
+
+47
+00:01:11,208 --> 00:01:11,832
+Private,
+
+48
+00:01:11,867 --> 00:01:13,653
+Hybrid dan Community Cloud,
+
+49
+00:01:13,653 --> 00:01:15,181
+ikut keperluan masing-masing.
+
+50
+00:01:16,328 --> 00:01:17,834
+Cloud ada dua bahagian.
+
+51
+00:01:18,421 --> 00:01:19,760
+Front End ialah bahagian
+
+52
+00:01:19,760 --> 00:01:20,418
+pengguna,
+
+53
+00:01:20,474 --> 00:01:22,192
+seperti laptop dan browser.
+
+54
+00:01:22,807 --> 00:01:24,079
+Back End pula menguruskan
+
+55
+00:01:24,079 --> 00:01:24,749
+server,
+
+56
+00:01:24,749 --> 00:01:25,407
+storage,
+
+57
+00:01:25,407 --> 00:01:27,125
+database dan keselamatan.
+
+58
+00:01:28,261 --> 00:01:29,566
+Adakah cloud selamat?
+
+59
+00:01:30,164 --> 00:01:31,090
+Tak automatik!
+
+60
+00:01:31,738 --> 00:01:33,435
+Kita perlu password yang kuat,
+
+61
+00:01:33,435 --> 00:01:35,109
+Multi-Factor Authentication,
+
+62
+00:01:35,109 --> 00:01:36,972
+encryption dan access control.
+
+63
+00:01:38,128 --> 00:01:39,579
+Peniaga kecil pula boleh semak
+
+64
+00:01:39,579 --> 00:01:41,030
+stok dan jualan guna laptop
+
+65
+00:01:41,030 --> 00:01:42,336
+di kedai atau telefon di
+
+66
+00:01:42,336 --> 00:01:42,826
+luar,
+
+67
+00:01:42,905 --> 00:01:44,557
+selagi ada internet dan servis
+
+68
+00:01:44,557 --> 00:01:45,638
+cloud berfungsi.
+
+69
+00:01:46,828 --> 00:01:47,675
+Jom recap!
+
+70
+00:01:48,240 --> 00:01:49,691
+Cloud Computing ialah servis
+
+71
+00:01:49,691 --> 00:01:50,773
+pengkomputeran melalui
+
+72
+00:01:50,773 --> 00:01:51,520
+internet.
+
+73
+00:01:52,113 --> 00:01:53,596
+IaaS infrastruktur,
+
+74
+00:01:53,631 --> 00:01:54,578
+PaaS platform,
+
+75
+00:01:54,579 --> 00:01:55,517
+SaaS software,
+
+76
+00:01:55,517 --> 00:01:57,246
+dan empat deployment models.
+
+77
+00:01:58,395 --> 00:02:00,091
+Semoga anda lebih faham asas
+
+78
+00:02:00,091 --> 00:02:01,150
+Cloud Computing.
+
+79
+00:02:01,771 --> 00:02:03,088
+Teruskan belajar sedikit demi
+
+80
+00:02:03,088 --> 00:02:03,723
+sedikit!
+
+81
+00:02:04,828 --> 00:02:06,356
+Terima kasih kerana menonton!
+
+82
+00:02:06,954 --> 00:02:08,037
+Jangan lupa Like,
+
+83
+00:02:08,037 --> 00:02:09,174
+Share dan Follow.
+
+84
+00:02:09,811 --> 00:02:11,306
+Nak sokong dengan Gift Kek?
+
+85
+00:02:11,965 --> 00:02:13,884
+Sokongan anda amat dihargai.
+
+86
+00:02:14,555 --> 00:02:15,402
+Jumpa lagi!

@@ -1,0 +1,30 @@
+{
+ "text": "Minat nak ceburi bidang IT?",
+ "words": [
+  {
+   "text": "Minat",
+   "start": 0.097166,
+   "end": 0.427374
+  },
+  {
+   "text": "nak",
+   "start": 0.427375,
+   "end": 0.580666
+  },
+  {
+   "text": "ceburi",
+   "start": 0.616041,
+   "end": 0.958041
+  },
+  {
+   "text": "bidang",
+   "start": 0.981583,
+   "end": 1.276374
+  },
+  {
+   "text": "I.T.",
+   "start": 1.288208,
+   "end": 1.724541
+  }
+ ]
+}

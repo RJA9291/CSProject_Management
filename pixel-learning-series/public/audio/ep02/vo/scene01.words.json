@@ -1,0 +1,80 @@
+{
+ "text": "Pernah guna Google Drive, Gmail atau Netflix? Tahu tak, data anda sebenarnya disimpan di mana?",
+ "words": [
+  {
+   "text": "Pernah",
+   "start": 0.094625,
+   "end": 0.440625
+  },
+  {
+   "text": "guna",
+   "start": 0.462958,
+   "end": 0.697333
+  },
+  {
+   "text": "Google",
+   "start": 0.741958,
+   "end": 1.065624
+  },
+  {
+   "text": "Drive",
+   "start": 1.087958,
+   "end": 1.489749
+  },
+  {
+   "text": "Gmail",
+   "start": 1.657125,
+   "end": 2.04775
+  },
+  {
+   "text": "atau",
+   "start": 2.058916,
+   "end": 2.293291
+  },
+  {
+   "text": "Netflix",
+   "start": 2.349125,
+   "end": 2.9295
+  },
+  {
+   "text": "Tahu",
+   "start": 3.75,
+   "end": 4.006708
+  },
+  {
+   "text": "tak",
+   "start": 4.051333,
+   "end": 4.296874
+  },
+  {
+   "text": "data",
+   "start": 4.441958,
+   "end": 4.698666
+  },
+  {
+   "text": "anda",
+   "start": 4.698666,
+   "end": 4.955374
+  },
+  {
+   "text": "sebenarnya",
+   "start": 4.977666,
+   "end": 5.479916
+  },
+  {
+   "text": "disimpan",
+   "start": 5.50225,
+   "end": 5.9375
+  },
+  {
+   "text": "di",
+   "start": 5.959833,
+   "end": 6.049124
+  },
+  {
+   "text": "mana",
+   "start": 6.06025,
+   "end": 6.37275
+  }
+ ]
+}

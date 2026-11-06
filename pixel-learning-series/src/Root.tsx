@@ -1,0 +1,68 @@
+import React from 'react';
+import {Composition, Folder, Still} from 'remotion';
+import {CharacterSheet} from './compositions/CharacterSheet';
+import {EpisodeVideoProps, makeEpisodeVideo, withEpisode} from './compositions/EpisodeVideo';
+import {LFCAVideo} from './compositions/LFCAVideo';
+import {QC_COLS, qcHeight, QCSheet, QCSheetProps} from './compositions/QCSheet';
+import {EP01} from './config/episode';
+import {VIDEO} from './config/theme';
+import {EP02} from './ep02/config/episode';
+import {EP02_SCENES} from './ep02/scenes';
+import {episodeAllFrames, episodeSceneFrames, episodeTotal} from './lib/durations';
+import type {Episode} from './lib/episode-types';
+import {SCENE_COMPONENTS} from './scenes';
+
+const CloudVideo = makeEpisodeVideo(EP02, EP02_SCENES);
+// Scene previews need their episode's narration context.
+const EP02_PREVIEWS = EP02_SCENES.map((s) => withEpisode(EP02, s));
+
+// One folder per episode: the full video plus every scene on its own for preview.
+const EpisodeFolder: React.FC<{name: string; videoId: string; ep: Episode; video: React.FC<EpisodeVideoProps>; scenes: React.FC[]}> = ({name, videoId, ep, video, scenes}) => (
+  <Folder name={name}>
+    <Composition
+      id={videoId}
+      component={video}
+      width={VIDEO.width}
+      height={VIDEO.height}
+      fps={VIDEO.fps}
+      durationInFrames={VIDEO.fps * 90}
+      defaultProps={{durations: ep.scenes.map((s) => s.minSeconds * VIDEO.fps)} as EpisodeVideoProps}
+      calculateMetadata={async () => {
+        const durations = await episodeAllFrames(ep);
+        return {durationInFrames: episodeTotal(ep, durations), props: {durations}};
+      }}
+    />
+    <Folder name={`${name}-Scenes`}>
+      {scenes.map((Scene, i) => (
+        <Composition
+          key={ep.scenes[i].id}
+          id={ep.scenes[i].id}
+          component={Scene}
+          width={VIDEO.width}
+          height={VIDEO.height}
+          fps={VIDEO.fps}
+          durationInFrames={ep.scenes[i].minSeconds * VIDEO.fps}
+          calculateMetadata={async () => ({durationInFrames: await episodeSceneFrames(ep, i)})}
+        />
+      ))}
+    </Folder>
+  </Folder>
+);
+
+export const RemotionRoot: React.FC = () => (
+  <>
+    <EpisodeFolder name="Ep01-LFCA" videoId="LFCAVideo" ep={EP01} video={LFCAVideo} scenes={SCENE_COMPONENTS} />
+    <EpisodeFolder name="Ep02-Cloud" videoId="CloudVideo" ep={EP02} video={CloudVideo} scenes={EP02_PREVIEWS} />
+    <Folder name="Assets">
+      <Still id="CharacterSheet" component={CharacterSheet} width={1800} height={1700} />
+      <Still
+        id="QCSheet"
+        component={QCSheet}
+        width={12 + QC_COLS * (324 + 12)}
+        height={qcHeight(12)}
+        defaultProps={{tag: 'qc-85', frames: [], names: []} as QCSheetProps}
+        calculateMetadata={({props}) => ({height: qcHeight(props.names.length || 12)})}
+      />
+    </Folder>
+  </>
+);

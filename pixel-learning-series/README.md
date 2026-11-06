@@ -1,0 +1,96 @@
+# Siri video pembelajaran pixel-art
+
+- **Episod 01:** LFCA – Your IT Career Roadmap (`LFCAVideo`, `npm run render`)
+- **Episod 02:** Cloud Computing – Blue Pixel World (`CloudVideo`, `npm run render:ep02`)
+
+> Video siap render (MP4 + SRT) dan helaian QC ada dalam folder `output/`. Render baharu ditulis ke `out/` (tidak di-commit).
+
+# Episod 01 – LFCA
+
+Video menegak 1080×1920 @ 30fps, dibina dengan Remotion + React. Semua grafik (watak, ikon, butang, latar) ialah pixel art yang dilukis dalam kod, jadi gayanya konsisten.
+
+## Mula
+
+```bash
+npm install
+npm run dev          # Remotion Studio di browser: pratonton penuh + scene satu-satu
+npm run render       # out/lfca-roadmap.mp4 (H.264)
+```
+
+Dalam Studio:
+- **Video / LFCAVideo**: video penuh.
+- **Scenes / Scene01Hook … Scene12Closing**: pratonton setiap scene.
+- **Assets / CharacterSheet**: master sprite sheet watak.
+
+> **Windows:** jika render gagal dengan `Failed to launch the browser process … ENOENT`, punca biasanya laluan folder melebihi 260 aksara. Salin `node_modules/.remotion/chrome-headless-shell/win64/chrome-headless-shell-win64/` ke folder pendek, kemudian set `REMOTION_BROWSER_EXECUTABLE` kepada `chrome-headless-shell.exe` dalam folder itu.
+
+## Aliran kerja produksi
+
+1. **Sunting skrip.** Fail: `src/config/scenes.ts`.
+   - `text` ialah teks atas skrin. `*perkataan*` jadi merah, `\n` ialah baris baru.
+   - `vo` ialah teks voice-over dan sari kata.
+   - `tts` ialah ejaan khas untuk sebutan TTS, contohnya `I.T.`.
+   - `list` mengandungi senarai kerjaya atau label.
+2. **Jana semula atau ganti suara.**
+   - Untuk TTS Melayu (perlukan internet, guna edge-tts), jalankan `npm run audio:vo`. Untuk suara wanita, tambah `-- --voice ms-MY-YasminNeural`.
+   - Untuk rakaman sendiri, simpan `public/audio/vo/sceneNN.mp3` dengan nama fail yang sama. Kemudian buang entri scene itu dalam `src/config/vo-timings.json`, supaya mulut watak dan sari kata diagih ikut panjang audio.
+3. **Laraskan masa.** Panjang scene dikira secara automatik: max(`minSeconds`, `voDelay` + panjang audio + `padSeconds`). Ubah tiga nilai itu dalam `scenes.ts`. Animasi yang disegerakkan dengan perkataan (contohnya kad muncul tepat pada perkataan "server") mengikut masa perkataan secara automatik.
+4. **Audio lain.** Fail: `src/config/audio.ts`. Di situ anda boleh ubah:
+   - kekuatan muzik, muzik semasa narasi (ducking) dan SFX;
+   - sari kata on/off (`showSubtitles`).
+
+   Muzik dan SFX asal dijana oleh `npm run audio:sfx`. Untuk menggantinya, letak fail lain dengan nama yang sama dalam `public/audio/`.
+5. **Pratonton**: `npm run dev`.
+6. **Render**:
+   - `npm run render` menghasilkan MP4.
+   - `npm run srt` menghasilkan `out/lfca-roadmap.srt`.
+   - `npm run stills` menghasilkan helaian QC dalam `out/stills/`.
+
+## Struktur
+
+```
+src/
+  assets/characters/host.ts   MASTER watak (kepala, cermin mata, baju, 10 pose)
+  assets/icons/icons.ts       semua ikon pixel
+  components/                 PixelSprite, PixelCharacter, PixelText, PixelBox, SpeechBubble,
+                              InfographicCard, Connector, Transition, Subtitles, SceneAudio …
+  scenes/Scene01Hook … Scene12Closing
+  config/scenes.ts            skrip, teks, masa, SFX
+  config/theme.ts             palet warna, fon, saiz piksel
+  config/audio.ts             muzik, SFX, kelantangan
+public/audio/                 vo/, sfx/, music/
+scripts/                      jana suara, jana SFX/muzik, SRT, stills QC
+```
+
+## Nota kandungan
+
+- Senarai kerjaya diambil daripada infografik "Your IT Career Roadmap" (Linux Foundation Training & Certification).
+- Logo rasmi Linux Foundation tidak digunakan. Lencana "LFCA" dan penguin ialah lukisan pixel asal.
+- Skrip tidak membuat dakwaan jaminan kerja.
+
+## Episod 02 – Cloud Computing
+
+Struktur: `src/ep02/`:
+- `config/scenes.ts`: skrip, teks atas skrin, kad IaaS/PaaS/SaaS, model deployment, recap.
+- `config/supporters.ts`: **4 nama supporter Gift Kek**. Nama sekarang ialah PLACEHOLDER; tukar sebelum publish. Setiap supporter ada `handle`, `spoken` (sebutan), `avatar` dan pilihan `image` (PNG sendiri).
+- `config/episode.ts`: sebutan TTS (`say`), muzik dan warna peralihan.
+- `config/theme.ts`: palet biru episod ini.
+- `scenes/`: 14 scene. Scene 2, 3 dan 14 guna komponen siri dalam `src/series/`.
+
+Aliran kerja:
+
+```bash
+npm run audio:vo:ep02   # jana semula suara (perlu bila skrip atau nama supporter berubah)
+npm run render:ep02     # out/ep02-cloud-computing.mp4
+npm run srt:ep02        # out/ep02-cloud-computing.srt
+node scripts/render-stills.mjs 0.45,0.92 ep02   # helaian QC
+```
+
+## Format siri (untuk episod akan datang)
+
+Intro, penghargaan Gift Kek dan penutup dikongsi oleh semua episod. Komponennya dalam `src/series/`:
+- `SeriesGreeting`: "Assalamualaikum! Mari sama-sama belajar!"
+- `SupporterThanks`: kad supporter muncul satu-satu ikut nama yang disebut.
+- `SeriesCTA`: Like/Share/Follow, Gift Kek dan "Jumpa lagi".
+
+Episod baru hanya perlu folder `src/epNN/` dengan config dan scene topiknya, kemudian didaftarkan dalam `src/Root.tsx`, `scripts/export-script.mjs`, `scripts/render-stills.mjs` dan `scripts/build-srt.mjs`.

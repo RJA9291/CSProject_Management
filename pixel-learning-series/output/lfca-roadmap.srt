@@ -1,0 +1,243 @@
+1
+00:00:00,697 --> 00:00:02,525
+Minat nak ceburi bidang IT?
+
+2
+00:00:04,997 --> 00:00:06,129
+Tapi tak tahu nak mula
+
+3
+00:00:06,129 --> 00:00:06,848
+dari mana?
+
+4
+00:00:09,597 --> 00:00:11,448
+Assalamualaikum dan hai semua!
+
+5
+00:00:12,153 --> 00:00:12,719
+Jom,
+
+6
+00:00:12,719 --> 00:00:14,158
+mari sama-sama belajar!
+
+7
+00:00:15,664 --> 00:00:16,749
+Sebelum kita mula,
+
+8
+00:00:16,749 --> 00:00:18,282
+terima kasih kepada semua yang
+
+9
+00:00:18,282 --> 00:00:19,791
+sudi belanja Gift Kek.
+
+10
+00:00:20,461 --> 00:00:21,864
+Gift anda membuatkan saya
+
+11
+00:00:21,864 --> 00:00:23,196
+lebih bersemangat untuk terus
+
+12
+00:00:23,196 --> 00:00:24,304
+berkongsi ilmu!
+
+13
+00:00:25,930 --> 00:00:27,251
+Hari ini kita nak kenali
+
+14
+00:00:27,251 --> 00:00:28,890
+satu roadmap kerjaya IT yang
+
+15
+00:00:28,890 --> 00:00:29,515
+menarik,
+
+16
+00:00:29,551 --> 00:00:30,860
+iaitu Linux Foundation
+
+17
+00:00:30,860 --> 00:00:33,030
+Certified IT Associate atau
+
+18
+00:00:33,030 --> 00:00:34,055
+LFCA.
+
+19
+00:00:35,564 --> 00:00:38,040
+LFCA ialah pensijilan asas
+
+20
+00:00:38,040 --> 00:00:39,385
+yang membantu kita memahami
+
+21
+00:00:39,385 --> 00:00:41,142
+asas-asas penting dalam dunia
+
+22
+00:00:41,142 --> 00:00:42,379
+teknologi maklumat.
+
+23
+00:00:43,830 --> 00:00:45,151
+Daripada asas ini,
+
+24
+00:00:45,234 --> 00:00:46,519
+kita boleh meneroka tiga
+
+25
+00:00:46,519 --> 00:00:48,405
+bidang utama dalam dunia IT.
+
+26
+00:00:50,430 --> 00:00:51,102
+Pertama,
+
+27
+00:00:51,126 --> 00:00:52,930
+Systems and Infrastructure.
+
+28
+00:00:53,635 --> 00:00:55,133
+Kalau korang minat server,
+
+29
+00:00:55,133 --> 00:00:56,135
+cloud computing,
+
+30
+00:00:56,135 --> 00:00:57,373
+database dan pengurusan
+
+31
+00:00:57,373 --> 00:00:58,033
+sistem,
+
+32
+00:00:58,034 --> 00:00:59,555
+ini antara laluan yang boleh
+
+33
+00:00:59,555 --> 00:01:00,404
+diterokai.
+
+34
+00:01:01,964 --> 00:01:02,553
+Kedua,
+
+35
+00:01:02,553 --> 00:01:03,980
+Network and Security.
+
+36
+00:01:04,709 --> 00:01:05,888
+Kalau korang berminat dengan
+
+37
+00:01:05,888 --> 00:01:07,102
+rangkaian komputer,
+
+38
+00:01:07,138 --> 00:01:08,317
+keselamatan sistem dan
+
+39
+00:01:08,317 --> 00:01:09,437
+cybersecurity,
+
+40
+00:01:09,473 --> 00:01:11,076
+bidang ini mungkin sesuai.
+
+41
+00:01:12,630 --> 00:01:13,290
+Ketiga,
+
+42
+00:01:13,350 --> 00:01:14,717
+Software Development.
+
+43
+00:01:15,364 --> 00:01:16,814
+Kalau korang suka coding,
+
+44
+00:01:16,814 --> 00:01:18,017
+membina aplikasi dan
+
+45
+00:01:18,017 --> 00:01:19,290
+menghasilkan sistem,
+
+46
+00:01:19,290 --> 00:01:20,458
+ini laluan yang boleh
+
+47
+00:01:20,458 --> 00:01:21,295
+diterokai.
+
+48
+00:01:22,830 --> 00:01:23,443
+Jadi,
+
+49
+00:01:23,467 --> 00:01:24,800
+mulakan dengan asas,
+
+50
+00:01:24,800 --> 00:01:25,932
+kenali minat dan bina
+
+51
+00:01:25,932 --> 00:01:27,076
+kemahiran sedikit demi
+
+52
+00:01:27,076 --> 00:01:27,724
+sedikit.
+
+53
+00:01:30,430 --> 00:01:31,751
+Terima kasih kerana belajar
+
+54
+00:01:31,751 --> 00:01:32,623
+bersama saya!
+
+55
+00:01:33,317 --> 00:01:34,402
+Kalau perkongsian ini
+
+56
+00:01:34,402 --> 00:01:35,250
+bermanfaat,
+
+57
+00:01:35,310 --> 00:01:36,371
+jangan lupa Like,
+
+58
+00:01:36,442 --> 00:01:37,869
+Share dan Follow untuk lebih
+
+59
+00:01:37,869 --> 00:01:39,154
+banyak video pembelajaran
+
+60
+00:01:39,154 --> 00:01:40,545
+menarik selepas ini.
+
+61
+00:01:41,265 --> 00:01:42,149
+Jumpa lagi!

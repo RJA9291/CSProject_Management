@@ -1,0 +1,85 @@
+{
+ "text": "Adakah cloud selamat? Tak automatik! Kita perlu password yang kuat, Multi-Factor Authentication, encryption dan access control.",
+ "words": [
+  {
+   "text": "Adakah",
+   "start": 0.094625,
+   "end": 0.48525
+  },
+  {
+   "text": "cloud",
+   "start": 0.507583,
+   "end": 0.741958
+  },
+  {
+   "text": "selamat",
+   "start": 0.753125,
+   "end": 1.199541
+  },
+  {
+   "text": "Tak",
+   "start": 1.99775,
+   "end": 2.1205
+  },
+  {
+   "text": "automatik",
+   "start": 2.120541,
+   "end": 2.723207
+  },
+  {
+   "text": "Kita",
+   "start": 3.571416,
+   "end": 3.861582
+  },
+  {
+   "text": "perlu",
+   "start": 3.895083,
+   "end": 4.129458
+  },
+  {
+   "text": "password",
+   "start": 4.162958,
+   "end": 4.575874
+  },
+  {
+   "text": "yang",
+   "start": 4.575875,
+   "end": 4.709791
+  },
+  {
+   "text": "kuat",
+   "start": 4.765625,
+   "end": 5.078125
+  },
+  {
+   "text": "Multi-Factor",
+   "start": 5.267875,
+   "end": 5.904041
+  },
+  {
+   "text": "Authentication",
+   "start": 5.926333,
+   "end": 6.819208
+  },
+  {
+   "text": "encryption",
+   "start": 6.941958,
+   "end": 7.544624
+  },
+  {
+   "text": "dan",
+   "start": 7.544625,
+   "end": 7.700875
+  },
+  {
+   "text": "access",
+   "start": 7.700875,
+   "end": 8.0915
+  },
+  {
+   "text": "control",
+   "start": 8.125,
+   "end": 8.604916
+  }
+ ]
+}

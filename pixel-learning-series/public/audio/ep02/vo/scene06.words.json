@@ -1,0 +1,125 @@
+{
+ "text": "Contohnya, seorang pelajar simpan assignment dalam Google Drive guna laptop di universiti. Balik rumah, dia sambung guna telefon, sebab fail itu disimpan dalam cloud.",
+ "words": [
+  {
+   "text": "Contohnya",
+   "start": 0.094625,
+   "end": 0.675
+  },
+  {
+   "text": "seorang",
+   "start": 0.898208,
+   "end": 1.244208
+  },
+  {
+   "text": "pelajar",
+   "start": 1.277666,
+   "end": 1.634791
+  },
+  {
+   "text": "simpan",
+   "start": 1.668291,
+   "end": 2.025416
+  },
+  {
+   "text": "assignment",
+   "start": 2.025458,
+   "end": 2.572333
+  },
+  {
+   "text": "dalam",
+   "start": 2.572333,
+   "end": 2.784374
+  },
+  {
+   "text": "Google",
+   "start": 2.829,
+   "end": 3.1415
+  },
+  {
+   "text": "Drive",
+   "start": 3.175,
+   "end": 3.476333
+  },
+  {
+   "text": "guna",
+   "start": 3.509833,
+   "end": 3.755374
+  },
+  {
+   "text": "laptop",
+   "start": 3.777666,
+   "end": 4.123666
+  },
+  {
+   "text": "di",
+   "start": 4.157125,
+   "end": 4.279875
+  },
+  {
+   "text": "universiti",
+   "start": 4.313375,
+   "end": 4.960708
+  },
+  {
+   "text": "Balik",
+   "start": 5.837041,
+   "end": 6.138374
+  },
+  {
+   "text": "rumah",
+   "start": 6.160708,
+   "end": 6.551333
+  },
+  {
+   "text": "dia",
+   "start": 6.71875,
+   "end": 6.930791
+  },
+  {
+   "text": "sambung",
+   "start": 6.941958,
+   "end": 7.276791
+  },
+  {
+   "text": "guna",
+   "start": 7.332583,
+   "end": 7.544624
+  },
+  {
+   "text": "telefon",
+   "start": 7.566958,
+   "end": 8.024541
+  },
+  {
+   "text": "sebab",
+   "start": 8.225458,
+   "end": 8.515624
+  },
+  {
+   "text": "fail",
+   "start": 8.526791,
+   "end": 8.794624
+  },
+  {
+   "text": "itu",
+   "start": 8.794625,
+   "end": 9.006666
+  },
+  {
+   "text": "disimpan",
+   "start": 9.029,
+   "end": 9.475416
+  },
+  {
+   "text": "dalam",
+   "start": 9.486625,
+   "end": 9.6875
+  },
+  {
+   "text": "cloud",
+   "start": 9.721,
+   "end": 10.100458
+  }
+ ]
+}

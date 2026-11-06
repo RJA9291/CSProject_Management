@@ -1,0 +1,4 @@
+public/qc/
+node_modules/
+out/
+scripts/script-*.json

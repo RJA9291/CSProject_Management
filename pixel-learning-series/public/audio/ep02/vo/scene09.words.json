@@ -1,0 +1,115 @@
+{
+ "text": "Cloud ada dua bahagian. Front End ialah bahagian pengguna, seperti laptop dan browser. Back End pula menguruskan server, storage, database dan keselamatan.",
+ "words": [
+  {
+   "text": "Cloud",
+   "start": 0.094625,
+   "end": 0.395958
+  },
+  {
+   "text": "ada",
+   "start": 0.407125,
+   "end": 0.596875
+  },
+  {
+   "text": "dua",
+   "start": 0.630375,
+   "end": 0.820125
+  },
+  {
+   "text": "bahagian",
+   "start": 0.842416,
+   "end": 1.400457
+  },
+  {
+   "text": "Front",
+   "start": 2.1875,
+   "end": 2.5335
+  },
+  {
+   "text": "End",
+   "start": 2.5335,
+   "end": 2.823666
+  },
+  {
+   "text": "ialah",
+   "start": 2.823666,
+   "end": 3.158499
+  },
+  {
+   "text": "bahagian",
+   "start": 3.169625,
+   "end": 3.504458
+  },
+  {
+   "text": "pengguna",
+   "start": 3.526791,
+   "end": 3.984374
+  },
+  {
+   "text": "seperti",
+   "start": 4.241083,
+   "end": 4.609374
+  },
+  {
+   "text": "laptop",
+   "start": 4.642875,
+   "end": 5.011166
+  },
+  {
+   "text": "dan",
+   "start": 5.0335,
+   "end": 5.200916
+  },
+  {
+   "text": "browser",
+   "start": 5.212041,
+   "end": 5.758916
+  },
+  {
+   "text": "Back",
+   "start": 6.573666,
+   "end": 6.830374
+  },
+  {
+   "text": "End",
+   "start": 6.8415,
+   "end": 7.075875
+  },
+  {
+   "text": "pula",
+   "start": 7.087041,
+   "end": 7.343749
+  },
+  {
+   "text": "menguruskan",
+   "start": 7.366083,
+   "end": 7.834833
+  },
+  {
+   "text": "server",
+   "start": 7.846,
+   "end": 8.337083
+  },
+  {
+   "text": "storage",
+   "start": 8.515625,
+   "end": 9.017875
+  },
+  {
+   "text": "database",
+   "start": 9.174125,
+   "end": 9.732166
+  },
+  {
+   "text": "dan",
+   "start": 9.776791,
+   "end": 9.944207
+  },
+  {
+   "text": "keselamatan",
+   "start": 9.977666,
+   "end": 10.691957
+  }
+ ]
+}
