@@ -9,6 +9,10 @@ export const SFX = {
   success: 'audio/sfx/success.wav',
   click: 'audio/sfx/click.wav',
   transition: 'audio/sfx/transition.wav',
+  // Episode 03 additions.
+  alert: 'audio/sfx/alert.wav',
+  notify: 'audio/sfx/notify.wav',
+  buzz: 'audio/sfx/buzz.wav',
 } as const;
 
 export type SfxName = keyof typeof SFX;

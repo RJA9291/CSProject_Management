@@ -2,6 +2,7 @@
 
 - **Episod 01:** LFCA – Your IT Career Roadmap (`LFCAVideo`, `npm run render`)
 - **Episod 02:** Cloud Computing – Blue Pixel World (`CloudVideo`, `npm run render:ep02`)
+- **Episod 03:** Cybersecurity Basics – Protect Yourself in the Digital World (`CyberVideo`, `npm run render:ep03`)
 
 > Video siap render (MP4 + SRT) dan helaian QC ada dalam folder `output/`. Render baharu ditulis ke `out/` (tidak di-commit).
 
@@ -85,6 +86,28 @@ npm run render:ep02     # out/ep02-cloud-computing.mp4
 npm run srt:ep02        # out/ep02-cloud-computing.srt
 node scripts/render-stills.mjs 0.45,0.92 ep02   # helaian QC
 ```
+
+## Episod 03 – Cybersecurity Basics
+
+Struktur: `src/ep03/`:
+- `config/scenes.ts`: skrip VO (12 scene), teks atas skrin, kad ancaman, Berhenti/Semak/Sahkan, amalan harian, tindakan mangsa (NSRC 997), recap.
+- `config/supporters.ts`: **senarai supporter Gift Kek** (sekarang 3 nama PLACEHOLDER fiksyen: @HafizITMY, @AidaSofea88, @RazmanTech). Tukar di sini sahaja: bilangan kad, tajuk "N PENYUMBANG" dan narasi ikut senarai ini. Jalankan semula `npm run audio:vo:ep03` selepas tukar.
+- `config/episode.ts`: sebutan TTS (`say`), muzik `bgm-ep03.wav`, warna peralihan.
+- `components/`: `CyberBackground` (latar navy "ancaman" + amaran merah), `Phone` (SMS fiksyen), `GiftThanks` (kad supporter ikut bilangan), `Cards`.
+- `assets/icons.ts`: ikon pixel siber (amaran, cangkuk, bug, tangan berhenti, kanta, bank, polis, folder bukti, dll).
+- Pose host baru `warn` (dua tapak tangan diangkat) ditambah dalam `src/assets/characters/host.ts`; pose lama tidak berubah.
+- SFX baru: `alert`, `notify`, `buzz` (`npm run audio:ep03` jana fail Ep03 sahaja).
+
+Semua contoh scam ialah **fiksyen** (pautan `.contoh` tidak berfungsi, berlabel "CONTOH FIKSYEN"). Talian NSRC 997 disemak pada Nov 2026 (malaysia.gov.my, PDRM, The Star); semak semula sebelum publish.
+
+```bash
+npm run audio:vo:ep03   # suara ms-MY-OsmanNeural (+15%)
+npm run render:ep03     # out/ep03-cybersecurity-basics.mp4
+npm run srt:ep03        # out/ep03-cybersecurity-basics.srt
+node scripts/render-stills.mjs 0.45,0.92 ep03   # helaian QC
+```
+
+Dalam cloud session (di belakang proxy), tambah `--ignore-certificate-errors` pada render dan set `https_proxy=$HTTPS_PROXY` supaya Google Fonts boleh dimuatkan.
 
 ## Format siri (untuk episod akan datang)
 

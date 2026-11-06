@@ -1,0 +1,135 @@
+{
+ "text": "Ada tiga ancaman yang kita perlu kenal. Phishing, iaitu cubaan mencuri maklumat. Malware, iaitu perisian berbahaya. Dan ransomware, yang boleh mengunci data serta menuntut bayaran tebusan.",
+ "words": [
+  {
+   "text": "Ada",
+   "start": 0.093458,
+   "end": 0.310833
+  },
+  {
+   "text": "tiga",
+   "start": 0.354333,
+   "end": 0.582583
+  },
+  {
+   "text": "ancaman",
+   "start": 0.582625,
+   "end": 1.028291
+  },
+  {
+   "text": "yang",
+   "start": 1.039125,
+   "end": 1.136958
+  },
+  {
+   "text": "kita",
+   "start": 1.180416,
+   "end": 1.386957
+  },
+  {
+   "text": "perlu",
+   "start": 1.408708,
+   "end": 1.647833
+  },
+  {
+   "text": "kenal",
+   "start": 1.691291,
+   "end": 2.060874
+  },
+  {
+   "text": "Phishing",
+   "start": 2.880416,
+   "end": 3.369541
+  },
+  {
+   "text": "iaitu",
+   "start": 3.532625,
+   "end": 3.858708
+  },
+  {
+   "text": "cubaan",
+   "start": 3.902166,
+   "end": 4.217374
+  },
+  {
+   "text": "mencuri",
+   "start": 4.217375,
+   "end": 4.565208
+  },
+  {
+   "text": "maklumat",
+   "start": 4.586958,
+   "end": 5.043499
+  },
+  {
+   "text": "Malware",
+   "start": 5.815208,
+   "end": 6.315208
+  },
+  {
+   "text": "iaitu",
+   "start": 6.456541,
+   "end": 6.771749
+  },
+  {
+   "text": "perisian",
+   "start": 6.782625,
+   "end": 7.184791
+  },
+  {
+   "text": "berbahaya",
+   "start": 7.206541,
+   "end": 7.728291
+  },
+  {
+   "text": "Dan",
+   "start": 8.576083,
+   "end": 8.782624
+  },
+  {
+   "text": "ransomware",
+   "start": 8.804333,
+   "end": 9.358666
+  },
+  {
+   "text": "yang",
+   "start": 9.554333,
+   "end": 9.717374
+  },
+  {
+   "text": "boleh",
+   "start": 9.75,
+   "end": 9.97825
+  },
+  {
+   "text": "mengunci",
+   "start": 10.010875,
+   "end": 10.413041
+  },
+  {
+   "text": "data",
+   "start": 10.445666,
+   "end": 10.728291
+  },
+  {
+   "text": "serta",
+   "start": 10.75,
+   "end": 11.010875
+  },
+  {
+   "text": "menuntut",
+   "start": 11.032625,
+   "end": 11.380416
+  },
+  {
+   "text": "bayaran",
+   "start": 11.380416,
+   "end": 11.728249
+  },
+  {
+   "text": "tebusan",
+   "start": 11.760875,
+   "end": 12.2935
+  }
+ ]
+}

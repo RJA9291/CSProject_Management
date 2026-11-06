@@ -1,0 +1,100 @@
+{
+ "text": "Pernah tak terima SMS daripada bank yang suruh kita klik pautan untuk elakkan akaun disekat? Hati-hati! Mungkin itu scam!",
+ "words": [
+  {
+   "text": "Pernah",
+   "start": 0.093458,
+   "end": 0.419541
+  },
+  {
+   "text": "tak",
+   "start": 0.419583,
+   "end": 0.560874
+  },
+  {
+   "text": "terima",
+   "start": 0.57175,
+   "end": 0.843458
+  },
+  {
+   "text": "SMS",
+   "start": 0.843458,
+   "end": 1.626083
+  },
+  {
+   "text": "daripada",
+   "start": 1.669583,
+   "end": 2.006541
+  },
+  {
+   "text": "bank",
+   "start": 2.02825,
+   "end": 2.27825
+  },
+  {
+   "text": "yang",
+   "start": 2.27825,
+   "end": 2.452166
+  },
+  {
+   "text": "suruh",
+   "start": 2.473916,
+   "end": 2.713041
+  },
+  {
+   "text": "kita",
+   "start": 2.756541,
+   "end": 2.952207
+  },
+  {
+   "text": "klik",
+   "start": 2.995666,
+   "end": 3.191332
+  },
+  {
+   "text": "pautan",
+   "start": 3.213041,
+   "end": 3.636957
+  },
+  {
+   "text": "untuk",
+   "start": 3.636958,
+   "end": 3.886958
+  },
+  {
+   "text": "elakkan",
+   "start": 3.886958,
+   "end": 4.299999
+  },
+  {
+   "text": "akaun",
+   "start": 4.310875,
+   "end": 4.647833
+  },
+  {
+   "text": "disekat",
+   "start": 4.658708,
+   "end": 5.093499
+  },
+  {
+   "text": "Hati-hati",
+   "start": 5.847833,
+   "end": 6.402166
+  },
+  {
+   "text": "Mungkin",
+   "start": 7.260875,
+   "end": 7.630416
+  },
+  {
+   "text": "itu",
+   "start": 7.630416,
+   "end": 7.826082
+  },
+  {
+   "text": "scam",
+   "start": 7.847833,
+   "end": 8.228249
+  }
+ ]
+}

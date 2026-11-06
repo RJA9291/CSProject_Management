@@ -7,6 +7,7 @@ Writes <voDir>/sceneNN.mp3 + sceneNN.words.json, then collects all word timings 
 import argparse
 import asyncio
 import json
+import os
 import pathlib
 
 import edge_tts
@@ -18,7 +19,9 @@ async def synth(item, out, voice, rate, pitch):
     n = item["scene"]
     mp3 = out / f"scene{n:02d}.mp3"
     words = []
-    comm = edge_tts.Communicate(item["tts"], voice, rate=rate, pitch=pitch, boundary="WordBoundary")
+    # Uses the HTTPS proxy when one is configured (e.g. cloud sessions); none on a normal laptop.
+    proxy = os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy")
+    comm = edge_tts.Communicate(item["tts"], voice, rate=rate, pitch=pitch, boundary="WordBoundary", proxy=proxy)
     with open(mp3, "wb") as f:
         async for chunk in comm.stream():
             if chunk["type"] == "audio":

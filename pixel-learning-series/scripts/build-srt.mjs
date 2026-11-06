@@ -1,5 +1,5 @@
 // Writes an .srt for an episode from its word timings and the real scene offsets of the full video.
-// Usage: node scripts/build-srt.mjs [ep01|ep02]
+// Usage: node scripts/build-srt.mjs [ep01|ep02|ep03]
 import {bundle} from '@remotion/bundler';
 import {selectComposition} from '@remotion/renderer';
 import {build} from 'esbuild';
@@ -10,6 +10,7 @@ import path from 'node:path';
 const EPISODES = {
   ep01: {file: './src/config/episode.ts', name: 'EP01', comp: 'LFCAVideo', out: 'out/lfca-roadmap.srt'},
   ep02: {file: './src/ep02/config/episode.ts', name: 'EP02', comp: 'CloudVideo', out: 'out/ep02-cloud-computing.srt'},
+  ep03: {file: './src/ep03/config/episode.ts', name: 'EP03', comp: 'CyberVideo', out: 'out/ep03-cybersecurity-basics.srt'},
 };
 const id = process.argv[2] ?? 'ep01';
 const ep = EPISODES[id];

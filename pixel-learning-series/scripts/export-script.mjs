@@ -1,5 +1,5 @@
 // Exports an episode's voice-over lines (display text + TTS text) for generate-voiceover.py.
-// Usage: node scripts/export-script.mjs ep01|ep02  -> scripts/script-<ep>.json
+// Usage: node scripts/export-script.mjs ep01|ep02|ep03  -> scripts/script-<ep>.json
 import {build} from 'esbuild';
 import {writeFileSync} from 'node:fs';
 import path from 'node:path';
@@ -7,6 +7,7 @@ import path from 'node:path';
 const EPISODES = {
   ep01: {file: './src/config/episode.ts', name: 'EP01'},
   ep02: {file: './src/ep02/config/episode.ts', name: 'EP02'},
+  ep03: {file: './src/ep03/config/episode.ts', name: 'EP03'},
 };
 const id = process.argv[2] ?? 'ep01';
 const ep = EPISODES[id];

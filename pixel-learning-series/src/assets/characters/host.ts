@@ -191,9 +191,10 @@ export type Pose =
   | 'walk'
   | 'goodbye'
   | 'thanks'
-  | 'hold';
+  | 'hold'
+  | 'warn';
 
-export const POSES: Pose[] = ['neutral', 'wave', 'pointLeft', 'pointRight', 'think', 'explain', 'thumbsUp', 'celebrate', 'walk', 'goodbye', 'thanks', 'hold'];
+export const POSES: Pose[] = ['neutral', 'wave', 'pointLeft', 'pointRight', 'think', 'explain', 'thumbsUp', 'celebrate', 'walk', 'goodbye', 'thanks', 'hold', 'warn'];
 
 const ARM_DOWN_L: Arm = {elbow: {x: 12, y: 27}, hand: {x: 12, y: 31}};
 const ARM_DOWN_R: Arm = {elbow: {x: 31, y: 27}, hand: {x: 31, y: 31}};
@@ -245,6 +246,11 @@ const POSE_FRAMES: Record<Pose, Frame[]> = {
   // Both hands forward, for holding a phone or laptop drawn by the scene.
   hold: [
     {l: {elbow: {x: 13, y: 29}, hand: {x: 18, y: 29}, front: true}, r: {elbow: {x: 30, y: 29}, hand: {x: 25, y: 29}, front: true}, legs: 'stand'},
+  ],
+  // Both open palms raised in front: the "hati-hati / berhenti" warning gesture (Episode 03).
+  warn: [
+    {l: {elbow: {x: 9, y: 25}, hand: {x: 8, y: 18}, open: true}, r: {elbow: {x: 34, y: 25}, hand: {x: 35, y: 18}, open: true}, legs: 'stand', defaultExpr: 'confused'},
+    {l: {elbow: {x: 9, y: 25}, hand: {x: 7, y: 19}, open: true}, r: {elbow: {x: 34, y: 25}, hand: {x: 36, y: 19}, open: true}, legs: 'stand', defaultExpr: 'confused'},
   ],
   goodbye: [
     {l: ARM_DOWN_L, r: {elbow: {x: 35, y: 21}, hand: {x: 36, y: 12}, open: true}, legs: 'stand', defaultExpr: 'happy'},

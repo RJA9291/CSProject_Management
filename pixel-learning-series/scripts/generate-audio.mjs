@@ -3,8 +3,12 @@ import {mkdirSync, writeFileSync} from 'node:fs';
 
 const RATE = 44100;
 const root = new URL('../public/audio/', import.meta.url);
+// Optional filter: `node scripts/generate-audio.mjs alert notify buzz bgm-ep03` writes only those files.
+const only = new Set(process.argv.slice(2));
+const wanted = (name) => only.size === 0 || only.has(name);
 
 const writeWav = (path, samples) => {
+  if (!wanted(path.replace(/^.*\//, '').replace(/\.wav$/, ''))) return;
   const data = Buffer.alloc(samples.length * 2);
   let peak = 0;
   for (const s of samples) peak = Math.max(peak, Math.abs(s));
@@ -91,6 +95,13 @@ const sfx = {
     [0, tone(0.3, (t) => 900 - 2200 * t, decay(0.3), 'square', 0.125), 0.35],
     [0, tone(0.3, (t) => 600 - 1200 * t, decay(0.3), 'tri'), 0.4],
   ]),
+  // Episode 03 (Cybersecurity): warning beeps, phone notification, wrong-answer buzz.
+  alert: mix(0.62, [0, 1, 2].map((k) => [k * 0.2, tone(0.16, () => (k % 2 ? 660 : 880), decay(0.16, 0.002), 'square', 0.5), 0.5])),
+  notify: mix(0.5, [
+    [0, tone(0.14, () => midi(88), decay(0.14), 'sine'), 0.8],
+    [0.12, tone(0.34, () => midi(93), decay(0.34), 'sine'), 0.8],
+  ]),
+  buzz: tone(0.28, (t) => 150 - 60 * t, decay(0.28, 0.003), 'square', 0.5),
 };
 for (const [name, buf] of Object.entries(sfx)) writeWav(`sfx/${name}.wav`, buf);
 
@@ -165,6 +176,30 @@ song('music/bgm-ep02.wav', {
   ],
   lead: 'tri',
   leadGain: 0.3,
+});
+
+// Episode 03 (Cybersecurity): 100 BPM minor i–VI–III–VII, alert-but-friendly square lead.
+song('music/bgm-ep03.wav', {
+  bpm: 100,
+  chords: [
+    [45, [57, 60, 64]],
+    [41, [57, 60, 65]],
+    [48, [55, 60, 64]],
+    [43, [55, 59, 62]],
+  ],
+  melody: [
+    [76, null, 72, 76, 79, null, 76, 74],
+    [72, null, 69, 72, 77, 76, 72, null],
+    [72, 76, 79, null, 84, 79, 76, null],
+    [74, null, 71, 74, 79, null, 74, null],
+    [81, null, 76, 79, 81, 84, 81, null],
+    [77, 76, 72, null, 69, 72, 77, null],
+    [79, null, 76, 72, 76, 79, 84, null],
+    [83, 79, 74, null, 71, 74, null, null],
+  ],
+  lead: 'square',
+  leadDuty: 0.125,
+  leadGain: 0.13,
 });
 
 console.log(`Wrote ${Object.keys(sfx).length} SFX and music loops (Ep01 ${dur.toFixed(1)}s, Ep02)`);

@@ -1,0 +1,150 @@
+{
+ "text": "Untuk melindungi akaun pula, gunakan password yang kuat dan berbeza bagi setiap akaun. Aktifkan Multi-Factor Authentication atau MFA. Dan ingat, jangan sesekali kongsi OTP atau PIN dengan orang lain.",
+ "words": [
+  {
+   "text": "Untuk",
+   "start": 0.093458,
+   "end": 0.365208
+  },
+  {
+   "text": "melindungi",
+   "start": 0.386958,
+   "end": 0.854333
+  },
+  {
+   "text": "akaun",
+   "start": 0.854333,
+   "end": 1.180416
+  },
+  {
+   "text": "pula",
+   "start": 1.191291,
+   "end": 1.495624
+  },
+  {
+   "text": "gunakan",
+   "start": 1.745666,
+   "end": 2.115249
+  },
+  {
+   "text": "password",
+   "start": 2.136958,
+   "end": 2.549999
+  },
+  {
+   "text": "yang",
+   "start": 2.55,
+   "end": 2.691291
+  },
+  {
+   "text": "kuat",
+   "start": 2.756541,
+   "end": 2.995666
+  },
+  {
+   "text": "dan",
+   "start": 3.006541,
+   "end": 3.147832
+  },
+  {
+   "text": "berbeza",
+   "start": 3.169583,
+   "end": 3.604374
+  },
+  {
+   "text": "bagi",
+   "start": 3.647833,
+   "end": 3.897833
+  },
+  {
+   "text": "setiap",
+   "start": 3.930416,
+   "end": 4.223874
+  },
+  {
+   "text": "akaun",
+   "start": 4.234791,
+   "end": 4.713041
+  },
+  {
+   "text": "Aktifkan",
+   "start": 5.510875,
+   "end": 6.010875
+  },
+  {
+   "text": "Multi-Factor",
+   "start": 6.02175,
+   "end": 6.630458
+  },
+  {
+   "text": "Authentication",
+   "start": 6.641291,
+   "end": 7.489124
+  },
+  {
+   "text": "atau",
+   "start": 7.510875,
+   "end": 7.7935
+  },
+  {
+   "text": "M.F.A.",
+   "start": 7.826083,
+   "end": 8.478249
+  },
+  {
+   "text": "Dan",
+   "start": 9.336958,
+   "end": 9.510874
+  },
+  {
+   "text": "ingat",
+   "start": 9.510875,
+   "end": 9.923916
+  },
+  {
+   "text": "jangan",
+   "start": 10.108708,
+   "end": 10.380416
+  },
+  {
+   "text": "sesekali",
+   "start": 10.380416,
+   "end": 10.739124
+  },
+  {
+   "text": "kongsi",
+   "start": 10.77175,
+   "end": 11.130458
+  },
+  {
+   "text": "O.T.P.",
+   "start": 11.141291,
+   "end": 11.608666
+  },
+  {
+   "text": "atau",
+   "start": 11.619583,
+   "end": 11.858708
+  },
+  {
+   "text": "PIN",
+   "start": 11.891291,
+   "end": 12.130416
+  },
+  {
+   "text": "dengan",
+   "start": 12.152166,
+   "end": 12.358707
+  },
+  {
+   "text": "orang",
+   "start": 12.369583,
+   "end": 12.641333
+  },
+  {
+   "text": "lain",
+   "start": 12.652166,
+   "end": 12.999999
+  }
+ ]
+}

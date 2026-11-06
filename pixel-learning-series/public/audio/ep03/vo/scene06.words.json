@@ -1,0 +1,155 @@
+{
+ "text": "Bayangkan anda menerima mesej seperti ini. Kononnya akaun bank akan disekat jika tidak mengemas kini maklumat. Ini ialah contoh phishing. Scammer cuba membuatkan kita panik supaya kita bertindak tanpa berfikir.",
+ "words": [
+  {
+   "text": "Bayangkan",
+   "start": 0.093458,
+   "end": 0.604333
+  },
+  {
+   "text": "anda",
+   "start": 0.604333,
+   "end": 0.897791
+  },
+  {
+   "text": "menerima",
+   "start": 0.919583,
+   "end": 1.299999
+  },
+  {
+   "text": "mesej",
+   "start": 1.310875,
+   "end": 1.713041
+  },
+  {
+   "text": "seperti",
+   "start": 1.789125,
+   "end": 2.147833
+  },
+  {
+   "text": "ini",
+   "start": 2.147833,
+   "end": 2.495666
+  },
+  {
+   "text": "Kononnya",
+   "start": 3.347833,
+   "end": 3.760874
+  },
+  {
+   "text": "akaun",
+   "start": 3.760875,
+   "end": 4.086958
+  },
+  {
+   "text": "bank",
+   "start": 4.108708,
+   "end": 4.369583
+  },
+  {
+   "text": "akan",
+   "start": 4.369583,
+   "end": 4.619583
+  },
+  {
+   "text": "disekat",
+   "start": 4.619583,
+   "end": 4.989166
+  },
+  {
+   "text": "jika",
+   "start": 5.010875,
+   "end": 5.25
+  },
+  {
+   "text": "tidak",
+   "start": 5.260875,
+   "end": 5.5
+  },
+  {
+   "text": "mengemas",
+   "start": 5.510875,
+   "end": 5.902166
+  },
+  {
+   "text": "kini",
+   "start": 5.934791,
+   "end": 6.152166
+  },
+  {
+   "text": "maklumat",
+   "start": 6.173916,
+   "end": 6.663041
+  },
+  {
+   "text": "Ini",
+   "start": 7.434791,
+   "end": 7.717416
+  },
+  {
+   "text": "ialah",
+   "start": 7.72825,
+   "end": 8.054333
+  },
+  {
+   "text": "contoh",
+   "start": 8.086958,
+   "end": 8.380416
+  },
+  {
+   "text": "phishing",
+   "start": 8.391291,
+   "end": 8.836957
+  },
+  {
+   "text": "Scammer",
+   "start": 9.652166,
+   "end": 10.076082
+  },
+  {
+   "text": "cuba",
+   "start": 10.130416,
+   "end": 10.402166
+  },
+  {
+   "text": "membuatkan",
+   "start": 10.413041,
+   "end": 10.836957
+  },
+  {
+   "text": "kita",
+   "start": 10.869583,
+   "end": 11.054374
+  },
+  {
+   "text": "panik",
+   "start": 11.065208,
+   "end": 11.380416
+  },
+  {
+   "text": "supaya",
+   "start": 11.413041,
+   "end": 11.717374
+  },
+  {
+   "text": "kita",
+   "start": 11.739125,
+   "end": 11.934791
+  },
+  {
+   "text": "bertindak",
+   "start": 11.956541,
+   "end": 12.369582
+  },
+  {
+   "text": "tanpa",
+   "start": 12.402166,
+   "end": 12.663041
+  },
+  {
+   "text": "berfikir",
+   "start": 12.673916,
+   "end": 13.184791
+  }
+ ]
+}

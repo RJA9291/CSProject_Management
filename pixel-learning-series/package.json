@@ -14,7 +14,11 @@
     "typecheck": "tsc --noEmit",
     "audio:vo:ep02": "node scripts/export-script.mjs ep02 && python scripts/generate-voiceover.py --script scripts/script-ep02.json --rate +12%",
     "render:ep02": "remotion render CloudVideo out/ep02-cloud-computing.mp4 --codec h264",
-    "srt:ep02": "node scripts/build-srt.mjs ep02"
+    "srt:ep02": "node scripts/build-srt.mjs ep02",
+    "audio:vo:ep03": "node scripts/export-script.mjs ep03 && python scripts/generate-voiceover.py --script scripts/script-ep03.json --rate +15%",
+    "audio:ep03": "node scripts/generate-audio.mjs alert notify buzz bgm-ep03",
+    "render:ep03": "remotion render CyberVideo out/ep03-cybersecurity-basics.mp4 --codec h264",
+    "srt:ep03": "node scripts/build-srt.mjs ep03"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.540",
