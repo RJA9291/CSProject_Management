@@ -42,7 +42,9 @@ rmSync(tmp);
 
 const browserExecutable = process.env.REMOTION_BROWSER_EXECUTABLE ?? null;
 const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts')});
-const comp = await selectComposition({serveUrl, id: ep.comp, browserExecutable});
+// Behind an HTTPS proxy (cloud sessions) the browser needs this to load Google Fonts.
+const chromiumOptions = process.env.https_proxy ? {ignoreCertificateErrors: true} : {};
+const comp = await selectComposition({serveUrl, id: ep.comp, browserExecutable, chromiumOptions});
 const durations = comp.props.durations;
 
 const fmt = (t) => {
