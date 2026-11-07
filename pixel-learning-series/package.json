@@ -22,7 +22,11 @@
     "audio:vo:ep04": "node scripts/export-script.mjs ep04 && python scripts/generate-voiceover.py --script scripts/script-ep04.json --rate +15%",
     "audio:ep04": "node scripts/generate-audio.mjs link bgm-ep04",
     "render:ep04": "remotion render NetworkVideo out/ep04-computer-networking.mp4 --codec h264",
-    "srt:ep04": "node scripts/build-srt.mjs ep04"
+    "srt:ep04": "node scripts/build-srt.mjs ep04",
+    "audio:vo:ep05": "node scripts/export-script.mjs ep05 && python scripts/generate-voiceover.py --script scripts/script-ep05.json --rate +15%",
+    "audio:ep05": "node scripts/generate-audio.mjs key bgm-ep05",
+    "render:ep05": "remotion render LinuxVideo out/ep05-introduction-to-linux.mp4 --codec h264",
+    "srt:ep05": "node scripts/build-srt.mjs ep05"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.540",

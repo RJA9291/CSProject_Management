@@ -1,0 +1,105 @@
+{
+ "text": "GUI membolehkan kita berinteraksi menggunakan ikon, menu dan mouse. CLI pula membolehkan kita memberikan arahan melalui command line atau terminal.",
+ "words": [
+  {
+   "text": "G.U.I.",
+   "start": 0.093458,
+   "end": 0.582583
+  },
+  {
+   "text": "membolehkan",
+   "start": 0.593458,
+   "end": 1.082583
+  },
+  {
+   "text": "kita",
+   "start": 1.126083,
+   "end": 1.321749
+  },
+  {
+   "text": "berinteraksi",
+   "start": 1.343458,
+   "end": 1.941291
+  },
+  {
+   "text": "menggunakan",
+   "start": 1.973916,
+   "end": 2.441291
+  },
+  {
+   "text": "ikon",
+   "start": 2.441291,
+   "end": 2.886957
+  },
+  {
+   "text": "menu",
+   "start": 3.05,
+   "end": 3.354333
+  },
+  {
+   "text": "dan",
+   "start": 3.386958,
+   "end": 3.549999
+  },
+  {
+   "text": "mouse",
+   "start": 3.55,
+   "end": 3.973916
+  },
+  {
+   "text": "C.L.I.",
+   "start": 4.782625,
+   "end": 5.402208
+  },
+  {
+   "text": "pula",
+   "start": 5.423916,
+   "end": 5.652166
+  },
+  {
+   "text": "membolehkan",
+   "start": 5.673916,
+   "end": 6.206541
+  },
+  {
+   "text": "kita",
+   "start": 6.25,
+   "end": 6.456541
+  },
+  {
+   "text": "memberikan",
+   "start": 6.47825,
+   "end": 6.891291
+  },
+  {
+   "text": "arahan",
+   "start": 6.891291,
+   "end": 7.293457
+  },
+  {
+   "text": "melalui",
+   "start": 7.304333,
+   "end": 7.695624
+  },
+  {
+   "text": "command",
+   "start": 7.72825,
+   "end": 7.97825
+  },
+  {
+   "text": "line",
+   "start": 7.989125,
+   "end": 8.326083
+  },
+  {
+   "text": "atau",
+   "start": 8.380416,
+   "end": 8.652166
+  },
+  {
+   "text": "terminal",
+   "start": 8.706541,
+   "end": 9.173916
+  }
+ ]
+}

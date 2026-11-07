@@ -1,0 +1,125 @@
+{
+ "text": "Linux mempunyai pelbagai distribution atau distro. Antaranya Ubuntu, Debian, Fedora dan Red Hat Enterprise Linux. Setiap distro mempunyai pendekatan, pakej dan kegunaan yang berbeza.",
+ "words": [
+  {
+   "text": "Linux",
+   "start": 0.093458,
+   "end": 0.517374
+  },
+  {
+   "text": "mempunyai",
+   "start": 0.539125,
+   "end": 0.952166
+  },
+  {
+   "text": "pelbagai",
+   "start": 0.973916,
+   "end": 1.332624
+  },
+  {
+   "text": "distribution",
+   "start": 1.376083,
+   "end": 2.049999
+  },
+  {
+   "text": "atau",
+   "start": 2.07175,
+   "end": 2.3
+  },
+  {
+   "text": "distro",
+   "start": 2.343458,
+   "end": 2.745624
+  },
+  {
+   "text": "Antaranya",
+   "start": 3.554333,
+   "end": 4.021708
+  },
+  {
+   "text": "Ubuntu",
+   "start": 4.02175,
+   "end": 4.5435
+  },
+  {
+   "text": "Debian",
+   "start": 4.72825,
+   "end": 5.217375
+  },
+  {
+   "text": "Fedora",
+   "start": 5.369583,
+   "end": 5.826124
+  },
+  {
+   "text": "dan",
+   "start": 5.880416,
+   "end": 6.065207
+  },
+  {
+   "text": "Red",
+   "start": 6.086958,
+   "end": 6.304333
+  },
+  {
+   "text": "Hat",
+   "start": 6.315208,
+   "end": 6.554333
+  },
+  {
+   "text": "Enterprise",
+   "start": 6.554333,
+   "end": 7.086958
+  },
+  {
+   "text": "Linux",
+   "start": 7.086958,
+   "end": 7.608708
+  },
+  {
+   "text": "Setiap",
+   "start": 8.402166,
+   "end": 8.749999
+  },
+  {
+   "text": "distro",
+   "start": 8.760875,
+   "end": 9.108708
+  },
+  {
+   "text": "mempunyai",
+   "start": 9.119583,
+   "end": 9.521749
+  },
+  {
+   "text": "pendekatan",
+   "start": 9.543458,
+   "end": 10.086916
+  },
+  {
+   "text": "pakej",
+   "start": 10.293458,
+   "end": 10.663041
+  },
+  {
+   "text": "dan",
+   "start": 10.706541,
+   "end": 10.869582
+  },
+  {
+   "text": "kegunaan",
+   "start": 10.913041,
+   "end": 11.336957
+  },
+  {
+   "text": "yang",
+   "start": 11.347833,
+   "end": 11.467416
+  },
+  {
+   "text": "berbeza",
+   "start": 11.5,
+   "end": 11.945666
+  }
+ ]
+}

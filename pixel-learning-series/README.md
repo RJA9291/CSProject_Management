@@ -4,6 +4,7 @@
 - **Episod 02:** Cloud Computing – Blue Pixel World (`CloudVideo`, `npm run render:ep02`)
 - **Episod 03:** Cybersecurity Basics – Protect Yourself in the Digital World (`CyberVideo`, `npm run render:ep03`)
 - **Episod 04:** Computer Networking Basics – How Computers Connect & How the Internet Works (`NetworkVideo`, `npm run render:ep04`)
+- **Episod 05:** Introduction to Linux – Discover the Operating System Behind the Digital World (`LinuxVideo`, `npm run render:ep05`)
 
 > Video siap render (MP4 + SRT) dan helaian QC ada dalam folder `output/`. Render baharu ditulis ke `out/` (tidak di-commit).
 
@@ -127,6 +128,24 @@ npm run audio:vo:ep04
 npm run render:ep04     # out/ep04-computer-networking.mp4
 npm run srt:ep04
 node scripts/render-stills.mjs 0.5,0.93 ep04
+```
+
+## Episod 05 – Introduction to Linux
+
+Struktur: `src/ep05/`:
+- `config/scenes.ts`: skrip VO (12 scene), teks, perbandingan Linux/Windows, kad distro, sesi terminal (`COMMANDS`, `SERVER_SESSION`), recap.
+- `config/supporters.ts`: **6 supporter Gift Kek** (nama placeholder fiksyen; tukar sebelum publish). Siri ini simpan config setiap episod dalam `src/epNN/config/`, jadi fail ini di situ (bukan `src/config/`, yang milik Ep01).
+- `components/Tux.tsx`: penguin Linux pixel asal (pose idle/wave/point/celebrate, kelip mata, lompat).
+- `components/Terminal.tsx`: terminal **simulasi** (taip huruf demi huruf, kursor berkelip, output baris demi baris, prompt berubah selepas `cd`). Ia hanya melukis teks; tiada arahan sebenar dijalankan.
+- `components/ServerRoom.tsx`: latar pusat data dengan rak server berkelip.
+- Pose host baru `type` (menaip) dalam `src/assets/characters/host.ts`; SFX baru `key` (`npm run audio:ep05`); font terminal VT323.
+- Distro ditunjuk dengan label teks dan kotak pakej pixel asal, tanpa logo rasmi.
+
+```bash
+npm run audio:vo:ep05
+npm run render:ep05     # out/ep05-introduction-to-linux.mp4
+npm run srt:ep05
+node scripts/render-stills.mjs 0.55,0.93 ep05
 ```
 
 ## Format siri (untuk episod akan datang)

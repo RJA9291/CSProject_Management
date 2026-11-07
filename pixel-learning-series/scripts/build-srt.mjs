@@ -12,6 +12,7 @@ const EPISODES = {
   ep02: {file: './src/ep02/config/episode.ts', name: 'EP02', comp: 'CloudVideo', out: 'out/ep02-cloud-computing.srt'},
   ep03: {file: './src/ep03/config/episode.ts', name: 'EP03', comp: 'CyberVideo', out: 'out/ep03-cybersecurity-basics.srt'},
   ep04: {file: './src/ep04/config/episode.ts', name: 'EP04', comp: 'NetworkVideo', out: 'out/ep04-computer-networking.srt'},
+  ep05: {file: './src/ep05/config/episode.ts', name: 'EP05', comp: 'LinuxVideo', out: 'out/ep05-introduction-to-linux.srt'},
 };
 const id = process.argv[2] ?? 'ep01';
 const ep = EPISODES[id];

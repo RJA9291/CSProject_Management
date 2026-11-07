@@ -192,9 +192,10 @@ export type Pose =
   | 'goodbye'
   | 'thanks'
   | 'hold'
-  | 'warn';
+  | 'warn'
+  | 'type';
 
-export const POSES: Pose[] = ['neutral', 'wave', 'pointLeft', 'pointRight', 'think', 'explain', 'thumbsUp', 'celebrate', 'walk', 'goodbye', 'thanks', 'hold', 'warn'];
+export const POSES: Pose[] = ['neutral', 'wave', 'pointLeft', 'pointRight', 'think', 'explain', 'thumbsUp', 'celebrate', 'walk', 'goodbye', 'thanks', 'hold', 'warn', 'type'];
 
 const ARM_DOWN_L: Arm = {elbow: {x: 12, y: 27}, hand: {x: 12, y: 31}};
 const ARM_DOWN_R: Arm = {elbow: {x: 31, y: 27}, hand: {x: 31, y: 31}};
@@ -251,6 +252,11 @@ const POSE_FRAMES: Record<Pose, Frame[]> = {
   warn: [
     {l: {elbow: {x: 9, y: 25}, hand: {x: 8, y: 18}, open: true}, r: {elbow: {x: 34, y: 25}, hand: {x: 35, y: 18}, open: true}, legs: 'stand', defaultExpr: 'confused'},
     {l: {elbow: {x: 9, y: 25}, hand: {x: 7, y: 19}, open: true}, r: {elbow: {x: 34, y: 25}, hand: {x: 36, y: 19}, open: true}, legs: 'stand', defaultExpr: 'confused'},
+  ],
+  // Hands down on a keyboard in front, tapping alternately (Episode 05).
+  type: [
+    {l: {elbow: {x: 13, y: 29}, hand: {x: 17, y: 31}, front: true}, r: {elbow: {x: 30, y: 29}, hand: {x: 26, y: 30}, front: true}, legs: 'stand'},
+    {l: {elbow: {x: 13, y: 29}, hand: {x: 17, y: 30}, front: true}, r: {elbow: {x: 30, y: 29}, hand: {x: 26, y: 31}, front: true}, legs: 'stand'},
   ],
   goodbye: [
     {l: ARM_DOWN_L, r: {elbow: {x: 35, y: 21}, hand: {x: 36, y: 12}, open: true}, legs: 'stand', defaultExpr: 'happy'},

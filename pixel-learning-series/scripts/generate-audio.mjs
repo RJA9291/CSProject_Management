@@ -103,6 +103,8 @@ const sfx = {
   ]),
   // Episode 04 (Networking): rising "connected" chirp.
   link: mix(0.36, [60, 67, 72].map((n, i) => [i * 0.07, tone(0.14, () => midi(n + 24), decay(0.14), 'square', 0.25), 0.45])),
+  // Episode 05 (Linux): short keyboard tick.
+  key: mix(0.05, [[0, tone(0.03, () => 3200, decay(0.025, 0.001), 'square', 0.5), 0.35], [0, tone(0.04, () => 180, decay(0.03, 0.001), 'square', 0.5), 0.35]]),
   buzz: tone(0.28, (t) => 150 - 60 * t, decay(0.28, 0.003), 'square', 0.5),
 };
 for (const [name, buf] of Object.entries(sfx)) writeWav(`sfx/${name}.wav`, buf);
@@ -226,6 +228,29 @@ song('music/bgm-ep04.wav', {
   lead: 'square',
   leadDuty: 0.25,
   leadGain: 0.12,
+});
+
+// Episode 05 (Linux): calm-techy 96 BPM vi–IV–I–V with a soft triangle lead.
+song('music/bgm-ep05.wav', {
+  bpm: 96,
+  chords: [
+    [45, [57, 60, 64]],
+    [41, [57, 60, 65]],
+    [48, [55, 60, 64]],
+    [43, [55, 59, 62]],
+  ],
+  melody: [
+    [76, 79, 81, null, 79, 76, 74, null],
+    [72, 76, 77, null, 76, 72, 69, null],
+    [72, 76, 79, 84, null, 79, 76, null],
+    [74, 79, 83, null, 81, 79, 74, null],
+    [81, null, 84, 81, 79, 76, 79, null],
+    [77, 76, 72, null, 77, 81, 84, null],
+    [79, 76, 72, 76, 79, 84, 88, null],
+    [86, 83, 79, null, 74, 79, null, null],
+  ],
+  lead: 'tri',
+  leadGain: 0.28,
 });
 
 console.log(`Wrote ${Object.keys(sfx).length} SFX and music loops (Ep01 ${dur.toFixed(1)}s, Ep02)`);

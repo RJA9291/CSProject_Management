@@ -12,6 +12,8 @@ import {EP03} from './ep03/config/episode';
 import {EP03_SCENES} from './ep03/scenes';
 import {EP04} from './ep04/config/episode';
 import {EP04_SCENES} from './ep04/scenes';
+import {EP05} from './ep05/config/episode';
+import {EP05_SCENES} from './ep05/scenes';
 import {episodeAllFrames, episodeSceneFrames, episodeTotal} from './lib/durations';
 import type {Episode} from './lib/episode-types';
 import {SCENE_COMPONENTS} from './scenes';
@@ -23,6 +25,8 @@ const CyberVideo = makeEpisodeVideo(EP03, EP03_SCENES);
 const EP03_PREVIEWS = EP03_SCENES.map((s) => withEpisode(EP03, s));
 const NetworkVideo = makeEpisodeVideo(EP04, EP04_SCENES);
 const EP04_PREVIEWS = EP04_SCENES.map((s) => withEpisode(EP04, s));
+const LinuxVideo = makeEpisodeVideo(EP05, EP05_SCENES);
+const EP05_PREVIEWS = EP05_SCENES.map((s) => withEpisode(EP05, s));
 
 // One folder per episode: the full video plus every scene on its own for preview.
 const EpisodeFolder: React.FC<{name: string; videoId: string; ep: Episode; video: React.FC<EpisodeVideoProps>; scenes: React.FC[]}> = ({name, videoId, ep, video, scenes}) => (
@@ -63,6 +67,7 @@ export const RemotionRoot: React.FC = () => (
     <EpisodeFolder name="Ep02-Cloud" videoId="CloudVideo" ep={EP02} video={CloudVideo} scenes={EP02_PREVIEWS} />
     <EpisodeFolder name="Ep03-Cyber" videoId="CyberVideo" ep={EP03} video={CyberVideo} scenes={EP03_PREVIEWS} />
     <EpisodeFolder name="Ep04-Network" videoId="NetworkVideo" ep={EP04} video={NetworkVideo} scenes={EP04_PREVIEWS} />
+    <EpisodeFolder name="Ep05-Linux" videoId="LinuxVideo" ep={EP05} video={LinuxVideo} scenes={EP05_PREVIEWS} />
     <Folder name="Assets">
       <Still id="CharacterSheet" component={CharacterSheet} width={1800} height={1700} />
       <Still

@@ -1,0 +1,210 @@
+{
+ "text": "Jom cuba beberapa command asas Linux! PWD untuk melihat lokasi folder semasa. LS untuk melihat senarai fail dan folder. CD untuk masuk ke folder lain. MKDIR untuk mencipta folder baharu. Dan WHOAMI untuk mengetahui pengguna yang sedang login.",
+ "words": [
+  {
+   "text": "Jom",
+   "start": 0.093458,
+   "end": 0.365208
+  },
+  {
+   "text": "cuba",
+   "start": 0.419583,
+   "end": 0.680458
+  },
+  {
+   "text": "beberapa",
+   "start": 0.691291,
+   "end": 1.049999
+  },
+  {
+   "text": "command",
+   "start": 1.082625,
+   "end": 1.365208
+  },
+  {
+   "text": "asas",
+   "start": 1.365208,
+   "end": 1.691291
+  },
+  {
+   "text": "Linux",
+   "start": 1.691291,
+   "end": 2.213041
+  },
+  {
+   "text": "P.W.D.",
+   "start": 3.010875,
+   "end": 3.554333
+  },
+  {
+   "text": "untuk",
+   "start": 3.554333,
+   "end": 3.804333
+  },
+  {
+   "text": "melihat",
+   "start": 3.826083,
+   "end": 4.119541
+  },
+  {
+   "text": "lokasi",
+   "start": 4.130416,
+   "end": 4.532582
+  },
+  {
+   "text": "folder",
+   "start": 4.565208,
+   "end": 4.913041
+  },
+  {
+   "text": "semasa",
+   "start": 4.934791,
+   "end": 5.369582
+  },
+  {
+   "text": "L.S.",
+   "start": 6.22825,
+   "end": 6.717375
+  },
+  {
+   "text": "untuk",
+   "start": 6.72825,
+   "end": 6.989125
+  },
+  {
+   "text": "melihat",
+   "start": 7.0,
+   "end": 7.304333
+  },
+  {
+   "text": "senarai",
+   "start": 7.326083,
+   "end": 7.663041
+  },
+  {
+   "text": "fail",
+   "start": 7.684791,
+   "end": 8.065207
+  },
+  {
+   "text": "dan",
+   "start": 8.097833,
+   "end": 8.260874
+  },
+  {
+   "text": "folder",
+   "start": 8.27175,
+   "end": 8.77175
+  },
+  {
+   "text": "C.D.",
+   "start": 9.565208,
+   "end": 9.880416
+  },
+  {
+   "text": "untuk",
+   "start": 9.891291,
+   "end": 10.130416
+  },
+  {
+   "text": "masuk",
+   "start": 10.141291,
+   "end": 10.434749
+  },
+  {
+   "text": "ke",
+   "start": 10.456541,
+   "end": 10.554374
+  },
+  {
+   "text": "folder",
+   "start": 10.576083,
+   "end": 10.913041
+  },
+  {
+   "text": "lain",
+   "start": 10.934791,
+   "end": 11.271749
+  },
+  {
+   "text": "make",
+   "start": 12.065208,
+   "end": 12.326083
+  },
+  {
+   "text": "dir",
+   "start": 12.336958,
+   "end": 12.521749
+  },
+  {
+   "text": "untuk",
+   "start": 12.532625,
+   "end": 12.7935
+  },
+  {
+   "text": "mencipta",
+   "start": 12.804333,
+   "end": 13.184749
+  },
+  {
+   "text": "folder",
+   "start": 13.217375,
+   "end": 13.554333
+  },
+  {
+   "text": "baharu",
+   "start": 13.576083,
+   "end": 13.978249
+  },
+  {
+   "text": "Dan",
+   "start": 14.836958,
+   "end": 15.054333
+  },
+  {
+   "text": "who",
+   "start": 15.076083,
+   "end": 15.815208
+  },
+  {
+   "text": "am",
+   "start": 15.826083,
+   "end": 16.184791
+  },
+  {
+   "text": "I",
+   "start": 16.195666,
+   "end": 16.608707
+  },
+  {
+   "text": "untuk",
+   "start": 16.608708,
+   "end": 16.869583
+  },
+  {
+   "text": "mengetahui",
+   "start": 16.880416,
+   "end": 17.336957
+  },
+  {
+   "text": "pengguna",
+   "start": 17.358708,
+   "end": 17.760874
+  },
+  {
+   "text": "yang",
+   "start": 17.804333,
+   "end": 17.978249
+  },
+  {
+   "text": "sedang",
+   "start": 17.989125,
+   "end": 18.27175
+  },
+  {
+   "text": "login",
+   "start": 18.282625,
+   "end": 18.706541
+  }
+ ]
+}

@@ -1,0 +1,170 @@
+{
+ "text": "Jom kita recap! Linux kernel ialah teras sistem operasi. Ubuntu, Debian dan Fedora ialah contoh distribution. GUI menggunakan grafik, CLI menggunakan arahan terminal. Dan jangan lupa lima command asas yang kita belajar tadi!",
+ "words": [
+  {
+   "text": "Jom",
+   "start": 0.093458,
+   "end": 0.365208
+  },
+  {
+   "text": "kita",
+   "start": 0.408708,
+   "end": 0.593499
+  },
+  {
+   "text": "recap",
+   "start": 0.626083,
+   "end": 0.963041
+  },
+  {
+   "text": "Linux",
+   "start": 1.72825,
+   "end": 2.152166
+  },
+  {
+   "text": "kernel",
+   "start": 2.184791,
+   "end": 2.554374
+  },
+  {
+   "text": "ialah",
+   "start": 2.565208,
+   "end": 2.869541
+  },
+  {
+   "text": "teras",
+   "start": 2.880416,
+   "end": 3.119541
+  },
+  {
+   "text": "sistem",
+   "start": 3.119583,
+   "end": 3.456541
+  },
+  {
+   "text": "operasi",
+   "start": 3.456541,
+   "end": 4.010874
+  },
+  {
+   "text": "Ubuntu",
+   "start": 4.869583,
+   "end": 5.369583
+  },
+  {
+   "text": "Debian",
+   "start": 5.576083,
+   "end": 6.021749
+  },
+  {
+   "text": "dan",
+   "start": 6.032625,
+   "end": 6.206541
+  },
+  {
+   "text": "Fedora",
+   "start": 6.22825,
+   "end": 6.641291
+  },
+  {
+   "text": "ialah",
+   "start": 6.673916,
+   "end": 7.021749
+  },
+  {
+   "text": "contoh",
+   "start": 7.054333,
+   "end": 7.391291
+  },
+  {
+   "text": "distribution",
+   "start": 7.423916,
+   "end": 8.206541
+  },
+  {
+   "text": "G.U.I.",
+   "start": 9.0,
+   "end": 9.47825
+  },
+  {
+   "text": "menggunakan",
+   "start": 9.489125,
+   "end": 9.967375
+  },
+  {
+   "text": "grafik",
+   "start": 10.02175,
+   "end": 10.467416
+  },
+  {
+   "text": "C.L.I.",
+   "start": 10.663041,
+   "end": 11.239124
+  },
+  {
+   "text": "menggunakan",
+   "start": 11.27175,
+   "end": 11.77175
+  },
+  {
+   "text": "arahan",
+   "start": 11.782625,
+   "end": 12.141333
+  },
+  {
+   "text": "terminal",
+   "start": 12.163041,
+   "end": 12.673916
+  },
+  {
+   "text": "Dan",
+   "start": 13.5,
+   "end": 13.673916
+  },
+  {
+   "text": "jangan",
+   "start": 13.706541,
+   "end": 13.913082
+  },
+  {
+   "text": "lupa",
+   "start": 13.923916,
+   "end": 14.152166
+  },
+  {
+   "text": "lima",
+   "start": 14.184791,
+   "end": 14.358707
+  },
+  {
+   "text": "command",
+   "start": 14.391291,
+   "end": 14.630416
+  },
+  {
+   "text": "asas",
+   "start": 14.630416,
+   "end": 15.032582
+  },
+  {
+   "text": "yang",
+   "start": 15.043458,
+   "end": 15.184749
+  },
+  {
+   "text": "kita",
+   "start": 15.217375,
+   "end": 15.391291
+  },
+  {
+   "text": "belajar",
+   "start": 15.402166,
+   "end": 15.728249
+  },
+  {
+   "text": "tadi",
+   "start": 15.760875,
+   "end": 16.054333
+  }
+ ]
+}

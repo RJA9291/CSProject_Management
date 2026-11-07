@@ -15,6 +15,8 @@ export const SFX = {
   buzz: 'audio/sfx/buzz.wav',
   // Episode 04 addition.
   link: 'audio/sfx/link.wav',
+  // Episode 05 addition.
+  key: 'audio/sfx/key.wav',
 } as const;
 
 export type SfxName = keyof typeof SFX;

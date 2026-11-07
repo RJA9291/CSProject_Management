@@ -1,0 +1,459 @@
+1
+00:00:00,593 --> 00:00:02,180
+Windows mungkin sistem operasi
+
+2
+00:00:02,180 --> 00:00:03,424
+yang selalu kita guna.
+
+3
+00:00:04,065 --> 00:00:05,700
+Tapi pernah dengar Linux?
+
+4
+00:00:06,304 --> 00:00:07,309
+Tahukah anda,
+
+5
+00:00:07,337 --> 00:00:08,543
+Linux memainkan peranan
+
+6
+00:00:08,543 --> 00:00:10,098
+penting dalam dunia server dan
+
+7
+00:00:10,098 --> 00:00:10,841
+teknologi!
+
+8
+00:00:12,027 --> 00:00:13,749
+Assalamualaikum dan hai semua!
+
+9
+00:00:14,379 --> 00:00:15,318
+Selamat kembali.
+
+10
+00:00:15,966 --> 00:00:16,488
+Jom,
+
+11
+00:00:16,488 --> 00:00:17,829
+mari sama-sama belajar!
+
+12
+00:00:18,960 --> 00:00:20,008
+Sebelum kita mula,
+
+13
+00:00:20,080 --> 00:00:21,493
+saya nak ucapkan terima kasih
+
+14
+00:00:21,493 --> 00:00:22,797
+kepada enam orang yang sudi
+
+15
+00:00:22,797 --> 00:00:23,878
+belanja Gift Kek!
+
+16
+00:00:24,475 --> 00:00:26,371
+Terima kasih @AmirulTechMY,
+
+17
+00:00:26,421 --> 00:00:27,838
+@NadiaIT88,
+
+18
+00:00:27,845 --> 00:00:28,849
+@FarisDigital,
+
+19
+00:00:28,943 --> 00:00:29,860
+@SyazaBelajar,
+
+20
+00:00:29,899 --> 00:00:31,160
+@AzlanTechMY dan
+
+21
+00:00:31,160 --> 00:00:32,338
+@IzzatiOnline!
+
+22
+00:00:32,921 --> 00:00:34,399
+Sokongan anda semua membuatkan
+
+23
+00:00:34,399 --> 00:00:35,682
+saya lebih bersemangat untuk
+
+24
+00:00:35,682 --> 00:00:37,045
+terus berkongsi ilmu.
+
+25
+00:00:37,682 --> 00:00:39,110
+Terima kasih banyak-banyak!
+
+26
+00:00:40,293 --> 00:00:41,609
+Linux sebenarnya merujuk
+
+27
+00:00:41,609 --> 00:00:43,000
+kepada kernel sumber terbuka
+
+28
+00:00:43,000 --> 00:00:44,185
+yang menjadi asas kepada
+
+29
+00:00:44,185 --> 00:00:45,548
+banyak sistem operasi.
+
+30
+00:00:46,189 --> 00:00:47,483
+Sistem berasaskan Linux
+
+31
+00:00:47,483 --> 00:00:48,591
+digunakan dalam pelbagai
+
+32
+00:00:48,591 --> 00:00:49,765
+peranti dan persekitaran
+
+33
+00:00:49,765 --> 00:00:50,487
+teknologi.
+
+34
+00:00:51,693 --> 00:00:53,378
+Linux dan Windows kedua-duanya
+
+35
+00:00:53,378 --> 00:00:54,585
+digunakan sebagai sistem
+
+36
+00:00:54,585 --> 00:00:55,328
+operasi.
+
+37
+00:00:55,970 --> 00:00:56,980
+Linux terkenal dengan
+
+38
+00:00:56,980 --> 00:00:57,898
+fleksibiliti,
+
+39
+00:00:57,948 --> 00:00:59,143
+pilihan distribution dan
+
+40
+00:00:59,143 --> 00:01:00,680
+penggunaannya dalam server.
+
+41
+00:01:01,263 --> 00:01:02,643
+Windows pula sangat popular
+
+42
+00:01:02,643 --> 00:01:03,991
+untuk komputer peribadi dan
+
+43
+00:01:03,991 --> 00:01:05,430
+persekitaran perniagaan.
+
+44
+00:01:06,560 --> 00:01:07,843
+Kernel ialah bahagian teras
+
+45
+00:01:07,843 --> 00:01:08,934
+sistem operasi.
+
+46
+00:01:09,575 --> 00:01:10,988
+Ia menguruskan proses,
+
+47
+00:01:10,988 --> 00:01:11,601
+memori,
+
+48
+00:01:11,619 --> 00:01:12,934
+peranti dan sumber komputer
+
+49
+00:01:12,934 --> 00:01:14,021
+supaya software boleh
+
+50
+00:01:14,021 --> 00:01:15,678
+berkomunikasi dengan hardware.
+
+51
+00:01:16,760 --> 00:01:18,043
+Linux mempunyai pelbagai
+
+52
+00:01:18,043 --> 00:01:19,612
+distribution atau distro.
+
+53
+00:01:20,221 --> 00:01:21,395
+Antaranya Ubuntu,
+
+54
+00:01:21,395 --> 00:01:22,036
+Debian,
+
+55
+00:01:22,036 --> 00:01:23,754
+Fedora dan Red Hat Enterprise
+
+56
+00:01:23,754 --> 00:01:24,475
+Linux.
+
+57
+00:01:25,069 --> 00:01:26,210
+Setiap distro mempunyai
+
+58
+00:01:26,210 --> 00:01:26,954
+pendekatan,
+
+59
+00:01:26,960 --> 00:01:28,167
+pakej dan kegunaan yang
+
+60
+00:01:28,167 --> 00:01:28,812
+berbeza.
+
+61
+00:01:29,993 --> 00:01:31,243
+GUI membolehkan kita
+
+62
+00:01:31,243 --> 00:01:32,950
+berinteraksi menggunakan ikon,
+
+63
+00:01:32,950 --> 00:01:34,074
+menu dan mouse.
+
+64
+00:01:34,683 --> 00:01:36,378
+CLI pula membolehkan kita
+
+65
+00:01:36,378 --> 00:01:37,628
+memberikan arahan melalui
+
+66
+00:01:37,628 --> 00:01:39,274
+command line atau terminal.
+
+67
+00:01:40,427 --> 00:01:42,025
+Jom cuba beberapa command asas
+
+68
+00:01:42,025 --> 00:01:42,746
+Linux!
+
+69
+00:01:43,344 --> 00:01:44,899
+PWD untuk melihat lokasi
+
+70
+00:01:44,899 --> 00:01:45,903
+folder semasa.
+
+71
+00:01:46,562 --> 00:01:48,431
+LS untuk melihat senarai fail
+
+72
+00:01:48,431 --> 00:01:49,305
+dan folder.
+
+73
+00:01:49,899 --> 00:01:51,268
+CD untuk masuk ke folder
+
+74
+00:01:51,268 --> 00:01:51,805
+lain.
+
+75
+00:01:52,399 --> 00:01:53,909
+MKDIR untuk mencipta folder
+
+76
+00:01:53,909 --> 00:01:54,512
+baharu.
+
+77
+00:01:55,170 --> 00:01:57,692
+Dan WHOAMI untuk mengetahui
+
+78
+00:01:57,692 --> 00:01:59,240
+pengguna yang sedang login.
+
+79
+00:02:00,860 --> 00:02:02,447
+Bayangkan anda bekerja sebagai
+
+80
+00:02:02,447 --> 00:02:03,821
+IT administrator.
+
+81
+00:02:04,397 --> 00:02:05,810
+Anda perlu menguruskan server
+
+82
+00:02:05,810 --> 00:02:06,477
+syarikat.
+
+83
+00:02:07,038 --> 00:02:08,147
+Dengan menggunakan Linux
+
+84
+00:02:08,147 --> 00:02:08,810
+terminal,
+
+85
+00:02:08,810 --> 00:02:10,238
+anda boleh menyemak fail,
+
+86
+00:02:10,299 --> 00:02:11,332
+mengurus folder dan
+
+87
+00:02:11,332 --> 00:02:12,978
+menjalankan pelbagai arahan.
+
+88
+00:02:13,560 --> 00:02:15,234
+Inilah antara kemahiran asas
+
+89
+00:02:15,234 --> 00:02:16,451
+yang berguna dalam pengurusan
+
+90
+00:02:16,451 --> 00:02:17,706
+sistem dan server.
+
+91
+00:02:19,127 --> 00:02:20,196
+Jom kita recap!
+
+92
+00:02:20,762 --> 00:02:22,153
+Linux kernel ialah teras
+
+93
+00:02:22,153 --> 00:02:23,244
+sistem operasi.
+
+94
+00:02:23,903 --> 00:02:24,603
+Ubuntu,
+
+95
+00:02:24,609 --> 00:02:26,457
+Debian dan Fedora ialah contoh
+
+96
+00:02:26,457 --> 00:02:27,440
+distribution.
+
+97
+00:02:28,033 --> 00:02:29,696
+GUI menggunakan grafik,
+
+98
+00:02:29,696 --> 00:02:31,196
+CLI menggunakan arahan
+
+99
+00:02:31,196 --> 00:02:31,907
+terminal.
+
+100
+00:02:32,533 --> 00:02:33,664
+Dan jangan lupa lima command
+
+101
+00:02:33,664 --> 00:02:35,288
+asas yang kita belajar tadi!
+
+102
+00:02:36,493 --> 00:02:37,711
+Terima kasih kerana belajar
+
+103
+00:02:37,711 --> 00:02:38,530
+bersama saya!
+
+104
+00:02:39,150 --> 00:02:40,150
+Kalau perkongsian ini
+
+105
+00:02:40,150 --> 00:02:40,948
+bermanfaat,
+
+106
+00:02:40,987 --> 00:02:41,980
+jangan lupa Like,
+
+107
+00:02:42,030 --> 00:02:43,346
+Share dan Follow untuk lebih
+
+108
+00:02:43,346 --> 00:02:44,530
+banyak video pembelajaran
+
+109
+00:02:44,530 --> 00:02:45,828
+menarik selepas ini.
+
+110
+00:02:46,476 --> 00:02:47,422
+Dan kepada yang ingin
+
+111
+00:02:47,422 --> 00:02:48,933
+menyokong perkongsian ilmu ini
+
+112
+00:02:48,933 --> 00:02:49,861
+dengan Gift Kek,
+
+113
+00:02:49,900 --> 00:02:51,117
+sokongan anda amatlah
+
+114
+00:02:51,117 --> 00:02:51,937
+dihargai.
+
+115
+00:02:52,585 --> 00:02:53,415
+Jumpa lagi!

@@ -42,7 +42,7 @@ const Beat: React.FC<{start: number}> = ({start}) => {
 
 // Episode 03 Gift Kek thank-you: one card per supporter (any count), each entering as its name
 // is read, then the Gift Kek and the full set together with hearts and confetti.
-export const GiftThanks: React.FC<{index: number; supporters: Supporter[]}> = ({index, supporters}) => {
+export const GiftThanks: React.FC<{index: number; supporters: Supporter[]; extra?: React.ReactNode}> = ({index, supporters, extra}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const cfg = useEpisode().scenes[index];
@@ -124,6 +124,7 @@ export const GiftThanks: React.FC<{index: number; supporters: Supporter[]}> = ({
       <Icon sprite={SPARKLE} x={790} y={1120} px={8} delay={cakeAt + 4} bob={6} phase={20} />
       <Reactions start={starts[0] ?? 0} x={60} width={960} bottom={1500} rise={460} count={6} thumbs={false} />
       <Host scene={index} x={276} y={1080} pose={frame >= allAt ? 'celebrate' : frame >= starts[0] ? 'thanks' : 'wave'} step={8} />
+      {extra}
       <Confetti start={allAt} />
     </SceneFrame>
   );
