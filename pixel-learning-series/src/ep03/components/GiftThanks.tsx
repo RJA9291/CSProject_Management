@@ -54,14 +54,17 @@ export const GiftThanks: React.FC<{index: number; supporters: Supporter[]; extra
   const allAt = Math.min(Math.round(voEnd(index) * fps) - 10, cakeAt + 30);
   // Cards share the band between the heading and the host: one column up to 3 supporters,
   // two columns beyond that (an odd last card is centred).
-  const top = 560;
-  const band = 520;
   const cols = n > 3 ? 2 : 1;
   const rows = Math.ceil(n / cols);
+  // Four or more rows start a little higher so cards stay readable.
+  const top = rows > 3 ? 545 : 560;
+  const band = rows > 3 ? 545 : 520;
   const gap = rows > 3 ? 10 : 18;
   const h = Math.min(160, Math.floor((band - gap * (rows - 1)) / rows));
   const width = cols === 1 ? 860 : 490;
   const colGap = 20;
+  // Two-column avatar size (unchanged for three rows, larger than h - 72 for four).
+  const avatar2 = Math.min(88, h - 40);
   const slot = (i: number): [number, number] => {
     const r = Math.floor(i / cols);
     const c = i % cols;
@@ -94,12 +97,12 @@ export const GiftThanks: React.FC<{index: number; supporters: Supporter[]; extra
         const d = starts[i];
         const active = frame >= d && (i === supporters.length - 1 ? frame < cakeAt : frame < starts[i + 1]);
         const glow = together && Math.floor((frame - allAt) / 10) % supporters.length === i;
-        const handleSize = cols === 1 ? Math.min(54, Math.floor((width - h - 200) / ((s.handle.length + 1) * 0.6))) : Math.min(38, Math.floor(250 / ((s.handle.length + 1) * 0.6)));
+        const handleSize = cols === 1 ? Math.min(54, Math.floor((width - h - 200) / ((s.handle.length + 1) * 0.6))) : Math.min(38, Math.floor((width - 118 - avatar2) / ((s.handle.length + 1) * 0.66)));
         return (
           <Reveal key={s.handle} delay={d} mode={ENTRANCES[i % 3]} style={{left: slot(i)[0], top: slot(i)[1], width, height: h}}>
             <PixelBox bg={COLORS.white} border={active || glow ? COLORS.red : COLORS.text} padding={cols === 1 ? '10px 22px' : '10px 14px'} style={{height: '100%'}}>
               <div style={{display: 'flex', alignItems: 'center', gap: cols === 1 ? 22 : 12, height: '100%'}}>
-                <Avatar s={s} size={cols === 1 ? h - 52 : h - 72} />
+                <Avatar s={s} size={cols === 1 ? h - 52 : avatar2} />
                 <div style={{display: 'flex', flexDirection: 'column', gap: 6, flex: 1, minWidth: 0}}>
                   <div style={{fontFamily: FONTS.heading, fontWeight: 900, fontSize: handleSize, color: COLORS.text, whiteSpace: 'nowrap', lineHeight: 1}}>@{s.handle}</div>
                   <div style={{display: 'flex', alignItems: 'center', gap: 10}}>

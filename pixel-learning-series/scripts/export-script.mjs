@@ -10,6 +10,7 @@ const EPISODES = {
   ep03: {file: './src/ep03/config/episode.ts', name: 'EP03'},
   ep04: {file: './src/ep04/config/episode.ts', name: 'EP04'},
   ep05: {file: './src/ep05/config/episode.ts', name: 'EP05'},
+  ep06: {file: './src/ep06/config/episode.ts', name: 'EP06'},
 };
 const id = process.argv[2] ?? 'ep01';
 const ep = EPISODES[id];

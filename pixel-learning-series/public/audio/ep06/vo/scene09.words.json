@@ -1,0 +1,160 @@
+{
+ "text": "Kalau printer tak boleh print, periksa bekalan kuasa, kertas, toner dan sambungan network atau USB. Semak juga print queue untuk memastikan tiada dokumen yang tersangkut. Selepas itu, cuba buat test print.",
+ "words": [
+  {
+   "text": "Kalau",
+   "start": 0.093458,
+   "end": 0.321708
+  },
+  {
+   "text": "printer",
+   "start": 0.343458,
+   "end": 0.658666
+  },
+  {
+   "text": "tak",
+   "start": 0.691291,
+   "end": 0.821707
+  },
+  {
+   "text": "boleh",
+   "start": 0.832625,
+   "end": 1.05
+  },
+  {
+   "text": "print",
+   "start": 1.07175,
+   "end": 1.332625
+  },
+  {
+   "text": "periksa",
+   "start": 1.55,
+   "end": 1.82175
+  },
+  {
+   "text": "bekalan",
+   "start": 1.854333,
+   "end": 2.104333
+  },
+  {
+   "text": "kuasa",
+   "start": 2.147833,
+   "end": 2.517416
+  },
+  {
+   "text": "kertas",
+   "start": 2.734791,
+   "end": 3.245666
+  },
+  {
+   "text": "toner",
+   "start": 3.408708,
+   "end": 3.723916
+  },
+  {
+   "text": "dan",
+   "start": 3.767375,
+   "end": 3.930416
+  },
+  {
+   "text": "sambungan",
+   "start": 3.941291,
+   "end": 4.321707
+  },
+  {
+   "text": "network",
+   "start": 4.32175,
+   "end": 4.734791
+  },
+  {
+   "text": "atau",
+   "start": 4.77825,
+   "end": 5.02825
+  },
+  {
+   "text": "U.S.B.",
+   "start": 5.082625,
+   "end": 5.647833
+  },
+  {
+   "text": "Semak",
+   "start": 6.5,
+   "end": 6.826083
+  },
+  {
+   "text": "juga",
+   "start": 6.847833,
+   "end": 7.054374
+  },
+  {
+   "text": "print",
+   "start": 7.076083,
+   "end": 7.293458
+  },
+  {
+   "text": "queue",
+   "start": 7.304333,
+   "end": 7.760874
+  },
+  {
+   "text": "untuk",
+   "start": 7.760875,
+   "end": 8.010875
+  },
+  {
+   "text": "memastikan",
+   "start": 8.032625,
+   "end": 8.5435
+  },
+  {
+   "text": "tiada",
+   "start": 8.565208,
+   "end": 8.804333
+  },
+  {
+   "text": "dokumen",
+   "start": 8.836958,
+   "end": 9.293499
+  },
+  {
+   "text": "yang",
+   "start": 9.304333,
+   "end": 9.445624
+  },
+  {
+   "text": "tersangkut",
+   "start": 9.467375,
+   "end": 9.97825
+  },
+  {
+   "text": "Selepas",
+   "start": 10.72825,
+   "end": 11.108666
+  },
+  {
+   "text": "itu",
+   "start": 11.108708,
+   "end": 11.413041
+  },
+  {
+   "text": "cuba",
+   "start": 11.641291,
+   "end": 11.880416
+  },
+  {
+   "text": "buat",
+   "start": 11.891291,
+   "end": 12.065207
+  },
+  {
+   "text": "test",
+   "start": 12.097833,
+   "end": 12.326083
+  },
+  {
+   "text": "print",
+   "start": 12.336958,
+   "end": 12.619583
+  }
+ ]
+}

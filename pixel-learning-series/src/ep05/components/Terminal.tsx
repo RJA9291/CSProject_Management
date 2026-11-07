@@ -43,12 +43,14 @@ type Props = {
   finalDir?: string;
   // Highlights the step currently being explained.
   focus?: number;
+  // 'windows' draws a Command Prompt style prompt: `<dir>>` (dir like C:\\Users\\staff).
+  shell?: 'unix' | 'windows';
 };
 
 type Line = {kind: 'prompt' | 'out' | 'banner'; dir?: string; text: string; color?: string; active?: boolean};
 
 // Pixel terminal window that types commands one by one, then prints their output.
-export const Terminal: React.FC<Props> = ({x, y, w, h, steps, user = 'student', host = 'linux', title, delay = 0, size = 44, banner = [], finalDir, focus}) => {
+export const Terminal: React.FC<Props> = ({x, y, w, h, steps, user = 'student', host = 'linux', title, delay = 0, size = 44, banner = [], finalDir, focus, shell = 'unix'}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const s = pop(frame, fps, delay, 11);
@@ -89,6 +91,14 @@ export const Terminal: React.FC<Props> = ({x, y, w, h, steps, user = 'student', 
           {visible.map((l, i) => {
             const idx = i + offset;
             const cursor = cursorOn === idx && blink ? <span style={{background: EP05_THEME.green, color: EP05_THEME.green}}>_</span> : null;
+            if (l.kind === 'prompt' && shell === 'windows')
+              return (
+                <div key={idx} style={{whiteSpace: 'pre', background: l.active ? 'rgba(57,184,107,0.16)' : undefined}}>
+                  <span style={{color: EP05_THEME.termText}}>{l.dir}&gt;</span>
+                  <span style={{color: COLORS.white}}>{l.text}</span>
+                  {cursor}
+                </div>
+              );
             if (l.kind === 'prompt')
               return (
                 <div key={idx} style={{whiteSpace: 'pre', background: l.active ? 'rgba(57,184,107,0.16)' : undefined}}>

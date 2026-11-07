@@ -1,0 +1,55 @@
+{
+ "text": "Assalamualaikum dan hai semua! Selamat kembali. Jom, mari sama-sama belajar!",
+ "words": [
+  {
+   "text": "Assalamualaikum",
+   "start": 0.093458,
+   "end": 0.821708
+  },
+  {
+   "text": "dan",
+   "start": 0.843458,
+   "end": 0.995624
+  },
+  {
+   "text": "hai",
+   "start": 0.995666,
+   "end": 1.202207
+  },
+  {
+   "text": "semua",
+   "start": 1.223916,
+   "end": 1.615207
+  },
+  {
+   "text": "Selamat",
+   "start": 2.445666,
+   "end": 2.771749
+  },
+  {
+   "text": "kembali",
+   "start": 2.804333,
+   "end": 3.184749
+  },
+  {
+   "text": "Jom",
+   "start": 4.032625,
+   "end": 4.391333
+  },
+  {
+   "text": "mari",
+   "start": 4.554333,
+   "end": 4.771708
+  },
+  {
+   "text": "sama-sama",
+   "start": 4.793458,
+   "end": 5.249999
+  },
+  {
+   "text": "belajar",
+   "start": 5.260875,
+   "end": 5.695666
+  }
+ ]
+}

@@ -105,6 +105,8 @@ const sfx = {
   link: mix(0.36, [60, 67, 72].map((n, i) => [i * 0.07, tone(0.14, () => midi(n + 24), decay(0.14), 'square', 0.25), 0.45])),
   // Episode 05 (Linux): short keyboard tick.
   key: mix(0.05, [[0, tone(0.03, () => 3200, decay(0.025, 0.001), 'square', 0.5), 0.35], [0, tone(0.04, () => 180, decay(0.03, 0.001), 'square', 0.5), 0.35]]),
+  // Episode 06 (IT Support): printer feed - rhythmic mechanical ticks.
+  print: mix(0.9, Array.from({length: 9}, (_, i) => [i * 0.09, tone(0.06, () => 140 + (i % 2) * 60, decay(0.06, 0.002), 'square', 0.5), 0.4])),
   buzz: tone(0.28, (t) => 150 - 60 * t, decay(0.28, 0.003), 'square', 0.5),
 };
 for (const [name, buf] of Object.entries(sfx)) writeWav(`sfx/${name}.wav`, buf);
@@ -251,6 +253,30 @@ song('music/bgm-ep05.wav', {
   ],
   lead: 'tri',
   leadGain: 0.28,
+});
+
+// Episode 06 (IT Support): upbeat 104 BPM I–vi–ii–V with a square lead.
+song('music/bgm-ep06.wav', {
+  bpm: 104,
+  chords: [
+    [48, [60, 64, 67]],
+    [45, [57, 60, 64]],
+    [50, [57, 62, 65]],
+    [43, [55, 59, 62]],
+  ],
+  melody: [
+    [72, null, 76, 79, 76, null, 72, 74],
+    [76, null, 72, 69, 72, 76, 79, null],
+    [77, null, 74, 77, 81, 79, 77, null],
+    [74, 79, 83, null, 79, 74, 71, null],
+    [79, 76, 72, null, 76, 79, 84, null],
+    [81, null, 76, 72, 76, 81, 84, null],
+    [86, 84, 81, null, 77, 74, 77, null],
+    [79, 77, 74, null, 71, 74, null, null],
+  ],
+  lead: 'square',
+  leadDuty: 0.25,
+  leadGain: 0.11,
 });
 
 console.log(`Wrote ${Object.keys(sfx).length} SFX and music loops (Ep01 ${dur.toFixed(1)}s, Ep02)`);

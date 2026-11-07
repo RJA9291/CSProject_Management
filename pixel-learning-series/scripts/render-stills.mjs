@@ -35,7 +35,12 @@ const EP05_IDS = [
   'Ep05Scene06Kernel', 'Ep05Scene07Distros', 'Ep05Scene08GuiCli', 'Ep05Scene09Commands',
   'Ep05Scene10Server', 'Ep05Scene11Recap', 'Ep05Scene12CTA',
 ];
-const ids = episode === 'ep05' ? EP05_IDS : episode === 'ep04' ? EP04_IDS : episode === 'ep03' ? EP03_IDS : episode === 'ep02' ? EP02_IDS : EP01_IDS;
+const EP06_IDS = [
+  'Ep06Scene01Hook', 'Ep06Scene02Greeting', 'Ep06Scene03Supporters', 'Ep06Scene04WhatIs', 'Ep06Scene05Problems',
+  'Ep06Scene06Troubleshooting', 'Ep06Scene07Steps', 'Ep06Scene08Internet', 'Ep06Scene09Printer',
+  'Ep06Scene10Factory', 'Ep06Scene11Recap', 'Ep06Scene12CTA',
+];
+const ids = episode === 'ep06' ? EP06_IDS : episode === 'ep05' ? EP05_IDS : episode === 'ep04' ? EP04_IDS : episode === 'ep03' ? EP03_IDS : episode === 'ep02' ? EP02_IDS : EP01_IDS;
 mkdirSync('public/qc', {recursive: true});
 let serveUrl = await bundle({entryPoint: path.resolve('src/index.ts')});
 const results = {};
@@ -52,7 +57,7 @@ for (const at of moments) {
 // Re-bundle so the freshly written public/qc images are included.
 serveUrl = await bundle({entryPoint: path.resolve('src/index.ts')});
 for (const [tag, frames] of Object.entries(results)) {
-  const inputProps = {tag, frames, names: ids.map((id) => id.replace(/^(Ep0[2-5])?Scene\d+/, ''))};
+  const inputProps = {tag, frames, names: ids.map((id) => id.replace(/^(Ep0[2-6])?Scene\d+/, ''))};
   const composition = await selectComposition({serveUrl, id: 'QCSheet', inputProps, browserExecutable, chromiumOptions});
   const output = path.resolve(`out/stills/${tag}.png`);
   await renderStill({composition, serveUrl, output, inputProps, browserExecutable, chromiumOptions});

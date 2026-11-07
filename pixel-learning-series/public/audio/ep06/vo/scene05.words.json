@@ -1,0 +1,100 @@
+{
+ "text": "Antara masalah biasa yang dihadapi pengguna ialah komputer perlahan, tiada internet, printer tidak berfungsi, software error dan masalah login.",
+ "words": [
+  {
+   "text": "Antara",
+   "start": 0.093458,
+   "end": 0.386916
+  },
+  {
+   "text": "masalah",
+   "start": 0.397833,
+   "end": 0.767416
+  },
+  {
+   "text": "biasa",
+   "start": 0.77825,
+   "end": 1.104333
+  },
+  {
+   "text": "yang",
+   "start": 1.136958,
+   "end": 1.234791
+  },
+  {
+   "text": "dihadapi",
+   "start": 1.289125,
+   "end": 1.702166
+  },
+  {
+   "text": "pengguna",
+   "start": 1.723916,
+   "end": 2.115207
+  },
+  {
+   "text": "ialah",
+   "start": 2.136958,
+   "end": 2.419583
+  },
+  {
+   "text": "komputer",
+   "start": 2.452166,
+   "end": 2.832582
+  },
+  {
+   "text": "perlahan",
+   "start": 2.865208,
+   "end": 3.354333
+  },
+  {
+   "text": "tiada",
+   "start": 3.582625,
+   "end": 3.832625
+  },
+  {
+   "text": "internet",
+   "start": 3.832625,
+   "end": 4.332625
+  },
+  {
+   "text": "printer",
+   "start": 4.55,
+   "end": 4.865208
+  },
+  {
+   "text": "tidak",
+   "start": 4.930416,
+   "end": 5.136957
+  },
+  {
+   "text": "berfungsi",
+   "start": 5.136958,
+   "end": 5.658708
+  },
+  {
+   "text": "software",
+   "start": 5.919583,
+   "end": 6.332624
+  },
+  {
+   "text": "error",
+   "start": 6.343458,
+   "end": 6.691291
+  },
+  {
+   "text": "dan",
+   "start": 6.756541,
+   "end": 6.941291
+  },
+  {
+   "text": "masalah",
+   "start": 6.941291,
+   "end": 7.354332
+  },
+  {
+   "text": "login",
+   "start": 7.354333,
+   "end": 7.756499
+  }
+ ]
+}

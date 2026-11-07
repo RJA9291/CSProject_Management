@@ -1,0 +1,479 @@
+1
+00:00:00,593 --> 00:00:02,007
+Pernah tak komputer tiba-tiba
+
+2
+00:00:02,007 --> 00:00:02,854
+tak boleh guna,
+
+3
+00:00:02,854 --> 00:00:04,398
+internet terputus atau printer
+
+4
+00:00:04,398 --> 00:00:05,283
+tak mahu print?
+
+5
+00:00:05,859 --> 00:00:07,102
+Siapa yang kita panggil?
+
+6
+00:00:07,728 --> 00:00:08,570
+IT Support!
+
+7
+00:00:09,660 --> 00:00:11,382
+Assalamualaikum dan hai semua!
+
+8
+00:00:12,012 --> 00:00:12,951
+Selamat kembali.
+
+9
+00:00:13,599 --> 00:00:14,121
+Jom,
+
+10
+00:00:14,121 --> 00:00:15,462
+mari sama-sama belajar!
+
+11
+00:00:16,593 --> 00:00:17,641
+Sebelum kita mula,
+
+12
+00:00:17,713 --> 00:00:19,126
+saya nak ucapkan terima kasih
+
+13
+00:00:19,126 --> 00:00:20,398
+kepada tujuh orang yang sudi
+
+14
+00:00:20,398 --> 00:00:21,467
+belanja Gift Kek!
+
+15
+00:00:22,076 --> 00:00:23,820
+Terima kasih @HakimTechMY,
+
+16
+00:00:23,870 --> 00:00:25,315
+@FarahDigital88,
+
+17
+00:00:25,315 --> 00:00:26,298
+@AmirulIT,
+
+18
+00:00:26,370 --> 00:00:27,359
+@NabilaOnline,
+
+19
+00:00:27,359 --> 00:00:28,207
+@DanialTech,
+
+20
+00:00:28,207 --> 00:00:30,189
+@AinaBelajar dan @SyafiqMY!
+
+21
+00:00:30,837 --> 00:00:32,315
+Sokongan anda semua membuatkan
+
+22
+00:00:32,315 --> 00:00:33,598
+saya lebih bersemangat untuk
+
+23
+00:00:33,598 --> 00:00:34,961
+terus berkongsi ilmu.
+
+24
+00:00:35,598 --> 00:00:37,026
+Terima kasih banyak-banyak!
+
+25
+00:00:38,227 --> 00:00:39,694
+IT Support ialah fungsi yang
+
+26
+00:00:39,694 --> 00:00:40,488
+membantu pengguna
+
+27
+00:00:40,488 --> 00:00:41,509
+menyelesaikan masalah
+
+28
+00:00:41,509 --> 00:00:42,633
+berkaitan komputer,
+
+29
+00:00:42,705 --> 00:00:43,427
+software,
+
+30
+00:00:43,477 --> 00:00:44,944
+hardware dan rangkaian supaya
+
+31
+00:00:44,944 --> 00:00:46,216
+kerja dapat berjalan dengan
+
+32
+00:00:46,216 --> 00:00:46,883
+lancar.
+
+33
+00:00:47,960 --> 00:00:49,156
+Antara masalah biasa yang
+
+34
+00:00:49,156 --> 00:00:50,319
+dihadapi pengguna ialah
+
+35
+00:00:50,319 --> 00:00:51,421
+komputer perlahan,
+
+36
+00:00:51,449 --> 00:00:52,399
+tiada internet,
+
+37
+00:00:52,417 --> 00:00:53,725
+printer tidak berfungsi,
+
+38
+00:00:53,786 --> 00:00:55,221
+software error dan masalah
+
+39
+00:00:55,221 --> 00:00:55,823
+login.
+
+40
+00:00:57,560 --> 00:00:59,114
+Troubleshooting ialah proses
+
+41
+00:00:59,114 --> 00:01:00,782
+mengenal pasti punca masalah,
+
+42
+00:01:00,832 --> 00:01:02,180
+menguji kemungkinan penyebab
+
+43
+00:01:02,180 --> 00:01:03,560
+dan melaksanakan penyelesaian
+
+44
+00:01:03,560 --> 00:01:04,347
+yang sesuai.
+
+45
+00:01:05,527 --> 00:01:07,125
+Untuk menyelesaikan masalah,
+
+46
+00:01:07,125 --> 00:01:08,281
+ikut lima langkah.
+
+47
+00:01:08,879 --> 00:01:10,194
+Kenal pasti masalah,
+
+48
+00:01:10,194 --> 00:01:11,090
+periksa punca,
+
+49
+00:01:11,118 --> 00:01:12,046
+buat ujian,
+
+50
+00:01:12,053 --> 00:01:13,401
+laksanakan penyelesaian dan
+
+51
+00:01:13,401 --> 00:01:14,977
+akhirnya sahkan masalah sudah
+
+52
+00:01:14,977 --> 00:01:15,622
+selesai.
+
+53
+00:01:16,827 --> 00:01:18,022
+Bayangkan pengguna mengadu
+
+54
+00:01:18,022 --> 00:01:19,305
+komputer tidak boleh connect
+
+55
+00:01:19,305 --> 00:01:20,070
+ke internet.
+
+56
+00:01:20,635 --> 00:01:21,379
+Mula-mula,
+
+57
+00:01:21,385 --> 00:01:23,075
+periksa kabel atau Wi-Fi.
+
+58
+00:01:23,744 --> 00:01:24,466
+Kemudian,
+
+59
+00:01:24,472 --> 00:01:26,266
+semak konfigurasi IP dan cuba
+
+60
+00:01:26,266 --> 00:01:27,516
+ping gateway untuk melihat
+
+61
+00:01:27,516 --> 00:01:28,842
+sama ada sambungan ke router
+
+62
+00:01:28,842 --> 00:01:29,585
+berfungsi.
+
+63
+00:01:30,233 --> 00:01:31,429
+Jika masih gagal,
+
+64
+00:01:31,429 --> 00:01:32,635
+teruskan pemeriksaan dan
+
+65
+00:01:32,635 --> 00:01:33,896
+escalate kepada Network
+
+66
+00:01:33,896 --> 00:01:35,157
+Engineer jika masalah
+
+67
+00:01:35,157 --> 00:01:36,288
+melibatkan rangkaian yang
+
+68
+00:01:36,288 --> 00:01:37,096
+lebih besar.
+
+69
+00:01:38,493 --> 00:01:39,933
+Kalau printer tak boleh print,
+
+70
+00:01:39,950 --> 00:01:41,117
+periksa bekalan kuasa,
+
+71
+00:01:41,135 --> 00:01:41,809
+kertas,
+
+72
+00:01:41,809 --> 00:01:43,178
+toner dan sambungan network
+
+73
+00:01:43,178 --> 00:01:44,248
+atau USB.
+
+74
+00:01:44,900 --> 00:01:46,433
+Semak juga print queue untuk
+
+75
+00:01:46,433 --> 00:01:47,867
+memastikan tiada dokumen yang
+
+76
+00:01:47,867 --> 00:01:48,578
+tersangkut.
+
+77
+00:01:49,128 --> 00:01:50,013
+Selepas itu,
+
+78
+00:01:50,041 --> 00:01:51,220
+cuba buat test print.
+
+79
+00:01:52,627 --> 00:01:54,159
+Bayangkan anda bekerja sebagai
+
+80
+00:01:54,159 --> 00:01:55,751
+IT Support di sebuah kilang.
+
+81
+00:01:56,359 --> 00:01:57,566
+Production tak boleh akses
+
+82
+00:01:57,566 --> 00:01:58,201
+sistem,
+
+83
+00:01:58,207 --> 00:01:59,664
+manakala QA pula menghadapi
+
+84
+00:01:59,664 --> 00:02:00,690
+masalah printer.
+
+85
+00:02:01,262 --> 00:02:02,544
+IT Support perlu menyiasat
+
+86
+00:02:02,544 --> 00:02:03,207
+masalah,
+
+87
+00:02:03,207 --> 00:02:04,457
+mengenal pasti punca dan
+
+88
+00:02:04,457 --> 00:02:05,462
+menyelesaikannya.
+
+89
+00:02:06,099 --> 00:02:07,414
+Jika masalah memerlukan
+
+90
+00:02:07,414 --> 00:02:08,353
+kepakaran lain,
+
+91
+00:02:08,370 --> 00:02:09,664
+ia perlu diescalate kepada
+
+92
+00:02:09,664 --> 00:02:11,164
+Network Engineer atau System
+
+93
+00:02:11,164 --> 00:02:12,222
+Administrator.
+
+94
+00:02:13,593 --> 00:02:14,663
+Jom kita recap!
+
+95
+00:02:15,228 --> 00:02:16,630
+IT Support membantu pengguna
+
+96
+00:02:16,630 --> 00:02:17,696
+menyelesaikan masalah
+
+97
+00:02:17,696 --> 00:02:18,417
+teknologi.
+
+98
+00:02:19,076 --> 00:02:19,989
+Ingat lima langkah
+
+99
+00:02:19,989 --> 00:02:21,783
+troubleshooting: Identify,
+
+100
+00:02:21,783 --> 00:02:22,239
+Check,
+
+101
+00:02:22,239 --> 00:02:22,739
+Test,
+
+102
+00:02:22,739 --> 00:02:24,080
+Fix dan Verify.
+
+103
+00:02:24,739 --> 00:02:25,652
+Dan jangan lupa,
+
+104
+00:02:25,652 --> 00:02:26,935
+escalate masalah jika
+
+105
+00:02:26,935 --> 00:02:28,163
+memerlukan kepakaran yang
+
+106
+00:02:28,163 --> 00:02:29,091
+lebih khusus.
+
+107
+00:02:30,193 --> 00:02:31,411
+Terima kasih kerana belajar
+
+108
+00:02:31,411 --> 00:02:32,230
+bersama saya!
+
+109
+00:02:32,850 --> 00:02:33,850
+Kalau perkongsian ini
+
+110
+00:02:33,850 --> 00:02:34,648
+bermanfaat,
+
+111
+00:02:34,687 --> 00:02:35,680
+jangan lupa Like,
+
+112
+00:02:35,730 --> 00:02:37,046
+Share dan Follow untuk lebih
+
+113
+00:02:37,046 --> 00:02:38,230
+banyak video pembelajaran
+
+114
+00:02:38,230 --> 00:02:39,528
+menarik selepas ini.
+
+115
+00:02:40,176 --> 00:02:41,122
+Dan kepada yang ingin
+
+116
+00:02:41,122 --> 00:02:42,633
+menyokong perkongsian ilmu ini
+
+117
+00:02:42,633 --> 00:02:43,561
+dengan Gift Kek,
+
+118
+00:02:43,600 --> 00:02:44,817
+sokongan anda amatlah
+
+119
+00:02:44,817 --> 00:02:45,637
+dihargai.
+
+120
+00:02:46,285 --> 00:02:47,115
+Jumpa lagi!

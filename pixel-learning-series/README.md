@@ -5,6 +5,7 @@
 - **Episod 03:** Cybersecurity Basics – Protect Yourself in the Digital World (`CyberVideo`, `npm run render:ep03`)
 - **Episod 04:** Computer Networking Basics – How Computers Connect & How the Internet Works (`NetworkVideo`, `npm run render:ep04`)
 - **Episod 05:** Introduction to Linux – Discover the Operating System Behind the Digital World (`LinuxVideo`, `npm run render:ep05`)
+- **Episod 06:** IT Support & Troubleshooting Basics (`SupportVideo`, `npm run render:ep06`)
 
 > Video siap render (MP4 + SRT) dan helaian QC ada dalam folder `output/`. Render baharu ditulis ke `out/` (tidak di-commit).
 
@@ -146,6 +147,23 @@ npm run audio:vo:ep05
 npm run render:ep05     # out/ep05-introduction-to-linux.mp4
 npm run srt:ep05
 node scripts/render-stills.mjs 0.55,0.93 ep05
+```
+
+## Episod 06 – IT Support & Troubleshooting Basics
+
+Struktur: `src/ep06/`:
+- `config/scenes.ts`: skrip VO (12 scene), teks, kad masalah, 5 langkah, sesi Command Prompt (`NET_COMMANDS`), senario kilang A/B, recap.
+- `config/supporters.ts`: **7 supporter Gift Kek** (nama contoh fiksyen; tukar sebelum publish). Kad guna 2 lajur x 4 baris.
+- `assets/icons.ts`: `TECH_LOOK` (host yang SAMA + headset IT), monitor (error/ok/loading), toolbox, kertas, tiket, ikon escalate.
+- `components/People.tsx`: watak pengguna (guna rupa avatar siri).
+- Terminal Ep05 kini ada `shell="windows"` untuk prompt Command Prompt (`C:\Users\staff>`); arahan `ipconfig`, `ipconfig /all`, `ping 192.168.1.1` dilabel "Command Prompt (Windows) • SIMULASI", dan gateway ditanda sebagai contoh.
+- SFX baru `print` (`npm run audio:ep06`).
+
+```bash
+npm run audio:vo:ep06
+npm run render:ep06     # out/ep06-it-support-troubleshooting.mp4
+npm run srt:ep06
+node scripts/render-stills.mjs 0.55,0.93 ep06
 ```
 
 ## Format siri (untuk episod akan datang)

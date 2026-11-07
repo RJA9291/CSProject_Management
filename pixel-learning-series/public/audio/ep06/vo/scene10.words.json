@@ -1,0 +1,225 @@
+{
+ "text": "Bayangkan anda bekerja sebagai IT Support di sebuah kilang. Production tak boleh akses sistem, manakala QA pula menghadapi masalah printer. IT Support perlu menyiasat masalah, mengenal pasti punca dan menyelesaikannya. Jika masalah memerlukan kepakaran lain, ia perlu diescalate kepada Network Engineer atau System Administrator.",
+ "words": [
+  {
+   "text": "Bayangkan",
+   "start": 0.093458,
+   "end": 0.604333
+  },
+  {
+   "text": "anda",
+   "start": 0.604333,
+   "end": 0.865208
+  },
+  {
+   "text": "bekerja",
+   "start": 0.886958,
+   "end": 1.299999
+  },
+  {
+   "text": "sebagai",
+   "start": 1.32175,
+   "end": 1.626083
+  },
+  {
+   "text": "I.T.",
+   "start": 1.626083,
+   "end": 1.876083
+  },
+  {
+   "text": "Support",
+   "start": 1.897833,
+   "end": 2.223916
+  },
+  {
+   "text": "di",
+   "start": 2.223916,
+   "end": 2.310874
+  },
+  {
+   "text": "sebuah",
+   "start": 2.332625,
+   "end": 2.61525
+  },
+  {
+   "text": "kilang",
+   "start": 2.636958,
+   "end": 3.017374
+  },
+  {
+   "text": "Production",
+   "start": 3.826083,
+   "end": 4.282624
+  },
+  {
+   "text": "tak",
+   "start": 4.304333,
+   "end": 4.423916
+  },
+  {
+   "text": "boleh",
+   "start": 4.434791,
+   "end": 4.706541
+  },
+  {
+   "text": "akses",
+   "start": 4.706541,
+   "end": 5.032624
+  },
+  {
+   "text": "sistem",
+   "start": 5.032625,
+   "end": 5.467416
+  },
+  {
+   "text": "manakala",
+   "start": 5.673916,
+   "end": 5.945666
+  },
+  {
+   "text": "Q.A.",
+   "start": 5.97825,
+   "end": 6.336958
+  },
+  {
+   "text": "pula",
+   "start": 6.358708,
+   "end": 6.597833
+  },
+  {
+   "text": "menghadapi",
+   "start": 6.608708,
+   "end": 7.097833
+  },
+  {
+   "text": "masalah",
+   "start": 7.130416,
+   "end": 7.510832
+  },
+  {
+   "text": "printer",
+   "start": 7.510875,
+   "end": 7.956541
+  },
+  {
+   "text": "I.T.",
+   "start": 8.72825,
+   "end": 9.010875
+  },
+  {
+   "text": "Support",
+   "start": 9.032625,
+   "end": 9.326083
+  },
+  {
+   "text": "perlu",
+   "start": 9.336958,
+   "end": 9.576083
+  },
+  {
+   "text": "menyiasat",
+   "start": 9.597833,
+   "end": 9.978249
+  },
+  {
+   "text": "masalah",
+   "start": 10.010875,
+   "end": 10.5
+  },
+  {
+   "text": "mengenal",
+   "start": 10.673916,
+   "end": 10.978249
+  },
+  {
+   "text": "pasti",
+   "start": 11.0,
+   "end": 11.304333
+  },
+  {
+   "text": "punca",
+   "start": 11.326083,
+   "end": 11.706499
+  },
+  {
+   "text": "dan",
+   "start": 11.75,
+   "end": 11.913041
+  },
+  {
+   "text": "menyelesaikannya",
+   "start": 11.923916,
+   "end": 12.728249
+  },
+  {
+   "text": "Jika",
+   "start": 13.565208,
+   "end": 13.869541
+  },
+  {
+   "text": "masalah",
+   "start": 13.902166,
+   "end": 14.315207
+  },
+  {
+   "text": "memerlukan",
+   "start": 14.315208,
+   "end": 14.826083
+  },
+  {
+   "text": "kepakaran",
+   "start": 14.880416,
+   "end": 15.249999
+  },
+  {
+   "text": "lain",
+   "start": 15.260875,
+   "end": 15.619583
+  },
+  {
+   "text": "ia",
+   "start": 15.836958,
+   "end": 16.032624
+  },
+  {
+   "text": "perlu",
+   "start": 16.054333,
+   "end": 16.304333
+  },
+  {
+   "text": "diescalate",
+   "start": 16.326083,
+   "end": 16.815208
+  },
+  {
+   "text": "kepada",
+   "start": 16.826083,
+   "end": 17.086958
+  },
+  {
+   "text": "Network",
+   "start": 17.130416,
+   "end": 17.499999
+  },
+  {
+   "text": "Engineer",
+   "start": 17.510875,
+   "end": 17.967416
+  },
+  {
+   "text": "atau",
+   "start": 18.010875,
+   "end": 18.260875
+  },
+  {
+   "text": "System",
+   "start": 18.293458,
+   "end": 18.630416
+  },
+  {
+   "text": "Administrator",
+   "start": 18.630416,
+   "end": 19.489124
+  }
+ ]
+}

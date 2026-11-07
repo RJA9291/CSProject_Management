@@ -1,0 +1,240 @@
+{
+ "text": "Bayangkan pengguna mengadu komputer tidak boleh connect ke internet. Mula-mula, periksa kabel atau Wi-Fi. Kemudian, semak konfigurasi IP dan cuba ping gateway untuk melihat sama ada sambungan ke router berfungsi. Jika masih gagal, teruskan pemeriksaan dan escalate kepada Network Engineer jika masalah melibatkan rangkaian yang lebih besar.",
+ "words": [
+  {
+   "text": "Bayangkan",
+   "start": 0.093458,
+   "end": 0.582583
+  },
+  {
+   "text": "pengguna",
+   "start": 0.593458,
+   "end": 0.963041
+  },
+  {
+   "text": "mengadu",
+   "start": 0.963041,
+   "end": 1.245666
+  },
+  {
+   "text": "komputer",
+   "start": 1.289125,
+   "end": 1.702166
+  },
+  {
+   "text": "tidak",
+   "start": 1.756541,
+   "end": 1.952207
+  },
+  {
+   "text": "boleh",
+   "start": 1.963041,
+   "end": 2.180416
+  },
+  {
+   "text": "connect",
+   "start": 2.191291,
+   "end": 2.528249
+  },
+  {
+   "text": "ke",
+   "start": 2.57175,
+   "end": 2.658708
+  },
+  {
+   "text": "internet",
+   "start": 2.658708,
+   "end": 3.136958
+  },
+  {
+   "text": "Mula-mula",
+   "start": 3.902166,
+   "end": 4.445624
+  },
+  {
+   "text": "periksa",
+   "start": 4.652166,
+   "end": 4.967374
+  },
+  {
+   "text": "kabel",
+   "start": 5.010875,
+   "end": 5.380458
+  },
+  {
+   "text": "atau",
+   "start": 5.391291,
+   "end": 5.630416
+  },
+  {
+   "text": "Wi-Fi",
+   "start": 5.684791,
+   "end": 6.141332
+  },
+  {
+   "text": "Kemudian",
+   "start": 7.010875,
+   "end": 7.532625
+  },
+  {
+   "text": "semak",
+   "start": 7.739125,
+   "end": 8.043458
+  },
+  {
+   "text": "konfigurasi",
+   "start": 8.054333,
+   "end": 8.695624
+  },
+  {
+   "text": "I.P.",
+   "start": 8.695666,
+   "end": 9.054374
+  },
+  {
+   "text": "dan",
+   "start": 9.076083,
+   "end": 9.217374
+  },
+  {
+   "text": "cuba",
+   "start": 9.27175,
+   "end": 9.510875
+  },
+  {
+   "text": "ping",
+   "start": 9.532625,
+   "end": 9.706541
+  },
+  {
+   "text": "gateway",
+   "start": 9.75,
+   "end": 10.163041
+  },
+  {
+   "text": "untuk",
+   "start": 10.173916,
+   "end": 10.413041
+  },
+  {
+   "text": "melihat",
+   "start": 10.434791,
+   "end": 10.760874
+  },
+  {
+   "text": "sama",
+   "start": 10.782625,
+   "end": 10.967375
+  },
+  {
+   "text": "ada",
+   "start": 10.967375,
+   "end": 11.130416
+  },
+  {
+   "text": "sambungan",
+   "start": 11.163041,
+   "end": 11.619582
+  },
+  {
+   "text": "ke",
+   "start": 11.663041,
+   "end": 11.717374
+  },
+  {
+   "text": "router",
+   "start": 11.782625,
+   "end": 12.097833
+  },
+  {
+   "text": "berfungsi",
+   "start": 12.108708,
+   "end": 12.652166
+  },
+  {
+   "text": "Jika",
+   "start": 13.5,
+   "end": 13.804333
+  },
+  {
+   "text": "masih",
+   "start": 13.826083,
+   "end": 14.097833
+  },
+  {
+   "text": "gagal",
+   "start": 14.119583,
+   "end": 14.521749
+  },
+  {
+   "text": "teruskan",
+   "start": 14.695666,
+   "end": 15.152207
+  },
+  {
+   "text": "pemeriksaan",
+   "start": 15.163041,
+   "end": 15.749999
+  },
+  {
+   "text": "dan",
+   "start": 15.75,
+   "end": 15.902166
+  },
+  {
+   "text": "escalate",
+   "start": 15.902166,
+   "end": 16.445624
+  },
+  {
+   "text": "kepada",
+   "start": 16.456541,
+   "end": 16.717416
+  },
+  {
+   "text": "Network",
+   "start": 16.760875,
+   "end": 17.152166
+  },
+  {
+   "text": "Engineer",
+   "start": 17.163041,
+   "end": 17.641291
+  },
+  {
+   "text": "jika",
+   "start": 17.706541,
+   "end": 17.967416
+  },
+  {
+   "text": "masalah",
+   "start": 17.989125,
+   "end": 18.423916
+  },
+  {
+   "text": "melibatkan",
+   "start": 18.423916,
+   "end": 18.858707
+  },
+  {
+   "text": "rangkaian",
+   "start": 18.869583,
+   "end": 19.336958
+  },
+  {
+   "text": "yang",
+   "start": 19.347833,
+   "end": 19.543499
+  },
+  {
+   "text": "lebih",
+   "start": 19.554333,
+   "end": 19.760874
+  },
+  {
+   "text": "besar",
+   "start": 19.77175,
+   "end": 20.163041
+  }
+ ]
+}
