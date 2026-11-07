@@ -18,7 +18,11 @@
     "audio:vo:ep03": "node scripts/export-script.mjs ep03 && python scripts/generate-voiceover.py --script scripts/script-ep03.json --rate +15%",
     "audio:ep03": "node scripts/generate-audio.mjs alert notify buzz bgm-ep03",
     "render:ep03": "remotion render CyberVideo out/ep03-cybersecurity-basics.mp4 --codec h264",
-    "srt:ep03": "node scripts/build-srt.mjs ep03"
+    "srt:ep03": "node scripts/build-srt.mjs ep03",
+    "audio:vo:ep04": "node scripts/export-script.mjs ep04 && python scripts/generate-voiceover.py --script scripts/script-ep04.json --rate +15%",
+    "audio:ep04": "node scripts/generate-audio.mjs link bgm-ep04",
+    "render:ep04": "remotion render NetworkVideo out/ep04-computer-networking.mp4 --codec h264",
+    "srt:ep04": "node scripts/build-srt.mjs ep04"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.540",

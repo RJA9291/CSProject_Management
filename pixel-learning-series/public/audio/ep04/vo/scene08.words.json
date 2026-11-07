@@ -1,0 +1,120 @@
+{
+ "text": "DNS membantu menukar nama domain seperti website kepada alamat IP. DHCP pula membantu memberikan konfigurasi rangkaian seperti IP Address kepada peranti secara automatik.",
+ "words": [
+  {
+   "text": "D.N.S.",
+   "start": 0.093458,
+   "end": 0.810833
+  },
+  {
+   "text": "membantu",
+   "start": 0.843458,
+   "end": 1.256499
+  },
+  {
+   "text": "menukar",
+   "start": 1.267375,
+   "end": 1.647791
+  },
+  {
+   "text": "nama",
+   "start": 1.680416,
+   "end": 1.908666
+  },
+  {
+   "text": "domain",
+   "start": 1.952166,
+   "end": 2.289124
+  },
+  {
+   "text": "seperti",
+   "start": 2.3,
+   "end": 2.647833
+  },
+  {
+   "text": "website",
+   "start": 2.680416,
+   "end": 3.136957
+  },
+  {
+   "text": "kepada",
+   "start": 3.169583,
+   "end": 3.408708
+  },
+  {
+   "text": "alamat",
+   "start": 3.408708,
+   "end": 3.767416
+  },
+  {
+   "text": "I.P.",
+   "start": 3.77825,
+   "end": 4.158666
+  },
+  {
+   "text": "D.H.C.P.",
+   "start": 5.010875,
+   "end": 5.673916
+  },
+  {
+   "text": "pula",
+   "start": 5.695666,
+   "end": 5.902207
+  },
+  {
+   "text": "membantu",
+   "start": 5.913041,
+   "end": 6.315207
+  },
+  {
+   "text": "memberikan",
+   "start": 6.326083,
+   "end": 6.739124
+  },
+  {
+   "text": "konfigurasi",
+   "start": 6.782625,
+   "end": 7.413041
+  },
+  {
+   "text": "rangkaian",
+   "start": 7.445666,
+   "end": 7.913041
+  },
+  {
+   "text": "seperti",
+   "start": 7.923916,
+   "end": 8.315207
+  },
+  {
+   "text": "I.P.",
+   "start": 8.315208,
+   "end": 8.673916
+  },
+  {
+   "text": "Address",
+   "start": 8.673916,
+   "end": 9.130457
+  },
+  {
+   "text": "kepada",
+   "start": 9.195666,
+   "end": 9.423916
+  },
+  {
+   "text": "peranti",
+   "start": 9.445666,
+   "end": 9.782624
+  },
+  {
+   "text": "secara",
+   "start": 9.804333,
+   "end": 10.097791
+  },
+  {
+   "text": "automatik",
+   "start": 10.097833,
+   "end": 10.717416
+  }
+ ]
+}

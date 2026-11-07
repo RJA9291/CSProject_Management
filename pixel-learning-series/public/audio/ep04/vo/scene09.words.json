@@ -1,0 +1,175 @@
+{
+ "text": "Apabila kita membuka sesuatu website, peranti akan menghantar permintaan melalui rangkaian. Data akan melalui peranti rangkaian seperti switch dan router sebelum sampai ke server destinasi. Server memproses permintaan dan menghantar respons semula kepada pengguna.",
+ "words": [
+  {
+   "text": "Apabila",
+   "start": 0.093458,
+   "end": 0.463041
+  },
+  {
+   "text": "kita",
+   "start": 0.495666,
+   "end": 0.691332
+  },
+  {
+   "text": "membuka",
+   "start": 0.713041,
+   "end": 1.093457
+  },
+  {
+   "text": "sesuatu",
+   "start": 1.115208,
+   "end": 1.452166
+  },
+  {
+   "text": "website",
+   "start": 1.473916,
+   "end": 1.930457
+  },
+  {
+   "text": "peranti",
+   "start": 2.169583,
+   "end": 2.495666
+  },
+  {
+   "text": "akan",
+   "start": 2.495666,
+   "end": 2.691332
+  },
+  {
+   "text": "menghantar",
+   "start": 2.723916,
+   "end": 3.169582
+  },
+  {
+   "text": "permintaan",
+   "start": 3.213041,
+   "end": 3.756499
+  },
+  {
+   "text": "melalui",
+   "start": 3.756541,
+   "end": 4.158707
+  },
+  {
+   "text": "rangkaian",
+   "start": 4.202166,
+   "end": 4.756499
+  },
+  {
+   "text": "Data",
+   "start": 5.543458,
+   "end": 5.869541
+  },
+  {
+   "text": "akan",
+   "start": 5.869583,
+   "end": 6.108708
+  },
+  {
+   "text": "melalui",
+   "start": 6.130416,
+   "end": 6.489124
+  },
+  {
+   "text": "peranti",
+   "start": 6.510875,
+   "end": 6.815208
+  },
+  {
+   "text": "rangkaian",
+   "start": 6.847833,
+   "end": 7.260874
+  },
+  {
+   "text": "seperti",
+   "start": 7.260875,
+   "end": 7.565208
+  },
+  {
+   "text": "switch",
+   "start": 7.597833,
+   "end": 7.967416
+  },
+  {
+   "text": "dan",
+   "start": 8.032625,
+   "end": 8.217416
+  },
+  {
+   "text": "router",
+   "start": 8.25,
+   "end": 8.641291
+  },
+  {
+   "text": "sebelum",
+   "start": 8.673916,
+   "end": 8.967374
+  },
+  {
+   "text": "sampai",
+   "start": 8.97825,
+   "end": 9.315208
+  },
+  {
+   "text": "ke",
+   "start": 9.347833,
+   "end": 9.434791
+  },
+  {
+   "text": "server",
+   "start": 9.456541,
+   "end": 9.836957
+  },
+  {
+   "text": "destinasi",
+   "start": 9.880416,
+   "end": 10.510832
+  },
+  {
+   "text": "Server",
+   "start": 11.358708,
+   "end": 11.782624
+  },
+  {
+   "text": "memproses",
+   "start": 11.804333,
+   "end": 12.315208
+  },
+  {
+   "text": "permintaan",
+   "start": 12.336958,
+   "end": 12.880416
+  },
+  {
+   "text": "dan",
+   "start": 12.880416,
+   "end": 12.989124
+  },
+  {
+   "text": "menghantar",
+   "start": 13.010875,
+   "end": 13.413041
+  },
+  {
+   "text": "respons",
+   "start": 13.434791,
+   "end": 13.847832
+  },
+  {
+   "text": "semula",
+   "start": 13.858708,
+   "end": 14.184791
+  },
+  {
+   "text": "kepada",
+   "start": 14.217375,
+   "end": 14.4565
+  },
+  {
+   "text": "pengguna",
+   "start": 14.467375,
+   "end": 14.923916
+  }
+ ]
+}

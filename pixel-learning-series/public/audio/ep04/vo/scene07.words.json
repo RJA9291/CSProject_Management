@@ -1,0 +1,170 @@
+{
+ "text": "IP Address ialah alamat logik yang digunakan untuk mengenal pasti peranti dalam rangkaian. MAC Address pula ialah alamat yang dikaitkan dengan network interface peranti. Senang cerita, kedua-duanya memainkan peranan berbeza dalam komunikasi rangkaian.",
+ "words": [
+  {
+   "text": "I.P.",
+   "start": 0.093458,
+   "end": 0.441291
+  },
+  {
+   "text": "Address",
+   "start": 0.452166,
+   "end": 0.973916
+  },
+  {
+   "text": "ialah",
+   "start": 0.984791,
+   "end": 1.376082
+  },
+  {
+   "text": "alamat",
+   "start": 1.376083,
+   "end": 1.680416
+  },
+  {
+   "text": "logik",
+   "start": 1.691291,
+   "end": 2.028249
+  },
+  {
+   "text": "yang",
+   "start": 2.02825,
+   "end": 2.169541
+  },
+  {
+   "text": "digunakan",
+   "start": 2.223916,
+   "end": 2.723916
+  },
+  {
+   "text": "untuk",
+   "start": 2.734791,
+   "end": 2.973916
+  },
+  {
+   "text": "mengenal",
+   "start": 2.984791,
+   "end": 3.278249
+  },
+  {
+   "text": "pasti",
+   "start": 3.3,
+   "end": 3.604333
+  },
+  {
+   "text": "peranti",
+   "start": 3.636958,
+   "end": 3.995666
+  },
+  {
+   "text": "dalam",
+   "start": 4.017375,
+   "end": 4.267375
+  },
+  {
+   "text": "rangkaian",
+   "start": 4.289125,
+   "end": 4.843458
+  },
+  {
+   "text": "MAC",
+   "start": 5.630416,
+   "end": 5.945624
+  },
+  {
+   "text": "Address",
+   "start": 5.945666,
+   "end": 6.336957
+  },
+  {
+   "text": "pula",
+   "start": 6.358708,
+   "end": 6.619583
+  },
+  {
+   "text": "ialah",
+   "start": 6.652166,
+   "end": 7.032582
+  },
+  {
+   "text": "alamat",
+   "start": 7.032625,
+   "end": 7.413041
+  },
+  {
+   "text": "yang",
+   "start": 7.413041,
+   "end": 7.543457
+  },
+  {
+   "text": "dikaitkan",
+   "start": 7.597833,
+   "end": 8.054374
+  },
+  {
+   "text": "dengan",
+   "start": 8.065208,
+   "end": 8.249999
+  },
+  {
+   "text": "network",
+   "start": 8.260875,
+   "end": 8.663041
+  },
+  {
+   "text": "interface",
+   "start": 8.673916,
+   "end": 9.130457
+  },
+  {
+   "text": "peranti",
+   "start": 9.152166,
+   "end": 9.576082
+  },
+  {
+   "text": "Senang",
+   "start": 10.434791,
+   "end": 10.771749
+  },
+  {
+   "text": "cerita",
+   "start": 10.804333,
+   "end": 11.206499
+  },
+  {
+   "text": "kedua-duanya",
+   "start": 11.391291,
+   "end": 11.967374
+  },
+  {
+   "text": "memainkan",
+   "start": 11.989125,
+   "end": 12.434791
+  },
+  {
+   "text": "peranan",
+   "start": 12.456541,
+   "end": 12.771749
+  },
+  {
+   "text": "berbeza",
+   "start": 12.793458,
+   "end": 13.206499
+  },
+  {
+   "text": "dalam",
+   "start": 13.25,
+   "end": 13.467375
+  },
+  {
+   "text": "komunikasi",
+   "start": 13.5,
+   "end": 14.076083
+  },
+  {
+   "text": "rangkaian",
+   "start": 14.108708,
+   "end": 14.641333
+  }
+ ]
+}

@@ -13,6 +13,8 @@ export const SFX = {
   alert: 'audio/sfx/alert.wav',
   notify: 'audio/sfx/notify.wav',
   buzz: 'audio/sfx/buzz.wav',
+  // Episode 04 addition.
+  link: 'audio/sfx/link.wav',
 } as const;
 
 export type SfxName = keyof typeof SFX;

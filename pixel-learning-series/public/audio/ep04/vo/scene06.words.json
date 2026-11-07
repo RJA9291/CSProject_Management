@@ -1,0 +1,120 @@
+{
+ "text": "Router berfungsi menghubungkan rangkaian yang berbeza dan mengarahkan trafik data antara rangkaian. Switch pula menghubungkan banyak peranti dalam rangkaian LAN supaya boleh berkomunikasi.",
+ "words": [
+  {
+   "text": "Router",
+   "start": 0.093458,
+   "end": 0.528249
+  },
+  {
+   "text": "berfungsi",
+   "start": 0.55,
+   "end": 1.017375
+  },
+  {
+   "text": "menghubungkan",
+   "start": 1.05,
+   "end": 1.539125
+  },
+  {
+   "text": "rangkaian",
+   "start": 1.560875,
+   "end": 2.02825
+  },
+  {
+   "text": "yang",
+   "start": 2.039125,
+   "end": 2.126083
+  },
+  {
+   "text": "berbeza",
+   "start": 2.169583,
+   "end": 2.593499
+  },
+  {
+   "text": "dan",
+   "start": 2.658708,
+   "end": 2.821749
+  },
+  {
+   "text": "mengarahkan",
+   "start": 2.832625,
+   "end": 3.278291
+  },
+  {
+   "text": "trafik",
+   "start": 3.310875,
+   "end": 3.647833
+  },
+  {
+   "text": "data",
+   "start": 3.647833,
+   "end": 3.941291
+  },
+  {
+   "text": "antara",
+   "start": 3.941291,
+   "end": 4.267374
+  },
+  {
+   "text": "rangkaian",
+   "start": 4.289125,
+   "end": 4.843458
+  },
+  {
+   "text": "Switch",
+   "start": 5.641291,
+   "end": 5.978249
+  },
+  {
+   "text": "pula",
+   "start": 6.0,
+   "end": 6.22825
+  },
+  {
+   "text": "menghubungkan",
+   "start": 6.239125,
+   "end": 6.782583
+  },
+  {
+   "text": "banyak",
+   "start": 6.793458,
+   "end": 7.086916
+  },
+  {
+   "text": "peranti",
+   "start": 7.097833,
+   "end": 7.434791
+  },
+  {
+   "text": "dalam",
+   "start": 7.445666,
+   "end": 7.673916
+  },
+  {
+   "text": "rangkaian",
+   "start": 7.695666,
+   "end": 8.065207
+  },
+  {
+   "text": "LAN",
+   "start": 8.065208,
+   "end": 8.326083
+  },
+  {
+   "text": "supaya",
+   "start": 8.347833,
+   "end": 8.684791
+  },
+  {
+   "text": "boleh",
+   "start": 8.717375,
+   "end": 9.0
+  },
+  {
+   "text": "berkomunikasi",
+   "start": 9.02175,
+   "end": 9.815208
+  }
+ ]
+}

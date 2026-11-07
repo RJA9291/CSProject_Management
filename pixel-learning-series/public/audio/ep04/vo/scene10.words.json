@@ -1,0 +1,205 @@
+{
+ "text": "Bayangkan sebuah kilang yang mempunyai bahagian Production, QA dan Maintenance. Setiap bahagian mempunyai komputer yang disambungkan kepada rangkaian syarikat. Mereka boleh mengakses sistem dalaman, berkongsi printer dan mendapatkan maklumat daripada server. Inilah contoh penggunaan computer networking dalam operasi sesebuah organisasi.",
+ "words": [
+  {
+   "text": "Bayangkan",
+   "start": 0.093458,
+   "end": 0.615208
+  },
+  {
+   "text": "sebuah",
+   "start": 0.615208,
+   "end": 0.919541
+  },
+  {
+   "text": "kilang",
+   "start": 0.941291,
+   "end": 1.234749
+  },
+  {
+   "text": "yang",
+   "start": 1.245666,
+   "end": 1.343499
+  },
+  {
+   "text": "mempunyai",
+   "start": 1.365208,
+   "end": 1.767374
+  },
+  {
+   "text": "bahagian",
+   "start": 1.789125,
+   "end": 2.158708
+  },
+  {
+   "text": "Production",
+   "start": 2.180416,
+   "end": 2.734749
+  },
+  {
+   "text": "QA",
+   "start": 2.930416,
+   "end": 3.386957
+  },
+  {
+   "text": "dan",
+   "start": 3.430416,
+   "end": 3.604332
+  },
+  {
+   "text": "Maintenance",
+   "start": 3.604333,
+   "end": 4.191291
+  },
+  {
+   "text": "Setiap",
+   "start": 4.97825,
+   "end": 5.304333
+  },
+  {
+   "text": "bahagian",
+   "start": 5.304333,
+   "end": 5.684749
+  },
+  {
+   "text": "mempunyai",
+   "start": 5.695666,
+   "end": 6.076082
+  },
+  {
+   "text": "komputer",
+   "start": 6.108708,
+   "end": 6.576083
+  },
+  {
+   "text": "yang",
+   "start": 6.619583,
+   "end": 6.749999
+  },
+  {
+   "text": "disambungkan",
+   "start": 6.782625,
+   "end": 7.391333
+  },
+  {
+   "text": "kepada",
+   "start": 7.434791,
+   "end": 7.652166
+  },
+  {
+   "text": "rangkaian",
+   "start": 7.684791,
+   "end": 8.076082
+  },
+  {
+   "text": "syarikat",
+   "start": 8.097833,
+   "end": 8.554374
+  },
+  {
+   "text": "Mereka",
+   "start": 9.304333,
+   "end": 9.597791
+  },
+  {
+   "text": "boleh",
+   "start": 9.630416,
+   "end": 9.847791
+  },
+  {
+   "text": "mengakses",
+   "start": 9.869583,
+   "end": 10.260874
+  },
+  {
+   "text": "sistem",
+   "start": 10.260875,
+   "end": 10.597833
+  },
+  {
+   "text": "dalaman",
+   "start": 10.608708,
+   "end": 11.010874
+  },
+  {
+   "text": "berkongsi",
+   "start": 11.217375,
+   "end": 11.630416
+  },
+  {
+   "text": "printer",
+   "start": 11.663041,
+   "end": 12.054332
+  },
+  {
+   "text": "dan",
+   "start": 12.108708,
+   "end": 12.239124
+  },
+  {
+   "text": "mendapatkan",
+   "start": 12.260875,
+   "end": 12.739125
+  },
+  {
+   "text": "maklumat",
+   "start": 12.75,
+   "end": 13.173916
+  },
+  {
+   "text": "daripada",
+   "start": 13.184791,
+   "end": 13.510874
+  },
+  {
+   "text": "server",
+   "start": 13.532625,
+   "end": 13.989166
+  },
+  {
+   "text": "Inilah",
+   "start": 14.760875,
+   "end": 15.108708
+  },
+  {
+   "text": "contoh",
+   "start": 15.152166,
+   "end": 15.467374
+  },
+  {
+   "text": "penggunaan",
+   "start": 15.467375,
+   "end": 15.923916
+  },
+  {
+   "text": "computer",
+   "start": 15.956541,
+   "end": 16.391332
+  },
+  {
+   "text": "networking",
+   "start": 16.434791,
+   "end": 16.956541
+  },
+  {
+   "text": "dalam",
+   "start": 17.0,
+   "end": 17.22825
+  },
+  {
+   "text": "operasi",
+   "start": 17.22825,
+   "end": 17.673916
+  },
+  {
+   "text": "sesebuah",
+   "start": 17.695666,
+   "end": 18.141291
+  },
+  {
+   "text": "organisasi",
+   "start": 18.141291,
+   "end": 18.913041
+  }
+ ]
+}

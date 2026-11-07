@@ -1,0 +1,240 @@
+{
+ "text": "Sebelum kita mula, saya nak ucapkan terima kasih kepada lima orang yang sudi belanja Gift Kek! Terima kasih @HafizITMY, @AidaSofea88, @RazmanTech, @ZulFikriMY dan @SyafiqahIT! Sokongan anda semua membuatkan saya lebih bersemangat untuk terus berkongsi ilmu. Terima kasih banyak-banyak!",
+ "words": [
+  {
+   "text": "Sebelum",
+   "start": 0.093458,
+   "end": 0.419541
+  },
+  {
+   "text": "kita",
+   "start": 0.441291,
+   "end": 0.615207
+  },
+  {
+   "text": "mula",
+   "start": 0.626083,
+   "end": 0.941291
+  },
+  {
+   "text": "saya",
+   "start": 1.213041,
+   "end": 1.441291
+  },
+  {
+   "text": "nak",
+   "start": 1.473916,
+   "end": 1.560874
+  },
+  {
+   "text": "ucapkan",
+   "start": 1.560875,
+   "end": 2.02825
+  },
+  {
+   "text": "terima",
+   "start": 2.05,
+   "end": 2.256541
+  },
+  {
+   "text": "kasih",
+   "start": 2.289125,
+   "end": 2.604333
+  },
+  {
+   "text": "kepada",
+   "start": 2.626083,
+   "end": 2.865208
+  },
+  {
+   "text": "lima",
+   "start": 2.908708,
+   "end": 3.115208
+  },
+  {
+   "text": "orang",
+   "start": 3.115208,
+   "end": 3.408666
+  },
+  {
+   "text": "yang",
+   "start": 3.430416,
+   "end": 3.571707
+  },
+  {
+   "text": "sudi",
+   "start": 3.593458,
+   "end": 3.854333
+  },
+  {
+   "text": "belanja",
+   "start": 3.876083,
+   "end": 4.213041
+  },
+  {
+   "text": "Gift",
+   "start": 4.256541,
+   "end": 4.463082
+  },
+  {
+   "text": "Kek",
+   "start": 4.506541,
+   "end": 4.745666
+  },
+  {
+   "text": "Terima",
+   "start": 5.554333,
+   "end": 5.815208
+  },
+  {
+   "text": "kasih",
+   "start": 5.847833,
+   "end": 6.097833
+  },
+  {
+   "text": "Hafiz",
+   "start": 6.108708,
+   "end": 6.521749
+  },
+  {
+   "text": "I.T.",
+   "start": 6.52175,
+   "end": 6.836958
+  },
+  {
+   "text": "M.Y.",
+   "start": 6.836958,
+   "end": 7.315208
+  },
+  {
+   "text": "Aida",
+   "start": 7.597833,
+   "end": 7.858708
+  },
+  {
+   "text": "Sofea",
+   "start": 7.880416,
+   "end": 8.271707
+  },
+  {
+   "text": "lapan",
+   "start": 8.293458,
+   "end": 8.499999
+  },
+  {
+   "text": "lapan",
+   "start": 8.5,
+   "end": 8.891291
+  },
+  {
+   "text": "Razman",
+   "start": 9.141291,
+   "end": 9.499999
+  },
+  {
+   "text": "Tech",
+   "start": 9.532625,
+   "end": 9.760875
+  },
+  {
+   "text": "Zul",
+   "start": 10.010875,
+   "end": 10.282625
+  },
+  {
+   "text": "Fikri",
+   "start": 10.304333,
+   "end": 10.663041
+  },
+  {
+   "text": "M.Y.",
+   "start": 10.663041,
+   "end": 11.119582
+  },
+  {
+   "text": "dan",
+   "start": 11.184791,
+   "end": 11.358707
+  },
+  {
+   "text": "Syafiqah",
+   "start": 11.380416,
+   "end": 11.836957
+  },
+  {
+   "text": "I.T.",
+   "start": 11.836958,
+   "end": 12.228249
+  },
+  {
+   "text": "Sokongan",
+   "start": 13.076083,
+   "end": 13.499999
+  },
+  {
+   "text": "anda",
+   "start": 13.5,
+   "end": 13.77175
+  },
+  {
+   "text": "semua",
+   "start": 13.804333,
+   "end": 14.097791
+  },
+  {
+   "text": "membuatkan",
+   "start": 14.097833,
+   "end": 14.543499
+  },
+  {
+   "text": "saya",
+   "start": 14.554333,
+   "end": 14.782583
+  },
+  {
+   "text": "lebih",
+   "start": 14.826083,
+   "end": 15.010874
+  },
+  {
+   "text": "bersemangat",
+   "start": 15.043458,
+   "end": 15.554333
+  },
+  {
+   "text": "untuk",
+   "start": 15.576083,
+   "end": 15.804333
+  },
+  {
+   "text": "terus",
+   "start": 15.836958,
+   "end": 16.086958
+  },
+  {
+   "text": "berkongsi",
+   "start": 16.119583,
+   "end": 16.586958
+  },
+  {
+   "text": "ilmu",
+   "start": 16.586958,
+   "end": 16.999999
+  },
+  {
+   "text": "Terima",
+   "start": 17.836958,
+   "end": 18.097833
+  },
+  {
+   "text": "kasih",
+   "start": 18.130416,
+   "end": 18.391291
+  },
+  {
+   "text": "banyak-banyak",
+   "start": 18.413041,
+   "end": 19.065207
+  }
+ ]
+}

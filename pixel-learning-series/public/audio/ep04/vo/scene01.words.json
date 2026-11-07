@@ -1,0 +1,95 @@
+{
+ "text": "Pernah terfikir macam mana telefon kita boleh connect ke internet, hantar mesej dan akses website? Jom kita fahami!",
+ "words": [
+  {
+   "text": "Pernah",
+   "start": 0.093458,
+   "end": 0.408666
+  },
+  {
+   "text": "terfikir",
+   "start": 0.408708,
+   "end": 0.810874
+  },
+  {
+   "text": "macam",
+   "start": 0.832625,
+   "end": 1.0935
+  },
+  {
+   "text": "mana",
+   "start": 1.104333,
+   "end": 1.310874
+  },
+  {
+   "text": "telefon",
+   "start": 1.332625,
+   "end": 1.680458
+  },
+  {
+   "text": "kita",
+   "start": 1.723916,
+   "end": 1.919582
+  },
+  {
+   "text": "boleh",
+   "start": 1.941291,
+   "end": 2.169541
+  },
+  {
+   "text": "connect",
+   "start": 2.180416,
+   "end": 2.495624
+  },
+  {
+   "text": "ke",
+   "start": 2.517375,
+   "end": 2.615208
+  },
+  {
+   "text": "internet",
+   "start": 2.615208,
+   "end": 3.017374
+  },
+  {
+   "text": "hantar",
+   "start": 3.213041,
+   "end": 3.473916
+  },
+  {
+   "text": "mesej",
+   "start": 3.506541,
+   "end": 3.930457
+  },
+  {
+   "text": "dan",
+   "start": 3.963041,
+   "end": 4.136957
+  },
+  {
+   "text": "akses",
+   "start": 4.136958,
+   "end": 4.528249
+  },
+  {
+   "text": "website",
+   "start": 4.539125,
+   "end": 5.039125
+  },
+  {
+   "text": "Jom",
+   "start": 5.804333,
+   "end": 6.086958
+  },
+  {
+   "text": "kita",
+   "start": 6.119583,
+   "end": 6.336958
+  },
+  {
+   "text": "fahami",
+   "start": 6.358708,
+   "end": 6.728291
+  }
+ ]
+}

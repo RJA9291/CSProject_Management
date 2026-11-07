@@ -101,6 +101,8 @@ const sfx = {
     [0, tone(0.14, () => midi(88), decay(0.14), 'sine'), 0.8],
     [0.12, tone(0.34, () => midi(93), decay(0.34), 'sine'), 0.8],
   ]),
+  // Episode 04 (Networking): rising "connected" chirp.
+  link: mix(0.36, [60, 67, 72].map((n, i) => [i * 0.07, tone(0.14, () => midi(n + 24), decay(0.14), 'square', 0.25), 0.45])),
   buzz: tone(0.28, (t) => 150 - 60 * t, decay(0.28, 0.003), 'square', 0.5),
 };
 for (const [name, buf] of Object.entries(sfx)) writeWav(`sfx/${name}.wav`, buf);
@@ -200,6 +202,30 @@ song('music/bgm-ep03.wav', {
   lead: 'square',
   leadDuty: 0.125,
   leadGain: 0.13,
+});
+
+// Episode 04 (Networking): bright 108 BPM I–V–vi–IV with a pulse lead.
+song('music/bgm-ep04.wav', {
+  bpm: 108,
+  chords: [
+    [43, [55, 59, 62]],
+    [38, [54, 57, 62]],
+    [40, [55, 59, 64]],
+    [36, [55, 60, 64]],
+  ],
+  melody: [
+    [79, null, 74, 79, 83, null, 81, 79],
+    [78, null, 74, 78, 81, 79, 78, null],
+    [76, 79, 83, null, 86, 83, 79, null],
+    [76, null, 72, 76, 79, null, 76, null],
+    [79, 83, 86, null, 83, 81, 79, null],
+    [78, 81, 86, null, 81, 78, 74, null],
+    [76, null, 79, 83, 88, 86, 83, null],
+    [84, 83, 79, null, 76, 79, null, null],
+  ],
+  lead: 'square',
+  leadDuty: 0.25,
+  leadGain: 0.12,
 });
 
 console.log(`Wrote ${Object.keys(sfx).length} SFX and music loops (Ep01 ${dur.toFixed(1)}s, Ep02)`);

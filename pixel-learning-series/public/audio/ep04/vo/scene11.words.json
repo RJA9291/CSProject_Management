@@ -1,0 +1,195 @@
+{
+ "text": "Jom kita recap! LAN, WAN dan WLAN ialah jenis rangkaian. Router menghubungkan rangkaian, switch menghubungkan peranti dalam LAN. IP dan MAC Address membantu komunikasi rangkaian. DNS mencari alamat IP melalui nama domain, manakala DHCP membantu memberikan konfigurasi rangkaian.",
+ "words": [
+  {
+   "text": "Jom",
+   "start": 0.093458,
+   "end": 0.365208
+  },
+  {
+   "text": "kita",
+   "start": 0.408708,
+   "end": 0.593499
+  },
+  {
+   "text": "recap",
+   "start": 0.626083,
+   "end": 0.963041
+  },
+  {
+   "text": "LAN",
+   "start": 1.72825,
+   "end": 2.076083
+  },
+  {
+   "text": "WAN",
+   "start": 2.260875,
+   "end": 2.5
+  },
+  {
+   "text": "dan",
+   "start": 2.52175,
+   "end": 2.695666
+  },
+  {
+   "text": "W-LAN",
+   "start": 2.717375,
+   "end": 3.217375
+  },
+  {
+   "text": "ialah",
+   "start": 3.22825,
+   "end": 3.554333
+  },
+  {
+   "text": "jenis",
+   "start": 3.576083,
+   "end": 3.891291
+  },
+  {
+   "text": "rangkaian",
+   "start": 3.913041,
+   "end": 4.510874
+  },
+  {
+   "text": "Router",
+   "start": 5.304333,
+   "end": 5.749999
+  },
+  {
+   "text": "menghubungkan",
+   "start": 5.77175,
+   "end": 6.2935
+  },
+  {
+   "text": "rangkaian",
+   "start": 6.315208,
+   "end": 6.869541
+  },
+  {
+   "text": "switch",
+   "start": 7.065208,
+   "end": 7.391291
+  },
+  {
+   "text": "menghubungkan",
+   "start": 7.423916,
+   "end": 7.956541
+  },
+  {
+   "text": "peranti",
+   "start": 7.97825,
+   "end": 8.326083
+  },
+  {
+   "text": "dalam",
+   "start": 8.347833,
+   "end": 8.597833
+  },
+  {
+   "text": "LAN",
+   "start": 8.597833,
+   "end": 8.923916
+  },
+  {
+   "text": "I.P.",
+   "start": 9.706541,
+   "end": 10.032624
+  },
+  {
+   "text": "dan",
+   "start": 10.054333,
+   "end": 10.217374
+  },
+  {
+   "text": "MAC",
+   "start": 10.217375,
+   "end": 10.489125
+  },
+  {
+   "text": "Address",
+   "start": 10.489125,
+   "end": 10.902166
+  },
+  {
+   "text": "membantu",
+   "start": 10.934791,
+   "end": 11.358707
+  },
+  {
+   "text": "komunikasi",
+   "start": 11.380416,
+   "end": 11.956499
+  },
+  {
+   "text": "rangkaian",
+   "start": 11.989125,
+   "end": 12.532583
+  },
+  {
+   "text": "D.N.S.",
+   "start": 13.326083,
+   "end": 14.043458
+  },
+  {
+   "text": "mencari",
+   "start": 14.076083,
+   "end": 14.456499
+  },
+  {
+   "text": "alamat",
+   "start": 14.456541,
+   "end": 14.804374
+  },
+  {
+   "text": "I.P.",
+   "start": 14.815208,
+   "end": 15.130416
+  },
+  {
+   "text": "melalui",
+   "start": 15.163041,
+   "end": 15.521749
+  },
+  {
+   "text": "nama",
+   "start": 15.565208,
+   "end": 15.793458
+  },
+  {
+   "text": "domain",
+   "start": 15.826083,
+   "end": 16.239124
+  },
+  {
+   "text": "manakala",
+   "start": 16.489125,
+   "end": 16.804333
+  },
+  {
+   "text": "D.H.C.P.",
+   "start": 16.847833,
+   "end": 17.434791
+  },
+  {
+   "text": "membantu",
+   "start": 17.456541,
+   "end": 17.880457
+  },
+  {
+   "text": "memberikan",
+   "start": 17.891291,
+   "end": 18.347832
+  },
+  {
+   "text": "konfigurasi",
+   "start": 18.391291,
+   "end": 19.043457
+  },
+  {
+   "text": "rangkaian",
+   "start": 19.076083,
+   "end": 19.641291
+  }
+ ]
+}

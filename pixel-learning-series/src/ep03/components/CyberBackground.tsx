@@ -13,6 +13,8 @@ type Props = {
   // Frame where the red pixel alarm frame starts flashing; alarmUntil stops it.
   alarmFrom?: number;
   alarmUntil?: number;
+  // 'tech' keeps the navy world calm (blue/cyan only) for non-threat technology scenes.
+  tone?: 'threat' | 'tech';
 };
 
 const BITS = Array.from({length: 16}, (_, i) => ({
@@ -33,7 +35,7 @@ const GLINTS = Array.from({length: 12}, (_, i) => ({
 
 // Episode 03 world: the series' dotted beige background, switching to a dark-navy cyber-threat
 // mode (binary rain, red/cyan pixels, optional flashing alarm frame) when a threat is on screen.
-export const CyberBackground: React.FC<Props> = ({navyFrom = 0, navyUntil = Infinity, alarmFrom = Infinity, alarmUntil = Infinity}) => {
+export const CyberBackground: React.FC<Props> = ({navyFrom = 0, navyUntil = Infinity, alarmFrom = Infinity, alarmUntil = Infinity, tone = 'threat'}) => {
   const frame = useCurrentFrame();
   // interpolate() needs finite ranges: "never" becomes a frame far past any scene.
   const NEVER = 1e6;
@@ -70,7 +72,7 @@ export const CyberBackground: React.FC<Props> = ({navyFrom = 0, navyUntil = Infi
                   fontFamily: FONTS.pixel,
                   fontWeight: 700,
                   fontSize: b.size,
-                  color: b.red ? EP03_THEME.red : EP03_THEME.blue,
+                  color: b.red && tone === 'threat' ? EP03_THEME.red : tone === 'tech' && b.red ? EP03_THEME.cyan : EP03_THEME.blue,
                   opacity: 0.45,
                   lineHeight: 1,
                 }}
@@ -83,7 +85,7 @@ export const CyberBackground: React.FC<Props> = ({navyFrom = 0, navyUntil = Infi
           })}
           {GLINTS.map((p, i) => {
             const y = (((p.y - frame * p.speed * 2) % 1920) + 1920) % 1920;
-            return <div key={i} style={{position: 'absolute', left: snap(p.x, 4), top: snap(y, 4), width: p.size, height: p.size, background: p.color, opacity: 0.35}} />;
+            return <div key={i} style={{position: 'absolute', left: snap(p.x, 4), top: snap(y, 4), width: p.size, height: p.size, background: tone === 'tech' && p.color === EP03_THEME.red ? EP03_THEME.green : p.color, opacity: 0.35}} />;
           })}
         </AbsoluteFill>
       ) : null}

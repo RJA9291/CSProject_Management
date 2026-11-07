@@ -52,12 +52,23 @@ export const GiftThanks: React.FC<{index: number; supporters: Supporter[]}> = ({
   const last = starts[starts.length - 1] ?? 0;
   const cakeAt = last + 26;
   const allAt = Math.min(Math.round(voEnd(index) * fps) - 10, cakeAt + 30);
-  // Cards share the band between the heading and the host.
+  // Cards share the band between the heading and the host: one column up to 3 supporters,
+  // two columns beyond that (an odd last card is centred).
   const top = 560;
   const band = 520;
-  const gap = n > 4 ? 10 : 18;
-  const h = Math.min(160, Math.floor((band - gap * (n - 1)) / n));
-  const width = 860;
+  const cols = n > 3 ? 2 : 1;
+  const rows = Math.ceil(n / cols);
+  const gap = rows > 3 ? 10 : 18;
+  const h = Math.min(160, Math.floor((band - gap * (rows - 1)) / rows));
+  const width = cols === 1 ? 860 : 490;
+  const colGap = 20;
+  const slot = (i: number): [number, number] => {
+    const r = Math.floor(i / cols);
+    const c = i % cols;
+    const lastAlone = cols === 2 && i === n - 1 && n % 2 === 1;
+    const left = cols === 1 || lastAlone ? (1080 - width) / 2 : (1080 - 2 * width - colGap) / 2 + c * (width + colGap);
+    return [left, top + r * (h + gap)];
+  };
   const sfx: SfxCue[] = [
     ...starts.map((f, i) => ({at: f / fps, sfx: ENTRANCES[i % 3] === 'pop' ? ('pop' as const) : ('whoosh' as const)})),
     {at: cakeAt / fps, sfx: 'coin'},
@@ -83,12 +94,12 @@ export const GiftThanks: React.FC<{index: number; supporters: Supporter[]}> = ({
         const d = starts[i];
         const active = frame >= d && (i === supporters.length - 1 ? frame < cakeAt : frame < starts[i + 1]);
         const glow = together && Math.floor((frame - allAt) / 10) % supporters.length === i;
-        const handleSize = Math.min(54, Math.floor((width - h - 200) / ((s.handle.length + 1) * 0.6)));
+        const handleSize = cols === 1 ? Math.min(54, Math.floor((width - h - 200) / ((s.handle.length + 1) * 0.6))) : Math.min(38, Math.floor(250 / ((s.handle.length + 1) * 0.6)));
         return (
-          <Reveal key={s.handle} delay={d} mode={ENTRANCES[i % 3]} style={{left: (1080 - width) / 2, top: top + i * (h + gap), width, height: h}}>
-            <PixelBox bg={COLORS.white} border={active || glow ? COLORS.red : COLORS.text} padding="10px 22px" style={{height: '100%'}}>
-              <div style={{display: 'flex', alignItems: 'center', gap: 22, height: '100%'}}>
-                <Avatar s={s} size={h - 52} />
+          <Reveal key={s.handle} delay={d} mode={ENTRANCES[i % 3]} style={{left: slot(i)[0], top: slot(i)[1], width, height: h}}>
+            <PixelBox bg={COLORS.white} border={active || glow ? COLORS.red : COLORS.text} padding={cols === 1 ? '10px 22px' : '10px 14px'} style={{height: '100%'}}>
+              <div style={{display: 'flex', alignItems: 'center', gap: cols === 1 ? 22 : 12, height: '100%'}}>
+                <Avatar s={s} size={cols === 1 ? h - 52 : h - 72} />
                 <div style={{display: 'flex', flexDirection: 'column', gap: 6, flex: 1, minWidth: 0}}>
                   <div style={{fontFamily: FONTS.heading, fontWeight: 900, fontSize: handleSize, color: COLORS.text, whiteSpace: 'nowrap', lineHeight: 1}}>@{s.handle}</div>
                   <div style={{display: 'flex', alignItems: 'center', gap: 10}}>
