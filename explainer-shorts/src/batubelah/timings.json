@@ -1,0 +1,2346 @@
+{
+ "s01-hook": {
+  "duration": 10.584,
+  "words": [
+   {
+    "text": "Korang",
+    "start": 0.093875,
+    "end": 0.346083
+   },
+   {
+    "text": "tahu",
+    "start": 0.368,
+    "end": 0.59825
+   },
+   {
+    "text": "tak",
+    "start": 0.631125,
+    "end": 0.883333
+   },
+   {
+    "text": "ada",
+    "start": 1.080708,
+    "end": 1.267124
+   },
+   {
+    "text": "satu",
+    "start": 1.289041,
+    "end": 1.508332
+   },
+   {
+    "text": "legenda",
+    "start": 1.53025,
+    "end": 1.83725
+   },
+   {
+    "text": "Melayu",
+    "start": 1.859208,
+    "end": 2.188166
+   },
+   {
+    "text": "tentang",
+    "start": 2.232,
+    "end": 2.440333
+   },
+   {
+    "text": "batu",
+    "start": 2.484208,
+    "end": 2.692541
+   },
+   {
+    "text": "besar",
+    "start": 2.692541,
+    "end": 3.032457
+   },
+   {
+    "text": "yang",
+    "start": 3.087291,
+    "end": 3.218874
+   },
+   {
+    "text": "boleh",
+    "start": 3.273666,
+    "end": 3.525874
+   },
+   {
+    "text": "terbuka",
+    "start": 3.536833,
+    "end": 3.942541
+   },
+   {
+    "text": "dan",
+    "start": 3.997375,
+    "end": 4.172833
+   },
+   {
+    "text": "tertutup",
+    "start": 4.19475,
+    "end": 4.578541
+   },
+   {
+    "text": "sendiri",
+    "start": 4.589458,
+    "end": 5.017083
+   },
+   {
+    "text": "dan",
+    "start": 5.225458,
+    "end": 5.389916
+   },
+   {
+    "text": "pernah",
+    "start": 5.400875,
+    "end": 5.75175
+   },
+   {
+    "text": "menelan",
+    "start": 5.75175,
+    "end": 6.102625
+   },
+   {
+    "text": "seorang",
+    "start": 6.113583,
+    "end": 6.420583
+   },
+   {
+    "text": "ibu",
+    "start": 6.431583,
+    "end": 6.793416
+   },
+   {
+    "text": "Batu",
+    "start": 7.642541,
+    "end": 7.982457
+   },
+   {
+    "text": "tu",
+    "start": 8.015333,
+    "end": 8.103041
+   },
+   {
+    "text": "dipanggil",
+    "start": 8.125,
+    "end": 8.51975
+   },
+   {
+    "text": "Batu",
+    "start": 8.541666,
+    "end": 8.760957
+   },
+   {
+    "text": "Belah",
+    "start": 8.771916,
+    "end": 8.991207
+   },
+   {
+    "text": "Batu",
+    "start": 9.002208,
+    "end": 9.232458
+   },
+   {
+    "text": "Bertangkup",
+    "start": 9.243416,
+    "end": 9.802624
+   }
+  ]
+ },
+ "s02-soalan": {
+  "duration": 8.616,
+  "words": [
+   {
+    "text": "Persoalannya",
+    "start": 0.093875,
+    "end": 0.773708
+   },
+   {
+    "text": "kenapa",
+    "start": 0.938166,
+    "end": 1.223249
+   },
+   {
+    "text": "batu",
+    "start": 1.234208,
+    "end": 1.486416
+   },
+   {
+    "text": "tu",
+    "start": 1.53025,
+    "end": 1.617958
+   },
+   {
+    "text": "menelan",
+    "start": 1.639916,
+    "end": 1.946916
+   },
+   {
+    "text": "manusia",
+    "start": 1.957875,
+    "end": 2.396458
+   },
+   {
+    "text": "Dan",
+    "start": 3.234666,
+    "end": 3.432041
+   },
+   {
+    "text": "kenapa",
+    "start": 3.453958,
+    "end": 3.717124
+   },
+   {
+    "text": "seorang",
+    "start": 3.739041,
+    "end": 4.046041
+   },
+   {
+    "text": "ibu",
+    "start": 4.057,
+    "end": 4.331125
+   },
+   {
+    "text": "sanggup",
+    "start": 4.353083,
+    "end": 4.692999
+   },
+   {
+    "text": "masuk",
+    "start": 4.693,
+    "end": 5.011
+   },
+   {
+    "text": "ke",
+    "start": 5.032875,
+    "end": 5.131541
+   },
+   {
+    "text": "dalamnya",
+    "start": 5.142541,
+    "end": 5.570166
+   },
+   {
+    "text": "Jom",
+    "start": 6.414458,
+    "end": 6.677624
+   },
+   {
+    "text": "kita",
+    "start": 6.7215,
+    "end": 6.918875
+   },
+   {
+    "text": "tengok",
+    "start": 6.929833,
+    "end": 7.182041
+   },
+   {
+    "text": "kisahnya",
+    "start": 7.214916,
+    "end": 7.741249
+   }
+  ]
+ },
+ "s03-keluarga": {
+  "duration": 11.568,
+  "words": [
+   {
+    "text": "Menurut",
+    "start": 0.093875,
+    "end": 0.477666
+   },
+   {
+    "text": "cerita",
+    "start": 0.499541,
+    "end": 0.784624
+   },
+   {
+    "text": "orang",
+    "start": 0.784666,
+    "end": 1.047832
+   },
+   {
+    "text": "dulu-dulu",
+    "start": 1.091666,
+    "end": 1.617999
+   },
+   {
+    "text": "ada",
+    "start": 1.859208,
+    "end": 2.034666
+   },
+   {
+    "text": "seorang",
+    "start": 2.056583,
+    "end": 2.352624
+   },
+   {
+    "text": "ibu",
+    "start": 2.363583,
+    "end": 2.659624
+   },
+   {
+    "text": "bernama",
+    "start": 2.670625,
+    "end": 3.076333
+   },
+   {
+    "text": "Mak",
+    "start": 3.076333,
+    "end": 3.229833
+   },
+   {
+    "text": "Tanjung",
+    "start": 3.240791,
+    "end": 3.712291
+   },
+   {
+    "text": "Dia",
+    "start": 4.5285,
+    "end": 4.769708
+   },
+   {
+    "text": "seorang",
+    "start": 4.780708,
+    "end": 5.109666
+   },
+   {
+    "text": "janda",
+    "start": 5.1535,
+    "end": 5.449541
+   },
+   {
+    "text": "yang",
+    "start": 5.4715,
+    "end": 5.614041
+   },
+   {
+    "text": "hidup",
+    "start": 5.635958,
+    "end": 5.910083
+   },
+   {
+    "text": "miskin",
+    "start": 5.921041,
+    "end": 6.249999
+   },
+   {
+    "text": "bersama",
+    "start": 6.260958,
+    "end": 6.578958
+   },
+   {
+    "text": "dua",
+    "start": 6.622791,
+    "end": 6.787249
+   },
+   {
+    "text": "orang",
+    "start": 6.787291,
+    "end": 7.039499
+   },
+   {
+    "text": "anaknya",
+    "start": 7.061416,
+    "end": 7.521957
+   },
+   {
+    "text": "Melur",
+    "start": 7.774125,
+    "end": 8.103083
+   },
+   {
+    "text": "yang",
+    "start": 8.135958,
+    "end": 8.289458
+   },
+   {
+    "text": "sulung",
+    "start": 8.311416,
+    "end": 8.640374
+   },
+   {
+    "text": "dan",
+    "start": 8.684208,
+    "end": 8.793874
+   },
+   {
+    "text": "Pekan",
+    "start": 8.804833,
+    "end": 9.199583
+   },
+   {
+    "text": "adiknya",
+    "start": 9.375,
+    "end": 9.835541
+   },
+   {
+    "text": "yang",
+    "start": 9.8465,
+    "end": 9.978083
+   },
+   {
+    "text": "masih",
+    "start": 10.0,
+    "end": 10.263166
+   },
+   {
+    "text": "kecil",
+    "start": 10.274125,
+    "end": 10.679833
+   }
+  ]
+ },
+ "s04-susah": {
+  "duration": 6.936,
+  "words": [
+   {
+    "text": "Hidup",
+    "start": 0.093875,
+    "end": 0.368
+   },
+   {
+    "text": "mereka",
+    "start": 0.378958,
+    "end": 0.642124
+   },
+   {
+    "text": "susah",
+    "start": 0.653083,
+    "end": 1.069749
+   },
+   {
+    "text": "Setiap",
+    "start": 1.864041,
+    "end": 2.225874
+   },
+   {
+    "text": "hari",
+    "start": 2.225875,
+    "end": 2.467083
+   },
+   {
+    "text": "Mak",
+    "start": 2.489041,
+    "end": 2.631582
+   },
+   {
+    "text": "Tanjung",
+    "start": 2.642541,
+    "end": 2.971499
+   },
+   {
+    "text": "keluar",
+    "start": 3.004375,
+    "end": 3.2785
+   },
+   {
+    "text": "mencari",
+    "start": 3.311416,
+    "end": 3.673249
+   },
+   {
+    "text": "rezeki",
+    "start": 3.706125,
+    "end": 4.100875
+   },
+   {
+    "text": "dan",
+    "start": 4.111833,
+    "end": 4.276291
+   },
+   {
+    "text": "menguruskan",
+    "start": 4.287291,
+    "end": 4.780707
+   },
+   {
+    "text": "anak-anaknya",
+    "start": 4.791666,
+    "end": 5.383791
+   },
+   {
+    "text": "seorang",
+    "start": 5.405708,
+    "end": 5.734666
+   },
+   {
+    "text": "diri",
+    "start": 5.767541,
+    "end": 6.074541
+   }
+  ]
+ },
+ "s05-tembakul": {
+  "duration": 14.544,
+  "words": [
+   {
+    "text": "Satu",
+    "start": 0.093875,
+    "end": 0.400875
+   },
+   {
+    "text": "hari",
+    "start": 0.422791,
+    "end": 0.762707
+   },
+   {
+    "text": "Mak",
+    "start": 0.971041,
+    "end": 1.135499
+   },
+   {
+    "text": "Tanjung",
+    "start": 1.135541,
+    "end": 1.486416
+   },
+   {
+    "text": "teringin",
+    "start": 1.519291,
+    "end": 1.870166
+   },
+   {
+    "text": "sangat",
+    "start": 1.870166,
+    "end": 2.144291
+   },
+   {
+    "text": "nak",
+    "start": 2.15525,
+    "end": 2.286833
+   },
+   {
+    "text": "makan",
+    "start": 2.297791,
+    "end": 2.571916
+   },
+   {
+    "text": "telur",
+    "start": 2.593875,
+    "end": 2.802208
+   },
+   {
+    "text": "ikan",
+    "start": 2.835083,
+    "end": 3.098249
+   },
+   {
+    "text": "tembakul",
+    "start": 3.131125,
+    "end": 3.690333
+   },
+   {
+    "text": "Ikan",
+    "start": 4.517541,
+    "end": 4.780707
+   },
+   {
+    "text": "tembakul",
+    "start": 4.791666,
+    "end": 5.252207
+   },
+   {
+    "text": "ni",
+    "start": 5.296041,
+    "end": 5.405707
+   },
+   {
+    "text": "ikan",
+    "start": 5.405708,
+    "end": 5.745624
+   },
+   {
+    "text": "yang",
+    "start": 5.745625,
+    "end": 5.888166
+   },
+   {
+    "text": "selalu",
+    "start": 5.899125,
+    "end": 6.17325
+   },
+   {
+    "text": "hidup",
+    "start": 6.206125,
+    "end": 6.491208
+   },
+   {
+    "text": "di",
+    "start": 6.502208,
+    "end": 6.578958
+   },
+   {
+    "text": "kawasan",
+    "start": 6.611833,
+    "end": 7.017541
+   },
+   {
+    "text": "berlumpur",
+    "start": 7.039458,
+    "end": 7.521916
+   },
+   {
+    "text": "dan",
+    "start": 7.587708,
+    "end": 7.774124
+   },
+   {
+    "text": "paya",
+    "start": 7.785083,
+    "end": 8.015333
+   },
+   {
+    "text": "bakau",
+    "start": 8.026333,
+    "end": 8.421083
+   },
+   {
+    "text": "Telurnya",
+    "start": 9.287291,
+    "end": 9.703957
+   },
+   {
+    "text": "jarang",
+    "start": 9.736833,
+    "end": 9.999999
+   },
+   {
+    "text": "dapat",
+    "start": 10.032875,
+    "end": 10.394708
+   },
+   {
+    "text": "jadi",
+    "start": 10.592125,
+    "end": 10.844333
+   },
+   {
+    "text": "bila",
+    "start": 10.866208,
+    "end": 11.052624
+   },
+   {
+    "text": "Mak",
+    "start": 11.074541,
+    "end": 11.206124
+   },
+   {
+    "text": "Tanjung",
+    "start": 11.228083,
+    "end": 11.557041
+   },
+   {
+    "text": "dapat",
+    "start": 11.589916,
+    "end": 11.809207
+   },
+   {
+    "text": "sedikit",
+    "start": 11.831125,
+    "end": 12.291666
+   },
+   {
+    "text": "dia",
+    "start": 12.467125,
+    "end": 12.653541
+   },
+   {
+    "text": "rasa",
+    "start": 12.686416,
+    "end": 12.905707
+   },
+   {
+    "text": "sangat",
+    "start": 12.927625,
+    "end": 13.212708
+   },
+   {
+    "text": "gembira",
+    "start": 13.245625,
+    "end": 13.651333
+   }
+  ]
+ },
+ "s06-pesan": {
+  "duration": 13.58,
+  "words": [
+   {
+    "text": "Sebelum",
+    "start": 0.093875,
+    "end": 0.433791
+   },
+   {
+    "text": "keluar",
+    "start": 0.455708,
+    "end": 0.718874
+   },
+   {
+    "text": "bekerja",
+    "start": 0.75175,
+    "end": 1.245166
+   },
+   {
+    "text": "dia",
+    "start": 1.431583,
+    "end": 1.607041
+   },
+   {
+    "text": "pesan",
+    "start": 1.618,
+    "end": 1.946958
+   },
+   {
+    "text": "pada",
+    "start": 1.957875,
+    "end": 2.144291
+   },
+   {
+    "text": "Melur",
+    "start": 2.15525,
+    "end": 2.440333
+   },
+   {
+    "text": "Melur",
+    "start": 3.638,
+    "end": 4.2505
+   },
+   {
+    "text": "simpan",
+    "start": 4.5504999999999995,
+    "end": 5.0255
+   },
+   {
+    "text": "telur",
+    "start": 5.0255,
+    "end": 5.288
+   },
+   {
+    "text": "ikan",
+    "start": 5.288,
+    "end": 5.6005
+   },
+   {
+    "text": "tembakul",
+    "start": 5.6005,
+    "end": 6.1129999999999995
+   },
+   {
+    "text": "ni",
+    "start": 6.1129999999999995,
+    "end": 6.3004999999999995
+   },
+   {
+    "text": "untuk",
+    "start": 6.3004999999999995,
+    "end": 6.587999999999999
+   },
+   {
+    "text": "mak",
+    "start": 6.587999999999999,
+    "end": 6.9879999999999995
+   },
+   {
+    "text": "ya",
+    "start": 7.275499999999999,
+    "end": 7.8629999999999995
+   },
+   {
+    "text": "Nanti",
+    "start": 8.7005,
+    "end": 9.138
+   },
+   {
+    "text": "balik",
+    "start": 9.138,
+    "end": 9.463
+   },
+   {
+    "text": "mak",
+    "start": 9.463,
+    "end": 9.6505
+   },
+   {
+    "text": "nak",
+    "start": 9.6505,
+    "end": 9.8255
+   },
+   {
+    "text": "makan",
+    "start": 9.8255,
+    "end": 10.563
+   },
+   {
+    "text": "Melur",
+    "start": 11.753875,
+    "end": 12.006083
+   },
+   {
+    "text": "pun",
+    "start": 12.038958000000001,
+    "end": 12.236333
+   },
+   {
+    "text": "mengangguk",
+    "start": 12.247291,
+    "end": 12.784582
+   }
+  ],
+  "parts": [
+   {
+    "file": "s06-pesan-0.mp3",
+    "start": 0.0,
+    "duration": 3.288
+   },
+   {
+    "file": "s06-pesan-1.mp3",
+    "start": 3.538,
+    "duration": 7.872
+   },
+   {
+    "file": "s06-pesan-2.mp3",
+    "start": 11.66,
+    "duration": 1.92
+   }
+  ]
+ },
+ "s07-pekan": {
+  "duration": 15.288,
+  "words": [
+   {
+    "text": "Selepas",
+    "start": 0.093875,
+    "end": 0.5215
+   },
+   {
+    "text": "ibunya",
+    "start": 0.5215,
+    "end": 0.905291
+   },
+   {
+    "text": "pergi",
+    "start": 0.927208,
+    "end": 1.310999
+   },
+   {
+    "text": "Pekan",
+    "start": 1.563166,
+    "end": 1.804374
+   },
+   {
+    "text": "menangis",
+    "start": 1.815333,
+    "end": 2.188124
+   },
+   {
+    "text": "kelaparan",
+    "start": 2.210083,
+    "end": 2.681583
+   },
+   {
+    "text": "dan",
+    "start": 2.692541,
+    "end": 2.835082
+   },
+   {
+    "text": "merengek",
+    "start": 2.846041,
+    "end": 3.174999
+   },
+   {
+    "text": "nak",
+    "start": 3.185958,
+    "end": 3.350416
+   },
+   {
+    "text": "makan",
+    "start": 3.361416,
+    "end": 3.635541
+   },
+   {
+    "text": "telur",
+    "start": 3.657458,
+    "end": 3.865791
+   },
+   {
+    "text": "ikan",
+    "start": 3.898666,
+    "end": 4.172791
+   },
+   {
+    "text": "tu",
+    "start": 4.216666,
+    "end": 4.414041
+   },
+   {
+    "text": "Melur",
+    "start": 5.252208,
+    "end": 5.548249
+   },
+   {
+    "text": "cuba",
+    "start": 5.603083,
+    "end": 5.844291
+   },
+   {
+    "text": "memujuk",
+    "start": 5.866208,
+    "end": 6.359624
+   },
+   {
+    "text": "tapi",
+    "start": 6.502208,
+    "end": 6.743416
+   },
+   {
+    "text": "Pekan",
+    "start": 6.765333,
+    "end": 7.039458
+   },
+   {
+    "text": "terus",
+    "start": 7.061416,
+    "end": 7.313624
+   },
+   {
+    "text": "menangis",
+    "start": 7.335541,
+    "end": 7.861874
+   },
+   {
+    "text": "Kasihan",
+    "start": 8.651333,
+    "end": 9.046083
+   },
+   {
+    "text": "tengok",
+    "start": 9.068,
+    "end": 9.309208
+   },
+   {
+    "text": "adiknya",
+    "start": 9.309208,
+    "end": 9.835541
+   },
+   {
+    "text": "Melur",
+    "start": 10.0,
+    "end": 10.285083
+   },
+   {
+    "text": "bagi",
+    "start": 10.296041,
+    "end": 10.526291
+   },
+   {
+    "text": "sedikit",
+    "start": 10.559208,
+    "end": 11.008749
+   },
+   {
+    "text": "Pekan",
+    "start": 11.787291,
+    "end": 12.083332
+   },
+   {
+    "text": "minta",
+    "start": 12.094291,
+    "end": 12.335499
+   },
+   {
+    "text": "lagi",
+    "start": 12.357458,
+    "end": 12.642541
+   },
+   {
+    "text": "Melur",
+    "start": 13.508791,
+    "end": 13.793874
+   },
+   {
+    "text": "bagi",
+    "start": 13.815791,
+    "end": 14.078957
+   },
+   {
+    "text": "lagi",
+    "start": 14.111833,
+    "end": 14.418833
+   }
+  ]
+ },
+ "s08-habis": {
+  "duration": 4.92,
+  "words": [
+   {
+    "text": "Akhirnya",
+    "start": 0.093875,
+    "end": 0.554416
+   },
+   {
+    "text": "telur",
+    "start": 0.565333,
+    "end": 0.784624
+   },
+   {
+    "text": "ikan",
+    "start": 0.806583,
+    "end": 1.069749
+   },
+   {
+    "text": "tembakul",
+    "start": 1.091666,
+    "end": 1.552207
+   },
+   {
+    "text": "tu",
+    "start": 1.585083,
+    "end": 1.650874
+   },
+   {
+    "text": "habis",
+    "start": 1.672791,
+    "end": 2.122332
+   },
+   {
+    "text": "tak",
+    "start": 2.308791,
+    "end": 2.418457
+   },
+   {
+    "text": "tinggal",
+    "start": 2.440333,
+    "end": 2.714458
+   },
+   {
+    "text": "langsung",
+    "start": 2.725458,
+    "end": 3.142124
+   },
+   {
+    "text": "untuk",
+    "start": 3.153083,
+    "end": 3.438166
+   },
+   {
+    "text": "ibu",
+    "start": 3.449125,
+    "end": 3.679375
+   },
+   {
+    "text": "mereka",
+    "start": 3.679375,
+    "end": 4.041208
+   }
+  ]
+ },
+ "s09-balik": {
+  "duration": 7.848,
+  "words": [
+   {
+    "text": "Petang",
+    "start": 0.093875,
+    "end": 0.368
+   },
+   {
+    "text": "tu",
+    "start": 0.411833,
+    "end": 0.587291
+   },
+   {
+    "text": "Mak",
+    "start": 0.773666,
+    "end": 0.927166
+   },
+   {
+    "text": "Tanjung",
+    "start": 0.938166,
+    "end": 1.245166
+   },
+   {
+    "text": "balik",
+    "start": 1.278083,
+    "end": 1.541249
+   },
+   {
+    "text": "dalam",
+    "start": 1.552208,
+    "end": 1.760541
+   },
+   {
+    "text": "keadaan",
+    "start": 1.782458,
+    "end": 2.111416
+   },
+   {
+    "text": "penat",
+    "start": 2.122375,
+    "end": 2.495166
+   },
+   {
+    "text": "Dia",
+    "start": 3.267541,
+    "end": 3.497791
+   },
+   {
+    "text": "terus",
+    "start": 3.530708,
+    "end": 3.804833
+   },
+   {
+    "text": "mencari",
+    "start": 3.82675,
+    "end": 4.188583
+   },
+   {
+    "text": "telur",
+    "start": 4.210541,
+    "end": 4.429832
+   },
+   {
+    "text": "ikan",
+    "start": 4.462708,
+    "end": 4.791666
+   },
+   {
+    "text": "yang",
+    "start": 4.791666,
+    "end": 4.912291
+   },
+   {
+    "text": "dia",
+    "start": 4.967125,
+    "end": 5.098708
+   },
+   {
+    "text": "simpan",
+    "start": 5.120625,
+    "end": 5.559208
+   },
+   {
+    "text": "tapi",
+    "start": 5.723666,
+    "end": 5.964874
+   },
+   {
+    "text": "semuanya",
+    "start": 5.997791,
+    "end": 6.414457
+   },
+   {
+    "text": "dah",
+    "start": 6.436416,
+    "end": 6.556999
+   },
+   {
+    "text": "habis",
+    "start": 6.557,
+    "end": 7.039458
+   }
+  ]
+ },
+ "s10-sedih": {
+  "duration": 15.864,
+  "words": [
+   {
+    "text": "Hati",
+    "start": 0.093875,
+    "end": 0.368
+   },
+   {
+    "text": "Mak",
+    "start": 0.400875,
+    "end": 0.543416
+   },
+   {
+    "text": "Tanjung",
+    "start": 0.554375,
+    "end": 0.894291
+   },
+   {
+    "text": "sangat",
+    "start": 0.927208,
+    "end": 1.179416
+   },
+   {
+    "text": "sedih",
+    "start": 1.190333,
+    "end": 1.519291
+   },
+   {
+    "text": "Dalam",
+    "start": 2.379375,
+    "end": 2.642541
+   },
+   {
+    "text": "cerita",
+    "start": 2.664458,
+    "end": 2.960499
+   },
+   {
+    "text": "ni",
+    "start": 3.004375,
+    "end": 3.190791
+   },
+   {
+    "text": "bukan",
+    "start": 3.410083,
+    "end": 3.695166
+   },
+   {
+    "text": "semata-mata",
+    "start": 3.717125,
+    "end": 4.232458
+   },
+   {
+    "text": "sebab",
+    "start": 4.254375,
+    "end": 4.5285
+   },
+   {
+    "text": "telur",
+    "start": 4.550458,
+    "end": 4.747833
+   },
+   {
+    "text": "ikan",
+    "start": 4.780708,
+    "end": 5.197374
+   },
+   {
+    "text": "Dia",
+    "start": 5.997791,
+    "end": 6.238999
+   },
+   {
+    "text": "rasa",
+    "start": 6.271916,
+    "end": 6.502166
+   },
+   {
+    "text": "permintaan",
+    "start": 6.535083,
+    "end": 7.017541
+   },
+   {
+    "text": "kecilnya",
+    "start": 7.061416,
+    "end": 7.489041
+   },
+   {
+    "text": "pun",
+    "start": 7.510958,
+    "end": 7.730249
+   },
+   {
+    "text": "tak",
+    "start": 7.752208,
+    "end": 7.894749
+   },
+   {
+    "text": "dihargai",
+    "start": 7.905708,
+    "end": 8.475874
+   },
+   {
+    "text": "sedangkan",
+    "start": 8.760958,
+    "end": 9.177624
+   },
+   {
+    "text": "selama",
+    "start": 9.188583,
+    "end": 9.495583
+   },
+   {
+    "text": "ni",
+    "start": 9.539458,
+    "end": 9.681999
+   },
+   {
+    "text": "dia",
+    "start": 9.714916,
+    "end": 9.879374
+   },
+   {
+    "text": "bersusah",
+    "start": 9.901333,
+    "end": 10.317999
+   },
+   {
+    "text": "payah",
+    "start": 10.328958,
+    "end": 10.646958
+   },
+   {
+    "text": "demi",
+    "start": 10.668875,
+    "end": 10.910083
+   },
+   {
+    "text": "anak-anaknya",
+    "start": 10.921041,
+    "end": 11.622791
+   },
+   {
+    "text": "Kesedihan",
+    "start": 12.478083,
+    "end": 13.004374
+   },
+   {
+    "text": "yang",
+    "start": 13.004375,
+    "end": 13.157875
+   },
+   {
+    "text": "dah",
+    "start": 13.190791,
+    "end": 13.344291
+   },
+   {
+    "text": "lama",
+    "start": 13.344291,
+    "end": 13.574541
+   },
+   {
+    "text": "dipendam",
+    "start": 13.607458,
+    "end": 13.991208
+   },
+   {
+    "text": "akhirnya",
+    "start": 13.991208,
+    "end": 14.484624
+   },
+   {
+    "text": "memuncak",
+    "start": 14.495625,
+    "end": 15.032916
+   }
+  ]
+ },
+ "s11-seru": {
+  "duration": 19.33,
+  "words": [
+   {
+    "text": "Jadi",
+    "start": 0.093875,
+    "end": 0.455708
+   },
+   {
+    "text": "apa",
+    "start": 0.653083,
+    "end": 0.938166
+   },
+   {
+    "text": "yang",
+    "start": 0.971041,
+    "end": 1.091666
+   },
+   {
+    "text": "dia",
+    "start": 1.135541,
+    "end": 1.289041
+   },
+   {
+    "text": "buat",
+    "start": 1.310958,
+    "end": 1.617958
+   },
+   {
+    "text": "Mak",
+    "start": 2.401333,
+    "end": 2.620624
+   },
+   {
+    "text": "Tanjung",
+    "start": 2.620625,
+    "end": 2.9715
+   },
+   {
+    "text": "pergi",
+    "start": 3.004375,
+    "end": 3.2785
+   },
+   {
+    "text": "ke",
+    "start": 3.289458,
+    "end": 3.399124
+   },
+   {
+    "text": "tempat",
+    "start": 3.399125,
+    "end": 3.67325
+   },
+   {
+    "text": "Batu",
+    "start": 3.695166,
+    "end": 3.947374
+   },
+   {
+    "text": "Belah",
+    "start": 3.958333,
+    "end": 4.166666
+   },
+   {
+    "text": "Batu",
+    "start": 4.177625,
+    "end": 4.396916
+   },
+   {
+    "text": "Bertangkup",
+    "start": 4.407875,
+    "end": 4.934208
+   },
+   {
+    "text": "batu",
+    "start": 5.1535,
+    "end": 5.449541
+   },
+   {
+    "text": "yang",
+    "start": 5.4715,
+    "end": 5.559208
+   },
+   {
+    "text": "dipercayai",
+    "start": 5.614041,
+    "end": 6.217124
+   },
+   {
+    "text": "boleh",
+    "start": 6.239041,
+    "end": 6.491249
+   },
+   {
+    "text": "terbuka",
+    "start": 6.502208,
+    "end": 6.951749
+   },
+   {
+    "text": "dan",
+    "start": 7.0285,
+    "end": 7.203958
+   },
+   {
+    "text": "menelan",
+    "start": 7.214916,
+    "end": 7.565791
+   },
+   {
+    "text": "sesiapa",
+    "start": 7.565791,
+    "end": 7.982457
+   },
+   {
+    "text": "yang",
+    "start": 8.026333,
+    "end": 8.146958
+   },
+   {
+    "text": "memanggilnya",
+    "start": 8.157875,
+    "end": 8.82675
+   },
+   {
+    "text": "Sambil",
+    "start": 9.671041,
+    "end": 10.021916
+   },
+   {
+    "text": "menangis",
+    "start": 10.032875,
+    "end": 10.526291
+   },
+   {
+    "text": "dia",
+    "start": 10.690791,
+    "end": 10.888166
+   },
+   {
+    "text": "menyeru",
+    "start": 10.899125,
+    "end": 11.271916
+   },
+   {
+    "text": "Batu",
+    "start": 12.469999999999999,
+    "end": 12.904791
+   },
+   {
+    "text": "belah",
+    "start": 12.904791,
+    "end": 13.380332
+   },
+   {
+    "text": "batu",
+    "start": 13.67925,
+    "end": 14.059666
+   },
+   {
+    "text": "bertangkup",
+    "start": 14.059666,
+    "end": 14.779791
+   },
+   {
+    "text": "telanlah",
+    "start": 15.092291,
+    "end": 15.608581999999998
+   },
+   {
+    "text": "aku",
+    "start": 15.608583,
+    "end": 16.206415999999997
+   },
+   {
+    "text": "aku",
+    "start": 16.5325,
+    "end": 16.845
+   },
+   {
+    "text": "tak",
+    "start": 16.845,
+    "end": 17.048791
+   },
+   {
+    "text": "mahu",
+    "start": 17.048791,
+    "end": 17.374874
+   },
+   {
+    "text": "hidup",
+    "start": 17.374875,
+    "end": 17.728125
+   },
+   {
+    "text": "lagi",
+    "start": 17.728165999999998,
+    "end": 18.407499
+   }
+  ],
+  "parts": [
+   {
+    "file": "s11-seru-0.mp3",
+    "start": 0.0,
+    "duration": 12.12
+   },
+   {
+    "file": "s11-seru-1.mp3",
+    "start": 12.37,
+    "duration": 6.96
+   }
+  ]
+ },
+ "s12-ditelan": {
+  "duration": 6.36,
+  "words": [
+   {
+    "text": "Batu",
+    "start": 0.093875,
+    "end": 0.389916
+   },
+   {
+    "text": "itu",
+    "start": 0.400875,
+    "end": 0.620166
+   },
+   {
+    "text": "pun",
+    "start": 0.642125,
+    "end": 0.795625
+   },
+   {
+    "text": "terbuka",
+    "start": 0.817541,
+    "end": 1.256124
+   },
+   {
+    "text": "dan",
+    "start": 1.409666,
+    "end": 1.585082
+   },
+   {
+    "text": "Mak",
+    "start": 1.585083,
+    "end": 1.727624
+   },
+   {
+    "text": "Tanjung",
+    "start": 1.749541,
+    "end": 2.067541
+   },
+   {
+    "text": "masuk",
+    "start": 2.089458,
+    "end": 2.407458
+   },
+   {
+    "text": "ke",
+    "start": 2.418416,
+    "end": 2.517082
+   },
+   {
+    "text": "dalamnya",
+    "start": 2.528083,
+    "end": 2.944749
+   },
+   {
+    "text": "Kemudian",
+    "start": 3.793875,
+    "end": 4.166666
+   },
+   {
+    "text": "batu",
+    "start": 4.177625,
+    "end": 4.429833
+   },
+   {
+    "text": "itu",
+    "start": 4.440791,
+    "end": 4.649124
+   },
+   {
+    "text": "tertutup",
+    "start": 4.693,
+    "end": 5.065791
+   },
+   {
+    "text": "semula",
+    "start": 5.087708,
+    "end": 5.471499
+   }
+  ]
+ },
+ "s13-anak": {
+  "duration": 11.712,
+  "words": [
+   {
+    "text": "Melur",
+    "start": 0.093875,
+    "end": 0.433791
+   },
+   {
+    "text": "dan",
+    "start": 0.477625,
+    "end": 0.642083
+   },
+   {
+    "text": "Pekan",
+    "start": 0.664041,
+    "end": 0.916249
+   },
+   {
+    "text": "mengejar",
+    "start": 0.938166,
+    "end": 1.376749
+   },
+   {
+    "text": "sambil",
+    "start": 1.409666,
+    "end": 1.727666
+   },
+   {
+    "text": "menangis",
+    "start": 1.738583,
+    "end": 2.133333
+   },
+   {
+    "text": "memanggil",
+    "start": 2.166208,
+    "end": 2.615749
+   },
+   {
+    "text": "ibu",
+    "start": 2.62675,
+    "end": 2.867958
+   },
+   {
+    "text": "mereka",
+    "start": 2.868,
+    "end": 3.240791
+   },
+   {
+    "text": "tapi",
+    "start": 3.503958,
+    "end": 3.734208
+   },
+   {
+    "text": "semuanya",
+    "start": 3.767125,
+    "end": 4.19475
+   },
+   {
+    "text": "dah",
+    "start": 4.227625,
+    "end": 4.425
+   },
+   {
+    "text": "terlambat",
+    "start": 4.425,
+    "end": 4.907458
+   },
+   {
+    "text": "Dalam",
+    "start": 5.657875,
+    "end": 5.932
+   },
+   {
+    "text": "sesetengah",
+    "start": 5.932,
+    "end": 6.370583
+   },
+   {
+    "text": "versi",
+    "start": 6.381583,
+    "end": 6.765374
+   },
+   {
+    "text": "yang",
+    "start": 7.017541,
+    "end": 7.203957
+   },
+   {
+    "text": "tinggal",
+    "start": 7.236833,
+    "end": 7.554833
+   },
+   {
+    "text": "hanyalah",
+    "start": 7.565791,
+    "end": 7.938582
+   },
+   {
+    "text": "beberapa",
+    "start": 7.949541,
+    "end": 8.333332
+   },
+   {
+    "text": "helai",
+    "start": 8.366208,
+    "end": 8.662249
+   },
+   {
+    "text": "rambut",
+    "start": 8.706125,
+    "end": 9.002166
+   },
+   {
+    "text": "Mak",
+    "start": 9.002208,
+    "end": 9.144749
+   },
+   {
+    "text": "Tanjung",
+    "start": 9.166666,
+    "end": 9.506582
+   },
+   {
+    "text": "yang",
+    "start": 9.539458,
+    "end": 9.671041
+   },
+   {
+    "text": "tersepit",
+    "start": 9.714916,
+    "end": 10.153499
+   },
+   {
+    "text": "di",
+    "start": 10.1535,
+    "end": 10.252166
+   },
+   {
+    "text": "celah",
+    "start": 10.285083,
+    "end": 10.515333
+   },
+   {
+    "text": "batu",
+    "start": 10.515333,
+    "end": 10.844291
+   }
+  ]
+ },
+ "s14-kenapa": {
+  "duration": 18.048,
+  "words": [
+   {
+    "text": "Jadi",
+    "start": 0.093875,
+    "end": 0.466666
+   },
+   {
+    "text": "kenapa",
+    "start": 0.642125,
+    "end": 0.91625
+   },
+   {
+    "text": "batu",
+    "start": 0.938166,
+    "end": 1.168416
+   },
+   {
+    "text": "itu",
+    "start": 1.179375,
+    "end": 1.37675
+   },
+   {
+    "text": "menelan",
+    "start": 1.398666,
+    "end": 1.705666
+   },
+   {
+    "text": "manusia",
+    "start": 1.716666,
+    "end": 2.188166
+   },
+   {
+    "text": "Dalam",
+    "start": 3.026333,
+    "end": 3.300458
+   },
+   {
+    "text": "legenda",
+    "start": 3.300458,
+    "end": 3.662291
+   },
+   {
+    "text": "ni",
+    "start": 3.717125,
+    "end": 3.925458
+   },
+   {
+    "text": "Batu",
+    "start": 4.166666,
+    "end": 4.429832
+   },
+   {
+    "text": "Belah",
+    "start": 4.440791,
+    "end": 4.616249
+   },
+   {
+    "text": "Batu",
+    "start": 4.627208,
+    "end": 4.846499
+   },
+   {
+    "text": "Bertangkup",
+    "start": 4.857458,
+    "end": 5.328958
+   },
+   {
+    "text": "digambarkan",
+    "start": 5.350875,
+    "end": 5.975875
+   },
+   {
+    "text": "sebagai",
+    "start": 5.986833,
+    "end": 6.315791
+   },
+   {
+    "text": "batu",
+    "start": 6.337708,
+    "end": 6.622791
+   },
+   {
+    "text": "ajaib",
+    "start": 6.622791,
+    "end": 7.149124
+   },
+   {
+    "text": "Ia",
+    "start": 7.927625,
+    "end": 8.157875
+   },
+   {
+    "text": "akan",
+    "start": 8.157875,
+    "end": 8.421041
+   },
+   {
+    "text": "terbuka",
+    "start": 8.443,
+    "end": 8.826791
+   },
+   {
+    "text": "bila",
+    "start": 8.848666,
+    "end": 9.078916
+   },
+   {
+    "text": "diseru",
+    "start": 9.100875,
+    "end": 9.440791
+   },
+   {
+    "text": "oleh",
+    "start": 9.440791,
+    "end": 9.681999
+   },
+   {
+    "text": "orang",
+    "start": 9.682,
+    "end": 9.967083
+   },
+   {
+    "text": "yang",
+    "start": 9.989041,
+    "end": 10.131582
+   },
+   {
+    "text": "sangat",
+    "start": 10.1535,
+    "end": 10.427625
+   },
+   {
+    "text": "sedih",
+    "start": 10.438583,
+    "end": 10.767541
+   },
+   {
+    "text": "dan",
+    "start": 10.822375,
+    "end": 10.997833
+   },
+   {
+    "text": "putus",
+    "start": 11.008791,
+    "end": 11.337707
+   },
+   {
+    "text": "asa",
+    "start": 11.337708,
+    "end": 11.710499
+   },
+   {
+    "text": "Batu",
+    "start": 12.565791,
+    "end": 12.916666
+   },
+   {
+    "text": "tu",
+    "start": 12.949541,
+    "end": 13.037249
+   },
+   {
+    "text": "tak",
+    "start": 13.070166,
+    "end": 13.201749
+   },
+   {
+    "text": "menelan",
+    "start": 13.212708,
+    "end": 13.563583
+   },
+   {
+    "text": "sesiapa",
+    "start": 13.563583,
+    "end": 13.980249
+   },
+   {
+    "text": "sesuka",
+    "start": 14.013166,
+    "end": 14.331166
+   },
+   {
+    "text": "hati",
+    "start": 14.342125,
+    "end": 14.703958
+   },
+   {
+    "text": "Ia",
+    "start": 15.570166,
+    "end": 15.789457
+   },
+   {
+    "text": "menelan",
+    "start": 15.811416,
+    "end": 16.129416
+   },
+   {
+    "text": "orang",
+    "start": 16.140333,
+    "end": 16.436374
+   },
+   {
+    "text": "yang",
+    "start": 16.447375,
+    "end": 16.546041
+   },
+   {
+    "text": "memanggilnya",
+    "start": 16.568,
+    "end": 17.193
+   }
+  ]
+ },
+ "s15-punca": {
+  "duration": 10.536,
+  "words": [
+   {
+    "text": "Mak",
+    "start": 0.093875,
+    "end": 0.324125
+   },
+   {
+    "text": "Tanjung",
+    "start": 0.324125,
+    "end": 0.653083
+   },
+   {
+    "text": "masuk",
+    "start": 0.675,
+    "end": 1.003958
+   },
+   {
+    "text": "ke",
+    "start": 1.014916,
+    "end": 1.113582
+   },
+   {
+    "text": "dalam",
+    "start": 1.124541,
+    "end": 1.288999
+   },
+   {
+    "text": "batu",
+    "start": 1.321916,
+    "end": 1.585082
+   },
+   {
+    "text": "kerana",
+    "start": 1.596041,
+    "end": 1.870166
+   },
+   {
+    "text": "hatinya",
+    "start": 1.881125,
+    "end": 2.330666
+   },
+   {
+    "text": "terlalu",
+    "start": 2.363583,
+    "end": 2.692541
+   },
+   {
+    "text": "kecewa",
+    "start": 2.736416,
+    "end": 3.153082
+   },
+   {
+    "text": "dan",
+    "start": 3.196916,
+    "end": 3.361374
+   },
+   {
+    "text": "sedih",
+    "start": 3.361416,
+    "end": 3.701332
+   },
+   {
+    "text": "Telur",
+    "start": 4.550458,
+    "end": 4.802666
+   },
+   {
+    "text": "ikan",
+    "start": 4.835541,
+    "end": 5.098707
+   },
+   {
+    "text": "tembakul",
+    "start": 5.109666,
+    "end": 5.548249
+   },
+   {
+    "text": "cuma",
+    "start": 5.603083,
+    "end": 5.855291
+   },
+   {
+    "text": "jadi",
+    "start": 5.899125,
+    "end": 6.162291
+   },
+   {
+    "text": "titik",
+    "start": 6.184208,
+    "end": 6.425416
+   },
+   {
+    "text": "terakhir",
+    "start": 6.436416,
+    "end": 6.864041
+   },
+   {
+    "text": "kepada",
+    "start": 6.907875,
+    "end": 7.138125
+   },
+   {
+    "text": "penat",
+    "start": 7.160083,
+    "end": 7.478083
+   },
+   {
+    "text": "dan",
+    "start": 7.478083,
+    "end": 7.631583
+   },
+   {
+    "text": "susah",
+    "start": 7.631583,
+    "end": 7.927624
+   },
+   {
+    "text": "hidup",
+    "start": 7.938583,
+    "end": 8.267541
+   },
+   {
+    "text": "yang",
+    "start": 8.300458,
+    "end": 8.475916
+   },
+   {
+    "text": "dia",
+    "start": 8.51975,
+    "end": 8.67325
+   },
+   {
+    "text": "tanggung",
+    "start": 8.706125,
+    "end": 9.057
+   },
+   {
+    "text": "selama",
+    "start": 9.089916,
+    "end": 9.396916
+   },
+   {
+    "text": "ni",
+    "start": 9.418875,
+    "end": 9.649125
+   }
+  ]
+ },
+ "s16-pengajaran": {
+  "duration": 18.864,
+  "words": [
+   {
+    "text": "Kisah",
+    "start": 0.093875,
+    "end": 0.44475
+   },
+   {
+    "text": "ni",
+    "start": 0.466666,
+    "end": 0.631124
+   },
+   {
+    "text": "ialah",
+    "start": 0.631125,
+    "end": 0.960083
+   },
+   {
+    "text": "legenda",
+    "start": 0.960083,
+    "end": 1.299999
+   },
+   {
+    "text": "rakyat",
+    "start": 1.343875,
+    "end": 1.738625
+   },
+   {
+    "text": "bukan",
+    "start": 1.925,
+    "end": 2.221041
+   },
+   {
+    "text": "fakta",
+    "start": 2.232,
+    "end": 2.55
+   },
+   {
+    "text": "sejarah",
+    "start": 2.571916,
+    "end": 3.043416
+   },
+   {
+    "text": "Pengajarannya",
+    "start": 3.837708,
+    "end": 4.561374
+   },
+   {
+    "text": "hargai",
+    "start": 4.835541,
+    "end": 5.208332
+   },
+   {
+    "text": "dan",
+    "start": 5.241208,
+    "end": 5.372791
+   },
+   {
+    "text": "dengarlah",
+    "start": 5.416666,
+    "end": 5.855249
+   },
+   {
+    "text": "permintaan",
+    "start": 5.877208,
+    "end": 6.359666
+   },
+   {
+    "text": "ibu",
+    "start": 6.359666,
+    "end": 6.611832
+   },
+   {
+    "text": "bapa",
+    "start": 6.611833,
+    "end": 6.907874
+   },
+   {
+    "text": "walaupun",
+    "start": 6.929833,
+    "end": 7.291666
+   },
+   {
+    "text": "nampak",
+    "start": 7.302625,
+    "end": 7.57675
+   },
+   {
+    "text": "kecil",
+    "start": 7.620625,
+    "end": 8.015375
+   },
+   {
+    "text": "kerana",
+    "start": 8.245625,
+    "end": 8.5965
+   },
+   {
+    "text": "di",
+    "start": 8.618416,
+    "end": 8.684207
+   },
+   {
+    "text": "sebalik",
+    "start": 8.717125,
+    "end": 9.035125
+   },
+   {
+    "text": "permintaan",
+    "start": 9.057,
+    "end": 9.506541
+   },
+   {
+    "text": "kecil",
+    "start": 9.550458,
+    "end": 9.846499
+   },
+   {
+    "text": "itu",
+    "start": 9.8465,
+    "end": 10.131583
+   },
+   {
+    "text": "ada",
+    "start": 10.142541,
+    "end": 10.405707
+   },
+   {
+    "text": "pengorbanan",
+    "start": 10.416666,
+    "end": 10.975874
+   },
+   {
+    "text": "yang",
+    "start": 10.986833,
+    "end": 11.129374
+   },
+   {
+    "text": "besar",
+    "start": 11.129375,
+    "end": 11.524125
+   },
+   {
+    "text": "Dan",
+    "start": 12.313583,
+    "end": 12.510958
+   },
+   {
+    "text": "bila",
+    "start": 12.521916,
+    "end": 12.741207
+   },
+   {
+    "text": "hati",
+    "start": 12.763166,
+    "end": 13.037291
+   },
+   {
+    "text": "terlalu",
+    "start": 13.059208,
+    "end": 13.355249
+   },
+   {
+    "text": "sedih",
+    "start": 13.377208,
+    "end": 13.695208
+   },
+   {
+    "text": "luahkanlah",
+    "start": 13.958333,
+    "end": 14.473666
+   },
+   {
+    "text": "pada",
+    "start": 14.473666,
+    "end": 14.627166
+   },
+   {
+    "text": "orang",
+    "start": 14.627208,
+    "end": 14.912291
+   },
+   {
+    "text": "yang",
+    "start": 14.934208,
+    "end": 15.043874
+   },
+   {
+    "text": "kita",
+    "start": 15.087708,
+    "end": 15.285083
+   },
+   {
+    "text": "percaya",
+    "start": 15.296041,
+    "end": 15.745582
+   },
+   {
+    "text": "Jangan",
+    "start": 16.600875,
+    "end": 16.940791
+   },
+   {
+    "text": "dipendam",
+    "start": 16.95175,
+    "end": 17.324541
+   },
+   {
+    "text": "seorang",
+    "start": 17.335541,
+    "end": 17.664499
+   },
+   {
+    "text": "diri",
+    "start": 17.697375,
+    "end": 18.004375
+   }
+  ]
+ }
+}

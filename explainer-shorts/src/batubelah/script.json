@@ -1,0 +1,33 @@
+{
+  "title": "Kenapa Batu Belah Batu Bertangkup Menelan Manusia?",
+  "voice": "ms-MY-OsmanNeural",
+  "rate": "+14%",
+  "pitch": "+0Hz",
+  "_note": "Legenda rakyat Melayu (versi ringkas). Edit `vo`/`parts` then run `python scripts/generate-vo.py batubelah`. Mak Tanjung's lines use the female voice.",
+  "say": {},
+  "shots": [
+    {"id": "s01-hook", "vo": "Korang tahu tak, ada satu legenda Melayu tentang batu besar yang boleh terbuka dan tertutup sendiri, dan pernah menelan seorang ibu? Batu tu dipanggil Batu Belah Batu Bertangkup.", "highlight": ["batu", "terbuka", "tertutup", "menelan", "Belah", "Bertangkup."], "voDelay": 0.5, "pad": 0.4},
+    {"id": "s02-soalan", "vo": "Persoalannya, kenapa batu tu menelan manusia? Dan kenapa seorang ibu sanggup masuk ke dalamnya? Jom kita tengok kisahnya.", "highlight": ["kenapa", "manusia?", "ibu"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s03-keluarga", "vo": "Menurut cerita orang dulu-dulu, ada seorang ibu bernama Mak Tanjung. Dia seorang janda yang hidup miskin bersama dua orang anaknya, Melur yang sulung dan Pekan, adiknya yang masih kecil.", "highlight": ["Mak", "Tanjung.", "Melur", "Pekan,"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s04-susah", "vo": "Hidup mereka susah. Setiap hari Mak Tanjung keluar mencari rezeki dan menguruskan anak-anaknya seorang diri.", "highlight": ["susah.", "rezeki", "seorang", "diri."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s05-tembakul", "vo": "Satu hari, Mak Tanjung teringin sangat nak makan telur ikan tembakul. Ikan tembakul ni ikan yang selalu hidup di kawasan berlumpur dan paya bakau. Telurnya jarang dapat, jadi bila Mak Tanjung dapat sedikit, dia rasa sangat gembira.", "highlight": ["telur", "ikan", "tembakul.", "paya", "bakau.", "gembira."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s06-pesan", "parts": [
+      {"vo": "Sebelum keluar bekerja, dia pesan pada Melur:"},
+      {"vo": "Melur, simpan telur ikan tembakul ni untuk mak, ya. Nanti balik mak nak makan.", "voice": "ms-MY-YasminNeural", "pitch": "-8Hz", "rate": "+0%"},
+      {"vo": "Melur pun mengangguk."}
+    ], "highlight": ["simpan", "untuk", "mak,", "mengangguk."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s07-pekan", "vo": "Selepas ibunya pergi, Pekan menangis kelaparan dan merengek nak makan telur ikan tu. Melur cuba memujuk, tapi Pekan terus menangis. Kasihan tengok adiknya, Melur bagi sedikit. Pekan minta lagi. Melur bagi lagi.", "highlight": ["menangis", "kelaparan", "sedikit.", "lagi."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s08-habis", "vo": "Akhirnya telur ikan tembakul tu habis, tak tinggal langsung untuk ibu mereka.", "highlight": ["habis,", "langsung"], "voDelay": 0.2, "pad": 0.6},
+    {"id": "s09-balik", "vo": "Petang tu, Mak Tanjung balik dalam keadaan penat. Dia terus mencari telur ikan yang dia simpan, tapi semuanya dah habis.", "highlight": ["penat.", "mencari", "habis."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s10-sedih", "vo": "Hati Mak Tanjung sangat sedih. Dalam cerita ni, bukan semata-mata sebab telur ikan. Dia rasa permintaan kecilnya pun tak dihargai, sedangkan selama ni dia bersusah payah demi anak-anaknya. Kesedihan yang dah lama dipendam akhirnya memuncak.", "highlight": ["sedih.", "dihargai,", "bersusah", "payah", "dipendam"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s11-seru", "parts": [
+      {"vo": "Jadi, apa yang dia buat? Mak Tanjung pergi ke tempat Batu Belah Batu Bertangkup, batu yang dipercayai boleh terbuka dan menelan sesiapa yang memanggilnya. Sambil menangis, dia menyeru:"},
+      {"vo": "Batu belah, batu bertangkup, telanlah aku, aku tak mahu hidup lagi.", "voice": "ms-MY-YasminNeural", "pitch": "-10Hz", "rate": "-8%"}
+    ], "highlight": ["Belah", "Bertangkup,", "memanggilnya.", "menyeru:"], "voDelay": 0.2, "pad": 0.5},
+    {"id": "s12-ditelan", "vo": "Batu itu pun terbuka, dan Mak Tanjung masuk ke dalamnya. Kemudian batu itu tertutup semula.", "highlight": ["terbuka,", "masuk", "tertutup"], "voDelay": 0.2, "pad": 0.8},
+    {"id": "s13-anak", "vo": "Melur dan Pekan mengejar sambil menangis memanggil ibu mereka, tapi semuanya dah terlambat. Dalam sesetengah versi, yang tinggal hanyalah beberapa helai rambut Mak Tanjung yang tersepit di celah batu.", "highlight": ["menangis", "terlambat.", "rambut", "celah"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s14-kenapa", "vo": "Jadi, kenapa batu itu menelan manusia? Dalam legenda ni, Batu Belah Batu Bertangkup digambarkan sebagai batu ajaib. Ia akan terbuka bila diseru oleh orang yang sangat sedih dan putus asa. Batu tu tak menelan sesiapa sesuka hati. Ia menelan orang yang memanggilnya.", "highlight": ["kenapa", "ajaib.", "diseru", "putus", "asa.", "memanggilnya."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s15-punca", "vo": "Mak Tanjung masuk ke dalam batu kerana hatinya terlalu kecewa dan sedih. Telur ikan tembakul cuma jadi titik terakhir kepada penat dan susah hidup yang dia tanggung selama ni.", "highlight": ["kecewa", "sedih.", "titik", "terakhir", "penat", "susah"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s16-pengajaran", "vo": "Kisah ni ialah legenda rakyat, bukan fakta sejarah. Pengajarannya, hargai dan dengarlah permintaan ibu bapa walaupun nampak kecil, kerana di sebalik permintaan kecil itu ada pengorbanan yang besar. Dan bila hati terlalu sedih, luahkanlah pada orang yang kita percaya. Jangan dipendam seorang diri.", "highlight": ["legenda", "hargai", "ibu", "bapa", "pengorbanan", "luahkanlah", "percaya."], "voDelay": 0.2, "pad": 2.0}
+  ]
+}

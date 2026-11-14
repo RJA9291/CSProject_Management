@@ -3,6 +3,7 @@ import {Composition, Folder} from 'remotion';
 import {loadFonts} from './fonts';
 import {FPS, SHOTS, TOTAL_FRAMES} from './waze/timeline';
 import {WazeShot, WazeVideo} from './waze/Video';
+import {BatuShot, BatuVideo, SHOTS as BATU_SHOTS, TOTAL_FRAMES as BATU_FRAMES} from './batubelah/Story';
 import {SantubongShot, SantubongVideo, SHOTS as SANTUBONG_SHOTS, TOTAL_FRAMES as SANTUBONG_FRAMES} from './santubong/Story';
 
 loadFonts();
@@ -22,6 +23,14 @@ export const RemotionRoot: React.FC = () => (
     <Folder name="Santubong-Shots">
       {SANTUBONG_SHOTS.map((s, i) => (
         <Composition key={s.id} id={`Santubong-${s.id}`} component={SantubongShot} defaultProps={{index: i}} width={1080} height={1920} fps={FPS} durationInFrames={s.frames} />
+      ))}
+    </Folder>
+  </Folder>
+  <Folder name="Legenda-BatuBelah">
+    <Composition id="BatuBelah" component={BatuVideo} width={1080} height={1920} fps={FPS} durationInFrames={BATU_FRAMES} />
+    <Folder name="BatuBelah-Shots">
+      {BATU_SHOTS.map((s, i) => (
+        <Composition key={s.id} id={`BatuBelah-${s.id}`} component={BatuShot} defaultProps={{index: i}} width={1080} height={1920} fps={FPS} durationInFrames={s.frames} />
       ))}
     </Folder>
   </Folder>

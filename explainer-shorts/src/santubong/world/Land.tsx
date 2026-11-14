@@ -279,7 +279,8 @@ export const Kayangan: React.FC<{t: number; glow?: number}> = ({t, glow = 0.6}) 
   );
 };
 
-export const Land: React.FC<{mood: Mood; t: number; flash?: number; far?: boolean}> = ({mood, t, flash = 0, far = false}) => {
+// `coast` = false hides the sea and beach (for inland sets such as swamps and forests).
+export const Land: React.FC<{mood: Mood; t: number; flash?: number; far?: boolean; coast?: boolean}> = ({mood, t, flash = 0, far = false, coast = true}) => {
   const s = SKIES[mood];
   return (
     <>
@@ -296,8 +297,8 @@ export const Land: React.FC<{mood: Mood; t: number; flash?: number; far?: boolea
       <directionalLight position={[-120, 200, 160]} intensity={s.sunI + flash * 3} color={s.sun} />
       <directionalLight position={[140, 80, 200]} intensity={0.5} color="#ffe2c8" />
       <ambientLight intensity={0.2 + flash * 1.5} />
-      <Sea t={t} color={s.sea} />
-      <Beach t={t} />
+      {coast ? <Sea t={t} color={s.sea} /> : null}
+      {coast ? <Beach t={t} /> : null}
     </>
   );
 };

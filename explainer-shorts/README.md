@@ -31,6 +31,19 @@ REMOTION_BROWSER_EXECUTABLE=... npm run render:santubong
 PREFIX=Santubong- node scripts/render-stills.mjs 0.3,0.8
 ```
 
+## Video 3: Kenapa Batu Belah Batu Bertangkup Menelan Manusia? (`BatuBelah`)
+
+Legenda rakyat Melayu (~3.5 minit), 16 shot ikut cerita ringkas: batu yang terbuka & tertutup → Mak Tanjung, Melur & Pekan → telur ikan tembakul di paya bakau → pesan ibu → Pekan menangis, telur habis → ibu kecewa → seruan kepada batu → batu menelan & tertutup → rambut di celah batu → kenapa batu menelan (hanya yang menyerunya) → pengajaran. Mesej penutup menyertakan talian sokongan emosi (Talian HEAL 15555, Befrienders KL 03-7627 2929, disemak Nov 2026).
+
+- `src/batubelah/script.json`: narasi (dialog ibu guna `ms-MY-YasminNeural`).
+- `src/batubelah/world/Sets.tsx`: paya bakau + ikan tembakul, hutan + Batu Belah (dua belah yang terbuka), mangkuk telur ikan, bakul, air mata, rambut.
+- `src/batubelah/Story.tsx`: pengarah shot (guna semula watak chibi & kampung dari Santubong).
+
+```bash
+python scripts/generate-vo.py batubelah
+REMOTION_BROWSER_EXECUTABLE=... npm run render:batubelah
+```
+
 ## Fail utama
 
 - `src/waze/script.json`: skrip VO setiap shot, perkataan yang ditonjol kuning (`highlight`), sebutan TTS (`say`).
