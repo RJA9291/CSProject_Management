@@ -1,0 +1,34 @@
+{
+  "title": "Kenapa Si Tanggang Bertukar Menjadi Batu?",
+  "voice": "ms-MY-OsmanNeural",
+  "rate": "+14%",
+  "pitch": "+0Hz",
+  "_note": "Legenda Si Tanggang (versi ringkas). Run `python scripts/generate-vo.py tanggang` after edits. Mother = Yasmin; Tanggang's line = Osman (deeper).",
+  "say": {},
+  "shots": [
+    {"id": "s01-hook", "vo": "Korang tahu tak, kenapa Si Tanggang yang dah menjadi kaya akhirnya bertukar menjadi batu? Jom kita dengar kisahnya.", "highlight": ["kenapa", "Tanggang", "kaya", "batu?"], "voDelay": 0.5, "pad": 0.4},
+    {"id": "s02-miskin", "vo": "Menurut legenda, Si Tanggang hidup sangat miskin bersama ibu dan ayahnya di sebuah kampung di tepi sungai. Mereka tinggal di pondok buruk dan hidup serba kekurangan.", "highlight": ["miskin", "ibu", "ayahnya", "pondok", "buruk"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s03-mimpi", "vo": "Walaupun miskin, Tanggang selalu bermimpi untuk menjadi kaya. Setiap kali kapal besar lalu, dia akan memandangnya lama-lama.", "highlight": ["bermimpi", "kaya.", "kapal"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s04-merantau", "vo": "Satu hari, sebuah kapal berlabuh berhampiran kampungnya. Tanggang minta izin daripada ibu bapanya untuk ikut belayar dan merantau.", "highlight": ["kapal", "izin", "belayar", "merantau."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s05-pesan", "parts": [
+      {"vo": "Ibunya sedih, tapi tetap mengizinkan sambil berpesan:"},
+      {"vo": "Jangan lupakan mak dan ayah, nak.", "voice": "ms-MY-YasminNeural", "pitch": "-8Hz", "rate": "-4%"}
+    ], "highlight": ["sedih,", "Jangan", "lupakan"], "voDelay": 0.2, "pad": 0.6},
+    {"id": "s06-kaya", "vo": "Di atas kapal, Tanggang bekerja keras. Dia rajin dan pandai, sampailah akhirnya dia menjadi nakhoda yang kaya raya. Dia juga berkahwin dengan seorang puteri.", "highlight": ["bekerja", "keras.", "nakhoda", "kaya", "raya.", "puteri."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s07-pulang", "vo": "Bertahun-tahun kemudian, kapal Tanggang yang besar dan cantik berlabuh di kampung asalnya. Berita itu sampai ke telinga ibu bapanya.", "highlight": ["Bertahun-tahun", "berlabuh", "kampung", "asalnya."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s08-sampan", "vo": "Dengan gembira, ibunya mendayung sampan membawa makanan kegemaran Tanggang, ingin berjumpa anak yang sangat dirinduinya.", "highlight": ["gembira,", "sampan", "dirinduinya."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s09-nafi", "parts": [
+      {"vo": "Tapi bila Tanggang nampak ibunya yang tua dan berpakaian lusuh, dia rasa malu di depan isteri dan anak kapalnya. Dia pun berkata:"},
+      {"vo": "Perempuan tua ini bukan ibu aku! Halau dia pergi!", "pitch": "-6Hz", "rate": "+6%"}
+    ], "highlight": ["lusuh,", "malu", "bukan", "ibu", "Halau"], "voDelay": 0.2, "pad": 0.5},
+    {"id": "s10-hancur", "vo": "Hati ibunya hancur. Dia dihalau dari kapal anak yang dilahirkan dan dibesarkannya sendiri.", "highlight": ["hancur.", "dihalau", "dilahirkan", "dibesarkannya"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s11-doa", "parts": [
+      {"vo": "Sambil menangis, ibunya berdoa:"},
+      {"vo": "Ya Tuhan, jika benar dia anakku Tanggang, tunjukkanlah kekuasaan-Mu.", "voice": "ms-MY-YasminNeural", "pitch": "-10Hz", "rate": "-8%"}
+    ], "highlight": ["berdoa:", "anakku", "kekuasaan-Mu."], "voDelay": 0.2, "pad": 0.5},
+    {"id": "s12-batu", "vo": "Tiba-tiba langit gelap, ribut datang dan petir sabung-menyabung. Menurut legenda, Tanggang, isterinya, anak kapal dan kapalnya bertukar menjadi batu.", "highlight": ["ribut", "petir", "batu."], "voDelay": 0.3, "pad": 0.6},
+    {"id": "s13-kenapa", "vo": "Jadi, kenapa Si Tanggang bertukar menjadi batu? Dalam legenda ini, dia disumpah kerana menderhaka, sanggup menafikan ibunya sendiri hanya kerana malu dengan kemiskinan.", "highlight": ["kenapa", "menderhaka,", "menafikan", "malu"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s14-fakta", "vo": "Kisah Si Tanggang ialah legenda rakyat, bukan fakta sejarah. Cerita yang hampir sama juga wujud di Sumatera Barat, iaitu kisah Malin Kundang. Ada batu yang dikaitkan dengan kisah ini, tetapi itu kepercayaan rakyat, bukan bukti sejarah.", "highlight": ["legenda", "rakyat,", "Malin", "Kundang.", "kepercayaan"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s15-pengajaran", "vo": "Pengajarannya, setinggi mana pun kita berjaya, jangan sesekali lupa dan malu dengan ibu bapa yang membesarkan kita.", "highlight": ["berjaya,", "jangan", "lupa", "malu", "ibu", "bapa"], "voDelay": 0.2, "pad": 1.6}
+  ]
+}
