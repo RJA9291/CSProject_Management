@@ -70,7 +70,7 @@ const Wayang: React.FC<{b: Beat; f: number}> = ({b, f}) => {
         </pattern>
       </defs>
       <rect width={1080} height={1920} fill="url(#wy-screen)" opacity={flicker} />
-      <g transform={`translate(540 1100) scale(1.55) translate(-640 -1040) rotate(${sway} 640 1500)`}>
+      <g transform={`translate(540 1080) scale(1.18) translate(-555 -1020) rotate(${sway} 555 1500)`}>
         {b.prims.filter((p) => !skip.includes(p.role)).map((p) =>
           shape(p, {key: p.id, fill: p.role === 'eye' ? '#f7b45a' : ['tanggang', 'wife', 'mother', 'sail', 'hull'].includes(p.role) ? 'url(#wy-perf)' : p.role === 'sea' ? '#1a0c05' : '#120a06'}),
         )}
