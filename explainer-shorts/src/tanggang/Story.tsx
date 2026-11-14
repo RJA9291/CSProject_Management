@@ -402,3 +402,6 @@ export const TanggangVideo: React.FC = () => {
     </AbsoluteFill>
   );
 };
+
+// Re-used by the style-comparison video.
+export const TanggangScene3D = Scene3D;

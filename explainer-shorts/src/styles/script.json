@@ -1,0 +1,20 @@
+{
+  "title": "Satu Cerita, 8 Gaya Video",
+  "voice": "ms-MY-OsmanNeural",
+  "rate": "+14%",
+  "pitch": "+0Hz",
+  "_note": "Style comparison reel using the same Si Tanggang beat in every style.",
+  "say": {"3D": "tiga D"},
+  "shots": [
+    {"id": "g0-intro", "vo": "Satu cerita, lapan gaya video! Kita guna babak yang sama, Si Tanggang menafikan ibunya, dan tengok apa beza setiap gaya.", "highlight": ["lapan", "gaya", "babak", "sama,", "beza"], "voDelay": 0.4, "pad": 0.4},
+    {"id": "g1-lowpoly", "vo": "Gaya satu, kartun 3D low-poly. Ini gaya video tadi. Watak chibi kepala besar, dunia 3D bersegi-segi, dan kamera boleh bergerak macam filem.", "highlight": ["satu,", "low-poly.", "chibi", "bersegi-segi,", "filem."], "voDelay": 0.3, "pad": 0.4},
+    {"id": "g2-sinematik", "vo": "Gaya dua, 3D sinematik. Masih 3D, tapi dengan pencahayaan senja yang dramatik, color grading dan bingkai filem. Lebih mewah dan beremosi.", "highlight": ["dua,", "sinematik.", "dramatik,", "grading", "beremosi."], "voDelay": 0.3, "pad": 0.4},
+    {"id": "g3-wayang", "vo": "Gaya tiga, wayang kulit. Watak jadi bayang hitam berukir atas kain bercahaya, bergoyang macam digerakkan tok dalang. Paling rasa tradisional Melayu.", "highlight": ["tiga,", "wayang", "kulit.", "bayang", "tradisional"], "voDelay": 0.3, "pad": 0.4},
+    {"id": "g4-kertas", "vo": "Gaya empat, buku cerita kertas. Semuanya macam potongan kertas berlapis, ada bayang lembut, dan bergerak sikit-sikit macam stop motion. Sesuai untuk kanak-kanak.", "highlight": ["empat,", "kertas.", "berlapis,", "stop", "motion.", "kanak-kanak."], "voDelay": 0.3, "pad": 0.4},
+    {"id": "g5-pixel", "vo": "Gaya lima, pixel art. Gaya retro macam game lama, sama dengan siri pembelajaran kita. Ringkas, comel dan mudah dikenali.", "highlight": ["lima,", "pixel", "art.", "retro", "comel"], "voDelay": 0.3, "pad": 0.4},
+    {"id": "g6-komik", "vo": "Gaya enam, komik bergerak. Babak dipecah jadi panel komik, ada belon dialog dan kesan bunyi besar. Sesuai untuk babak drama.", "highlight": ["enam,", "komik", "panel", "belon", "drama."], "voDelay": 0.3, "pad": 0.4},
+    {"id": "g7-lukisan", "vo": "Gaya tujuh, lukisan tangan. Garisan dilukis sedikit demi sedikit atas kertas putih, macam seseorang sedang bercerita sambil melakar.", "highlight": ["tujuh,", "lukisan", "tangan.", "melakar."], "voDelay": 0.3, "pad": 0.4},
+    {"id": "g8-batik", "vo": "Gaya lapan, ilustrasi rata bermotif batik. Warna tradisional, corak batik dan bingkai songket. Nampak elegan dan sangat Malaysia.", "highlight": ["lapan,", "batik.", "songket.", "elegan", "Malaysia."], "voDelay": 0.3, "pad": 0.4},
+    {"id": "g9-outro", "vo": "Jadi, gaya mana yang korang paling suka? Komen nombor gaya pilihan korang!", "highlight": ["gaya", "suka?", "Komen", "nombor"], "voDelay": 0.3, "pad": 1.4}
+  ]
+}

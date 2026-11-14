@@ -1,0 +1,1037 @@
+{
+ "g0-intro": {
+  "duration": 8.64,
+  "words": [
+   {
+    "text": "Satu",
+    "start": 0.093875,
+    "end": 0.400875
+   },
+   {
+    "text": "cerita",
+    "start": 0.433791,
+    "end": 0.828541
+   },
+   {
+    "text": "lapan",
+    "start": 1.058791,
+    "end": 1.332916
+   },
+   {
+    "text": "gaya",
+    "start": 1.37675,
+    "end": 1.585083
+   },
+   {
+    "text": "video",
+    "start": 1.618,
+    "end": 1.990791
+   },
+   {
+    "text": "Kita",
+    "start": 2.818,
+    "end": 3.092125
+   },
+   {
+    "text": "guna",
+    "start": 3.125,
+    "end": 3.366208
+   },
+   {
+    "text": "babak",
+    "start": 3.377208,
+    "end": 3.684208
+   },
+   {
+    "text": "yang",
+    "start": 3.695166,
+    "end": 3.848666
+   },
+   {
+    "text": "sama",
+    "start": 3.870625,
+    "end": 4.2215
+   },
+   {
+    "text": "Si",
+    "start": 4.462708,
+    "end": 4.627166
+   },
+   {
+    "text": "Tanggang",
+    "start": 4.660083,
+    "end": 4.956124
+   },
+   {
+    "text": "menafikan",
+    "start": 4.967125,
+    "end": 5.438583
+   },
+   {
+    "text": "ibunya",
+    "start": 5.438583,
+    "end": 5.910083
+   },
+   {
+    "text": "dan",
+    "start": 6.085541,
+    "end": 6.260999
+   },
+   {
+    "text": "tengok",
+    "start": 6.282875,
+    "end": 6.546041
+   },
+   {
+    "text": "apa",
+    "start": 6.546041,
+    "end": 6.754374
+   },
+   {
+    "text": "beza",
+    "start": 6.776333,
+    "end": 7.105291
+   },
+   {
+    "text": "setiap",
+    "start": 7.138166,
+    "end": 7.445166
+   },
+   {
+    "text": "gaya",
+    "start": 7.456125,
+    "end": 7.763125
+   }
+  ]
+ },
+ "g1-lowpoly": {
+  "duration": 10.8,
+  "words": [
+   {
+    "text": "Gaya",
+    "start": 0.093875,
+    "end": 0.378958
+   },
+   {
+    "text": "satu",
+    "start": 0.389916,
+    "end": 0.729832
+   },
+   {
+    "text": "kartun",
+    "start": 0.949125,
+    "end": 1.289041
+   },
+   {
+    "text": "tiga",
+    "start": 1.321916,
+    "end": 1.606999
+   },
+   {
+    "text": "D",
+    "start": 1.639916,
+    "end": 1.738582
+   },
+   {
+    "text": "low-poly",
+    "start": 1.782458,
+    "end": 2.221041
+   },
+   {
+    "text": "Ini",
+    "start": 3.081125,
+    "end": 3.2785
+   },
+   {
+    "text": "gaya",
+    "start": 3.322375,
+    "end": 3.574583
+   },
+   {
+    "text": "video",
+    "start": 3.607458,
+    "end": 3.925458
+   },
+   {
+    "text": "tadi",
+    "start": 3.958333,
+    "end": 4.254374
+   },
+   {
+    "text": "Watak",
+    "start": 5.131583,
+    "end": 5.460541
+   },
+   {
+    "text": "chibi",
+    "start": 5.504375,
+    "end": 5.745583
+   },
+   {
+    "text": "kepala",
+    "start": 5.756583,
+    "end": 5.986833
+   },
+   {
+    "text": "besar",
+    "start": 6.008791,
+    "end": 6.370624
+   },
+   {
+    "text": "dunia",
+    "start": 6.568,
+    "end": 6.853083
+   },
+   {
+    "text": "tiga",
+    "start": 6.896916,
+    "end": 7.127166
+   },
+   {
+    "text": "D",
+    "start": 7.160083,
+    "end": 7.236833
+   },
+   {
+    "text": "bersegi-segi",
+    "start": 7.258791,
+    "end": 7.938624
+   },
+   {
+    "text": "dan",
+    "start": 8.135958,
+    "end": 8.300416
+   },
+   {
+    "text": "kamera",
+    "start": 8.344291,
+    "end": 8.662291
+   },
+   {
+    "text": "boleh",
+    "start": 8.684208,
+    "end": 8.936416
+   },
+   {
+    "text": "bergerak",
+    "start": 8.958333,
+    "end": 9.309208
+   },
+   {
+    "text": "macam",
+    "start": 9.320166,
+    "end": 9.583332
+   },
+   {
+    "text": "filem",
+    "start": 9.60525,
+    "end": 10.021916
+   }
+  ]
+ },
+ "g2-sinematik": {
+  "duration": 10.8,
+  "words": [
+   {
+    "text": "Gaya",
+    "start": 0.093875,
+    "end": 0.368
+   },
+   {
+    "text": "dua",
+    "start": 0.400875,
+    "end": 0.664041
+   },
+   {
+    "text": "tiga",
+    "start": 0.817541,
+    "end": 1.069749
+   },
+   {
+    "text": "D",
+    "start": 1.102625,
+    "end": 1.190333
+   },
+   {
+    "text": "sinematik",
+    "start": 1.212291,
+    "end": 1.782457
+   },
+   {
+    "text": "Masih",
+    "start": 2.587708,
+    "end": 2.916666
+   },
+   {
+    "text": "tiga",
+    "start": 2.938583,
+    "end": 3.190791
+   },
+   {
+    "text": "D",
+    "start": 3.223666,
+    "end": 3.399124
+   },
+   {
+    "text": "tapi",
+    "start": 3.574541,
+    "end": 3.870582
+   },
+   {
+    "text": "dengan",
+    "start": 3.892541,
+    "end": 4.067999
+   },
+   {
+    "text": "pencahayaan",
+    "start": 4.100875,
+    "end": 4.703958
+   },
+   {
+    "text": "senja",
+    "start": 4.714916,
+    "end": 5.043874
+   },
+   {
+    "text": "yang",
+    "start": 5.087708,
+    "end": 5.208333
+   },
+   {
+    "text": "dramatik",
+    "start": 5.252208,
+    "end": 5.745624
+   },
+   {
+    "text": "color",
+    "start": 5.899125,
+    "end": 6.17325
+   },
+   {
+    "text": "grading",
+    "start": 6.217125,
+    "end": 6.611875
+   },
+   {
+    "text": "dan",
+    "start": 6.655708,
+    "end": 6.831166
+   },
+   {
+    "text": "bingkai",
+    "start": 6.853083,
+    "end": 7.225874
+   },
+   {
+    "text": "filem",
+    "start": 7.258791,
+    "end": 7.697374
+   },
+   {
+    "text": "Lebih",
+    "start": 8.475875,
+    "end": 8.75
+   },
+   {
+    "text": "mewah",
+    "start": 8.782875,
+    "end": 9.155666
+   },
+   {
+    "text": "dan",
+    "start": 9.188583,
+    "end": 9.364041
+   },
+   {
+    "text": "beremosi",
+    "start": 9.385958,
+    "end": 9.934208
+   }
+  ]
+ },
+ "g3-wayang": {
+  "duration": 10.176,
+  "words": [
+   {
+    "text": "Gaya",
+    "start": 0.093875,
+    "end": 0.357041
+   },
+   {
+    "text": "tiga",
+    "start": 0.400875,
+    "end": 0.718875
+   },
+   {
+    "text": "wayang",
+    "start": 0.90525,
+    "end": 1.168416
+   },
+   {
+    "text": "kulit",
+    "start": 1.212291,
+    "end": 1.519291
+   },
+   {
+    "text": "Watak",
+    "start": 2.291666,
+    "end": 2.631582
+   },
+   {
+    "text": "jadi",
+    "start": 2.6535,
+    "end": 2.894708
+   },
+   {
+    "text": "bayang",
+    "start": 2.916666,
+    "end": 3.190791
+   },
+   {
+    "text": "hitam",
+    "start": 3.212708,
+    "end": 3.508749
+   },
+   {
+    "text": "berukir",
+    "start": 3.530708,
+    "end": 3.881583
+   },
+   {
+    "text": "atas",
+    "start": 3.892541,
+    "end": 4.221499
+   },
+   {
+    "text": "kain",
+    "start": 4.265333,
+    "end": 4.429791
+   },
+   {
+    "text": "bercahaya",
+    "start": 4.440791,
+    "end": 4.967124
+   },
+   {
+    "text": "bergoyang",
+    "start": 5.208333,
+    "end": 5.614041
+   },
+   {
+    "text": "macam",
+    "start": 5.635958,
+    "end": 5.964916
+   },
+   {
+    "text": "digerakkan",
+    "start": 5.986833,
+    "end": 6.447374
+   },
+   {
+    "text": "tok",
+    "start": 6.491208,
+    "end": 6.622791
+   },
+   {
+    "text": "dalang",
+    "start": 6.64475,
+    "end": 7.017541
+   },
+   {
+    "text": "Paling",
+    "start": 7.839916,
+    "end": 8.081124
+   },
+   {
+    "text": "rasa",
+    "start": 8.114041,
+    "end": 8.377207
+   },
+   {
+    "text": "tradisional",
+    "start": 8.421041,
+    "end": 8.936374
+   },
+   {
+    "text": "Melayu",
+    "start": 8.947375,
+    "end": 9.331166
+   }
+  ]
+ },
+ "g4-kertas": {
+  "duration": 11.184,
+  "words": [
+   {
+    "text": "Gaya",
+    "start": 0.093875,
+    "end": 0.389916
+   },
+   {
+    "text": "empat",
+    "start": 0.389916,
+    "end": 0.817541
+   },
+   {
+    "text": "buku",
+    "start": 0.960083,
+    "end": 1.256124
+   },
+   {
+    "text": "cerita",
+    "start": 1.289041,
+    "end": 1.552207
+   },
+   {
+    "text": "kertas",
+    "start": 1.585083,
+    "end": 2.089458
+   },
+   {
+    "text": "Semuanya",
+    "start": 2.89475,
+    "end": 3.300458
+   },
+   {
+    "text": "macam",
+    "start": 3.300458,
+    "end": 3.574583
+   },
+   {
+    "text": "potongan",
+    "start": 3.607458,
+    "end": 3.947374
+   },
+   {
+    "text": "kertas",
+    "start": 4.002208,
+    "end": 4.342124
+   },
+   {
+    "text": "berlapis",
+    "start": 4.364041,
+    "end": 4.923249
+   },
+   {
+    "text": "ada",
+    "start": 5.142541,
+    "end": 5.317999
+   },
+   {
+    "text": "bayang",
+    "start": 5.339916,
+    "end": 5.624999
+   },
+   {
+    "text": "lembut",
+    "start": 5.635958,
+    "end": 5.975874
+   },
+   {
+    "text": "dan",
+    "start": 6.17325,
+    "end": 6.32675
+   },
+   {
+    "text": "bergerak",
+    "start": 6.337708,
+    "end": 6.732458
+   },
+   {
+    "text": "sikit-sikit",
+    "start": 6.754375,
+    "end": 7.269708
+   },
+   {
+    "text": "macam",
+    "start": 7.280708,
+    "end": 7.587708
+   },
+   {
+    "text": "stop",
+    "start": 7.609666,
+    "end": 7.861832
+   },
+   {
+    "text": "motion",
+    "start": 7.861833,
+    "end": 8.322374
+   },
+   {
+    "text": "Sesuai",
+    "start": 9.111833,
+    "end": 9.517541
+   },
+   {
+    "text": "untuk",
+    "start": 9.539458,
+    "end": 9.791666
+   },
+   {
+    "text": "kanak-kanak",
+    "start": 9.824541,
+    "end": 10.372791
+   }
+  ]
+ },
+ "g5-pixel": {
+  "duration": 9.384,
+  "words": [
+   {
+    "text": "Gaya",
+    "start": 0.093875,
+    "end": 0.368
+   },
+   {
+    "text": "lima",
+    "start": 0.400875,
+    "end": 0.696916
+   },
+   {
+    "text": "pixel",
+    "start": 0.872375,
+    "end": 1.1465
+   },
+   {
+    "text": "art",
+    "start": 1.1465,
+    "end": 1.431583
+   },
+   {
+    "text": "Gaya",
+    "start": 2.214916,
+    "end": 2.510957
+   },
+   {
+    "text": "retro",
+    "start": 2.554833,
+    "end": 2.861833
+   },
+   {
+    "text": "macam",
+    "start": 2.872791,
+    "end": 3.179791
+   },
+   {
+    "text": "game",
+    "start": 3.20175,
+    "end": 3.410083
+   },
+   {
+    "text": "lama",
+    "start": 3.410083,
+    "end": 3.739041
+   },
+   {
+    "text": "sama",
+    "start": 3.98025,
+    "end": 4.254375
+   },
+   {
+    "text": "dengan",
+    "start": 4.265333,
+    "end": 4.440791
+   },
+   {
+    "text": "siri",
+    "start": 4.45175,
+    "end": 4.725875
+   },
+   {
+    "text": "pembelajaran",
+    "start": 4.747791,
+    "end": 5.285082
+   },
+   {
+    "text": "kita",
+    "start": 5.318,
+    "end": 5.614041
+   },
+   {
+    "text": "Ringkas",
+    "start": 6.469291,
+    "end": 6.984624
+   },
+   {
+    "text": "comel",
+    "start": 7.182,
+    "end": 7.510958
+   },
+   {
+    "text": "dan",
+    "start": 7.532875,
+    "end": 7.642541
+   },
+   {
+    "text": "mudah",
+    "start": 7.6535,
+    "end": 7.993416
+   },
+   {
+    "text": "dikenali",
+    "start": 8.015333,
+    "end": 8.497791
+   }
+  ]
+ },
+ "g6-komik": {
+  "duration": 9.552,
+  "words": [
+   {
+    "text": "Gaya",
+    "start": 0.093875,
+    "end": 0.400875
+   },
+   {
+    "text": "enam",
+    "start": 0.400875,
+    "end": 0.839458
+   },
+   {
+    "text": "komik",
+    "start": 0.960083,
+    "end": 1.256124
+   },
+   {
+    "text": "bergerak",
+    "start": 1.278083,
+    "end": 1.760541
+   },
+   {
+    "text": "Babak",
+    "start": 2.554833,
+    "end": 2.894749
+   },
+   {
+    "text": "dipecah",
+    "start": 2.905708,
+    "end": 3.300458
+   },
+   {
+    "text": "jadi",
+    "start": 3.333333,
+    "end": 3.563583
+   },
+   {
+    "text": "panel",
+    "start": 3.585541,
+    "end": 3.837749
+   },
+   {
+    "text": "komik",
+    "start": 3.892541,
+    "end": 4.254374
+   },
+   {
+    "text": "ada",
+    "start": 4.440791,
+    "end": 4.638166
+   },
+   {
+    "text": "belon",
+    "start": 4.660083,
+    "end": 4.945166
+   },
+   {
+    "text": "dialog",
+    "start": 4.967125,
+    "end": 5.307041
+   },
+   {
+    "text": "dan",
+    "start": 5.328958,
+    "end": 5.493416
+   },
+   {
+    "text": "kesan",
+    "start": 5.537291,
+    "end": 5.811416
+   },
+   {
+    "text": "bunyi",
+    "start": 5.822375,
+    "end": 6.074583
+   },
+   {
+    "text": "besar",
+    "start": 6.0965,
+    "end": 6.502208
+   },
+   {
+    "text": "Sesuai",
+    "start": 7.302625,
+    "end": 7.697375
+   },
+   {
+    "text": "untuk",
+    "start": 7.719291,
+    "end": 7.971499
+   },
+   {
+    "text": "babak",
+    "start": 7.982458,
+    "end": 8.278499
+   },
+   {
+    "text": "drama",
+    "start": 8.300458,
+    "end": 8.684249
+   }
+  ]
+ },
+ "g7-lukisan": {
+  "duration": 8.568,
+  "words": [
+   {
+    "text": "Gaya",
+    "start": 0.093875,
+    "end": 0.357041
+   },
+   {
+    "text": "tujuh",
+    "start": 0.400875,
+    "end": 0.740791
+   },
+   {
+    "text": "lukisan",
+    "start": 0.938166,
+    "end": 1.310957
+   },
+   {
+    "text": "tangan",
+    "start": 1.332875,
+    "end": 1.716666
+   },
+   {
+    "text": "Garisan",
+    "start": 2.5,
+    "end": 2.916666
+   },
+   {
+    "text": "dilukis",
+    "start": 2.927625,
+    "end": 3.289458
+   },
+   {
+    "text": "sedikit",
+    "start": 3.289458,
+    "end": 3.607458
+   },
+   {
+    "text": "demi",
+    "start": 3.618416,
+    "end": 3.837707
+   },
+   {
+    "text": "sedikit",
+    "start": 3.870625,
+    "end": 4.188625
+   },
+   {
+    "text": "atas",
+    "start": 4.199541,
+    "end": 4.495582
+   },
+   {
+    "text": "kertas",
+    "start": 4.539458,
+    "end": 4.824541
+   },
+   {
+    "text": "putih",
+    "start": 4.8465,
+    "end": 5.1645
+   },
+   {
+    "text": "macam",
+    "start": 5.460541,
+    "end": 5.789499
+   },
+   {
+    "text": "seseorang",
+    "start": 5.800458,
+    "end": 6.217124
+   },
+   {
+    "text": "sedang",
+    "start": 6.239041,
+    "end": 6.491249
+   },
+   {
+    "text": "bercerita",
+    "start": 6.524125,
+    "end": 6.973666
+   },
+   {
+    "text": "sambil",
+    "start": 7.006583,
+    "end": 7.324583
+   },
+   {
+    "text": "melakar",
+    "start": 7.335541,
+    "end": 7.774124
+   }
+  ]
+ },
+ "g8-batik": {
+  "duration": 9.552,
+  "words": [
+   {
+    "text": "Gaya",
+    "start": 0.093875,
+    "end": 0.368
+   },
+   {
+    "text": "lapan",
+    "start": 0.400875,
+    "end": 0.784666
+   },
+   {
+    "text": "ilustrasi",
+    "start": 0.90525,
+    "end": 1.486375
+   },
+   {
+    "text": "rata",
+    "start": 1.53025,
+    "end": 1.771458
+   },
+   {
+    "text": "bermotif",
+    "start": 1.793416,
+    "end": 2.231999
+   },
+   {
+    "text": "batik",
+    "start": 2.232,
+    "end": 2.62675
+   },
+   {
+    "text": "Warna",
+    "start": 3.432,
+    "end": 3.771916
+   },
+   {
+    "text": "tradisional",
+    "start": 3.804833,
+    "end": 4.418874
+   },
+   {
+    "text": "corak",
+    "start": 4.660083,
+    "end": 4.890333
+   },
+   {
+    "text": "batik",
+    "start": 4.912291,
+    "end": 5.241249
+   },
+   {
+    "text": "dan",
+    "start": 5.252208,
+    "end": 5.405708
+   },
+   {
+    "text": "bingkai",
+    "start": 5.427625,
+    "end": 5.767541
+   },
+   {
+    "text": "songket",
+    "start": 5.800458,
+    "end": 6.228083
+   },
+   {
+    "text": "Nampak",
+    "start": 6.995625,
+    "end": 7.335541
+   },
+   {
+    "text": "elegan",
+    "start": 7.3465,
+    "end": 7.796041
+   },
+   {
+    "text": "dan",
+    "start": 7.807,
+    "end": 7.971458
+   },
+   {
+    "text": "sangat",
+    "start": 7.9715,
+    "end": 8.234666
+   },
+   {
+    "text": "Malaysia",
+    "start": 8.245625,
+    "end": 8.67325
+   }
+  ]
+ },
+ "g9-outro": {
+  "duration": 5.544,
+  "words": [
+   {
+    "text": "Jadi",
+    "start": 0.093875,
+    "end": 0.44475
+   },
+   {
+    "text": "gaya",
+    "start": 0.642125,
+    "end": 0.883333
+   },
+   {
+    "text": "mana",
+    "start": 0.894291,
+    "end": 1.135499
+   },
+   {
+    "text": "yang",
+    "start": 1.157458,
+    "end": 1.278083
+   },
+   {
+    "text": "korang",
+    "start": 1.332875,
+    "end": 1.563125
+   },
+   {
+    "text": "paling",
+    "start": 1.596041,
+    "end": 1.815332
+   },
+   {
+    "text": "suka",
+    "start": 1.837291,
+    "end": 2.188166
+   },
+   {
+    "text": "Komen",
+    "start": 3.037291,
+    "end": 3.322374
+   },
+   {
+    "text": "nombor",
+    "start": 3.344291,
+    "end": 3.640332
+   },
+   {
+    "text": "gaya",
+    "start": 3.684208,
+    "end": 3.936416
+   },
+   {
+    "text": "pilihan",
+    "start": 3.958333,
+    "end": 4.298249
+   },
+   {
+    "text": "korang",
+    "start": 4.353083,
+    "end": 4.692999
+   }
+  ]
+ }
+}

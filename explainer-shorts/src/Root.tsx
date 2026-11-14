@@ -3,6 +3,7 @@ import {Composition, Folder} from 'remotion';
 import {loadFonts} from './fonts';
 import {FPS, SHOTS, TOTAL_FRAMES} from './waze/timeline';
 import {WazeShot, WazeVideo} from './waze/Video';
+import {StylesShot, StylesVideo, SHOTS as STYLES_SHOTS, TOTAL_FRAMES as STYLES_FRAMES} from './styles/Styles';
 import {TanggangShot, TanggangVideo, SHOTS as TANGGANG_SHOTS, TOTAL_FRAMES as TANGGANG_FRAMES} from './tanggang/Story';
 import {MahsuriShot, MahsuriVideo, SHOTS as MAHSURI_SHOTS, TOTAL_FRAMES as MAHSURI_FRAMES} from './mahsuri/Story';
 import {BatuShot, BatuVideo, SHOTS as BATU_SHOTS, TOTAL_FRAMES as BATU_FRAMES} from './batubelah/Story';
@@ -49,6 +50,14 @@ export const RemotionRoot: React.FC = () => (
     <Folder name="Tanggang-Shots">
       {TANGGANG_SHOTS.map((s, i) => (
         <Composition key={s.id} id={`Tanggang-${s.id}`} component={TanggangShot} defaultProps={{index: i}} width={1080} height={1920} fps={FPS} durationInFrames={s.frames} />
+      ))}
+    </Folder>
+  </Folder>
+  <Folder name="Perbandingan-Gaya">
+    <Composition id="GayaVideo" component={StylesVideo} width={1080} height={1920} fps={FPS} durationInFrames={STYLES_FRAMES} />
+    <Folder name="Gaya-Segmen">
+      {STYLES_SHOTS.map((s, i) => (
+        <Composition key={s.id} id={`Gaya-${s.id}`} component={StylesShot} defaultProps={{index: i}} width={1080} height={1920} fps={FPS} durationInFrames={s.frames} />
       ))}
     </Folder>
   </Folder>
