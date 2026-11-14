@@ -327,12 +327,13 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
       return {
         panels: [
           {
-            key: 'a', x: 40, y: 150, w: 1000, h: 400, at: c('ombak', 4) - 4,
+            key: 'a', x: 40, y: 150, w: 1000, h: 400, at: 4,
             draw: (f, w, h) => (
               <>
                 <rect width={w} height={h} fill="#bfe6ff" />
-                <Water w={w} h={h} y={140} f={f * 3} rough={4} />
-                <Sfx x={500} y={120} text="OMBAK TIBA-TIBA?" f={f - 2} size={70} color="#ffffff" rot={-4} />
+                <Water w={w} h={h} y={140} f={f * 3} rough={f + 4 >= c('ombak', 4) ? 4 : 1} />
+                <Narr x={30} y={24} w={600} text={'SEBAB 2: PERKARA\nYANG TAK DIFAHAMI'} size={36} show={f + 4 < c('ombak', 4)} />
+                <Sfx x={500} y={120} text="OMBAK TIBA-TIBA?" f={f + 4 - c('ombak', 4) - 2} size={70} color="#ffffff" rot={-4} />
               </>
             ),
           },
