@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame} from 'remotion';
 import {cue, FPS, makeTimeline, ScriptShot, Shot, Timing} from '../lib/timeline';
 import {Captions} from '../waze/ui/Overlays';
-import {Badge, Dragon, Fish, Fog, Fountain, Hills, Hut, Jungle, Lotus, Moon, Person, QMark, Sky, Stick, Stump, SunkenCity, TwelveLakes, Water} from './art';
+import {Dragon, Fish, Fog, Fountain, Hills, Hut, Jungle, Lotus, Moon, Person, QMark, Sky, Stick, SunkenCity, Water} from './art';
 import {INK, Narr, Page, PanelDef, Sfx, Speech, SpeedLines} from './comic';
 import {setLook} from './look';
 import script from './script.json';
@@ -12,17 +12,6 @@ export const {SHOTS, TOTAL_FRAMES} = makeTimeline(script.shots as ScriptShot[], 
 
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const JAKUN = ['#c0504d', '#3d7bd9', '#f4a51c', '#36a86b'];
-
-// Giant hand reaching in (the "real monster" is human damage).
-const Hand: React.FC<{x: number; y: number; s?: number}> = ({x, y, s = 1}) => (
-  <g transform={`translate(${x} ${y}) scale(${s})`}>
-    <rect x={-50} y={-400} width={100} height={260} fill="#d9a47a" stroke={INK} strokeWidth={6} />
-    <rect x={-70} y={-160} width={140} height={110} rx={30} fill="#d9a47a" stroke={INK} strokeWidth={6} />
-    {[-52, -18, 16, 50].map((fx) => (
-      <rect key={fx} x={fx - 14} y={-70} width={28} height={70} rx={14} fill="#d9a47a" stroke={INK} strokeWidth={6} />
-    ))}
-  </g>
-);
 
 const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
   const c = (w: string, fb: number, nth = 0) => cue(shot, w, fb, nth);
@@ -54,41 +43,44 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
       return {
         panels: [
           {
-            key: 'a', x: 40, y: 150, w: 1000, h: 560, at: 4,
+            key: 'a', x: 40, y: 150, w: 1000, h: 640, at: 4,
             draw: (f, w, h) => (
               <>
                 <Sky w={w} h={h} top="#7cc3ee" bottom="#e6f6ff" id="p2a" />
-                <Hills w={w} y={260} />
-                <Jungle w={w} y={340} n={7} s={0.8} />
-                <Water w={w} h={h} y={340} f={f} />
-                <Lotus x={300} y={440} s={0.9} />
-                <Lotus x={700} y={470} s={0.7} />
-                <Narr x={30} y={30} w={560} text={'DAERAH PEKAN, PAHANG'} size={38} />
+                <Hills w={w} y={300} />
+                <Jungle w={w} y={380} n={7} s={0.8} />
+                <rect y={440} width={w} height={200} fill="#9ccf6a" stroke={INK} strokeWidth={5} />
+                <Narr x={30} y={30} w={560} text={'PADA ZAMAN DAHULU KALA...'} size={36} />
+                <Narr x={520} y={520} w={450} text={'BELUM ADA TASIK'} size={34} bg="#ffffff" show={f >= c('belum', 3) - 4} />
               </>
             ),
           },
           {
-            key: 'b', x: 40, y: 740, w: 480, h: 680, at: c('dua', 3) - 4,
-            draw: (f, w) => (
+            key: 'b', x: 40, y: 820, w: 480, h: 600, at: c('Burung', 6) - 4,
+            draw: (f, w, h) => (
               <>
-                <rect width={w} height={680} fill="#e6f6ff" />
-                <rect width={w} height={680} fill="url(#ht-light)" />
-                <TwelveLakes cx={w / 2} cy={360} f={f} s={0.95} />
-                <Narr x={20} y={20} w={440} text={'12 KAWASAN AIR\nBERSAMBUNG'} size={34} />
-                <text x={w / 2} y={650} textAnchor="middle" fontFamily="Rubik, sans-serif" fontWeight={800} fontSize={20} fill={INK}>
-                  (ilustrasi, bukan skala sebenar)
-                </text>
+                <Sky w={w} h={h} top="#ffcf8a" bottom="#fff2d8" id="p2b" />
+                <Jungle w={w} y={380} n={4} s={0.9} />
+                <rect y={440} width={w} height={160} fill="#9ccf6a" />
+                {[0, 1, 2].map((k) => (
+                  <path key={k} d={`M ${120 + k * 110} ${200 + Math.sin(f / 5 + k) * 14} q 18 -18 36 0 q 18 -18 36 0`} fill="none" stroke={INK} strokeWidth={6} strokeLinecap="round" />
+                ))}
+                <Sfx x={w / 2} y={130} text="CIP! CIP!" f={f - 2} size={70} />
               </>
             ),
           },
           {
-            key: 'c', x: 560, y: 740, w: 480, h: 680, at: c('2009', 6) - 4,
-            draw: (f, w) => (
+            key: 'c', x: 560, y: 820, w: 480, h: 600, at: c('angin', 8) - 4,
+            draw: (f, w, h) => (
               <>
-                <rect width={w} height={680} fill="#fff2b8" />
-                <rect width={w} height={680} fill="url(#ht-red)" opacity={0.12} />
-                <Badge x={w / 2} y={330} year="2009" label="RIZAB BIOSFERA" f={f} />
-                <Narr x={20} y={520} w={440} text={'DIIKTIRAF UNESCO:\nRIZAB BIOSFERA\nPERTAMA DI MALAYSIA'} size={30} bg="#ffffff" />
+                <rect width={w} height={h} fill="#cfe8b8" />
+                {Array.from({length: 14}, (_, k) => (
+                  <path key={k} d={`M ${30 + k * 32} 560 q ${10 + Math.sin(f / 6 + k) * 18} -80 ${24 + Math.sin(f / 6 + k) * 30} -150`} fill="none" stroke="#3f8a4c" strokeWidth={8} strokeLinecap="round" />
+                ))}
+                {[0, 1].map((k) => (
+                  <path key={k} d={`M ${60 + ((f * 6 + k * 200) % 420)} ${180 + k * 90} q 40 -30 80 0 t 80 0`} fill="none" stroke="#ffffff" strokeWidth={8} strokeLinecap="round" />
+                ))}
+                <Sfx x={w / 2} y={120} text="WUSHH..." f={f - 2} size={80} color="#ffffff" />
               </>
             ),
           },
@@ -103,29 +95,30 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
               <>
                 <Sky w={w} h={h} top="#ffcf8a" bottom="#fff2d8" id="p3" />
                 <Jungle w={w} y={420} n={7} s={0.9} />
-                <Water w={w} h={h} y={560} f={f} />
+                <rect y={560} width={w} height={200} fill="#c9a06a" stroke={INK} strokeWidth={5} />
                 <Hut x={180} y={560} s={1.1} />
                 <Hut x={820} y={560} s={0.9} />
                 <Person x={430} y={720} f={f} cloth="#8c5a3c" elder pose="talk" face="happy" />
                 <Person x={600} y={730} s={0.62} f={f} cloth={JAKUN[0]} face="happy" flip />
                 <Person x={700} y={735} s={0.58} f={f} cloth={JAKUN[1]} woman face="happy" flip />
-                <Speech x={440} y={150} w={360} h={140} tx={470} ty={420} text={'Dulu-dulu...'} size={44} />
-                <Narr x={30} y={30} w={380} text={'ORANG ASLI JAKUN'} size={36} />
+                <Speech x={440} y={150} w={360} h={140} tx={470} ty={420} text={'Hidup aman...'} size={44} />
+                <Narr x={30} y={30} w={560} text={'KAMPUNG DI PINGGIR HUTAN'} size={34} />
               </>
             ),
           },
           {
-            key: 'b', x: 40, y: 940, w: 1000, h: 480, at: c('mulut', 6) - 4,
+            key: 'b', x: 40, y: 940, w: 1000, h: 480, at: c('bercerita', 6) - 4,
             draw: (f, w) => (
               <>
-                <rect width={w} height={480} fill="#fff6e0" />
+                <rect width={w} height={480} fill="#1b2350" />
+                <Moon x={880} y={110} r={50} />
                 {[180, 500, 820].map((px, k) => (
                   <g key={px}>
                     <Person x={px} y={450} s={0.85} f={f + k * 7} cloth={JAKUN[k + 1]} woman={k === 1} elder={k === 0} pose="talk" face="happy" />
                     {k < 2 ? <path d={`M ${px + 70} 210 q 90 -60 180 0`} fill="none" stroke={INK} strokeWidth={6} strokeDasharray="14 10" /> : null}
                   </g>
                 ))}
-                <Narr x={30} y={24} w={560} text={'DARI MULUT KE MULUT'} size={36} />
+                <Narr x={30} y={24} w={560} text={'SETIAP MALAM...'} size={36} />
               </>
             ),
           },
@@ -145,7 +138,7 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
                 <Person x={330} y={590} f={f} cloth={JAKUN[0]} pose="chop" />
                 <Person x={640} y={590} f={f + 5} cloth={JAKUN[1]} pose="chop" flip />
                 <Sfx x={500} y={200} text="TAK! TAK!" f={f % 18} size={90} color="#ffffff" />
-                <Narr x={30} y={30} w={520} text={'DAHULU: TANAH KERING'} size={34} />
+                <Narr x={30} y={30} w={520} text={'MEMBUKA LADANG BARU'} size={34} />
               </>
             ),
           },
@@ -158,7 +151,7 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
                 <Person x={300} y={590} f={f} cloth="#6b5a7a" woman elder pose="point" face="angry" />
                 <Person x={700} y={590} f={f} cloth={JAKUN[0]} pose="scared" face="shock" flip />
                 <Person x={860} y={595} s={0.9} f={f} cloth={JAKUN[1]} pose="scared" face="shock" flip />
-                <Speech x={380} y={60} w={460} h={170} tx={350} ty={300} text={'Tanah ini\nmilik aku!'} size={44} shout />
+                <Speech x={380} y={60} w={460} h={170} tx={350} ty={300} text={'Siapa benarkan\nkamu tebang?!'} size={40} shout />
               </>
             ),
           },
@@ -200,7 +193,7 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
                 <g transform="translate(260 520) scale(1.9)">
                   <Person x={0} y={0} f={f} cloth="#6b5a7a" woman elder face="calm" />
                 </g>
-                <Speech x={430} y={90} w={520} h={240} tx={330} ty={250} text={'Jangan sesekali\ncabut tongkat ini.'} size={42} />
+                <Speech x={430} y={90} w={520} h={240} tx={330} ty={250} text={'Jangan sesekali\ncabut tongkat ini!'} size={42} />
               </>
             ),
           },
@@ -280,7 +273,7 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
                 <Water w={w} h={h} y={520} f={f} />
                 {f >= naga - 4 ? <SpeedLines cx={620} cy={420} w={w} h={h} f={f} /> : null}
                 {f >= naga - 4 ? <Dragon x={560} water={700} s={1.25} f={f} rise={Math.min(1, (f - naga + 4) / 24)} /> : null}
-                <Narr x={30} y={30} w={560} text={'NAGA SERI GUMUM'} size={44} show={f >= naga} />
+                <Narr x={30} y={30} w={560} text={'NAGA SERI GUMUM'} size={44} show={f >= c('Seri', 4) - 4} />
                 <Narr x={30} y={110} w={560} text={'"PENJAGA TASIK"'} size={34} bg="#ffffff" show={f >= c('penjaga', 5)} />
               </>
             ),
@@ -316,8 +309,9 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
                 <path d="M -20 1000 C 300 900 200 1150 520 1060 S 900 1200 1040 1080" fill="none" stroke="#2b5a8a" strokeWidth={40} opacity={0.7} />
                 <Fog w={w} y={760} f={f} />
                 <Fog w={w} y={980} f={f + 120} />
-                <QMark x={860} y={520} f={f} size={120} />
-                <Narr x={30} y={30} w={640} text={'SEBAB 1:\nLUAS, BERLIKU, BERKABUS'} size={38} show={f >= c('Pertama', 3) - 4} />
+                <Dragon x={620} water={1000} s={0.9} f={f} rise={interpolate(f, [c('meronda', 7) - 4, c('meronda', 7) + 30], [0, 0.45], clamp)} dim />
+                <Narr x={30} y={30} w={640} text={'BILA MALAM BERKABUS...'} size={38} show={f >= c('kabus', 3) - 4} />
+                <Narr x={30} y={110} w={640} text={'NAGA KELUAR MERONDA'} size={34} bg="#ffffff" show={f >= c('meronda', 7) - 4} />
               </>
             ),
           },
@@ -331,9 +325,9 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
             draw: (f, w, h) => (
               <>
                 <rect width={w} height={h} fill="#bfe6ff" />
-                <Water w={w} h={h} y={140} f={f * 3} rough={f + 4 >= c('ombak', 4) ? 4 : 1} />
-                <Narr x={30} y={24} w={600} text={'SEBAB 2: PERKARA\nYANG TAK DIFAHAMI'} size={36} show={f + 4 < c('ombak', 4)} />
-                <Sfx x={500} y={120} text="OMBAK TIBA-TIBA?" f={f + 4 - c('ombak', 4) - 2} size={70} color="#ffffff" rot={-4} />
+                <Water w={w} h={h} y={140} f={f * 3} rough={f + 4 >= c('berombak', 3) ? 4 : 1} />
+                <Narr x={30} y={24} w={600} text={'TANDA-TANDA\nNAGA LALU...'} size={36} show={f + 4 < c('berombak', 3)} />
+                <Sfx x={500} y={120} text="AIR BEROMBAK!" f={f + 4 - c('berombak', 3) - 2} size={70} color="#ffffff" rot={-4} />
               </>
             ),
           },
@@ -360,13 +354,13 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
             ),
           },
           {
-            key: 'd', x: 40, y: 1110, w: 1000, h: 310, at: c('Naga', 9) - 4,
+            key: 'd', x: 40, y: 1110, w: 1000, h: 310, at: c('berbisik', 9) - 4,
             draw: (f, w, h) => (
               <>
                 <rect width={w} height={h} fill="#ffd23f" />
                 <rect width={w} height={h} fill="url(#ht-red)" opacity={0.15} />
                 <text x={w / 2} y={180} textAnchor="middle" fontFamily="Rubik, sans-serif" fontWeight={900} fontSize={64} fill={INK}>
-                  SEBAB 2: "NAGA" = JAWAPAN
+                  "ITU NAGA SEDANG LALU..."
                 </text>
               </>
             ),
@@ -390,14 +384,14 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
                 <Person x={300} y={690} s={0.8} f={f} cloth={JAKUN[1]} pose="cheer" face="happy" />
                 <Person x={460} y={692} s={0.75} f={f} cloth={JAKUN[3]} woman pose="cheer" face="happy" />
                 <path d="M 760 380 c -40 -60 -120 -20 -80 40 l 80 70 l 80 -70 c 40 -60 -40 -100 -80 -40 z" fill="#e0483a" stroke={INK} strokeWidth={6} transform={`scale(${1 + Math.sin(f / 6) * 0.04})`} />
-                <Narr x={30} y={30} w={560} text={'SEBAB 3:\nHORMATI TASIK & ALAM'} size={38} show={f >= c('Ketiga', 1) - 4} />
+                <Narr x={30} y={30} w={560} text={'HORMATI TASIK'} size={40} show={f >= c('menghormati', 2) - 4} />
               </>
             ),
           },
         ],
       };
     case 10: {
-      const notProven = c('bukan', 9);
+      const guard = c('menjaganya', 8);
       return {
         bg: '#0e2230',
         panels: [
@@ -411,16 +405,14 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
                 <SunkenCity x={w / 2} y={1100} s={1.2} f={f} />
                 <Fish x={220} y={420} f={f} />
                 <Fish x={760} y={620} f={f + 30} c="#ffb3cf" />
-                <QMark x={500} y={360} f={f} size={140} />
-                <Narr x={30} y={30} w={620} text={'LEGENDA LAIN:\nKOTA PURBA DI DASAR?'} size={38} />
-                {f >= notProven - 4 ? (
-                  <g transform={`translate(${w / 2} 760) rotate(-14) scale(${Math.min(1, (f - notProven + 4) / 6)})`}>
-                    <rect x={-330} y={-70} width={660} height={140} fill="none" stroke="#e0483a" strokeWidth={14} />
-                    <text textAnchor="middle" y={22} fontFamily="Rubik, sans-serif" fontWeight={900} fontSize={60} fill="#e0483a">
-                      BELUM TERBUKTI
-                    </text>
+                <Narr x={30} y={30} w={620} text={'KOTA LAMA\nDI DASAR TASIK'} size={38} />
+                {f >= guard - 4 ? (
+                  <g opacity={Math.min(1, (f - guard + 4) / 12)}>
+                    <path d={`M -40 ${560 + Math.sin(f / 12) * 20} C 200 420 380 700 620 560 S 900 460 1080 ${600 + Math.sin(f / 12) * 20}`} fill="none" stroke="#2f8a5a" strokeWidth={70} strokeLinecap="round" />
+                    <circle cx={1000} cy={560} r={10} fill="#ffd23f" />
                   </g>
                 ) : null}
+                <Narr x={520} y={1150} w={460} text={'DIJAGA SIANG & MALAM'} size={30} bg="#ffffff" show={f >= guard} />
               </>
             ),
           },
@@ -428,49 +420,33 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
       };
     }
     case 11: {
-      const flora = c('flora', 6);
-      const harm = c('terjejas', 11);
+      const janji = c('janji', 6);
       return {
         panels: [
           {
-            key: 'a', x: 40, y: 150, w: 1000, h: 380, at: 4,
+            key: 'a', x: 40, y: 150, w: 1000, h: 760, at: 4,
             draw: (f, w, h) => (
               <>
-                <rect width={w} height={h} fill="#ffffff" />
-                <rect width={w} height={h} fill="url(#ht-red)" opacity={0.1} />
-                <text x={w / 2} y={150} textAnchor="middle" fontFamily="Rubik, sans-serif" fontWeight={900} fontSize={70} fill={INK}>
-                  FAKTA:
-                </text>
-                <text x={w / 2} y={250} textAnchor="middle" fontFamily="Rubik, sans-serif" fontWeight={900} fontSize={54} fill="#e0483a">
-                  TIADA BUKTI SAINTIFIK NAGA
-                </text>
+                <Sky w={w} h={h} top="#f6b26b" bottom="#fff2d8" id="p12" />
+                <Hills w={w} y={360} />
+                <Jungle w={w} y={440} n={7} s={0.8} />
+                <Water w={w} h={h} y={440} f={f} />
+                <Lotus x={260} y={600} />
+                <Lotus x={760} y={640} s={0.8} />
+                <Narr x={30} y={30} w={520} text={'PENGAJARAN'} size={44} show={f >= c('Pengajarannya', 4) - 4} />
+                <Narr x={30} y={120} w={620} text={'PESANAN ORANG TUA\nJANGAN DIPANDANG RINGAN'} size={32} bg="#ffffff" show={f >= c('pesanan', 5) - 4} />
               </>
             ),
           },
           {
-            key: 'b', x: 40, y: 560, w: 480, h: 860, at: flora - 4,
+            key: 'b', x: 40, y: 940, w: 1000, h: 480, at: janji - 4,
             draw: (f, w, h) => (
               <>
-                <rect width={w} height={h} fill="#bfe6ff" />
-                <Water w={w} h={h} y={260} f={f} />
-                <Lotus x={140} y={330} s={1.1} />
-                <Lotus x={340} y={380} s={0.9} />
-                <Fish x={200} y={600} f={f} />
-                <Fish x={320} y={720} f={f + 40} c="#36a86b" />
-                <Narr x={20} y={20} w={440} text={'FLORA & FAUNA\nTERATAI TERKENAL'} size={32} />
-              </>
-            ),
-          },
-          {
-            key: 'c', x: 560, y: 560, w: 480, h: 860, at: harm - 4,
-            draw: (f, w, h) => (
-              <>
-                <rect width={w} height={h} fill="#c9a06a" />
-                <Water w={w} h={h} y={420} f={f} color="#8a6a3a" />
-                <Stump x={110} y={400} />
-                <Stump x={250} y={410} s={0.9} />
-                <Stump x={380} y={400} s={1.1} />
-                <Narr x={20} y={20} w={440} text={'TERJEJAS:\nLOMBONG & BALAK'} size={32} bg="#ff8a8a" />
+                <rect width={w} height={h} fill="#ffe08a" />
+                <rect y={360} width={w} height={120} fill="#c9a06a" stroke={INK} strokeWidth={5} />
+                <Stick x={w / 2} y={380} lift={Math.min(120, f * 6)} />
+                <QMark x={780} y={190} f={f} size={110} />
+                <Narr x={30} y={24} w={560} text={'SATU JANJI DILUPAKAN...'} size={34} />
               </>
             ),
           },
@@ -478,8 +454,7 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
       };
     }
     default: {
-      const hand = c('tangan', 6);
-      const ask = c('Korang', 9);
+      const ask = c('percaya', 6);
       return {
         panels: [
           {
@@ -493,8 +468,8 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
                 <Lotus x={240} y={600} />
                 <Lotus x={720} y={640} s={0.8} />
                 <Dragon x={620} water={560} s={0.8} f={f} rise={0.35} dim />
-                {f >= hand - 4 ? <Hand x={820} y={interpolate(f, [hand - 4, hand + 10], [-50, 360], clamp)} s={1.1} /> : null}
-                <Narr x={30} y={30} w={560} text={'KHAZANAH YANG\nPERLU DIJAGA'} size={38} />
+                <Stick x={300} y={580} />
+                <Narr x={30} y={30} w={560} text={'BERANI CABUT TAK?'} size={40} show={f >= c('berani', 3) - 4} />
               </>
             ),
           },
@@ -505,7 +480,7 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
                 <rect width={w} height={h} fill="#ffd23f" />
                 <rect width={w} height={h} fill="url(#ht-red)" opacity={0.15} />
                 <text x={w / 2} y={150} textAnchor="middle" fontFamily="Rubik, sans-serif" fontWeight={900} fontSize={64} fill={INK}>
-                  KORANG PERCAYA?
+                  NAGA MASIH ADA?
                 </text>
                 <Sfx x={w / 2} y={320} text="KOMEN BAWAH!" f={f - (c('Komen', 12) - ask)} size={96} color="#ffffff" rot={-4} />
               </>
@@ -519,14 +494,15 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
 
 const SFX_MAP: Record<number, [string, number, string][]> = {
   0: [['naga', 3, 'jump']],
-  1: [['dua', 3, 'pop'], ['2009', 6, 'success']],
+  1: [['Burung', 6, 'pop'], ['angin', 8, 'whoosh']],
   3: [['nenek', 7, 'alert']],
   4: [['mencucuk', 3, 'click'], ['Jangan', 6, 'sparkle']],
   5: [['tercabut', 4, 'pop'], ['memancut', 5, 'smash'], ['terbentuklah', 8, 'whoosh']],
-  6: [['Naga', 2.5, 'thunder'], ['bergelora', 10, 'smash']],
-  8: [['ombak', 4, 'whoosh'], ['bunyi', 5, 'blip']],
-  10: [['bukan', 9, 'buzz']],
-  11: [['terjejas', 11, 'alert']],
+  6: [['naga', 2.5, 'thunder'], ['bergelora', 10, 'smash']],
+  7: [['meronda', 7, 'whoosh']],
+  8: [['berombak', 3, 'whoosh'], ['bunyi', 5, 'blip']],
+  10: [['menjaganya', 8, 'sparkle']],
+  11: [['janji', 6, 'alert']],
   12: [['Komen', 12, 'coin']],
 };
 
