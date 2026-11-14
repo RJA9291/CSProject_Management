@@ -8,7 +8,9 @@
     "typecheck": "tsc --noEmit",
     "vo": "python scripts/generate-vo.py waze",
     "audio": "node scripts/generate-audio.mjs",
-    "render:waze": "remotion render src/index.ts WazeJem out/waze-jem.mp4 --codec h264"
+    "render:waze": "remotion render src/index.ts WazeJem out/waze-jem.mp4 --codec h264",
+    "vo:santubong": "python scripts/generate-vo.py santubong",
+    "render:santubong": "remotion render src/index.ts Santubong out/santubong.mp4 --codec h264"
   },
   "dependencies": {
     "@react-three/fiber": "8.17.10",

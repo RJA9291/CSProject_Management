@@ -22,11 +22,13 @@ def tts_text(text, say):
     return text
 
 
-async def synth(shot, cfg, out):
-    mp3 = out / f"{shot['id']}.mp3"
+GAP = 0.25  # silence between parts of one shot (seconds)
+
+
+async def synth_part(text, mp3, voice, rate, pitch, say):
     words = []
     proxy = os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy")
-    comm = edge_tts.Communicate(tts_text(shot.get("tts", shot["vo"]), cfg.get("say", {})), cfg["voice"], rate=cfg["rate"], pitch=cfg["pitch"], boundary="WordBoundary", proxy=proxy)
+    comm = edge_tts.Communicate(tts_text(text, say), voice, rate=rate, pitch=pitch, boundary="WordBoundary", proxy=proxy)
     with open(mp3, "wb") as f:
         async for chunk in comm.stream():
             if chunk["type"] == "audio":
@@ -34,8 +36,27 @@ async def synth(shot, cfg, out):
             elif chunk["type"] == "WordBoundary":
                 words.append({"text": chunk["text"], "start": chunk["offset"] / 1e7, "end": (chunk["offset"] + chunk["duration"]) / 1e7})
     dur = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(mp3)]).decode().strip())
-    print(f"{shot['id']}: {len(words)} words, {dur:.2f}s")
-    return {"duration": dur, "words": words}
+    return words, dur
+
+
+async def synth(shot, cfg, out):
+    """A shot is either one `vo` line (file <id>.mp3) or several `parts`, each with its own voice."""
+    say = cfg.get("say", {})
+    if "parts" not in shot:
+        words, dur = await synth_part(shot.get("tts", shot["vo"]), out / f"{shot['id']}.mp3", cfg["voice"], cfg["rate"], cfg["pitch"], say)
+        print(f"{shot['id']}: {len(words)} words, {dur:.2f}s")
+        return {"duration": dur, "words": words}
+    t = 0.0
+    words, parts = [], []
+    for k, p in enumerate(shot["parts"]):
+        name = f"{shot['id']}-{k}.mp3"
+        w, d = await synth_part(p["vo"], out / name, p.get("voice", cfg["voice"]), p.get("rate", cfg["rate"]), p.get("pitch", cfg["pitch"]), say)
+        words += [{"text": x["text"], "start": x["start"] + t, "end": x["end"] + t} for x in w]
+        parts.append({"file": name, "start": t, "duration": d})
+        t += d + GAP
+    total = t - GAP
+    print(f"{shot['id']}: {len(words)} words in {len(parts)} parts, {total:.2f}s")
+    return {"duration": total, "words": words, "parts": parts}
 
 
 async def main():

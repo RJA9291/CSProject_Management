@@ -205,9 +205,11 @@ const SFX: React.FC<{index: number}> = ({index}) => {
   if (index === 5) cues.push([cue(shot, 'tolong', 3), 'success'], [cue(shot, 'Komen', 7.6), 'coin']);
   return (
     <>
-      <Sequence from={Math.round(shot.voDelay * FPS)} name="VO">
-        <Audio src={staticFile(shot.audio)} />
-      </Sequence>
+      {shot.audio.map((a, i) => (
+        <Sequence key={`vo${i}`} from={a.from} name="VO">
+          <Audio src={staticFile(a.src)} />
+        </Sequence>
+      ))}
       {cues.map(([f, name], i) => (
         <Sequence key={i} from={Math.max(0, f)} durationInFrames={FPS} name={`SFX ${name}`}>
           <Audio src={staticFile(`audio/sfx/${name}.wav`)} volume={0.35} />

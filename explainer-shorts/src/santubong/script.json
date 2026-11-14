@@ -1,0 +1,29 @@
+{
+  "title": "Kenapa Puteri Santubong Bertukar Menjadi Gunung?",
+  "voice": "ms-MY-OsmanNeural",
+  "rate": "+14%",
+  "pitch": "+0Hz",
+  "_note": "Legenda rakyat Sarawak (versi ringkas). Edit `vo`/`parts` then run `python scripts/generate-vo.py santubong`. Princess lines use the female voice; Raja Kayangan uses a deeper voice.",
+  "say": {},
+  "shots": [
+    {"id": "s01-hook", "vo": "Korang tahu tak kenapa ada sebuah gunung kat Kuching yang bentuknya macam seorang puteri sedang berbaring, siap ada parut di pipinya?", "highlight": ["kenapa", "gunung", "puteri", "parut"], "voDelay": 0.5, "pad": 0.4},
+    {"id": "s02-santubong", "vo": "Haaa, itulah Gunung Santubong. Kata orang tua-tua, parut tu bekas pergaduhan dua orang puteri yang dulunya kawan baik.", "highlight": ["Santubong.", "pergaduhan", "kawan", "baik."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s03-kampung", "vo": "Dahulu kala, Kampung Pasir Puteh dan Kampung Pasir Kuning selalu bergaduh. Raja Kayangan pun menghantar dua orang puterinya turun ke bumi untuk mendamaikan mereka.", "highlight": ["bergaduh.", "Raja", "Kayangan", "mendamaikan"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s04-kemahiran", "vo": "Puteri Santubong pandai menenun kain. Puteri Sejinjang pula pandai menumbuk padi.", "highlight": ["Santubong", "menenun", "Sejinjang", "menumbuk"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s05-janji", "parts": [
+      {"vo": "Ingat, anakanda berdua. Jangan sekali-kali kamu bergaduh sesama sendiri!", "pitch": "-14Hz", "rate": "-6%"},
+      {"vo": "Kedua-dua puteri pun berjanji."}
+    ], "highlight": ["Jangan", "bergaduh", "berjanji."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s06-aman", "vo": "Tak lama kemudian, kampung jadi aman. Setiap malam, bunyi tenunan dan bunyi alu bersahut-sahutan, dan dua puteri itu jadi sahabat paling rapat.", "highlight": ["aman.", "sahabat", "rapat."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s07-putera", "vo": "Sampailah satu hari, datang Putera Serapi. Kacak, lembut tutur katanya. Dia puji tenunan Santubong, lepas tu puji pula tumbukan padi Sejinjang. Dan dua-dua puteri jatuh hati pada lelaki yang sama!", "highlight": ["Putera", "Serapi.", "jatuh", "hati", "sama!"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s08-cemburu", "parts": [
+      {"vo": "Tapi persoalannya, kenapa kawan baik boleh jadi musuh? Cemburu mula menyala. Satu malam bulan penuh, meletuslah pertengkaran."},
+      {"vo": "Kau perampas!", "voice": "ms-MY-YasminNeural", "pitch": "+6Hz", "rate": "+10%"},
+      {"vo": "Kau yang cemburu!", "voice": "ms-MY-YasminNeural", "pitch": "-6Hz", "rate": "+10%"}
+    ], "highlight": ["kenapa", "musuh?", "Cemburu", "perampas!", "cemburu!"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s09-pukul", "vo": "Sejinjang menghayun alunya, tepat kena pipi Santubong. Santubong membalas dengan belidak tenunnya, tepat kena kepala Sejinjang!", "highlight": ["alunya,", "pipi", "belidak", "kepala"], "voDelay": 0.2, "pad": 0.5},
+    {"id": "s10-sumpahan", "vo": "Langit bergemuruh. Raja Kayangan murka kerana janji dimungkiri. Kepala Sejinjang pecah berderai, dan serpihannya menjadi pulau-pulau kecil di laut.", "highlight": ["murka", "janji", "pecah", "pulau-pulau"], "voDelay": 0.3, "pad": 0.4},
+    {"id": "s11-gunung", "vo": "Santubong pula rebah, lalu menjadi gunung, dengan parut di pipi yang kekal hingga hari ini.", "highlight": ["gunung,", "parut", "pipi"], "voDelay": 0.2, "pad": 0.6},
+    {"id": "s12-pengajaran", "vo": "Jadi, itulah kenapa Puteri Santubong dikatakan bertukar menjadi gunung. Ingat, jangan biar cemburu memusnahkan persahabatan, dan janji tetap janji. Ini legenda rakyat Sarawak, bukan fakta sejarah, tau!", "highlight": ["kenapa", "cemburu", "persahabatan,", "janji", "legenda"], "voDelay": 0.2, "pad": 1.4}
+  ]
+}

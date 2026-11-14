@@ -9,7 +9,7 @@ const scale = Number(process.argv[3] ?? 0.35);
 const browserExecutable = process.env.REMOTION_BROWSER_EXECUTABLE ?? null;
 const chromiumOptions = {gl: 'swangle'};
 const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts')});
-const comps = (await getCompositions(serveUrl, {browserExecutable, chromiumOptions})).filter((c) => c.id.startsWith('Waze-'));
+const comps = (await getCompositions(serveUrl, {browserExecutable, chromiumOptions})).filter((c) => c.id.startsWith(process.env.PREFIX ?? 'Waze-'));
 for (const c of comps) {
   for (const m of moments) {
     const frame = Math.min(c.durationInFrames - 1, Math.round(c.durationInFrames * m));

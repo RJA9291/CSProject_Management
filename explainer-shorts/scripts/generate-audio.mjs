@@ -109,6 +109,25 @@ const sfx = {
   print: mix(0.9, Array.from({length: 9}, (_, i) => [i * 0.09, tone(0.06, () => 140 + (i % 2) * 60, decay(0.06, 0.002), 'square', 0.5), 0.4])),
   buzz: tone(0.28, (t) => 150 - 60 * t, decay(0.28, 0.003), 'square', 0.5),
 };
+// Legend shorts: rolling thunder and a shattering hit.
+const lowNoise = (dur, cutoff, env) => {
+  const n = Math.floor(dur * RATE);
+  const out = new Float32Array(n);
+  let lp = 0;
+  for (let i = 0; i < n; i++) {
+    lp += cutoff * (noise() - lp);
+    out[i] = lp * env(i / RATE) * 3;
+  }
+  return out;
+};
+sfx.thunder = mix(2.2, [
+  [0, lowNoise(2.2, 0.05, (t) => Math.min(1, t / 0.02) * Math.exp(-t * 1.6) * (1 + 0.5 * Math.sin(t * 9))), 1],
+  [0.05, lowNoise(0.4, 0.4, (t) => Math.exp(-t * 12)), 0.6],
+]);
+sfx.smash = mix(0.8, [
+  [0, lowNoise(0.8, 0.6, (t) => Math.exp(-t * 6)), 0.8],
+  ...[88, 91, 95].map((m, i) => [0.02 + i * 0.04, tone(0.3, () => midi(m), decay(0.3), 'tri'), 0.35]),
+]);
 for (const [name, buf] of Object.entries(sfx)) writeWav(`sfx/${name}.wav`, buf);
 
 const song = (file, {bpm, chords, melody, lead = 'square', leadDuty = 0.25, leadGain = 0.16}) => {
@@ -162,4 +181,26 @@ song('music/bgm-shorts.wav', {
   leadDuty: 0.25,
   leadGain: 0.1,
 });
-console.log('Wrote SFX and music/bgm-shorts.wav');
+// Legend shorts: slow, mysterious 84 BPM i–VI–VII–v (A minor) with a soft triangle lead.
+song('music/bgm-legend.wav', {
+  bpm: 84,
+  chords: [
+    [45, [57, 60, 64]],
+    [41, [57, 60, 65]],
+    [43, [55, 59, 62]],
+    [40, [55, 59, 64]],
+  ],
+  melody: [
+    [76, null, 72, null, 74, 76, null, null],
+    [77, null, 76, 74, 72, null, null, null],
+    [74, null, 71, null, 74, 79, null, 77],
+    [76, null, null, 71, 72, 74, null, null],
+    [81, null, 79, 76, 77, null, 76, null],
+    [72, null, 74, 76, 77, 76, 72, null],
+    [74, 76, 79, null, 77, 74, 71, null],
+    [69, null, 71, 72, 71, null, null, null],
+  ],
+  lead: 'tri',
+  leadGain: 0.26,
+});
+console.log('Wrote SFX, music/bgm-shorts.wav and music/bgm-legend.wav');

@@ -16,6 +16,21 @@ Dibina dengan Remotion + Three.js. Bahasa Melayu, suara `ms-MY-OsmanNeural` (edg
 
 Pemandu ialah presenter siri pixel (rambut hitam, cermin mata hitam, baju-T hitam) dalam versi chibi 3D. Watak asal; skrin aplikasi navigasi ialah reka bentuk generik tanpa logo.
 
+## Video 2: Kenapa Puteri Santubong Bertukar Menjadi Gunung? (`Santubong`)
+
+Legenda rakyat Sarawak, versi ringkas (~2 minit), 12 shot: gunung berbentuk puteri berbaring → dua kampung bergaduh → Raja Kayangan hantar Puteri Santubong (menenun) & Puteri Sejinjang (menumbuk padi) → janji → aman → Putera Serapi datang → cemburu → pukulan alu & belidak → sumpahan: kepala Sejinjang pecah jadi pulau-pulau, Santubong jadi gunung berparut → pengajaran.
+
+- `src/santubong/script.json`: narasi; shot boleh ada beberapa `parts` dengan suara sendiri (dialog puteri guna `ms-MY-YasminNeural`, Raja Kayangan guna suara lebih garau).
+- `src/santubong/world/`: `Land` (laut, pantai, kampung, Gunung Santubong, pulau, Kayangan, langit siang/senja/malam/ribut), `Chibi` (watak & prop: kek tenun, lesung, alu, belidak).
+- `src/santubong/Story.tsx`: pengarah shot + kapsyen + SFX.
+- Kapsyen akhir menyatakan ini legenda rakyat, bukan fakta sejarah.
+
+```bash
+python scripts/generate-vo.py santubong
+REMOTION_BROWSER_EXECUTABLE=... npm run render:santubong
+PREFIX=Santubong- node scripts/render-stills.mjs 0.3,0.8
+```
+
 ## Fail utama
 
 - `src/waze/script.json`: skrip VO setiap shot, perkataan yang ditonjol kuning (`highlight`), sebutan TTS (`say`).

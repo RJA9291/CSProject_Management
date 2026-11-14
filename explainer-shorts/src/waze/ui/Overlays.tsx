@@ -1,6 +1,6 @@
 import React from 'react';
 import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import type {Shot} from '../timeline';
+import type {Shot} from '../../lib/timeline';
 
 const FONT = 'Rubik, Inter, sans-serif';
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
