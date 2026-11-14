@@ -37,7 +37,7 @@ export const Hills: React.FC<{w: number; y: number; color?: string; seed?: numbe
 };
 
 export const Tree: React.FC<{x: number; y: number; s?: number; c?: string}> = ({x, y, s = 1, c = '#3f8a4c'}) => (
-  <g transform={`translate(${x} ${y}) scale(${s})`} filter={SH()}>
+  <g transform={`translate(${x} ${y}) scale(${s})`}>
     <rect x={-8} y={-60} width={16} height={60} fill="#6b4a2c" {...S} />
     <circle cx={0} cy={-90} r={46} fill={c} {...S} />
     <circle cx={-34} cy={-66} r={30} fill={c} {...S} />
@@ -47,11 +47,12 @@ export const Tree: React.FC<{x: number; y: number; s?: number; c?: string}> = ({
 );
 
 export const Jungle: React.FC<{w: number; y: number; n?: number; s?: number}> = ({w, y, n = 7, s = 1}) => (
-  <>
+  // One shadow for the whole tree line (cheaper than one per tree).
+  <g filter={SH()}>
     {Array.from({length: n}, (_, i) => (
       <Tree key={i} x={(i + 0.5) * (w / n) + (i % 2 ? 12 : -12)} y={y + (i % 3) * 8} s={s * (0.85 + (i % 3) * 0.12)} c={['#3f8a4c', '#2f7a46', '#4f9a52'][i % 3]} />
     ))}
-  </>
+  </g>
 );
 
 export const Water: React.FC<{w: number; h: number; y: number; f: number; color?: string; rough?: number}> = ({w, h, y, f, color = '#2b7fc4', rough = 1}) => (

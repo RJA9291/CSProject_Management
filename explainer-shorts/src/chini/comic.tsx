@@ -1,7 +1,7 @@
 // Motion-comic toolkit: page, panels (pop-in + slow push-in), halftone, speech bubbles,
 // narration boxes and big SFX lettering. Panel content is drawn in the panel's own pixel space.
 import React from 'react';
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {look} from './look';
 
 export const INK = '#141414';
@@ -64,7 +64,7 @@ const Panel: React.FC<{p: PanelDef}> = ({p}) => {
         <svg x={p.x} y={p.y} width={p.w} height={p.h} viewBox={`0 0 ${p.w} ${p.h}`} overflow="hidden">
           <ComicDefs />
           <g transform={`translate(${p.w / 2} ${p.h / 2}) scale(${push}) translate(${-p.w / 2} ${-p.h / 2})`}>{p.draw(f, p.w, p.h)}</g>
-          <rect width={p.w} height={p.h} filter="url(#pp-grain)" opacity={0.16} />
+          <image href={staticFile('textures/paper-grain.png')} width={p.w} height={p.h} preserveAspectRatio="none" opacity={0.18} style={{mixBlendMode: 'multiply'}} />
         </svg>
       </g>
     );
@@ -92,7 +92,7 @@ export const Page: React.FC<{panels: PanelDef[]; bg?: string; children?: React.R
         <rect width={1080} height={1920} fill={look.paper ? '#efe3c8' : bg} />
         {look.paper ? (
           <>
-            <rect width={1080} height={1920} filter="url(#pp-grain)" opacity={0.22} />
+            <image href={staticFile('textures/paper-grain.png')} width={1080} height={1920} preserveAspectRatio="none" opacity={0.25} style={{mixBlendMode: 'multiply'}} />
             <rect x={530} y={0} width={20} height={1920} fill="#d9c9a6" opacity={0.6} />
           </>
         ) : (
