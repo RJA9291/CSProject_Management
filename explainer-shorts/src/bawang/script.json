@@ -1,0 +1,28 @@
+{
+  "title": "Kenapa Bawang Merah Selalu Menindas Bawang Putih?",
+  "voice": "ms-MY-OsmanNeural",
+  "rate": "+14%",
+  "pitch": "+0Hz",
+  "_note": "Dongeng Bawang Merah Bawang Putih (versi ikan kaloi & buaian ajaib), gaya buku cerita kertas. Run `python scripts/generate-vo.py bawang` after edits.",
+  "say": {},
+  "shots": [
+    {"id": "b01-hook", "vo": "Korang tahu tak, kenapa dalam cerita dongeng lama, Bawang Putih selalu menjadi mangsa kekejaman Bawang Merah dan ibu tirinya? Jom kita dengar ceritanya.", "highlight": ["Bawang", "Putih", "mangsa", "kekejaman", "Merah"], "voDelay": 0.5, "pad": 0.4},
+    {"id": "b02-asal", "vo": "Pada zaman dahulu, di sebuah kampung, tinggal seorang gadis bernama Bawang Putih. Ibunya meninggal dunia ketika dia masih kecil.", "highlight": ["dahulu,", "Bawang", "Putih.", "meninggal", "kecil."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "b03-kahwin", "vo": "Ayahnya, seorang peniaga, kemudian berkahwin lain dengan seorang balu, yang mempunyai seorang anak perempuan bernama Bawang Merah.", "highlight": ["peniaga,", "berkahwin", "balu,", "Bawang", "Merah."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "b04-ayah", "vo": "Pada mulanya, semuanya nampak baik. Tapi bila ayahnya selalu keluar berniaga jauh, barulah perangai sebenar ibu tiri itu kelihatan. Tak lama kemudian, ayah Bawang Putih pula meninggal dunia.", "highlight": ["baik.", "berniaga", "perangai", "sebenar", "meninggal"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "b05-cemburu", "vo": "Jadi, kenapa dia ditindas? Sebab pertama, cemburu. Bawang Putih cantik, lemah lembut dan rajin. Orang kampung suka padanya. Setiap kali orang memuji Bawang Putih, hati Bawang Merah dan ibunya jadi panas.", "highlight": ["ditindas?", "cemburu.", "rajin.", "memuji", "panas."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "b06-pilihkasih", "parts": [
+      {"vo": "Sebab kedua, pilih kasih. Ibu tiri itu mahu anak kandungnya sentiasa nampak lebih hebat. Jadi, Bawang Putih dijadikan seperti orang gaji."},
+      {"vo": "Bawang Putih! Pergi basuh kain di sungai!", "voice": "ms-MY-YasminNeural", "pitch": "-8Hz", "rate": "+6%"},
+      {"vo": "Bawang Merah pula, duduk bersolek dan berehat sepanjang hari."}
+    ], "highlight": ["pilih", "kasih.", "gaji.", "Pergi", "bersolek"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "b07-sendiri", "vo": "Sebab ketiga, Bawang Putih tiada tempat bergantung. Ibu dan ayahnya sudah tiada. Jadi, ibu tiri dan Bawang Merah rasa mereka bebas buat apa sahaja.", "highlight": ["ketiga,", "bergantung.", "tiada.", "bebas"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "b08-beza", "vo": "Walaupun dibuli setiap hari, Bawang Putih tak pernah membalas. Dia tetap sopan dan ikhlas. Bawang Merah pula semakin sombong, kerana apa yang dia mahu, semuanya dapat.", "highlight": ["dibuli", "membalas.", "ikhlas.", "sombong,"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "b09-ikan", "vo": "Suatu hari, ketika membasuh kain di sungai, Bawang Putih menangis seorang diri. Tiba-tiba, muncul seekor ikan kaloi yang jinak. Bawang Putih percaya, ikan itu ialah jelmaan ibunya.", "highlight": ["sungai,", "menangis", "ikan", "kaloi", "jelmaan"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "b10-masak", "vo": "Bila ibu tiri dapat tahu, dia menangkap ikan itu dan memasaknya. Bawang Putih sangat sedih. Dia mengumpul tulang-tulang ikan itu, lalu menanamnya di tepi rumah.", "highlight": ["menangkap", "memasaknya.", "sedih.", "tulang-tulang", "menanamnya"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "b11-buaian", "vo": "Keesokan harinya, tumbuh sepohon pokok yang cantik, dengan sebuah buaian di dahannya. Bila Bawang Putih menyanyi, buaian itu berayun sendiri, seolah-olah ibunya sedang mendodoikannya.", "highlight": ["pokok", "buaian", "menyanyi,", "berayun", "mendodoikannya."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "b12-putera", "vo": "Satu hari, seorang putera raja terdengar suara merdu itu. Ibu tiri cuba menipu, dan menyuruh Bawang Merah naik ke buaian. Tapi buaian itu langsung tak bergerak! Rahsia mereka pun terbongkar.", "highlight": ["putera", "raja", "menipu,", "bergerak!", "terbongkar."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "b13-bahagia", "vo": "Putera raja membawa Bawang Putih ke istana dan mengahwininya. Namun Bawang Putih tak berdendam, malah tetap memaafkan keluarga tirinya.", "highlight": ["istana", "mengahwininya.", "berdendam,", "memaafkan"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "b14-pengajaran", "vo": "Pengajarannya, kebaikan hati dan kesabaran akhirnya akan dibalas. Sikap cemburu dan pilih kasih hanya membawa malu. Kita tak boleh memilih nasib, tapi kita selalu boleh memilih untuk menjadi orang yang baik.", "highlight": ["Pengajarannya,", "kebaikan", "kesabaran", "malu.", "baik."], "voDelay": 0.2, "pad": 1.6}
+  ]
+}

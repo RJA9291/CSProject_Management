@@ -19,7 +19,9 @@
     "render:tanggang": "remotion render src/index.ts Tanggang out/tanggang.mp4 --codec h264",
     "render:gaya": "remotion render src/index.ts GayaVideo out/gaya.mp4 --codec h264",
     "vo:chini": "python scripts/generate-vo.py chini",
-    "render:chini": "remotion render src/index.ts TasikChini out/chini.mp4 --codec h264"
+    "vo:bawang": "python scripts/generate-vo.py bawang",
+    "render:chini": "remotion render src/index.ts TasikChini out/chini.mp4 --codec h264",
+    "render:bawang": "remotion render src/index.ts BawangPutih out/bawang.mp4 --codec h264"
   },
   "dependencies": {
     "@react-three/fiber": "8.17.10",

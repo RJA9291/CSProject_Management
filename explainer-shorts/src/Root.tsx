@@ -3,6 +3,7 @@ import {Composition, Folder} from 'remotion';
 import {loadFonts} from './fonts';
 import {FPS, SHOTS, TOTAL_FRAMES} from './waze/timeline';
 import {WazeShot, WazeVideo} from './waze/Video';
+import {BawangShot, BawangVideo, SHOTS as BAWANG_SHOTS, TOTAL_FRAMES as BAWANG_FRAMES} from './bawang/Story';
 import {ChiniShot, ChiniVideo, SHOTS as CHINI_SHOTS, TOTAL_FRAMES as CHINI_FRAMES} from './chini/Story';
 import {StylesShot, StylesVideo, SHOTS as STYLES_SHOTS, TOTAL_FRAMES as STYLES_FRAMES} from './styles/Styles';
 import {TanggangShot, TanggangVideo, SHOTS as TANGGANG_SHOTS, TOTAL_FRAMES as TANGGANG_FRAMES} from './tanggang/Story';
@@ -59,6 +60,14 @@ export const RemotionRoot: React.FC = () => (
     <Folder name="Gaya-Segmen">
       {STYLES_SHOTS.map((s, i) => (
         <Composition key={s.id} id={`Gaya-${s.id}`} component={StylesShot} defaultProps={{index: i}} width={1080} height={1920} fps={FPS} durationInFrames={s.frames} />
+      ))}
+    </Folder>
+  </Folder>
+  <Folder name="Legenda-BawangPutih">
+    <Composition id="BawangPutih" component={BawangVideo} width={1080} height={1920} fps={FPS} durationInFrames={BAWANG_FRAMES} />
+    <Folder name="BawangPutih-Pages">
+      {BAWANG_SHOTS.map((s, i) => (
+        <Composition key={s.id} id={`Bawang-${s.id}`} component={BawangShot} defaultProps={{index: i}} width={1080} height={1920} fps={FPS} durationInFrames={s.frames} />
       ))}
     </Folder>
   </Folder>

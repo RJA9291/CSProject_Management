@@ -4,7 +4,7 @@ import {INK} from './comic';
 import {look, OUT, SH} from './look';
 
 // Outline props, read at render time so the same art can be inked (comic) or white-edged (paper).
-const S = {
+export const S = {
   get stroke() {
     return look.ink;
   },
