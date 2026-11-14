@@ -1,0 +1,16 @@
+import {loadFont} from '@remotion/fonts';
+import {staticFile} from 'remotion';
+
+// Local font files (no network at render time). Rubik (OFL) for captions, Inter (OFL) for small UI.
+const faces: [string, string, string][] = [
+  ['Rubik', 'rubik-latin-800-normal.woff2', '800'],
+  ['Rubik', 'rubik-latin-900-normal.woff2', '900'],
+  ['Inter', 'inter-latin-700-normal.woff2', '700'],
+];
+
+let loaded = false;
+export const loadFonts = () => {
+  if (loaded) return;
+  loaded = true;
+  for (const [family, file, weight] of faces) loadFont({family, url: staticFile(`fonts/${file}`), weight, format: 'woff2'});
+};

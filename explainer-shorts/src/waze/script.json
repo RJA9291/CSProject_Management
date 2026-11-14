@@ -1,0 +1,16 @@
+{
+  "title": "Macam Mana Waze Tahu Jalan Sesak?",
+  "voice": "ms-MY-OsmanNeural",
+  "rate": "+12%",
+  "pitch": "+2Hz",
+  "_note": "Edit `vo` to change narration, then run `npm run vo`. `highlight` words show in yellow in the captions. `say` respells words for the TTS only.",
+  "say": {"km/j": "kilometer sejam"},
+  "shots": [
+    {"id": "s1-hook", "vo": "Kau tengah drive selamba, tiba-tiba Waze cakap jalan depan sesak.", "highlight": ["Waze", "sesak."], "voDelay": 0.4, "pad": 0.4},
+    {"id": "s2-macam-mana", "vo": "Eh? Depan nampak kosong je. Macam mana dia tahu?", "highlight": ["Macam", "mana", "tahu?"], "voDelay": 0.2, "pad": 0.6},
+    {"id": "s3-telefon", "vo": "Rahsianya, telefon pemandu lain! Setiap telefon yang buka Waze atau Google Maps hantar lokasi dan kelajuan, tanpa nama.", "highlight": ["telefon", "lokasi", "kelajuan,", "tanpa", "nama."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s4-merah", "vo": "Bila ramai kereta bergerak perlahan di jalan yang sama, sistem kira purata kelajuan, dan jalan tu terus jadi merah.", "highlight": ["perlahan", "purata", "merah."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s5-report", "vo": "Pengguna lain pun boleh report kemalangan atau halangan. Data trafik lama pula bantu ramal masa sampai.", "highlight": ["report", "kemalangan", "halangan.", "ramal"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s6-tolong", "vo": "Maknanya, masa kau guna Waze, kau pun sebenarnya tolong pemandu lain! Korang selalu tersangkut jem kat mana? Komen bawah!", "highlight": ["tolong", "pemandu", "lain!", "Komen", "bawah!"], "voDelay": 0.2, "pad": 1.2}
+  ]
+}
