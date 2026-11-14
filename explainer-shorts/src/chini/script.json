@@ -1,0 +1,26 @@
+{
+  "title": "Kenapa Tasik Chini Dikatakan Ada Naga?",
+  "voice": "ms-MY-OsmanNeural",
+  "rate": "+14%",
+  "pitch": "+0Hz",
+  "_note": "Legenda Tasik Chini (gaya komik bergerak). Fakta: daerah Pekan, Pahang; 12 kawasan air bersambung; rizab biosfera UNESCO pertama di Malaysia (2009); masyarakat Orang Asli Jakun; terjejas akibat perlombongan & pembalakan. Run `python scripts/generate-vo.py chini` after edits.",
+  "say": {"2009": "dua ribu sembilan"},
+  "shots": [
+    {"id": "p01-hook", "vo": "Korang tahu tak, ada sebuah tasik di Malaysia yang dikatakan menjadi tempat tinggal seekor naga? Namanya Tasik Chini, di Pahang. Tapi kenapa tasik ni dikaitkan dengan naga?", "highlight": ["tasik", "naga?", "Tasik", "Chini,", "kenapa"], "voDelay": 0.5, "pad": 0.4},
+    {"id": "p02-fakta", "vo": "Tasik Chini terletak di daerah Pekan, Pahang. Ia terdiri daripada dua belas kawasan air yang bersambung, dikelilingi hutan dan paya. Pada tahun 2009, ia diiktiraf UNESCO sebagai rizab biosfera pertama di Malaysia.", "highlight": ["Pekan,", "dua", "belas", "UNESCO", "biosfera"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "p03-jakun", "vo": "Di sekitar tasik ini tinggal masyarakat Orang Asli Jakun. Merekalah yang mewarisi kebanyakan cerita tentang Tasik Chini, dari mulut ke mulut, sejak turun-temurun.", "highlight": ["Orang", "Asli", "Jakun.", "mulut", "turun-temurun."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "p04-nenek", "vo": "Dalam satu versi legenda, dahulu kawasan ini tanah kering. Sekumpulan orang membuka hutan untuk berladang. Tiba-tiba muncul seorang nenek tua bertongkat yang mendakwa tanah itu miliknya.", "highlight": ["legenda,", "kering.", "berladang.", "nenek", "bertongkat"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "p05-pesan", "parts": [
+      {"vo": "Mereka meminta maaf. Nenek itu pun mencucuk tongkatnya ke tanah dan berpesan:"},
+      {"vo": "Jangan sesekali cabut tongkat ini.", "voice": "ms-MY-YasminNeural", "pitch": "-14Hz", "rate": "-10%"}
+    ], "highlight": ["maaf.", "tongkatnya", "Jangan", "cabut"], "voDelay": 0.2, "pad": 0.5},
+    {"id": "p06-banjir", "vo": "Lama-kelamaan, pesanan itu dilupakan. Bila tongkat itu tercabut, air memancut keluar tanpa henti, membanjiri kawasan itu sehingga terbentuklah sebuah tasik.", "highlight": ["dilupakan.", "tercabut,", "memancut", "tasik."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "p07-naga", "vo": "Di dalam tasik itulah dikatakan tinggal seekor naga bernama Naga Seri Gumum. Masyarakat Jakun percaya naga ini penjaga tasik. Ada yang kata, kalau air tiba-tiba bergelora, itu tandanya naga sedang bergerak.", "highlight": ["Naga", "Seri", "Gumum.", "penjaga", "bergelora,"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "p08-sebab1", "vo": "Jadi, kenapa Tasik Chini dikaitkan dengan naga? Pertama, tasiknya luas, berliku-liku dan dikelilingi hutan tebal. Waktu malam atau berkabus, suasananya memang misteri.", "highlight": ["kenapa", "Pertama,", "berliku-liku", "misteri."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "p09-sebab2", "vo": "Kedua, orang dulu menggunakan cerita untuk menerangkan perkara yang mereka tak faham, seperti ombak tiba-tiba, bunyi pelik atau bayang di dalam air. Naga jadi jawapan yang mudah diingati.", "highlight": ["Kedua,", "menerangkan", "ombak", "bayang", "Naga"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "p10-sebab3", "vo": "Ketiga, cerita ini juga mengajar orang supaya menghormati tasik dan alam. Kalau tasik ada penjaga, orang akan lebih berhati-hati dan tak merosakkannya.", "highlight": ["Ketiga,", "menghormati", "alam.", "berhati-hati"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "p11-kota", "vo": "Ada juga legenda lain yang mengatakan wujud sebuah kota purba yang tenggelam di dasar tasik. Tapi sehingga kini, ia kekal sebagai cerita dan kepercayaan, bukan sesuatu yang terbukti.", "highlight": ["kota", "purba", "tenggelam", "bukan", "terbukti."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "p12-bukti", "vo": "Dari segi fakta, tiada bukti saintifik bahawa naga wujud di Tasik Chini. Yang boleh dibuktikan, tasik ini kaya dengan flora dan fauna, termasuk teratai yang terkenal, tetapi pernah terjejas teruk akibat aktiviti manusia seperti perlombongan dan pembalakan.", "highlight": ["tiada", "bukti", "saintifik", "teratai", "perlombongan", "pembalakan."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "p13-akhir", "vo": "Jadi, naga atau tidak, Tasik Chini tetap khazanah yang perlu dijaga. Mungkin yang lebih perlu kita takuti ialah tangan manusia sendiri. Korang percaya tak legenda Naga Seri Gumum? Komen bawah!", "highlight": ["khazanah", "dijaga.", "tangan", "manusia", "Komen", "bawah!"], "voDelay": 0.2, "pad": 1.6}
+  ]
+}

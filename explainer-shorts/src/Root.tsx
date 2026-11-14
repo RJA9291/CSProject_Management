@@ -3,6 +3,7 @@ import {Composition, Folder} from 'remotion';
 import {loadFonts} from './fonts';
 import {FPS, SHOTS, TOTAL_FRAMES} from './waze/timeline';
 import {WazeShot, WazeVideo} from './waze/Video';
+import {ChiniShot, ChiniVideo, SHOTS as CHINI_SHOTS, TOTAL_FRAMES as CHINI_FRAMES} from './chini/Story';
 import {StylesShot, StylesVideo, SHOTS as STYLES_SHOTS, TOTAL_FRAMES as STYLES_FRAMES} from './styles/Styles';
 import {TanggangShot, TanggangVideo, SHOTS as TANGGANG_SHOTS, TOTAL_FRAMES as TANGGANG_FRAMES} from './tanggang/Story';
 import {MahsuriShot, MahsuriVideo, SHOTS as MAHSURI_SHOTS, TOTAL_FRAMES as MAHSURI_FRAMES} from './mahsuri/Story';
@@ -58,6 +59,14 @@ export const RemotionRoot: React.FC = () => (
     <Folder name="Gaya-Segmen">
       {STYLES_SHOTS.map((s, i) => (
         <Composition key={s.id} id={`Gaya-${s.id}`} component={StylesShot} defaultProps={{index: i}} width={1080} height={1920} fps={FPS} durationInFrames={s.frames} />
+      ))}
+    </Folder>
+  </Folder>
+  <Folder name="Legenda-TasikChini">
+    <Composition id="TasikChini" component={ChiniVideo} width={1080} height={1920} fps={FPS} durationInFrames={CHINI_FRAMES} />
+    <Folder name="TasikChini-Pages">
+      {CHINI_SHOTS.map((s, i) => (
+        <Composition key={s.id} id={`Chini-${s.id}`} component={ChiniShot} defaultProps={{index: i}} width={1080} height={1920} fps={FPS} durationInFrames={s.frames} />
       ))}
     </Folder>
   </Folder>
