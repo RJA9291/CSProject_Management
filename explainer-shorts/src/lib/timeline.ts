@@ -20,14 +20,30 @@ export type Shot = {
   audio: {src: string; from: number}[]; // audio parts, `from` in frames relative to the shot
 };
 
-export const makeTimeline = (shots: ScriptShot[], timings: Record<string, Timing>, audioDir: string) => {
+const bare = (w: string) => w.replace(/^[^\p{L}\p{N}@]+|[^\p{L}\p{N}]+$/gu, '');
+
+// `say` respellings (e.g. "1821" -> "lapan belas dua puluh satu") make one display word span several TTS words.
+export const makeTimeline = (shots: ScriptShot[], timings: Record<string, Timing>, audioDir: string, say: Record<string, string> = {}) => {
   let start = 0;
   const SHOTS: Shot[] = shots.map((s) => {
     const t = timings[s.id] ?? {duration: 3, words: []};
     const vo = s.vo ?? (s.parts ?? []).map((p) => p.vo).join(' ');
     const display = vo.split(/\s+/);
+    const spans = display.map((w) => {
+      const key = Object.keys(say).find((k) => bare(w) === k);
+      return key ? say[key].split(/\s+/).length : 1;
+    });
+    const spanTotal = spans.reduce((x, y) => x + y, 0);
+    let k = 0;
     const words =
-      t.words.length === display.length
+      spanTotal !== display.length && t.words.length === spanTotal
+        ? display.map((text, i) => {
+            const first = t.words[k];
+            const last = t.words[k + spans[i] - 1];
+            k += spans[i];
+            return {text, start: first.start + s.voDelay, end: last.end + s.voDelay};
+          })
+        : t.words.length === display.length
         ? t.words.map((w, i) => ({text: display[i], start: w.start + s.voDelay, end: w.end + s.voDelay}))
         : display.map((text, i) => ({text, start: s.voDelay + (t.duration * i) / display.length, end: s.voDelay + (t.duration * (i + 0.9)) / display.length}));
     const parts = t.parts ?? [{file: `${s.id}.mp3`, start: 0, duration: t.duration}];

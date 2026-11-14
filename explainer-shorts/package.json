@@ -12,7 +12,9 @@
     "vo:santubong": "python scripts/generate-vo.py santubong",
     "render:santubong": "remotion render src/index.ts Santubong out/santubong.mp4 --codec h264",
     "vo:batubelah": "python scripts/generate-vo.py batubelah",
-    "render:batubelah": "remotion render src/index.ts BatuBelah out/batubelah.mp4 --codec h264"
+    "render:batubelah": "remotion render src/index.ts BatuBelah out/batubelah.mp4 --codec h264",
+    "vo:mahsuri": "python scripts/generate-vo.py mahsuri",
+    "render:mahsuri": "remotion render src/index.ts Mahsuri out/mahsuri.mp4 --codec h264"
   },
   "dependencies": {
     "@react-three/fiber": "8.17.10",

@@ -1,0 +1,28 @@
+{
+  "title": "Kenapa Mahsuri Dikatakan Menyumpah Langkawi?",
+  "voice": "ms-MY-OsmanNeural",
+  "rate": "+14%",
+  "pitch": "+0Hz",
+  "_note": "Legenda Mahsuri (versi ringkas). Fakta sejarah: serangan Siam ke atas Kedah 1821, Langkawi pulau bebas cukai 1987, Makam Mahsuri di Kampung Mawat. Run `python scripts/generate-vo.py mahsuri` after edits.",
+  "say": {"1821": "lapan belas dua puluh satu", "1987": "sembilan belas lapan puluh tujuh"},
+  "shots": [
+    {"id": "s01-hook", "vo": "Korang tahu tak, kenapa Langkawi pernah dikaitkan dengan sumpahan tujuh keturunan? Semuanya bermula dengan kisah seorang wanita bernama Mahsuri.", "highlight": ["kenapa", "Langkawi", "sumpahan", "tujuh", "keturunan?", "Mahsuri."], "voDelay": 0.5, "pad": 0.4},
+    {"id": "s02-mahsuri", "vo": "Menurut legenda, Mahsuri seorang wanita yang sangat cantik dan baik hati. Keluarganya dikatakan berasal dari Phuket sebelum berpindah ke Langkawi.", "highlight": ["cantik", "baik", "hati.", "Phuket"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s03-kahwin", "vo": "Mahsuri berkahwin dengan Wan Darus, anak kepada Datuk Pekerma Jaya, pembesar Langkawi ketika itu.", "highlight": ["Wan", "Darus,", "Datuk", "Pekerma", "Jaya,"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s04-cemburu", "vo": "Tapi ada seorang yang tak suka, iaitu Wan Mahora, isteri Datuk Pekerma Jaya. Menurut cerita, dia cemburu dengan kecantikan dan perhatian yang diterima Mahsuri.", "highlight": ["Wan", "Mahora,", "cemburu"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s05-perang", "vo": "Satu hari, Wan Darus terpaksa pergi berperang melawan Siam. Mahsuri tinggal di rumah bersama anak mereka yang masih kecil.", "highlight": ["berperang", "Siam.", "anak"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s06-deramang", "vo": "Ketika itu, datang seorang pengembara bernama Deramang yang pandai bersyair. Dia menumpang di rumah keluarga Mahsuri, dan Mahsuri melayannya dengan baik sebagai tetamu.", "highlight": ["Deramang", "bersyair.", "tetamu."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s07-fitnah", "vo": "Di sinilah fitnah bermula. Wan Mahora menyebarkan cerita kononnya Mahsuri curang dengan Deramang.", "highlight": ["fitnah", "curang"], "voDelay": 0.2, "pad": 0.5},
+    {"id": "s08-hukum", "vo": "Tanpa siasatan yang adil, Mahsuri dijatuhi hukuman bunuh. Dia menafikan tuduhan itu dan bersumpah dia tidak bersalah.", "highlight": ["adil,", "hukuman", "tidak", "bersalah."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s09-keris", "vo": "Menurut legenda, senjata biasa tidak lut pada tubuhnya. Akhirnya Mahsuri sendiri memberitahu, hanya kerisnya sendiri yang boleh digunakan.", "highlight": ["tidak", "lut", "kerisnya"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s10-darah-putih", "vo": "Bila keris itu digunakan, dikatakan darah putih mengalir, tanda Mahsuri tidak bersalah. Orang ramai terkejut, tapi semuanya sudah terlambat.", "highlight": ["darah", "putih", "tidak", "bersalah.", "terlambat."], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s11-sumpah", "parts": [
+      {"vo": "Sebelum menghembuskan nafas terakhir, Mahsuri dikatakan bersumpah:"},
+      {"vo": "Langkawi tidak akan aman selama tujuh keturunan!", "voice": "ms-MY-YasminNeural", "pitch": "-6Hz", "rate": "-6%"}
+    ], "highlight": ["bersumpah:", "tidak", "aman", "tujuh", "keturunan!"], "voDelay": 0.2, "pad": 0.6},
+    {"id": "s12-beras", "vo": "Tak lama kemudian, Siam menyerang Kedah dan Langkawi. Dalam cerita rakyat, penduduk membakar padi di Padang Mat Sirat supaya tidak jatuh ke tangan musuh. Ada yang percaya, beras terbakar masih ditemui di situ.", "highlight": ["Siam", "menyerang", "Padang", "Mat", "Sirat", "beras", "terbakar"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s13-kenapa", "vo": "Jadi, kenapa sumpahan itu dikatakan berlaku? Bagi orang dulu, perang, kemusnahan, dan Langkawi yang lama tidak maju dilihat sebagai bukti sumpahan Mahsuri.", "highlight": ["kenapa", "perang,", "kemusnahan,", "bukti"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s14-fakta", "vo": "Tapi dari segi sejarah, serangan Siam ke atas Kedah memang berlaku pada tahun 1821. Kemajuan Langkawi pula datang daripada pembangunan, terutama selepas menjadi pulau bebas cukai pada tahun 1987. Makam Mahsuri masih wujud di Langkawi hingga hari ini.", "highlight": ["sejarah,", "1821.", "pembangunan,", "1987.", "Makam"], "voDelay": 0.2, "pad": 0.4},
+    {"id": "s15-pengajaran", "vo": "Kisah sumpahan ini ialah legenda, bukan fakta sejarah. Pengajarannya, jangan mudah percaya dan menyebarkan fitnah, kerana fitnah boleh memusnahkan hidup orang yang tidak bersalah.", "highlight": ["legenda,", "fitnah,", "memusnahkan", "bersalah."], "voDelay": 0.2, "pad": 1.6}
+  ]
+}
