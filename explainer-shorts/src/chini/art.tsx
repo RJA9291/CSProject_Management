@@ -1,8 +1,19 @@
 // Flat comic art for Tasik Chini, inked with thick outlines. All sizes in panel pixels.
 import React from 'react';
 import {INK} from './comic';
+import {look, OUT, SH} from './look';
 
-const S = {stroke: INK, strokeWidth: 5, strokeLinejoin: 'round' as const, strokeLinecap: 'round' as const};
+// Outline props, read at render time so the same art can be inked (comic) or white-edged (paper).
+const S = {
+  get stroke() {
+    return look.ink;
+  },
+  get strokeWidth() {
+    return look.sw;
+  },
+  strokeLinejoin: 'round' as const,
+  strokeLinecap: 'round' as const,
+};
 
 export const Sky: React.FC<{w: number; h: number; top: string; bottom: string; id: string}> = ({w, h, top, bottom, id}) => (
   <>
@@ -16,17 +27,17 @@ export const Sky: React.FC<{w: number; h: number; top: string; bottom: string; i
   </>
 );
 
-export const Moon: React.FC<{x: number; y: number; r: number}> = ({x, y, r}) => <circle cx={x} cy={y} r={r} fill="#fff4c8" {...S} />;
+export const Moon: React.FC<{x: number; y: number; r: number}> = ({x, y, r}) => <circle cx={x} cy={y} r={r} fill="#fff4c8" {...S} filter={SH()} />;
 
 export const Hills: React.FC<{w: number; y: number; color?: string; seed?: number}> = ({w, y, color = '#2f6b4a', seed = 0}) => {
   const pts: string[] = [`0,${y + 60}`];
   for (let x = 0; x <= w; x += w / 6) pts.push(`${x},${y + Math.sin((x / w) * 7 + seed) * 40}`);
   pts.push(`${w},${y + 60}`);
-  return <polygon points={pts.join(' ')} fill={color} {...S} />;
+  return <polygon points={pts.join(' ')} fill={color} {...S} filter={SH()} />;
 };
 
 export const Tree: React.FC<{x: number; y: number; s?: number; c?: string}> = ({x, y, s = 1, c = '#3f8a4c'}) => (
-  <g transform={`translate(${x} ${y}) scale(${s})`}>
+  <g transform={`translate(${x} ${y}) scale(${s})`} filter={SH()}>
     <rect x={-8} y={-60} width={16} height={60} fill="#6b4a2c" {...S} />
     <circle cx={0} cy={-90} r={46} fill={c} {...S} />
     <circle cx={-34} cy={-66} r={30} fill={c} {...S} />
@@ -45,7 +56,7 @@ export const Jungle: React.FC<{w: number; y: number; n?: number; s?: number}> = 
 
 export const Water: React.FC<{w: number; h: number; y: number; f: number; color?: string; rough?: number}> = ({w, h, y, f, color = '#2b7fc4', rough = 1}) => (
   <g>
-    <rect x={0} y={y} width={w} height={h - y} fill={color} stroke={INK} strokeWidth={5} />
+    <rect x={0} y={y} width={w} height={h - y} fill={color} stroke={OUT()} strokeWidth={5} />
     <rect x={0} y={y + (h - y) * 0.45} width={w} height={(h - y) * 0.55} fill="url(#ht-dark)" opacity={0.5} />
     {Array.from({length: 6}, (_, i) => {
       const yy = y + 30 + i * ((h - y) / 6);
@@ -57,7 +68,7 @@ export const Water: React.FC<{w: number; h: number; y: number; f: number; color?
 );
 
 export const Lotus: React.FC<{x: number; y: number; s?: number}> = ({x, y, s = 1}) => (
-  <g transform={`translate(${x} ${y}) scale(${s})`}>
+  <g transform={`translate(${x} ${y}) scale(${s})`} filter={SH()}>
     <ellipse cx={0} cy={10} rx={46} ry={14} fill="#4f9a52" {...S} />
     {[-28, -12, 0, 12, 28].map((a, i) => (
       <ellipse key={i} cx={a * 0.5} cy={-10} rx={10} ry={26} fill={i === 2 ? '#ff8fb8' : '#ffb3cf'} {...S} transform={`rotate(${a} ${a * 0.5} 6)`} />
@@ -67,7 +78,7 @@ export const Lotus: React.FC<{x: number; y: number; s?: number}> = ({x, y, s = 1
 );
 
 export const Hut: React.FC<{x: number; y: number; s?: number}> = ({x, y, s = 1}) => (
-  <g transform={`translate(${x} ${y}) scale(${s})`}>
+  <g transform={`translate(${x} ${y}) scale(${s})`} filter={SH()}>
     {[-50, 50].map((px) => (
       <rect key={px} x={px - 5} y={-40} width={10} height={40} fill="#6b4a2c" {...S} />
     ))}
@@ -112,7 +123,7 @@ export const Person: React.FC<{x: number; y: number; s?: number; f: number; clot
   if (pose === 'bow') arm = [[-10, -60], [10, -60]];
   const lean = pose === 'bow' ? 28 : 0;
   return (
-    <g transform={`translate(${x} ${y}) scale(${flip ? -s : s} ${s})`}>
+    <g transform={`translate(${x} ${y}) scale(${flip ? -s : s} ${s})`} filter={SH()}>
       <g transform={`rotate(${lean} 0 -60)`}>
         {woman ? (
           <polygon points={`-26,${-140 + hunch} 26,${-140 + hunch} 50,0 -50,0`} fill={cloth} {...S} />
@@ -125,7 +136,7 @@ export const Person: React.FC<{x: number; y: number; s?: number; f: number; clot
         )}
         {arm.map(([ax, ay], i) => (
           <g key={i}>
-            <line x1={i ? 20 : -20} y1={-130 + hunch} x2={ax} y2={ay} stroke={INK} strokeWidth={18} strokeLinecap="round" />
+            <line x1={i ? 20 : -20} y1={-130 + hunch} x2={ax} y2={ay} stroke={OUT()} strokeWidth={18} strokeLinecap="round" />
             <line x1={i ? 20 : -20} y1={-130 + hunch} x2={ax} y2={ay} stroke={cloth} strokeWidth={10} strokeLinecap="round" />
             <circle cx={ax} cy={ay} r={9} fill={skin} {...S} strokeWidth={4} />
           </g>
@@ -156,10 +167,10 @@ export const Person: React.FC<{x: number; y: number; s?: number; f: number; clot
 
 // Walking stick planted in the ground.
 export const Stick: React.FC<{x: number; y: number; lift?: number}> = ({x, y, lift = 0}) => (
-  <g transform={`translate(${x} ${y - lift})`}>
+  <g transform={`translate(${x} ${y - lift})`} filter={SH()}>
     <rect x={-7} y={-150} width={14} height={160} rx={6} fill="#7a5236" {...S} />
     <path d="M -7 -150 q -20 -10 -10 -30 q 14 -8 24 6" fill="none" stroke="#7a5236" strokeWidth={12} strokeLinecap="round" />
-    <path d="M -7 -150 q -20 -10 -10 -30 q 14 -8 24 6" fill="none" stroke={INK} strokeWidth={3} />
+    <path d="M -7 -150 q -20 -10 -10 -30 q 14 -8 24 6" fill="none" stroke={OUT()} strokeWidth={3} />
   </g>
 );
 
@@ -187,7 +198,7 @@ export const Dragon: React.FC<{x: number; water: number; s?: number; f: number; 
   });
   const hy = -170 * rise + Math.sin(f * 0.1) * 8;
   return (
-    <g transform={`translate(${x} ${water}) scale(${flip ? -s : s} ${s})`}>
+    <g transform={`translate(${x} ${water}) scale(${flip ? -s : s} ${s})`} filter={SH()}>
       <clipPath id={`above-${x}`}>
         <rect x={-600} y={-600} width={1400} height={600} />
       </clipPath>
@@ -199,7 +210,7 @@ export const Dragon: React.FC<{x: number; water: number; s?: number; f: number; 
           </g>
         ))}
         {/* neck + head */}
-        <path d={`M 90 20 C 110 ${hy + 120} 150 ${hy + 60} 160 ${hy + 20}`} fill="none" stroke={INK} strokeWidth={66} strokeLinecap="round" />
+        <path d={`M 90 20 C 110 ${hy + 120} 150 ${hy + 60} 160 ${hy + 20}`} fill="none" stroke={OUT()} strokeWidth={66} strokeLinecap="round" />
         <path d={`M 90 20 C 110 ${hy + 120} 150 ${hy + 60} 160 ${hy + 20}`} fill="none" stroke={body} strokeWidth={54} strokeLinecap="round" />
         <g transform={`translate(170 ${hy})`}>
           <polygon points="-40,10 60,-6 96,18 60,40 -30,46" fill={body} {...S} />
@@ -246,7 +257,7 @@ export const TwelveLakes: React.FC<{cx: number; cy: number; f: number; s?: numbe
 
 // Generic recognition badge (no logos): year + label.
 export const Badge: React.FC<{x: number; y: number; year: string; label: string; f: number}> = ({x, y, year, label, f}) => (
-  <g transform={`translate(${x} ${y}) rotate(${Math.sin(f / 20) * 3}) scale(${Math.min(1, f / 8)})`}>
+  <g transform={`translate(${x} ${y}) rotate(${Math.sin(f / 20) * 3}) scale(${Math.min(1, f / 8)})`} filter={SH()}>
     {Array.from({length: 16}, (_, i) => {
       const a = (i / 16) * Math.PI * 2;
       return <circle key={i} cx={Math.cos(a) * 110} cy={Math.sin(a) * 110} r={22} fill="#36a86b" {...S} />;
@@ -278,14 +289,14 @@ export const SunkenCity: React.FC<{x: number; y: number; s?: number; f: number}>
 );
 
 export const Stump: React.FC<{x: number; y: number; s?: number}> = ({x, y, s = 1}) => (
-  <g transform={`translate(${x} ${y}) scale(${s})`}>
+  <g transform={`translate(${x} ${y}) scale(${s})`} filter={SH()}>
     <polygon points="-34,0 34,0 26,-40 -26,-40" fill="#8a5a34" {...S} />
     <ellipse cx={0} cy={-40} rx={26} ry={9} fill="#d9b48a" {...S} />
   </g>
 );
 
 export const Fish: React.FC<{x: number; y: number; f: number; c?: string}> = ({x, y, f, c = '#f4a51c'}) => (
-  <g transform={`translate(${x + Math.sin(f / 10) * 20} ${y})`}>
+  <g transform={`translate(${x + Math.sin(f / 10) * 20} ${y})`} filter={SH()}>
     <ellipse cx={0} cy={0} rx={34} ry={16} fill={c} {...S} />
     <polygon points="30,0 56,-16 56,16" fill={c} {...S} />
     <circle cx={-16} cy={-4} r={4} fill={INK} />
@@ -301,7 +312,7 @@ export const Fog: React.FC<{w: number; y: number; f: number}> = ({w, y, f}) => (
 );
 
 export const QMark: React.FC<{x: number; y: number; f: number; size?: number}> = ({x, y, f, size = 90}) => (
-  <text x={x} y={y + Math.sin(f / 8) * 8} textAnchor="middle" fontFamily="Rubik, sans-serif" fontWeight={900} fontSize={size} fill="#ffd23f" stroke={INK} strokeWidth={size * 0.08} paintOrder="stroke">
+  <text x={x} y={y + Math.sin(f / 8) * 8} textAnchor="middle" fontFamily="Rubik, sans-serif" fontWeight={900} fontSize={size} fill="#ffd23f" stroke={OUT()} strokeWidth={size * 0.08} paintOrder="stroke">
     ?
   </text>
 );

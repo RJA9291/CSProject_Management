@@ -4,6 +4,7 @@ import {cue, FPS, makeTimeline, ScriptShot, Shot, Timing} from '../lib/timeline'
 import {Captions} from '../waze/ui/Overlays';
 import {Badge, Dragon, Fish, Fog, Fountain, Hills, Hut, Jungle, Lotus, Moon, Person, QMark, Sky, Stick, Stump, SunkenCity, TwelveLakes, Water} from './art';
 import {INK, Narr, Page, PanelDef, Sfx, Speech, SpeedLines} from './comic';
+import {setLook} from './look';
 import script from './script.json';
 import timings from './timings.json';
 
@@ -528,13 +529,15 @@ const SFX_MAP: Record<number, [string, number, string][]> = {
   12: [['Komen', 12, 'coin']],
 };
 
-const ShotView: React.FC<{index: number}> = ({index}) => {
+const ShotView: React.FC<{index: number; paper?: boolean}> = ({index, paper = true}) => {
+  // Paper storybook is the default look; the comic look is kept as an alternative composition.
+  setLook(paper);
   const frame = useCurrentFrame();
   const shot = SHOTS[index];
   const page = pages(index, shot);
   const extra = SFX_MAP[index] ?? [];
   return (
-    <AbsoluteFill style={{background: '#fff6e0'}}>
+    <AbsoluteFill style={{background: paper ? '#efe3c8' : '#fff6e0'}}>
       <Page panels={page.panels} bg={page.bg} />
       <Captions shot={shot} y={1520} />
       {index > 0 ? <AbsoluteFill style={{background: '#fff', opacity: interpolate(frame, [0, 5], [0.5, 0], clamp)}} /> : null}
@@ -555,15 +558,15 @@ const ShotView: React.FC<{index: number}> = ({index}) => {
   );
 };
 
-export const ChiniShot: React.FC<{index: number}> = ({index}) => <ShotView index={index} />;
+export const ChiniShot: React.FC<{index: number; paper?: boolean}> = ({index, paper = true}) => <ShotView index={index} paper={paper} />;
 
-export const ChiniVideo: React.FC = () => {
+export const ChiniVideo: React.FC<{paper?: boolean}> = ({paper = true}) => {
   const music = (f: number) => interpolate(f, [0, 15, TOTAL_FRAMES - 45, TOTAL_FRAMES], [0, 0.09, 0.09, 0], clamp);
   return (
     <AbsoluteFill>
       {SHOTS.map((s, i) => (
         <Sequence key={s.id} from={s.start} durationInFrames={s.frames} name={s.id}>
-          <ShotView index={i} />
+          <ShotView index={i} paper={paper} />
         </Sequence>
       ))}
       <Audio src={staticFile('audio/music/bgm-legend.wav')} loop volume={music} />

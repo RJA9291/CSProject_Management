@@ -64,6 +64,7 @@ export const RemotionRoot: React.FC = () => (
   </Folder>
   <Folder name="Legenda-TasikChini">
     <Composition id="TasikChini" component={ChiniVideo} width={1080} height={1920} fps={FPS} durationInFrames={CHINI_FRAMES} />
+    <Composition id="TasikChiniKomik" component={ChiniVideo} defaultProps={{paper: false}} width={1080} height={1920} fps={FPS} durationInFrames={CHINI_FRAMES} />
     <Folder name="TasikChini-Pages">
       {CHINI_SHOTS.map((s, i) => (
         <Composition key={s.id} id={`Chini-${s.id}`} component={ChiniShot} defaultProps={{index: i}} width={1080} height={1920} fps={FPS} durationInFrames={s.frames} />
