@@ -219,16 +219,19 @@ const pages = (i: number, shot: Shot): {panels: PanelDef[]; bg?: string} => {
             ),
           },
           {
-            key: 'b', x: 40, y: 600, w: 480, h: 820, at: pull - 4,
-            draw: (f, w, h) => (
+            key: 'b', x: 40, y: 600, w: 480, h: 820, at: c('pemuda', 3) - 4,
+            draw: (f, w, h) => {
+              const t = f - (pull - c('pemuda', 3));
+              return (
               <>
                 <rect width={w} height={h} fill="#ffe08a" />
                 <rect y={640} width={w} height={180} fill="#c9a06a" stroke={INK} strokeWidth={5} />
-                <Stick x={300} y={660} lift={Math.min(160, f * 10)} />
-                <Person x={200} y={780} f={f} cloth={JAKUN[2]} pose="pull" face="shock" />
-                <Sfx x={w / 2} y={190} text="PLUP!" f={f - 4} size={120} />
+                <Stick x={300} y={660} lift={Math.max(0, Math.min(160, t * 10))} />
+                <Person x={200} y={780} f={f} cloth={JAKUN[2]} pose={t >= -20 ? 'pull' : 'point'} face={t >= 0 ? 'shock' : 'happy'} />
+                <Sfx x={w / 2} y={190} text="PLUP!" f={t} size={120} />
               </>
-            ),
+              );
+            },
           },
           {
             key: 'c', x: 560, y: 600, w: 480, h: 820, at: burst - 4,
