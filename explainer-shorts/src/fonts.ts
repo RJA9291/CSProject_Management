@@ -5,6 +5,8 @@ import {staticFile} from 'remotion';
 const faces: [string, string, string][] = [
   ['Rubik', 'rubik-latin-800-normal.woff2', '800'],
   ['Rubik', 'rubik-latin-900-normal.woff2', '900'],
+  ['Inter', 'inter-latin-400-normal.woff2', '400'],
+  ['Inter', 'inter-latin-600-normal.woff2', '600'],
   ['Inter', 'inter-latin-700-normal.woff2', '700'],
 ];
 

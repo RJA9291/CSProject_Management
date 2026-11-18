@@ -1,0 +1,17 @@
+{
+  "title": "Periuk Nasi Elektrik: Macam Mana Ia Tahu Nasi Dah Masak?",
+  "voice": "ms-MY-OsmanNeural",
+  "rate": "+6%",
+  "pitch": "-2Hz",
+  "_note": "Siri Barang Dapur (gaya dokumentari teknikal, menegak). Periuk nasi konvensional dengan termostat bermagnet. Run `python scripts/generate-vo.py dapur` after edits.",
+  "say": {"100": "seratus"},
+  "shots": [
+    {"id": "d01-hook", "vo": "Periuk nasi elektrik. Ada di hampir setiap dapur. Tapi macam mana ia tahu, nasi dah masak?", "highlight": ["Periuk", "nasi", "elektrik.", "masak?"], "voDelay": 0.6, "pad": 0.5},
+    {"id": "d02-anatomi", "vo": "Di dalamnya ada empat bahagian penting. Periuk dalam. Plat pemanas di bawahnya. Termostat bermagnet di tengah plat. Dan suis tuil di bahagian depan.", "highlight": ["Periuk", "dalam.", "Plat", "pemanas", "Termostat", "bermagnet", "suis", "tuil"], "voDelay": 0.3, "pad": 0.5},
+    {"id": "d03-didih", "vo": "Bila suis ditekan, plat pemanas mula memanaskan periuk. Air mendidih pada kira-kira 100 darjah Celsius. Selagi masih ada air, suhunya kekal di situ.", "highlight": ["memanaskan", "mendidih", "100", "darjah", "kekal"], "voDelay": 0.3, "pad": 0.5},
+    {"id": "d04-magnet", "vo": "Bila air habis diserap beras, suhu mula naik melepasi 100 darjah. Magnet pada termostat hilang daya tarikannya. Suis pun terlepas, dan periuk bertukar ke mod panas.", "highlight": ["habis", "naik", "Magnet", "hilang", "terlepas,", "panas."], "voDelay": 0.3, "pad": 0.6},
+    {"id": "d05-risiko", "vo": "Tapi apa boleh jadi salah? Dasar periuk yang basah boleh merosakkan plat pemanas. Lubang wap yang tersumbat boleh buat air tumpah. Dan terlalu banyak plag pada satu soket boleh buat wayar jadi panas.", "highlight": ["salah?", "basah", "tersumbat", "tumpah.", "plag", "panas."], "voDelay": 0.3, "pad": 0.5},
+    {"id": "d06-selamat", "vo": "Jadi, lap kering dasar periuk sebelum dimasukkan. Jangan tutup lubang wap. Cabut plag sebelum mencuci, dan jangan rendam badan periuk dalam air. Nasi lebih, simpan dalam peti sejuk.", "highlight": ["lap", "kering", "Jangan", "Cabut", "plag", "rendam", "peti", "sejuk."], "voDelay": 0.3, "pad": 0.5},
+    {"id": "d07-tutup", "vo": "Barang kecil di dapur. Tapi bila kita faham cara ia berfungsi, kita boleh guna dengan lebih selamat. Barang dapur apa korang nak kami bedah lepas ni? Komen bawah.", "highlight": ["faham", "selamat.", "bedah", "Komen", "bawah."], "voDelay": 0.3, "pad": 1.8}
+  ]
+}

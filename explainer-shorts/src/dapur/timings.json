@@ -1,0 +1,922 @@
+{
+ "d01-hook": {
+  "duration": 8.04,
+  "words": [
+   {
+    "text": "Periuk",
+    "start": 0.097166,
+    "end": 0.391957
+   },
+   {
+    "text": "nasi",
+    "start": 0.415583,
+    "end": 0.722166
+   },
+   {
+    "text": "elektrik",
+    "start": 0.722166,
+    "end": 1.288207
+   },
+   {
+    "text": "Ada",
+    "start": 2.158,
+    "end": 2.417416
+   },
+   {
+    "text": "di",
+    "start": 2.441041,
+    "end": 2.535374
+   },
+   {
+    "text": "hampir",
+    "start": 2.558958,
+    "end": 2.889166
+   },
+   {
+    "text": "setiap",
+    "start": 2.91275,
+    "end": 3.266541
+   },
+   {
+    "text": "dapur",
+    "start": 3.278291,
+    "end": 3.667457
+   },
+   {
+    "text": "Tapi",
+    "start": 4.575458,
+    "end": 4.834874
+   },
+   {
+    "text": "macam",
+    "start": 4.8585,
+    "end": 5.176916
+   },
+   {
+    "text": "mana",
+    "start": 5.188666,
+    "end": 5.424499
+   },
+   {
+    "text": "ia",
+    "start": 5.424541,
+    "end": 5.648582
+   },
+   {
+    "text": "tahu",
+    "start": 5.660375,
+    "end": 6.049541
+   },
+   {
+    "text": "nasi",
+    "start": 6.25,
+    "end": 6.580208
+   },
+   {
+    "text": "dah",
+    "start": 6.603791,
+    "end": 6.721707
+   },
+   {
+    "text": "masak",
+    "start": 6.7335,
+    "end": 7.134458
+   }
+  ]
+ },
+ "d02-anatomi": {
+  "duration": 12.192,
+  "words": [
+   {
+    "text": "Di",
+    "start": 0.097166,
+    "end": 0.226874
+   },
+   {
+    "text": "dalamnya",
+    "start": 0.250458,
+    "end": 0.663208
+   },
+   {
+    "text": "ada",
+    "start": 0.663208,
+    "end": 0.922624
+   },
+   {
+    "text": "empat",
+    "start": 0.922625,
+    "end": 1.276416
+   },
+   {
+    "text": "bahagian",
+    "start": 1.288208,
+    "end": 1.653791
+   },
+   {
+    "text": "penting",
+    "start": 1.677375,
+    "end": 2.1255
+   },
+   {
+    "text": "Periuk",
+    "start": 2.995291,
+    "end": 3.301874
+   },
+   {
+    "text": "dalam",
+    "start": 3.325458,
+    "end": 3.738208
+   },
+   {
+    "text": "Plat",
+    "start": 4.563666,
+    "end": 4.775916
+   },
+   {
+    "text": "pemanas",
+    "start": 4.78775,
+    "end": 5.247666
+   },
+   {
+    "text": "di",
+    "start": 5.283,
+    "end": 5.400916
+   },
+   {
+    "text": "bawahnya",
+    "start": 5.424541,
+    "end": 5.931624
+   },
+   {
+    "text": "Termostat",
+    "start": 6.851416,
+    "end": 7.334916
+   },
+   {
+    "text": "bermagnet",
+    "start": 7.346708,
+    "end": 7.877374
+   },
+   {
+    "text": "di",
+    "start": 7.877375,
+    "end": 7.971708
+   },
+   {
+    "text": "tengah",
+    "start": 7.995291,
+    "end": 8.242916
+   },
+   {
+    "text": "plat",
+    "start": 8.2665,
+    "end": 8.561291
+   },
+   {
+    "text": "Dan",
+    "start": 9.422166,
+    "end": 9.622624
+   },
+   {
+    "text": "suis",
+    "start": 9.634416,
+    "end": 9.964624
+   },
+   {
+    "text": "tuil",
+    "start": 9.976416,
+    "end": 10.318416
+   },
+   {
+    "text": "di",
+    "start": 10.353791,
+    "end": 10.459916
+   },
+   {
+    "text": "bahagian",
+    "start": 10.4835,
+    "end": 10.872666
+   },
+   {
+    "text": "depan",
+    "start": 10.908,
+    "end": 11.308958
+   }
+  ]
+ },
+ "d03-didih": {
+  "duration": 11.688,
+  "words": [
+   {
+    "text": "Bila",
+    "start": 0.097166,
+    "end": 0.391957
+   },
+   {
+    "text": "suis",
+    "start": 0.415583,
+    "end": 0.733999
+   },
+   {
+    "text": "ditekan",
+    "start": 0.74575,
+    "end": 1.3
+   },
+   {
+    "text": "plat",
+    "start": 1.524041,
+    "end": 1.712707
+   },
+   {
+    "text": "pemanas",
+    "start": 1.724541,
+    "end": 2.137291
+   },
+   {
+    "text": "mula",
+    "start": 2.160833,
+    "end": 2.420249
+   },
+   {
+    "text": "memanaskan",
+    "start": 2.432083,
+    "end": 2.974541
+   },
+   {
+    "text": "periuk",
+    "start": 2.998125,
+    "end": 3.434458
+   },
+   {
+    "text": "Air",
+    "start": 4.268875,
+    "end": 4.551875
+   },
+   {
+    "text": "mendidih",
+    "start": 4.58725,
+    "end": 5.035375
+   },
+   {
+    "text": "pada",
+    "start": 5.058958,
+    "end": 5.235833
+   },
+   {
+    "text": "kira-kira",
+    "start": 5.259416,
+    "end": 5.648582
+   },
+   {
+    "text": "seratus",
+    "start": 5.660375,
+    "end": 6.1085
+   },
+   {
+    "text": "darjah",
+    "start": 6.132083,
+    "end": 6.568416
+   },
+   {
+    "text": "Celsius",
+    "start": 6.568416,
+    "end": 7.134457
+   },
+   {
+    "text": "Selagi",
+    "start": 8.007083,
+    "end": 8.384458
+   },
+   {
+    "text": "masih",
+    "start": 8.408,
+    "end": 8.726416
+   },
+   {
+    "text": "ada",
+    "start": 8.726416,
+    "end": 8.938666
+   },
+   {
+    "text": "air",
+    "start": 8.938666,
+    "end": 9.304249
+   },
+   {
+    "text": "suhunya",
+    "start": 9.551875,
+    "end": 9.92925
+   },
+   {
+    "text": "kekal",
+    "start": 9.952833,
+    "end": 10.294833
+   },
+   {
+    "text": "di",
+    "start": 10.318416,
+    "end": 10.400957
+   },
+   {
+    "text": "situ",
+    "start": 10.424541,
+    "end": 10.766541
+   }
+  ]
+ },
+ "d04-magnet": {
+  "duration": 12.48,
+  "words": [
+   {
+    "text": "Bila",
+    "start": 0.097166,
+    "end": 0.403749
+   },
+   {
+    "text": "air",
+    "start": 0.415583,
+    "end": 0.698583
+   },
+   {
+    "text": "habis",
+    "start": 0.710375,
+    "end": 1.134916
+   },
+   {
+    "text": "diserap",
+    "start": 1.146708,
+    "end": 1.500499
+   },
+   {
+    "text": "beras",
+    "start": 1.51225,
+    "end": 1.889625
+   },
+   {
+    "text": "suhu",
+    "start": 2.13725,
+    "end": 2.408458
+   },
+   {
+    "text": "mula",
+    "start": 2.420291,
+    "end": 2.632541
+   },
+   {
+    "text": "naik",
+    "start": 2.679708,
+    "end": 2.939124
+   },
+   {
+    "text": "melepasi",
+    "start": 2.96275,
+    "end": 3.387291
+   },
+   {
+    "text": "seratus",
+    "start": 3.410833,
+    "end": 3.835374
+   },
+   {
+    "text": "darjah",
+    "start": 3.835375,
+    "end": 4.35425
+   },
+   {
+    "text": "Magnet",
+    "start": 5.21225,
+    "end": 5.636791
+   },
+   {
+    "text": "pada",
+    "start": 5.648583,
+    "end": 5.813666
+   },
+   {
+    "text": "termostat",
+    "start": 5.849041,
+    "end": 6.320749
+   },
+   {
+    "text": "hilang",
+    "start": 6.32075,
+    "end": 6.650958
+   },
+   {
+    "text": "daya",
+    "start": 6.686333,
+    "end": 6.910374
+   },
+   {
+    "text": "tarikannya",
+    "start": 6.922166,
+    "end": 7.523582
+   },
+   {
+    "text": "Suis",
+    "start": 8.443416,
+    "end": 8.820791
+   },
+   {
+    "text": "pun",
+    "start": 8.856125,
+    "end": 9.021208
+   },
+   {
+    "text": "terlepas",
+    "start": 9.056625,
+    "end": 9.599083
+   },
+   {
+    "text": "dan",
+    "start": 9.775958,
+    "end": 9.952833
+   },
+   {
+    "text": "periuk",
+    "start": 9.976416,
+    "end": 10.259416
+   },
+   {
+    "text": "bertukar",
+    "start": 10.283,
+    "end": 10.719333
+   },
+   {
+    "text": "ke",
+    "start": 10.778291,
+    "end": 10.872624
+   },
+   {
+    "text": "mod",
+    "start": 10.896208,
+    "end": 11.084874
+   },
+   {
+    "text": "panas",
+    "start": 11.096708,
+    "end": 11.591999
+   }
+  ]
+ },
+ "d05-risiko": {
+  "duration": 14.4,
+  "words": [
+   {
+    "text": "Tapi",
+    "start": 0.097166,
+    "end": 0.380166
+   },
+   {
+    "text": "apa",
+    "start": 0.380208,
+    "end": 0.651416
+   },
+   {
+    "text": "boleh",
+    "start": 0.675,
+    "end": 0.958
+   },
+   {
+    "text": "jadi",
+    "start": 0.981583,
+    "end": 1.229208
+   },
+   {
+    "text": "salah",
+    "start": 1.252833,
+    "end": 1.653791
+   },
+   {
+    "text": "Dasar",
+    "start": 2.523583,
+    "end": 2.900958
+   },
+   {
+    "text": "periuk",
+    "start": 2.936333,
+    "end": 3.266541
+   },
+   {
+    "text": "yang",
+    "start": 3.278291,
+    "end": 3.384416
+   },
+   {
+    "text": "basah",
+    "start": 3.431583,
+    "end": 3.797166
+   },
+   {
+    "text": "boleh",
+    "start": 3.808958,
+    "end": 4.068374
+   },
+   {
+    "text": "merosakkan",
+    "start": 4.092,
+    "end": 4.610875
+   },
+   {
+    "text": "plat",
+    "start": 4.634416,
+    "end": 4.870249
+   },
+   {
+    "text": "pemanas",
+    "start": 4.882083,
+    "end": 5.448124
+   },
+   {
+    "text": "Lubang",
+    "start": 6.32075,
+    "end": 6.698125
+   },
+   {
+    "text": "wap",
+    "start": 6.721708,
+    "end": 6.981124
+   },
+   {
+    "text": "yang",
+    "start": 6.992916,
+    "end": 7.146207
+   },
+   {
+    "text": "tersumbat",
+    "start": 7.193416,
+    "end": 7.653291
+   },
+   {
+    "text": "boleh",
+    "start": 7.653291,
+    "end": 7.924499
+   },
+   {
+    "text": "buat",
+    "start": 7.948125,
+    "end": 8.172166
+   },
+   {
+    "text": "air",
+    "start": 8.19575,
+    "end": 8.431583
+   },
+   {
+    "text": "tumpah",
+    "start": 8.478791,
+    "end": 8.938707
+   },
+   {
+    "text": "Dan",
+    "start": 9.823125,
+    "end": 10.023583
+   },
+   {
+    "text": "terlalu",
+    "start": 10.047166,
+    "end": 10.365582
+   },
+   {
+    "text": "banyak",
+    "start": 10.377375,
+    "end": 10.648583
+   },
+   {
+    "text": "plag",
+    "start": 10.660375,
+    "end": 10.955166
+   },
+   {
+    "text": "pada",
+    "start": 10.978791,
+    "end": 11.143874
+   },
+   {
+    "text": "satu",
+    "start": 11.191041,
+    "end": 11.462249
+   },
+   {
+    "text": "soket",
+    "start": 11.485833,
+    "end": 11.827833
+   },
+   {
+    "text": "boleh",
+    "start": 11.839625,
+    "end": 12.122625
+   },
+   {
+    "text": "buat",
+    "start": 12.146208,
+    "end": 12.346666
+   },
+   {
+    "text": "wayar",
+    "start": 12.3585,
+    "end": 12.712291
+   },
+   {
+    "text": "jadi",
+    "start": 12.759416,
+    "end": 13.018832
+   },
+   {
+    "text": "panas",
+    "start": 13.030666,
+    "end": 13.525957
+   }
+  ]
+ },
+ "d06-selamat": {
+  "duration": 13.776,
+  "words": [
+   {
+    "text": "Jadi",
+    "start": 0.097166,
+    "end": 0.498124
+   },
+   {
+    "text": "lap",
+    "start": 0.757541,
+    "end": 0.957999
+   },
+   {
+    "text": "kering",
+    "start": 0.969791,
+    "end": 1.229207
+   },
+   {
+    "text": "dasar",
+    "start": 1.276416,
+    "end": 1.594832
+   },
+   {
+    "text": "periuk",
+    "start": 1.630208,
+    "end": 1.972208
+   },
+   {
+    "text": "sebelum",
+    "start": 2.007541,
+    "end": 2.349541
+   },
+   {
+    "text": "dimasukkan",
+    "start": 2.384916,
+    "end": 3.045291
+   },
+   {
+    "text": "Jangan",
+    "start": 3.8915,
+    "end": 4.245291
+   },
+   {
+    "text": "tutup",
+    "start": 4.280666,
+    "end": 4.563666
+   },
+   {
+    "text": "lubang",
+    "start": 4.575458,
+    "end": 4.905666
+   },
+   {
+    "text": "wap",
+    "start": 4.92925,
+    "end": 5.224041
+   },
+   {
+    "text": "Cabut",
+    "start": 6.049541,
+    "end": 6.403291
+   },
+   {
+    "text": "plag",
+    "start": 6.403291,
+    "end": 6.662707
+   },
+   {
+    "text": "sebelum",
+    "start": 6.674541,
+    "end": 6.957541
+   },
+   {
+    "text": "mencuci",
+    "start": 6.969333,
+    "end": 7.488208
+   },
+   {
+    "text": "dan",
+    "start": 7.700458,
+    "end": 7.877333
+   },
+   {
+    "text": "jangan",
+    "start": 7.924541,
+    "end": 8.172166
+   },
+   {
+    "text": "rendam",
+    "start": 8.207541,
+    "end": 8.514124
+   },
+   {
+    "text": "badan",
+    "start": 8.53775,
+    "end": 8.82075
+   },
+   {
+    "text": "periuk",
+    "start": 8.844333,
+    "end": 9.174541
+   },
+   {
+    "text": "dalam",
+    "start": 9.198125,
+    "end": 9.433958
+   },
+   {
+    "text": "air",
+    "start": 9.433958,
+    "end": 9.834916
+   },
+   {
+    "text": "Nasi",
+    "start": 10.719333,
+    "end": 11.037749
+   },
+   {
+    "text": "lebih",
+    "start": 11.084916,
+    "end": 11.356124
+   },
+   {
+    "text": "simpan",
+    "start": 11.580208,
+    "end": 11.992958
+   },
+   {
+    "text": "dalam",
+    "start": 12.0165,
+    "end": 12.216958
+   },
+   {
+    "text": "peti",
+    "start": 12.240583,
+    "end": 12.452833
+   },
+   {
+    "text": "sejuk",
+    "start": 12.488208,
+    "end": 12.900958
+   }
+  ]
+ },
+ "d07-tutup": {
+  "duration": 12.312,
+  "words": [
+   {
+    "text": "Barang",
+    "start": 0.097166,
+    "end": 0.403749
+   },
+   {
+    "text": "kecil",
+    "start": 0.439166,
+    "end": 0.804749
+   },
+   {
+    "text": "di",
+    "start": 0.828291,
+    "end": 0.922624
+   },
+   {
+    "text": "dapur",
+    "start": 0.946208,
+    "end": 1.335374
+   },
+   {
+    "text": "Tapi",
+    "start": 2.217,
+    "end": 2.488208
+   },
+   {
+    "text": "bila",
+    "start": 2.511791,
+    "end": 2.712249
+   },
+   {
+    "text": "kita",
+    "start": 2.735833,
+    "end": 2.948083
+   },
+   {
+    "text": "faham",
+    "start": 2.971708,
+    "end": 3.313708
+   },
+   {
+    "text": "cara",
+    "start": 3.349041,
+    "end": 3.584874
+   },
+   {
+    "text": "ia",
+    "start": 3.596708,
+    "end": 3.820749
+   },
+   {
+    "text": "berfungsi",
+    "start": 3.844333,
+    "end": 4.422166
+   },
+   {
+    "text": "kita",
+    "start": 4.658,
+    "end": 4.893833
+   },
+   {
+    "text": "boleh",
+    "start": 4.917458,
+    "end": 5.176874
+   },
+   {
+    "text": "guna",
+    "start": 5.200458,
+    "end": 5.483458
+   },
+   {
+    "text": "dengan",
+    "start": 5.495291,
+    "end": 5.683957
+   },
+   {
+    "text": "lebih",
+    "start": 5.683958,
+    "end": 5.896208
+   },
+   {
+    "text": "selamat",
+    "start": 5.908,
+    "end": 6.356125
+   },
+   {
+    "text": "Barang",
+    "start": 7.181583,
+    "end": 7.499999
+   },
+   {
+    "text": "dapur",
+    "start": 7.535375,
+    "end": 7.877375
+   },
+   {
+    "text": "apa",
+    "start": 7.889166,
+    "end": 8.160374
+   },
+   {
+    "text": "korang",
+    "start": 8.183958,
+    "end": 8.478749
+   },
+   {
+    "text": "nak",
+    "start": 8.514166,
+    "end": 8.643874
+   },
+   {
+    "text": "kami",
+    "start": 8.67925,
+    "end": 8.903291
+   },
+   {
+    "text": "bedah",
+    "start": 8.926875,
+    "end": 9.209875
+   },
+   {
+    "text": "lepas",
+    "start": 9.209916,
+    "end": 9.528332
+   },
+   {
+    "text": "ni",
+    "start": 9.540083,
+    "end": 9.787708
+   },
+   {
+    "text": "Komen",
+    "start": 10.719333,
+    "end": 11.002333
+   },
+   {
+    "text": "bawah",
+    "start": 11.014166,
+    "end": 11.450499
+   }
+  ]
+ }
+}

@@ -20,8 +20,10 @@
     "render:gaya": "remotion render src/index.ts GayaVideo out/gaya.mp4 --codec h264",
     "vo:chini": "python scripts/generate-vo.py chini",
     "vo:bawang": "python scripts/generate-vo.py bawang",
+    "vo:dapur": "python scripts/generate-vo.py dapur",
     "render:chini": "remotion render src/index.ts TasikChini out/chini.mp4 --codec h264",
-    "render:bawang": "remotion render src/index.ts BawangPutih out/bawang.mp4 --codec h264"
+    "render:bawang": "remotion render src/index.ts BawangPutih out/bawang.mp4 --codec h264",
+    "render:dapur": "remotion render src/index.ts DapurPeriukNasi out/dapur.mp4 --codec h264"
   },
   "dependencies": {
     "@react-three/fiber": "8.17.10",
