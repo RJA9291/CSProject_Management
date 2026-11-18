@@ -3,6 +3,7 @@ import {Composition, Folder} from 'remotion';
 import {loadFonts} from './fonts';
 import {FPS, SHOTS, TOTAL_FRAMES} from './waze/timeline';
 import {WazeShot, WazeVideo} from './waze/Video';
+import {CerekShot, CerekVideo, SHOTS as CEREK_SHOTS, TOTAL_FRAMES as CEREK_FRAMES} from './cerek/Story';
 import {DapurShot, DapurVideo, SHOTS as DAPUR_SHOTS, TOTAL_FRAMES as DAPUR_FRAMES} from './dapur/Story';
 import {BawangShot, BawangVideo, SHOTS as BAWANG_SHOTS, TOTAL_FRAMES as BAWANG_FRAMES} from './bawang/Story';
 import {ChiniShot, ChiniVideo, SHOTS as CHINI_SHOTS, TOTAL_FRAMES as CHINI_FRAMES} from './chini/Story';
@@ -66,6 +67,12 @@ export const RemotionRoot: React.FC = () => (
   </Folder>
   <Folder name="Siri-BarangDapur">
     <Composition id="DapurPeriukNasi" component={DapurVideo} width={1080} height={1920} fps={FPS} durationInFrames={DAPUR_FRAMES} />
+    <Composition id="DapurCerekElektrik" component={CerekVideo} width={1080} height={1920} fps={FPS} durationInFrames={CEREK_FRAMES} />
+    <Folder name="Cerek-Scenes">
+      {CEREK_SHOTS.map((s, i) => (
+        <Composition key={s.id} id={`Cerek-${s.id}`} component={CerekShot} defaultProps={{index: i}} width={1080} height={1920} fps={FPS} durationInFrames={s.frames} />
+      ))}
+    </Folder>
     <Folder name="Dapur-Scenes">
       {DAPUR_SHOTS.map((s, i) => (
         <Composition key={s.id} id={`Dapur-${s.id}`} component={DapurShot} defaultProps={{index: i}} width={1080} height={1920} fps={FPS} durationInFrames={s.frames} />

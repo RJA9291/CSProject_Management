@@ -1,0 +1,17 @@
+{
+  "title": "Cerek Elektrik: Macam Mana Ia Padam Sendiri?",
+  "voice": "ms-MY-OsmanNeural",
+  "rate": "+8%",
+  "pitch": "+0Hz",
+  "_note": "Siri Barang Dapur EP02 (gaya dokumentari teknikal, palet cerah). Cerek elektrik dengan termostat wap dwi-logam. Run `python scripts/generate-vo.py cerek` after edits.",
+  "say": {"100": "seratus"},
+  "shots": [
+    {"id": "k01-hook", "vo": "Cerek elektrik. Air mendidih dalam beberapa minit, kemudian ia padam sendiri. Macam mana ia tahu air dah mendidih?", "highlight": ["Cerek", "elektrik.", "padam", "sendiri.", "mendidih?"], "voDelay": 0.6, "pad": 0.5},
+    {"id": "k02-anatomi", "vo": "Cerek ini ada empat bahagian penting. Elemen pemanas di dasar. Tapak kuasa di bawahnya. Penderia wap berhampiran pemegang. Dan suis pada pemegang.", "highlight": ["Elemen", "pemanas", "Tapak", "kuasa", "Penderia", "wap", "suis"], "voDelay": 0.3, "pad": 0.5},
+    {"id": "k03-didih", "vo": "Bila suis dihidupkan, elemen memanaskan air dari bawah. Air panas naik ke atas, air sejuk turun ke bawah, dan berpusing sehingga semuanya mendidih pada kira-kira 100 darjah Celsius.", "highlight": ["memanaskan", "naik", "turun", "berpusing", "100", "darjah"], "voDelay": 0.3, "pad": 0.5},
+    {"id": "k04-dwilogam", "vo": "Bila air mendidih, wap mengalir melalui saluran kecil ke penderia. Di situ ada kepingan dwi-logam, iaitu dua jenis logam yang mengembang pada kadar berbeza. Bila panas, ia melengkung, menolak suis, dan klik! Cerek pun padam.", "highlight": ["wap", "saluran", "dwi-logam,", "mengembang", "melengkung,", "klik!", "padam."], "voDelay": 0.3, "pad": 0.6},
+    {"id": "k05-risiko", "vo": "Tapi apa boleh jadi salah? Air melebihi paras maksimum boleh memercik keluar dari muncung. Cerek yang dihidupkan tanpa air boleh buat elemen terlalu panas. Dan kerak kapur pada elemen buat air lambat mendidih.", "highlight": ["salah?", "maksimum", "memercik", "tanpa", "air", "kerak", "kapur"], "voDelay": 0.3, "pad": 0.5},
+    {"id": "k06-selamat", "vo": "Jadi, isi air antara paras minimum dan maksimum. Tutup penutup rapat sebelum dihidupkan. Jauhkan wayar dari tepi meja. Dan bersihkan kerak dengan cuka atau asid sitrik.", "highlight": ["minimum", "maksimum.", "Tutup", "rapat", "wayar", "cuka", "sitrik."], "voDelay": 0.3, "pad": 0.5},
+    {"id": "k07-tutup", "vo": "Cerek kecil, tapi ada sains di dalamnya. Bila kita faham, kita boleh guna dengan lebih selamat. Barang dapur apa pula lepas ni? Komen bawah.", "highlight": ["sains", "faham,", "selamat.", "Komen", "bawah."], "voDelay": 0.3, "pad": 1.8}
+  ]
+}
